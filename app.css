@@ -303,12 +303,19 @@ select {
     font-size: 12.5px;
     font-weight: 600;
 }
-.section-head input.code {
-    flex: 0 0 78px;
+.code-badge {
+    flex: 0 0 auto;
     font-family: var(--mono);
     text-transform: uppercase;
-    font-size: 11.5px;
-    max-width: 5vw;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    background: #5c584c;
+    border-radius: 4px;
+    padding: 6px 9px;
+    letter-spacing: 0.03em;
+    white-space: nowrap;
+    cursor: default;
 }
 .icon-btn {
     background: none;
@@ -454,13 +461,15 @@ select {
     background: #fff;
     width: 210mm;
     min-height: 297mm;
-    padding: 20mm 18mm;
+    padding: 16mm 16mm;
     margin-bottom: 24px;
     box-shadow: 0 2px 18px rgba(0, 0, 0, 0.18);
     font-family: var(--serif);
     color: #1a1a1a;
     font-size: 10.5pt;
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
 }
 .doc-header {
     display: flex;
@@ -478,8 +487,8 @@ select {
     font-size: 9pt;
     letter-spacing: 0.15em;
     color: #6b6b6b;
-    margin-bottom: 2vh;
-    margin-top: 3vh;
+    margin-bottom: 3%;
+    margin-top: 2%;
 }
 .cover-rule {
     border: none;
@@ -736,7 +745,8 @@ table.stat td.badge {
     font-family: var(--mono);
     font-size: 8pt;
     color: #999;
-    margin-top: 24px;
+    margin-top: auto;
+    padding-top: 24px;
 }
 
 .empty-hint {
@@ -772,7 +782,7 @@ table.stat td.badge {
         min-height: 0;
     }
     .page:last-child {
-        page-break-after: auto;
+        break-after: auto;
     }
     @page {
         size: A4;

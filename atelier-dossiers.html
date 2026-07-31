@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Atelier de Dossiers</title>
+
         <link rel="stylesheet" href="./app.css" />
     </head>
     <body>
@@ -53,7 +54,30 @@
                     overflow-y: auto;
                 "
             >
-                <h3 style="margin-top: 0">Registre des couleurs utilisées</h3>
+                <div
+                    style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    "
+                >
+                    <h3 style="margin: 0">Registre des couleurs utilisées</h3>
+                    <button
+                        id="btn-modal-edit"
+                        title="Modifier / retirer des couleurs"
+                        style="
+                            background: none;
+                            border: 1px solid #d8d4c8;
+                            border-radius: 4px;
+                            width: 28px;
+                            height: 28px;
+                            font-size: 13px;
+                            color: #7a746a;
+                        "
+                    >
+                        ✎
+                    </button>
+                </div>
                 <p style="font-size: 12.5px; color: #666">
                     Toutes les couleurs déjà attribuées à un document, tous
                     documents confondus. Sert à garantir l'unicité des
