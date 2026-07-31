@@ -153,37 +153,44 @@
         {
           "id": "id25_75eq4",
           "type": "table",
-          "badge": false,
           "rows": [
             {
               "a": "1 - DOMAINE PUBLIC",
-              "b": "Aucun secret. Su, à des degrés divers, par une large partie de la population — de l'ordre de 10 à 90 % selon les régions et les sujets."
+              "b": "Aucun secret. Su, à des degrés divers, par une large partie de la population — de l'ordre de 10 à 90 % selon les régions et les sujets.",
+              "c": ""
             },
             {
               "a": "2 - NOTORIÉTÉ COMMUNE",
-              "b": "Connu de quiconque s'intéresse un minimum au sujet, sans démarche particulière ; de l'ordre de plusieurs dizaines de milliers de personnes à travers l'Imperium."
+              "b": "Connu de quiconque s'intéresse un minimum au sujet, sans démarche particulière ; de l'ordre de plusieurs dizaines de milliers de personnes à travers l'Imperium.",
+              "c": ""
             },
             {
               "a": "3 - SAVOIR SPÉCIALISÉ",
-              "b": "Réservé aux praticiens, érudits ou professions concernées ; de l'ordre de quelques milliers de personnes."
+              "b": "Réservé aux praticiens, érudits ou professions concernées ; de l'ordre de quelques milliers de personnes.",
+              "c": ""
             },
             {
               "a": "4 - SECRET INSTITUTIONNEL",
-              "b": "Réservé aux membres d'une organisation précise ; de l'ordre de quelques centaines de personnes."
+              "b": "Réservé aux membres d'une organisation précise ; de l'ordre de quelques centaines de personnes.",
+              "c": ""
             },
             {
               "a": "5 - SECRET RESTREINT",
-              "b": "Réservé à la hiérarchie ou à un cercle de confiance choisi au sein d'une organisation ; de l'ordre de quelques dizaines de personnes."
+              "b": "Réservé à la hiérarchie ou à un cercle de confiance choisi au sein d'une organisation ; de l'ordre de quelques dizaines de personnes.",
+              "c": ""
             },
             {
               "a": "6 - CONFIDENTIEL",
-              "b": "Réservé à un noyau très limité d'individus ; de l'ordre d'une dizaine de personnes, parfois moins."
+              "b": "Réservé à un noyau très limité d'individus ; de l'ordre d'une dizaine de personnes, parfois moins.",
+              "c": ""
             },
             {
               "a": "7 - ACCÈS INTERDIT",
-              "b": "Le niveau le plus élevé de l'échelle officielle. L'accès est refusé à quiconque ne dispose pas d'une autorisation nommément désignée — indépendamment du nombre de personnes effectivement informées, qui peut être extrêmement bas."
+              "b": "Le niveau le plus élevé de l'échelle officielle. L'accès est refusé à quiconque ne dispose pas d'une autorisation nommément désignée — indépendamment du nombre de personnes effectivement informées, qui peut être extrêmement bas.",
+              "c": ""
             }
-          ]
+          ],
+          "layout": "label-value"
         },
         {
           "id": "id26_gjws3",
@@ -212,17 +219,19 @@
         {
           "id": "id31_17zjy",
           "type": "table",
-          "badge": false,
           "rows": [
             {
               "a": "Hors-échelle",
-              "b": "Ce document. L'Archiviste détenant la totalité des archives du monde connu, sans filtre institutionnel ni allégeance à aucune hiérarchies  — y compris les paliers spéciaux qu'il a lui-même inventés. Sa connaissance n'est ni un privilège accordé, ni un rôle occupé : elle échappe entièrement au système qu'elle décrit. Ce document est ainsi également en dehors du système."
+              "b": "Ce document. L'Archiviste détenant la totalité des archives du monde connu, sans filtre institutionnel ni allégeance à aucune hiérarchies  — y compris les paliers spéciaux qu'il a lui-même inventés. Sa connaissance n'est ni un privilège accordé, ni un rôle occupé : elle échappe entièrement au système qu'elle décrit. Ce document est ainsi également en dehors du système.",
+              "c": ""
             },
             {
               "a": "A1-A5 Secrets de la Guilde des Animaliens",
-              "b": " Ces cinq niveaux parcourent l'intégralité de la hiérarchie de la Guilde. A1 : l'ensemble de la Guilde; A2 : Maîtres et professeurs travaillant à Narmatin; A3 : Le Haut Conseil et la Lignée; A4 : Mage Suprême; A5 : Gardien et personnel de la Tour."
+              "b": " Ces cinq niveaux parcourent l'intégralité de la hiérarchie de la Guilde. A1 : l'ensemble de la Guilde; A2 : Maîtres et professeurs travaillant à Narmatin; A3 : Le Haut Conseil et la Lignée; A4 : Mage Suprême; A5 : Gardien et personnel de la Tour.",
+              "c": ""
             }
-          ]
+          ],
+          "layout": "label-value"
         },
         {
           "id": "id33_bufdq",
@@ -390,29 +399,34 @@
         {
           "id": "id47_08zsq",
           "type": "table",
-          "badge": false,
           "rows": [
             {
               "a": "Guilde des Archivistes",
-              "b": "Organisation réelle et publique de l'Imperium, dédiée à la conservation des événements et connaissances du royaume — sans lien avec l'Archiviste."
+              "b": "Organisation réelle et publique de l'Imperium, dédiée à la conservation des événements et connaissances du royaume — sans lien avec l'Archiviste.",
+              "c": ""
             },
             {
               "a": "L'Archiviste",
-              "b": "Voyageur solitaire à l'origine réelle de cette collection, inconnu de toute institution, conservant par un moyen inconnu la mémoire du monde."
+              "b": "Voyageur solitaire à l'origine réelle de cette collection, inconnu de toute institution, conservant par un moyen inconnu la mémoire du monde.",
+              "c": ""
             },
             {
               "a": "Niveau officiel",
-              "b": "Échelle neutre de la Guilde des Archivistes, de 1 à 7, mesurant l'ordre de grandeur de personnes informées — voir ARC-03.A."
+              "b": "Échelle neutre de la Guilde des Archivistes, de 1 à 7, mesurant l'ordre de grandeur de personnes informées — voir ARC-03.A.",
+              "c": ""
             },
             {
               "a": "Palier spécial",
-              "b": "Désignation par rôle, ajoutée par l'Archiviste à des dossiers particuliers — voir ARC-03.B."
+              "b": "Désignation par rôle, ajoutée par l'Archiviste à des dossiers particuliers — voir ARC-03.B.",
+              "c": ""
             },
             {
               "a": "Guilde des Animaliens",
-              "b": "Organisation publique de l'Imperium, dédiée à l'entrainement et à la régulation de l'usage des liens téléphatiques inter-espèces."
+              "b": "Organisation publique de l'Imperium, dédiée à l'entrainement et à la régulation de l'usage des liens téléphatiques inter-espèces.",
+              "c": ""
             }
-          ]
+          ],
+          "layout": "label-value"
         }
       ]
     }
