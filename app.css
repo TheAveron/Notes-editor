@@ -779,7 +779,6 @@ table.stat td.badge {
         margin: 0;
         break-after: page;
         width: auto;
-        min-height: 0;
     }
     .page:last-child {
         break-after: auto;
