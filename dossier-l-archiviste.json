@@ -1,0 +1,420 @@
+{
+  "id": "id1_m7u0a",
+  "color": "#5c6b4f",
+  "stampStyle": "accent",
+  "cover": {
+    "orgLine": "GUILDE DES ARCHIVISTES — FONDS DOCUMENTAIRE",
+    "kicker": "DOSSIER D'INFORMATION",
+    "title": "L'archiviste",
+    "subtitle": "Origine du fonds & échelle de classification de la collection",
+    "stampText": "Hors-échelle - document premier de la\ncollection",
+    "meta": [
+      {
+        "a": "N° de dossier",
+        "b": "ARC-VC-001"
+      },
+      {
+        "a": "Objet",
+        "b": "L'Archiviste, la Guilde des Archivistes, et l'échelle de classification commune"
+      },
+      {
+        "a": "Documents liés",
+        "b": "Aucun"
+      },
+      {
+        "a": "Nature du sujet",
+        "b": "Infrastucture documentaire — à lire en premier"
+      },
+      {
+        "a": "Confidentialité",
+        "b": "Hors-échelle"
+      }
+    ]
+  },
+  "footerBrand": "L'ARCHIVISTE - DOCUMENT FONDATEUR",
+  "noteUsage": {
+    "includeTagLegend": true,
+    "text": "Ce dossier est le socle de toute la collection. Il explique d'où viennent réellement ces documents, ce que\nvaut leur estampille officielle, et définit l'échelle de classification de confidentialité. À lire avant tout autre dossier."
+  },
+  "sections": [
+    {
+      "id": "id2_qexfk",
+      "code": "ARC-01",
+      "title": "La Guilde des Archivistes",
+      "blocks": [
+        {
+          "id": "id6_0kxlx",
+          "type": "paragraph",
+          "text": "Le fonctionnement interne, la hiérarchie et les pratiques exactes de la véritable Guilde des Archivistes ne\nsont pas détaillés ici — ce dossier ne porte que sur l'entité qui usurpe son nom.",
+          "italic": false
+        },
+        {
+          "id": "id4_ql3ej",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Une organisation bien réelle",
+          "paragraphs": [
+            "La Guilde des Archivistes existe véritablement dans l'Imperium. Ce\nn'est pas une institution secrète : elle a pour mission publique et légitime de collecter, conserver et transcrire\nles événements, actes et connaissances du royaume — une fonction d'archivage et d'histoire, largement connue\net respectée."
+          ]
+        },
+        {
+          "id": "id5_l8ydf",
+          "type": "callout",
+          "tag": "attention",
+          "title": "Ce que la Guilde des Archivistes ignore",
+          "paragraphs": [
+            "La Guilde des Archivistes n'a aucun lien avec l'Archiviste (voir ARC-02) et ignore jusqu'à son existence. Elle\nn'a ni rédigé, ni validé, ni même vu passer un seul des documents de cette collection. Toute mention de son\nnom sur ces dossiers est une appropriation, pas une attribution réelle."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id7_5jywo",
+      "code": "ARC-02",
+      "title": "L'Archiviste",
+      "blocks": [
+        {
+          "id": "id9_711y6",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Ce qui est su",
+          "paragraphs": [
+            "L'Archiviste est un voyageur solitaire, dont l'existence n'est connue d'aucune institution de l'Imperium — ni l'Administration impériale, ni la Guilde des Archivistes, ni aucune autre organisation. Il conserve en lui, par un\nmoyen inconnu, l'intégralité ou presque de ce qui s'est passé et de ce qui se passe dans le monde. C'est lui qui a\ncompilé et conservé l'ensemble des dossiers de cette collection."
+          ]
+        },
+        {
+          "id": "id10_ryxny",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Une fausse estampille délibérée",
+          "paragraphs": [
+            "L'Archiviste a choisi que ses documents se présentent comme émanant de la Guilde des Archivistes, alors que\nce n'est pas le cas. Il n'est affilié à aucune de ses branches et n'a jamais été officiellement en contact avec elle. Certaines de ses informations pourraient en revanche provenir de la Guilde, nul ne sait."
+          ]
+        },
+        {
+          "id": "id12_w4u1m",
+          "type": "heading2",
+          "text": "Ce qui reste entièrement ouvert"
+        },
+        {
+          "id": "id13_csk0x",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Le mécanism de sa mémoire",
+          "paragraphs": [
+            "Rien n'explique comment un individu peut retenir la totalité des archives du monde connu. Don inné, artefact,\npacte, malédiction, nature non humaine : tout reste possible."
+          ]
+        },
+        {
+          "id": "id15_ewl7h",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Pourquoi l'emprunt du nom de la Guide des Archivistes",
+          "paragraphs": [
+            "Camouflage pour donner une apparence de légitimité et de neutralité à ses documents, hommage à une\ninstitution qu'il admire sans en faire partie, ou raison plus trouble encore : rien n'est tranché. Ce choix, en\ntout cas, n'est pas anodin — il cherche visiblement à ce que ses écrits soient pris au sérieux sans qu'on remonte\njusqu'à lui."
+          ]
+        },
+        {
+          "id": "id14_7qlz9",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Ses motivations et son itinéraire",
+          "paragraphs": [
+            "On ignore pourquoi il voyage, ce qu'il cherche, s'il a un but précis en consignant ces événements, et s'il a une\nquelconque limite — géographique, temporelle, ou autre — à ce qu'il peut consigner."
+          ]
+        },
+        {
+          "id": "id16_6xcc8",
+          "type": "callout",
+          "tag": "hook",
+          "title": "Une rencontre impossible",
+          "paragraphs": [
+            "Un PNJ mystérieux, croisé par les PJ, semble en savoir bien trop sur des événements qu'il n'aurait aucun\nmoyen légitime de connaître. Rien n'indique qu'il se présentera jamais comme « l'Archiviste » — mais rien\nn'empêche non plus qu'il le soit."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id17_0lhq2",
+      "code": "ARC-03",
+      "title": "Échelle de confidentialité",
+      "blocks": [
+        {
+          "id": "id18_xtbqw",
+          "type": "paragraph",
+          "text": "La Guilde des Archivistes utilise, pour l'ensemble de ses fonds, une échelle de confidentialité à sept niveaux, neutre vis-à-vis du sujet traité, puisque ses archives couvrent absolument tout ce qui se passe dans l'Imperium, sans distinction de domaine. Cette échelle mesure avant tout un ordre de grandeur : combien de personnes, approximativement, détiennent l'information. Des registres sont tenus de manière séparés pour savoir qui est en mesure d’accéder aux documents les plus secrets.",
+          "italic": false
+        },
+        {
+          "id": "id19_ndu8i",
+          "type": "heading2",
+          "text": "A. L'échelle officielle (Guilde des Archivistes)"
+        },
+        {
+          "id": "id25_75eq4",
+          "type": "table",
+          "badge": false,
+          "rows": [
+            {
+              "a": "1 - DOMAINE PUBLIC",
+              "b": "Aucun secret. Su, à des degrés divers, par une large partie de la population — de l'ordre de 10 à 90 % selon les régions et les sujets."
+            },
+            {
+              "a": "2 - NOTORIÉTÉ COMMUNE",
+              "b": "Connu de quiconque s'intéresse un minimum au sujet, sans démarche particulière ; de l'ordre de plusieurs dizaines de milliers de personnes à travers l'Imperium."
+            },
+            {
+              "a": "3 - SAVOIR SPÉCIALISÉ",
+              "b": "Réservé aux praticiens, érudits ou professions concernées ; de l'ordre de quelques milliers de personnes."
+            },
+            {
+              "a": "4 - SECRET INSTITUTIONNEL",
+              "b": "Réservé aux membres d'une organisation précise ; de l'ordre de quelques centaines de personnes."
+            },
+            {
+              "a": "5 - SECRET RESTREINT",
+              "b": "Réservé à la hiérarchie ou à un cercle de confiance choisi au sein d'une organisation ; de l'ordre de quelques dizaines de personnes."
+            },
+            {
+              "a": "6 - CONFIDENTIEL",
+              "b": "Réservé à un noyau très limité d'individus ; de l'ordre d'une dizaine de personnes, parfois moins."
+            },
+            {
+              "a": "7 - ACCÈS INTERDIT",
+              "b": "Le niveau le plus élevé de l'échelle officielle. L'accès est refusé à quiconque ne dispose pas d'une autorisation nommément désignée — indépendamment du nombre de personnes effectivement informées, qui peut être extrêmement bas."
+            }
+          ]
+        },
+        {
+          "id": "id26_gjws3",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Une échelle neutre et formelle",
+          "paragraphs": [
+            "Cette échelle appartient à la véritable Guilde des Archivistes. Elle sert à classer indifféremment un secret d'État, une recette alchimique rare, ou\nun scandale de cour — c'est précisément pour cela que l'Archiviste l'a reprise telle quelle pour couvrir ses\npropres dossiers, plutôt que d'inventer un système entièrement nouveau."
+          ]
+        },
+        {
+          "id": "id28_gacae",
+          "type": "pagebreak"
+        },
+        {
+          "id": "id27_t6vhr",
+          "type": "heading2",
+          "text": "B. Les paliers spéciaux de l'Archiviste"
+        },
+        {
+          "id": "id29_cr8qa",
+          "type": "paragraph",
+          "text": "Étant donné la nature particulière de certains dossiers comme ceux touchant à la Tour et à la menace qu'elle contient, l'Archiviste a jugé l'échelle officielle trop imprécise : elle indique un ordre de grandeur, mais pas qui, exactement, détient l'information. Il a donc ajouté, pour certins documents, des paliers spéciaux de son invention, désignant des rôles précis plutôt que de simples volumes de population. Ces paliers n'ont aucune existence officielle au sein de la Guilde des Archivistes : ils se superposent à l'échelle neutre sans la  remplacer, et n'apparaissent que dans les dossiers où l'Archiviste a jugé utile de les préciser. ",
+          "italic": false
+        },
+        {
+          "id": "id31_17zjy",
+          "type": "table",
+          "badge": false,
+          "rows": [
+            {
+              "a": "Hors-échelle",
+              "b": "Ce document. L'Archiviste détenant la totalité des archives du monde connu, sans filtre institutionnel ni allégeance à aucune hiérarchies  — y compris les paliers spéciaux qu'il a lui-même inventés. Sa connaissance n'est ni un privilège accordé, ni un rôle occupé : elle échappe entièrement au système qu'elle décrit. Ce document est ainsi également en dehors du système."
+            },
+            {
+              "a": "A1-A5 Secrets de la Guilde des Animaliens",
+              "b": " Ces cinq niveaux parcourent l'intégralité de la hiérarchie de la Guilde. A1 : l'ensemble de la Guilde; A2 : Maîtres et professeurs travaillant à Narmatin; A3 : Le Haut Conseil et la Lignée; A4 : Mage Suprême; A5 : Gardien et personnel de la Tour."
+            }
+          ]
+        },
+        {
+          "id": "id33_bufdq",
+          "type": "callout",
+          "tag": "attention",
+          "title": "Lecture d'une classification à deux marques",
+          "paragraphs": [
+            "Un document touchant à la Tour affiche donc, en couverture, à la fois son niveau officiel (1 à 7) et, si\nl'Archiviste l'a jugé utile, un palier spécial (A1 à A5). Les deux ne s'excluent pas : le niveau officiel donne l'ordre\nde grandeur, le palier spécial précise le rôle exact. Un futur dossier sur un sujet sans rapport avec la Tour\nn'affichera, lui, que le niveau officiel — voir note en tête de ARC-03."
+          ]
+        },
+        {
+          "id": "id32_2cm1j",
+          "type": "callout",
+          "tag": "attention",
+          "title": "Anciens détenteurs et statut retraité",
+          "paragraphs": [
+            "Un individu ayant occupé un niveau élevé (par exemple une Mage suprême retirée, voir CEL-VC-001) ne redescend pas automatiquement de niveau une fois sa charge quittée : rien n'indique de mécanisme d'oubli.\nLe niveau de classification décrit un accès institutionnel nécessaire pour avoir accès aux connaissance, mais ne décrit pas une interdiction."
+          ]
+        },
+        {
+          "id": "id48_xmwto",
+          "type": "crossref",
+          "text": "Voir GLD-VC-002 pour plus de détails sur la Guilde des Animaliens et la Tour."
+        }
+      ]
+    },
+    {
+      "id": "id34_zvkav",
+      "code": "ARC-04",
+      "title": "Fiabilité des Archives",
+      "blocks": [
+        {
+          "id": "id35_ln538",
+          "type": "paragraph",
+          "text": "Une question se pose logiquement : si l'Archiviste conserve la totalité des événements du monde, pourquoi\nses propres dossiers contiennent-ils des zones d'ombre, des hypothèses non tranchées, et des points\nexplicitement marqués comme incertains ?",
+          "italic": false
+        },
+        {
+          "id": "id36_vvesn",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Une hypothèse de lecture",
+          "paragraphs": [
+            "Il est probable que la mémoire de l'Archiviste ne soit pas uniforme : certains événements y sont fixés avec une\nprécision totale, d'autres ne lui parviennent que sous forme d'impressions, de déductions, ou de rumeurs qu'il\nn'a pas pu vérifier lui-même. Le système de balises utilisé dans toute la collection — Confirmé, Hypothèse de\ntravail, Hook MJ, Attention MJ — peut ainsi se lire, en creux, comme le propre système d'annotation de\nl'Archiviste : sa façon à lui de distinguer ce qu'il sait avec certitude de ce qu'il reconstitue, suppose, ou choisit\nde signaler comme utile sans le garantir."
+          ]
+        },
+        {
+          "id": "id37_366qi",
+          "type": "callout",
+          "tag": "hook",
+          "title": "Une archive erronée",
+          "paragraphs": [
+            "Et si un détail « Confirmé » d'un des dossiers s'avérait, à l'usage, faux ? Cela suggérerait que même l'Archiviste\npeut se tromper — ou qu'il a, pour une raison qui lui appartient, sciemment consigné une inexactitude. De\nquoi nourrir une intrigue entière autour de la fiabilité même de cette collection."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id38_z98sd",
+      "code": "ARC-05",
+      "title": "Hooks de Scénario",
+      "blocks": [
+        {
+          "id": "id39_vi552",
+          "type": "paragraph",
+          "text": "Quatre accroches centrées sur l'Archiviste et la Guilde des Archivistes elle-même.",
+          "italic": false
+        },
+        {
+          "id": "id40_hpbbt",
+          "type": "card",
+          "badgeText": "HOOK 1",
+          "title": "Le document égaré",
+          "pitch": "Les PJ mettent la main sur l'un des dossiers de cette collection portant l'estampille de la Guilde des Archivistes. Une piste logique serait de la contacter... pour découvrir qu'elle nie\ntoute paternité.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Local, point d'entrée de campagne"
+            },
+            {
+              "a": "Complication",
+              "b": "La Guilde des Archivistes, légitimement perplexe, pourrait vouloir enquêter elle- même sur l'origine de ce faux, tout en étant étonnée de la précision et du professionalisme de celui-ci."
+            },
+            {
+              "a": "Rôle de l'Archiviste",
+              "b": "Absent, sauf apparition indirecte via le contenu du document trouvé."
+            }
+          ]
+        },
+        {
+          "id": "id43_3e5bd",
+          "type": "card",
+          "badgeText": "HOOK 2",
+          "title": "L'enquête de la vraie Guilde",
+          "pitch": "La Guilde des Archivistes, ayant eu vent de documents circulant sous son nom sans son autorisation, ouvre une\nenquête interne pour identifier le faussaire.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Régional"
+            },
+            {
+              "a": "Complication",
+              "b": "Les PJ pourraient être engagés pour cette enquête sans se douter qu'elle les mènera vers une figure quasi mythique plutôt qu'un simple escroc."
+            },
+            {
+              "a": "Rôle de l'Archiviste",
+              "b": "Cible de l'enquête, sans jamais être directement rencontré."
+            }
+          ]
+        },
+        {
+          "id": "id42_0vjmm",
+          "type": "card",
+          "badgeText": "HOOK 3",
+          "title": "Celui qui savait déjà",
+          "pitch": "Un PNJ mineur, croisé en chemin, fait une remarque anodine sur un événement que les PJ n'ont partagé avec\npersonne — une information qu'il ne devrait avoir aucun moyen de connaître.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Personnel, ambiance"
+            },
+            {
+              "a": "Complication",
+              "b": "Rien ne confirme qu'il s'agit de l'Archiviste ; l'ambiguïté est le point fort de ce hook"
+            },
+            {
+              "a": "Rôle de l'Archiviste",
+              "b": "Possible incarnation directe, jamais confirmée."
+            }
+          ]
+        },
+        {
+          "id": "id41_c2gye",
+          "type": "card",
+          "badgeText": "HOOK 4",
+          "title": "La collection incomplète",
+          "pitch": "Un personnage érudit affirme posséder un fragment d'un dossier de cette même collection, mais portant un\nnuméro que personne ne connaît — suggérant que l'Archiviste a produit bien plus de documents que ceux déjà\ndécouverts.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Mondial, fil rouge de campagne"
+            },
+            {
+              "a": "Complication",
+              "b": "Ce fragment pourrait concerner absolument n'importe quel sujet de l'univers, ouvrant la porte à n'importe quelle direction que le MJ souhaite développer."
+            },
+            {
+              "a": "Rôle de l'Archiviste",
+              "b": "Auteur indirect d'un fil narratif entier, sans jamais apparaître."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id44_5w95j",
+      "code": "ARC-06",
+      "title": "Annexes",
+      "blocks": [
+        {
+          "id": "id46_v6nho",
+          "type": "heading2",
+          "text": "A. Glossaire"
+        },
+        {
+          "id": "id47_08zsq",
+          "type": "table",
+          "badge": false,
+          "rows": [
+            {
+              "a": "Guilde des Archivistes",
+              "b": "Organisation réelle et publique de l'Imperium, dédiée à la conservation des événements et connaissances du royaume — sans lien avec l'Archiviste."
+            },
+            {
+              "a": "L'Archiviste",
+              "b": "Voyageur solitaire à l'origine réelle de cette collection, inconnu de toute institution, conservant par un moyen inconnu la mémoire du monde."
+            },
+            {
+              "a": "Niveau officiel",
+              "b": "Échelle neutre de la Guilde des Archivistes, de 1 à 7, mesurant l'ordre de grandeur de personnes informées — voir ARC-03.A."
+            },
+            {
+              "a": "Palier spécial",
+              "b": "Désignation par rôle, ajoutée par l'Archiviste à des dossiers particuliers — voir ARC-03.B."
+            },
+            {
+              "a": "Guilde des Animaliens",
+              "b": "Organisation publique de l'Imperium, dédiée à l'entrainement et à la régulation de l'usage des liens téléphatiques inter-espèces."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
