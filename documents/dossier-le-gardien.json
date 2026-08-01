@@ -1,0 +1,399 @@
+{
+  "id": "id1_5xfmf",
+  "color": "#a9812e",
+  "stampStyle": "red",
+  "cover": {
+    "orgLine": "GUILDE DES ARCHIVISTES — FONDS DOCUMENTAIRE",
+    "kicker": "DOSSIER D'INFORMATION",
+    "title": "Le Gardien",
+    "subtitle": "de la Tour du Cinquième Point Cardinal",
+    "stampText": "NIVEAU 7 · A5 — Réservé au personel de la Tour",
+    "meta": [
+      {
+        "a": "N° de dossier",
+        "b": "GRD-VC-001"
+      },
+      {
+        "a": "Objet",
+        "b": "Identité, mécanisme et environnement du Gardien de la Tour"
+      },
+      {
+        "a": "Documents liés",
+        "b": "GLD-VC-001·MEN-VC-001·CEL-VC-001"
+      },
+      {
+        "a": "Nature du sujet",
+        "b": "Vivant - en fonction"
+      },
+      {
+        "a": "Confidentialité",
+        "b": "7 · A5 — usage MJ uniquement"
+      }
+    ]
+  },
+  "footerBrand": "Le Guardien - Niveau 7 · A5",
+  "noteUsage": {
+    "includeTagLegend": true,
+    "text": "Ce dossier est conçu pour être utilisé tel quel par un meneur de jeu (MJ) autre que l'auteur de l'univers. Chaque information est étiquetée selon son statut, afin de distinguer ce qui appartient au canon établi de ce qui reste ouvert à l'interprétation ou à l'adaptation."
+  },
+  "sections": [
+    {
+      "id": "id2_ca0sx",
+      "title": "Fiche d'identification",
+      "blocks": [
+        {
+          "id": "id4_6i0vp",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "Nom civil",
+              "b": "Miguel",
+              "c": ""
+            },
+            {
+              "a": "Titre",
+              "b": "Guardien de la Tour du Cinquième Point Cardinal",
+              "c": ""
+            },
+            {
+              "a": "Naissance",
+              "b": "Village paysan de l'Imperium, quelques jours de marche à l'ouest de Narmatin",
+              "c": ""
+            },
+            {
+              "a": "Origine sociale",
+              "b": "Famille de fermiers modestes",
+              "c": ""
+            },
+            {
+              "a": "Âge actuel",
+              "b": "105 ans",
+              "c": ""
+            },
+            {
+              "a": "Guardien depuis",
+              "b": "65 ans",
+              "c": ""
+            },
+            {
+              "a": "Lien initial",
+              "b": "Esprits de feu",
+              "c": ""
+            },
+            {
+              "a": "Liens additionels recensés",
+              "b": "Au moins 7 avant de se rendre à la Tour, total indéterminé depuis.",
+              "c": ""
+            },
+            {
+              "a": "Superieur hiérarchique",
+              "b": "Ambre, actuelle Mage Suprême de la Guilde des Animaliens. Elle est également sa compagne.",
+              "c": ""
+            },
+            {
+              "a": "Localisation actuelle",
+              "b": "Tour du Cinquième Point Cardinal",
+              "c": ""
+            }
+          ]
+        },
+        {
+          "id": "id5_317fz",
+          "type": "crossref",
+          "text": "Voir GLD-VC-001 pour plus de détails sur la Guilde de Animaliens"
+        },
+        {
+          "id": "id6_yaozw",
+          "type": "crossref",
+          "text": "Voir CEL-VC-001 pour plus de détails sur la fonction de Mage suprême"
+        },
+        {
+          "id": "id7_7h5mk",
+          "type": "heading2",
+          "text": "Parcours attesté"
+        },
+        {
+          "id": "id9_2asm5",
+          "type": "bullets",
+          "items": [
+            "Naissance et enfance au foyer famillial. Premier lien (Esprits de feu) découvert en son sein, avec des résultats inconstants.",
+            "Repéré par le maître local Sirgal, qui perçoit en lui des capacités téléphatiques inhabituellement puissante, notamment détecté au vu des comportement des rapaces aux alentours.",
+            "Départ pour Narmatin à 16 ans afin de reçevoir une formation plus poussée et d'intégrer la Guilde des Animaliens.",
+            "Quatre années de formation à la Guide, avec 4 liens cumulés la premiière année, et 7 lors de sa quatrième année.",
+            "À 20ans, il est envoyé à la Tour du Cinquième point Cardinal, accompagné de Célestine, alors Mage Suprême.",
+            "Formation de 20 années supplémentaires auprès d'Udor pour prendre sa relève. Ce dernier était alors âgé de 136 à 156 ans.",
+            "À 40 ans, Rituel de Transmission : absorption consentie de l'âme et de la puissance d'Udor. Miguel devient alors le Guardien.",
+            "65 années en poste à ce jour."
+          ]
+        },
+        {
+          "id": "id10_pajnv",
+          "type": "pagebreak"
+        },
+        {
+          "id": "id12_0mk8h",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Longévité",
+          "paragraphs": [
+            "Comme tout Guardien, Miguel doit sa longévité à des potions et sortilèges divers. Sa puissance liée aux esprits absorbés renforce d'autant plus ces effets, ce qui lui permet généralement de vivre substantiellement plus longtemps que son homologue Mage Suprême."
+          ]
+        },
+        {
+          "id": "id13_alx6c",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Apparence physique",
+          "paragraphs": [
+            "Aucune propriété physique n'est prédéfinie, à la seule exception de l'espèce. Miguels, et les Gardiens de manière générale sont des Humains. Tout le reste est laissé au plaisir des MJ."
+          ]
+        },
+        {
+          "id": "id41_w4os5",
+          "type": "crossref",
+          "text": "Voir GDN-03 et GDN-04 pour plus de détails sur le mécanisme de conscience partagée et du rituel de transmission."
+        }
+      ]
+    },
+    {
+      "id": "id14_3p9mg",
+      "title": "La Tour du Cinquième Point Cardinal",
+      "blocks": [
+        {
+          "id": "id16_i9dst",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Localisation & origine",
+          "paragraphs": [
+            "La Tour se dresse au centre d'une clairière circulaire, au cœur d'une forêt immense couvrant une bonne partie de l'est du territoire de l'Imperium. Elle se situe à plusieurs jours de voyage à cheval de Narmatin. Elle a été bâtie autour d'une météorite tombée il y a environ 12 000 ans, dont le cœur renferme un crystal unique en son genre, jamais retrouvé ailleurs dans le monde connu. "
+          ]
+        },
+        {
+          "id": "id17_ppx3d",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Fonction",
+          "paragraphs": [
+            "La Tour agit comme un focaliseur magique :  elle démultiplie les capacités psychiques du Gardien et lui permet de projeter sa conscience dans le plan Éthéré pour y affronter les créatures qui s'y trouvent et ainsi défendre le monde."
+          ]
+        },
+        {
+          "id": "id27_jnp5p",
+          "type": "crossref",
+          "text": "Voir MEN-VC-001 pour plus de détails."
+        },
+        {
+          "id": "id18_qf1rc",
+          "type": "heading2",
+          "text": "Architecture connue"
+        },
+        {
+          "id": "id19_e49vv",
+          "type": "bullets",
+          "items": [
+            "Entrée : une porte modeste, presque dérisoire au regard de l'ampleur du bâtiment, ouvrant sur un vestibule étroit meublé d'un seul petit meuble.",
+            "Un escalier mène à un hall circulaire, utilisé pour l'accueil et les audiences.",
+            "Quartiers résidentiels : quatre niveaux en sous-sol, desservis par un long couloir bordé de chambres numérotées.",
+            "Salon d'entretien : situé cinq étages au-dessus du hall, lieu des échanges plus personnels entre le Gardien et ses hôtes"
+          ]
+        },
+        {
+          "id": "id20_1qaal",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Le  cœur  du cristal",
+          "paragraphs": [
+            "L'emplacement exact du cristal originel n'est décrit dans aucune source disponible. Par cohérence\narchitecturale, il est raisonnable de le situer sous les quartiers résidentiels, au point le plus bas et le plus\ncentral de la Tour — mais ce choix reste ouvert."
+          ]
+        },
+        {
+          "id": "id21_0ozu7",
+          "type": "callout",
+          "tag": "attention",
+          "title": "Titre du callout",
+          "paragraphs": [
+            "Texte du callout."
+          ]
+        },
+        {
+          "id": "id24_lpwpz",
+          "type": "heading2",
+          "text": "Personel"
+        },
+        {
+          "id": "id22_a38bc",
+          "type": "paragraph",
+          "text": "Trois gobelins nommés — Gork, Vork et Lock — assurent le service de la Tour : accueil, portage des affaires, installation des visiteurs. Ils apparaissent et disparaissent avec une discrétion quasi magique.",
+          "italic": false
+        },
+        {
+          "id": "id23_y7h3l",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Statut des gobelins",
+          "paragraphs": [
+            "Leur statut exact n'est pas précisé : simples serviteurs sous contrat, créatures liées magiquement à la Tour elle-même plutôt qu'au Gardien personnellement, ou entités plus anciennes que la lignée des Gardiens ?\nChacune de ces pistes ouvre des possibilités différentes — notamment si un Gardien venait à disparaître sans successeur immédiat."
+          ]
+        },
+        {
+          "id": "id28_xt12l",
+          "type": "pagebreak"
+        },
+        {
+          "id": "id25_aalnj",
+          "type": "heading2",
+          "text": "Accès"
+        },
+        {
+          "id": "id26_zj3lf",
+          "type": "paragraph",
+          "text": "L'accès à la Tour est extrêmement restreint et se fait exclusivement sur accord du Mage surpême. Aucune mention n'existe d'un accès public, même cérémoniel.",
+          "italic": false
+        }
+      ]
+    },
+    {
+      "id": "id31_tsx0f",
+      "title": "La Lignée des Gardiens et le Rituel de Transmission",
+      "blocks": [
+        {
+          "id": "id33_ygzja",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Principe général",
+          "paragraphs": [
+            "À chaque changement de Gardien, un rituel interdit dans le reste de l'Imperium — mais systématiquement\npratiqué au sein de la Tour — permet au successeur d'absorber intégralement l'âme et la puissance du Gardien\nsortant. Cette absorption requiert le consentement plein et entier du Gardien sortant. Le Mage suprême de la\nGuilde des Animaliens, seul informé hors des murs de la Tour, tolère cette pratique sans l'approuver\nmoralement, car il considère que le sort du monde dépend du maintien d'un Gardien fonctionnel."
+          ]
+        },
+        {
+          "id": "id34_pgi4y",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Rôle de la formation de 20 ans",
+          "paragraphs": [
+            "La formation qui précède chaque transmission poursuit un double objectif : lever la puissance psychique du novice jusqu'à un niveau lui permettant de rester l'esprit dominant après l'absorption (voir GDN-04) et de construire, entre le novice et son prédécesseur, une relation de confiance qui rend la transmission plus harmonieuse qu'une greffe forcée sur un inconnu."
+          ]
+        },
+        {
+          "id": "id35_7g93f",
+          "type": "heading2",
+          "text": "Déroulement supposé du rituel"
+        },
+        {
+          "id": "id36_16du8",
+          "type": "paragraph",
+          "text": "Aucun témoignage direct du déroulement précis du rituel n'existe dans les sources disponibles. La\nreconstruction suivante est une proposition de trame scénique, cohérente avec les éléments établis, à\nutiliser ou à réécrire librement.",
+          "italic": false
+        },
+        {
+          "id": "id37_x6qx0",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Étapes proposées",
+          "paragraphs": [
+            "1. Préparatifs — isolement du binôme dans les niveaux supérieurs de la Tour, à un étage peut-être créé à cet effet.",
+            "2. Le lien d'ouverture — le Gardien sortant ouvre volontairement son esprit au novice via un contact psychique profond, facilité par le cristal lui-même.",
+            "3. L'absorption — bascule progressive de la conscience et de la puissance du sortant vers le successeur, décrite par la tradition orale de la Tour comme extrêmement douloureuse pour le récipiendaire.",
+            "4. Le silence — aucun témoignage ne fait état d'un Gardien sortant s'étant exprimé de nouveau en tant qu'entité séparément identifiable après le rituel.",
+            "5. La reconnaissance — le nouveau Gardien averti par courier le Mage suprême, seul informé hors la Tour du succès de la passation."
+          ]
+        },
+        {
+          "id": "id38_d7k5r",
+          "type": "callout",
+          "tag": "hook",
+          "title": "La transmission ratée",
+          "paragraphs": [
+            "La légende interne de la Tour évoque, sans le confirmer, l'existence d'au moins une transmission passée où le\nnovice n'a pas su rester l'esprit dominant : le corps du nouveau Gardien aurait alors été repris par la\nconscience d'un prédécesseur plus fort que lui. Si cette légende est vraie, ses conséquences sont un formidable\nmatériau de campagne — que ce soit comme rumeur à vérifier, comme vérité dérangeante à découvrir, ou\ncomme menace en train de se reproduire dans le présent du récit."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id39_c2eeh",
+      "title": "MECANIQUE DE LA CONSCIENCE PARTAGEE",
+      "blocks": [
+        {
+          "id": "id42_nt6v2",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Structure de la conscience du Gardien",
+          "paragraphs": [
+            "Après le rituel, le Gardien porte en lui l'ensemble des Gardiens qui l'ont précédé — en théorie jusqu'aux origines\nmêmes de la Tour, il y a 12 000 ans. Cette conscience multiple se répartit en deux strates distinctes."
+          ]
+        },
+        {
+          "id": "id43_lhvht",
+          "type": "heading2",
+          "text": "Connaissance commune (stable)"
+        },
+        {
+          "id": "id44_gq63i",
+          "type": "paragraph",
+          "text": "L''ensemble des savoirs partagés par la majorité des Gardiens successifs forme un socle stable, accessible en permanence et instantanément, sans effort particulier de la part du Gardien en exercice.",
+          "italic": false
+        },
+        {
+          "id": "id45_qi2b0",
+          "type": "heading2",
+          "text": "Connaissance individuelle (à consulter)"
+        },
+        {
+          "id": "id46_r89ln",
+          "type": "paragraph",
+          "text": "Un souvenir, une compétence rare ou un sort propre à un seul Gardien précis reste rattaché à cet esprit et ne peut être obtenu qu'en le « consultant » activement — ce qui prend du temps, suppose de deviner ou de savoir lequel des prédécesseurs détient l'information recherchée, et n'est jamais garanti d'aboutir rapidement.",
+          "italic": false
+        },
+        {
+          "id": "id47_bz122",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Principe de contrôle",
+          "paragraphs": [
+            "À tout instant, c'est l'esprit le plus puissant parmi tous ceux présents qui contrôle le corps du Gardien. Il n'existe aucune hiérarchie de préséance liée à l'ordre d'absorption : tous les Gardiens précédents sont placés strictement au même niveau. Un esprit absorbé huit mille ans plus tôt a, en théorie, exactement autant de chances de reprendre le contrôle qu'un esprit absorbé la veille, à la seule condition d'être, à cet instant précis, le plus puissant des esprits en présence."
+          ]
+        },
+        {
+          "id": "id48_6qod4",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Conséquence directe",
+          "paragraphs": [
+            "Le contrôle du corps n'est donc jamais définitivement acquis pour le Gardien en exercice : c'est un équilibre dynamique, négocié en permanence plutôt qu'une fois pour toutes. Cela justifie la sévérité extrême de la sélection des novices, ainsi que la durée et l'intensité de leur formation — destinée à la fois à développer leur\npuissance propre et à les préparer psychologiquement à supporter la charge cumulée qu'ils s'apprêtent à\nrecevoir."
+          ]
+        },
+        {
+          "id": "id49_x5tdu",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Le Gardien actuel face à ce risque",
+          "paragraphs": [
+            "Miguel vit-il, 65 ans après son investiture, avec une vigilance intérieure permanente face à ce risque de bascule, ou a-t-il acquis au fil des décennies une confiance stable en sa propre domination ? C'est l'un des choix de caractérisation les plus structurants pour quiconque souhaite utiliser ce personnage : un Gardien serein et un Gardien qui doute en silence n'offrent pas du tout le même terrain dramatique."
+          ]
+        },
+        {
+          "id": "id50_ow6vn",
+          "type": "callout",
+          "tag": "attention",
+          "title": "Un pouvoir difficile à mettre en danger",
+          "paragraphs": [
+            "Un Gardien ayant accès à des dizaines de savoirs et de capacités cumulés est, par construction, redoutablement difficile à menacer physiquement de façon crédible. Pour l'exploiter en jeu sans qu'il devienne\nun simple mur d'invincibilité, il est recommandé d'introduire des limites claires : temps nécessaire pour « consulter » un esprit précis, incapacité à consulter plusieurs esprits simultanément, fatigue ou vulnérabilité accrue liée à un usage intensif de cette faculté."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id52_nkzg2",
+      "title": "Nouvelle section",
+      "blocks": [
+        {
+          "id": "id53_wsmny",
+          "type": "paragraph",
+          "text": "Nouveau paragraphe. Cliquez pour modifier ce texte.",
+          "italic": false
+        }
+      ]
+    }
+  ]
+}

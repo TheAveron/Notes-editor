@@ -130,10 +130,7 @@ function generateProposals(usedHexes, count) {
         attempts++;
         const idx = proposals.length;
         const hue =
-            (startHue +
-                idx * (360 / count) +
-                (Math.random() * 24 - 12) +
-                360) %
+            (startHue + idx * (360 / count) + (Math.random() * 24 - 12) + 360) %
             360;
         const sat = 38 + Math.random() * 28; // 38-66%
         const lig = 30 + Math.random() * 16; // 30-46% (ton "encre saturée", ni pastel ni noir)
@@ -198,12 +195,7 @@ async function registerColor(docId, hex, title) {
 /* ---------- Modèle de document ---------- */
 let uidCounter = 1;
 function uid() {
-    return (
-        "id" +
-        uidCounter++ +
-        "_" +
-        Math.random().toString(36).slice(2, 7)
-    );
+    return "id" + uidCounter++ + "_" + Math.random().toString(36).slice(2, 7);
 }
 
 function newBlock(type) {
@@ -281,11 +273,9 @@ function sectionCode(idx) {
 // Met à jour les badges de code déjà affichés dans la sidebar sans reconstruire le DOM
 // (utilisé quand on tape dans le champ "N° de dossier", pour ne pas casser le focus du champ).
 function refreshSectionBadges() {
-    document
-        .querySelectorAll("#sidebar .code-badge")
-        .forEach((elm, i) => {
-            elm.textContent = sectionCode(i);
-        });
+    document.querySelectorAll("#sidebar .code-badge").forEach((elm, i) => {
+        elm.textContent = sectionCode(i);
+    });
 }
 
 // Compatibilité : les documents exportés avant l'ajout du mode "3 colonnes" utilisaient un
@@ -295,9 +285,7 @@ function migrateDoc(d) {
         (s.blocks || []).forEach((b) => {
             if (b.type === "table") {
                 if (!b.layout) {
-                    b.layout = b.badge
-                        ? "badge-value"
-                        : "label-value";
+                    b.layout = b.badge ? "badge-value" : "label-value";
                 }
                 delete b.badge;
                 b.rows = (b.rows || []).map((r) => ({
@@ -317,10 +305,10 @@ function defaultDocument() {
         stampStyle: "accent", // 'accent' ou 'red'
         cover: {
             orgLine: "GUILDE DES ARCHIVISTES — FONDS DOCUMENTAIRE",
-            kicker: "DOSSIER DE CLASSIFICATION",
+            kicker: "DOSSIER D'INFORMATION",
             title: "TITRE DU DOSSIER",
             subtitle: "Sous-titre descriptif du document",
-            stampText: "NIVEAU 1 — DOMAINE PUBLIC",
+            stampText: "Niveau 1 — Domaine Public",
             meta: [
                 { a: "N° de dossier", b: "DOC-VC-001" },
                 {
@@ -423,10 +411,8 @@ function renderBlockHtml(b) {
 
 function renderPreview() {
     const pal = derivePalette(doc.color);
-    const stampColor =
-        doc.stampStyle === "red" ? FIXED.red : pal.accent;
-    const stampBg =
-        doc.stampStyle === "red" ? FIXED.redBg : pal.accentBg;
+    const stampColor = doc.stampStyle === "red" ? FIXED.red : pal.accent;
+    const stampBg = doc.stampStyle === "red" ? FIXED.redBg : pal.accentBg;
     const styleVars = `--doc-accent:${pal.accent};--doc-ink:${pal.ink};--doc-inkmid:${pal.inkMid};--doc-card:${pal.card};--stamp-color:${stampColor};--stamp-bg:${stampBg};`;
 
     const header = () =>
@@ -452,10 +438,22 @@ function renderPreview() {
     note += `<p class="p-body">${nl2p(doc.noteUsage.text)}</p>`;
     if (doc.noteUsage.includeTagLegend) {
         const legends = [
-            ['confirme', 'Fait établi dans le lore central. Ne devrait pas être contredit à la légère car cela pourrait créer des incohérences dans l\'histoire.'],
-            ['hypothese', 'Proposition cohérente avec le canon existant, mais non tranchée. Le MJ peut l\'adopter telle quelle, l\'adapter, ou la remplacer par sa propre idée.'],
-            ['hook', 'Accroche de scénario prête à l\'emploi, directement exploitable en jeu.'],
-            ['attention', 'Point de vigilance : risque d\'incohérence, d\'équilibrage, ou de spoil à ne pas dévoiler trop tôt aux joueurs.'],
+            [
+                "confirme",
+                "Fait établi dans le lore central. Ne devrait pas être contredit à la légère car cela pourrait créer des incohérences dans l'histoire.",
+            ],
+            [
+                "hypothese",
+                "Proposition cohérente avec le canon existant, mais non tranchée. Le MJ peut l'adopter telle quelle, l'adapter, ou la remplacer par sa propre idée.",
+            ],
+            [
+                "hook",
+                "Accroche de scénario prête à l'emploi, directement exploitable en jeu.",
+            ],
+            [
+                "attention",
+                "Point de vigilance : risque d'incohérence, d'équilibrage, ou de spoil à ne pas dévoiler trop tôt aux joueurs.",
+            ],
         ];
         legends.forEach(([tag, txt]) => {
             const meta = TAG_META[tag];
@@ -482,41 +480,35 @@ function renderPreview() {
     // Sections de contenu (avec support des pagebreak)
     // TODO: check if valid
     doc.sections.forEach((s, i) => {
-
-        let currentPage =
-            `<div class="sec-h1">
-            <span class="code">${escapeHtml(sectionCode(i))}</span>
-            <span class="dot-separator">·</span>
-            ${escapeHtml(s.title)}
+        let currentPage = `<div class="sec-h1"><span class="code">${escapeHtml(sectionCode(i))}</span><span class="dot-separator">·</span>${escapeHtml(s.title)}
         </div>`;
 
-        s.blocks.forEach(block => {
-
+        s.blocks.forEach((block) => {
             if (block.type === "pagebreak") {
-
                 // On termine la page courante
                 pagesInner.push(currentPage);
 
                 // La suivante démarre vide
                 // (ou remets l'en-tête de section ici si tu souhaites le répéter)
                 currentPage = "";
-
             } else {
-
                 currentPage += renderBlockHtml(block);
-
             }
-
         });
 
         // Dernière page de la section
         if (currentPage.trim() !== "") {
             pagesInner.push(currentPage);
         }
-
     });
 
-    const total = pagesInner.length; const html = pagesInner.map((inner, i) => `<div class="page" style="${styleVars}">${header()}${inner}${footer(i + 1, total)}</div>`,).join("");
+    const total = pagesInner.length;
+    const html = pagesInner
+        .map(
+            (inner, i) =>
+                `<div class="page" style="${styleVars}">${header()}${inner}${footer(i + 1, total)}</div>`,
+        )
+        .join("");
 
     document.getElementById("preview").innerHTML = html;
 }
@@ -544,15 +536,12 @@ async function selectColor(hex, isDefault) {
 function renderColorPicker(container) {
     const box = el("div", { class: "side-section" });
     box.appendChild(
-        el("h3", {}, [
-            document.createTextNode("Couleur du document"),
-        ]),
+        el("h3", {}, [document.createTextNode("Couleur du document")]),
     );
 
     const grid = el("div", { class: "swatch-grid" });
     proposals.forEach((hex, i) => {
-        const isSelected =
-            normalizeHex(doc.color) === normalizeHex(hex);
+        const isSelected = normalizeHex(doc.color) === normalizeHex(hex);
         const sw = el("div", {
             class: "swatch" + (isSelected ? " selected" : ""),
             onclick: () => selectColor(hex, i === 0),
@@ -564,9 +553,7 @@ function renderColorPicker(container) {
             }),
         );
         sw.appendChild(
-            el("span", { class: "hex" }, [
-                document.createTextNode(hex),
-            ]),
+            el("span", { class: "hex" }, [document.createTextNode(hex)]),
         );
         if (i === 0)
             sw.appendChild(
@@ -585,9 +572,7 @@ function renderColorPicker(container) {
             {
                 onclick: () => {
                     proposals = generateProposals(
-                        registryHexes().filter(
-                            (h) => h !== doc.color,
-                        ),
+                        registryHexes().filter((h) => h !== doc.color),
                         5,
                     );
                     renderSidebar();
@@ -601,9 +586,7 @@ function renderColorPicker(container) {
     const customWrap = el("div", { class: "custom-hex" });
     const colorInput = el("input", {
         type: "color",
-        value: isValidHex(doc.color)
-            ? normalizeHex(doc.color)
-            : "#2f6f5e",
+        value: isValidHex(doc.color) ? normalizeHex(doc.color) : "#2f6f5e",
     });
     const textInput = el("input", {
         type: "text",
@@ -619,8 +602,7 @@ function renderColorPicker(container) {
         }
         const norm = normalizeHex(val);
         const clash = registry.find(
-            (r) =>
-                r.docId !== doc.id && normalizeHex(r.hex) === norm,
+            (r) => r.docId !== doc.id && normalizeHex(r.hex) === norm,
         );
         if (clash) {
             msg.className = "hex-warning";
@@ -636,37 +618,23 @@ function renderColorPicker(container) {
         textInput.value = colorInput.value;
         tryCustom(colorInput.value);
     });
-    textInput.addEventListener("change", () =>
-        tryCustom(textInput.value),
-    );
+    textInput.addEventListener("change", () => tryCustom(textInput.value));
     customWrap.appendChild(colorInput);
     customWrap.appendChild(textInput);
     box.appendChild(
-        el("label", {}, [
-            document.createTextNode("Couleur personnalisée"),
-        ]),
+        el("label", {}, [document.createTextNode("Couleur personnalisée")]),
     );
     box.appendChild(customWrap);
     box.appendChild(msg);
 
     const pal = derivePalette(doc.color);
     const palPrev = el("div", { class: "palette-preview" });
-    [
-        pal.ink,
-        pal.inkMid,
-        pal.accent,
-        pal.accentBg,
-        pal.card,
-    ].forEach((c) =>
-        palPrev.appendChild(
-            el("div", { style: `background:${c};`, title: c }),
-        ),
+    [pal.ink, pal.inkMid, pal.accent, pal.accentBg, pal.card].forEach((c) =>
+        palPrev.appendChild(el("div", { style: `background:${c};`, title: c })),
     );
     box.appendChild(
         el("label", { style: "margin-top:8px;" }, [
-            document.createTextNode(
-                "Palette dérivée (encre → fond)",
-            ),
+            document.createTextNode("Palette dérivée (encre → fond)"),
         ]),
     );
     box.appendChild(palPrev);
@@ -677,9 +645,7 @@ function renderColorPicker(container) {
     });
     stampRow.appendChild(
         el("label", {}, [
-            document.createTextNode(
-                "Style du tampon de couverture",
-            ),
+            document.createTextNode("Style du tampon de couverture"),
         ]),
     );
     const sel = el("select", {
@@ -696,8 +662,7 @@ function renderColorPicker(container) {
                     : "Rouge (alerte / restreint)",
             ),
         ]);
-        if (doc.stampStyle === v)
-            o.setAttribute("selected", "selected");
+        if (doc.stampStyle === v) o.setAttribute("selected", "selected");
         sel.appendChild(o);
     });
     stampRow.appendChild(sel);
@@ -708,9 +673,7 @@ function renderColorPicker(container) {
 
 function fieldText(labelText, value, onInput, multiline) {
     const f = el("div", { class: "field" });
-    f.appendChild(
-        el("label", {}, [document.createTextNode(labelText)]),
-    );
+    f.appendChild(el("label", {}, [document.createTextNode(labelText)]));
     const input = el(
         multiline ? "textarea" : "input",
         multiline ? {} : { type: "text" },
@@ -724,19 +687,13 @@ function fieldText(labelText, value, onInput, multiline) {
 function renderDocSettings(container) {
     const box = el("div", { class: "side-section" });
     box.appendChild(
-        el("h3", {}, [
-            document.createTextNode("Couverture du document"),
-        ]),
+        el("h3", {}, [document.createTextNode("Couverture du document")]),
     );
     box.appendChild(
-        fieldText(
-            "Ligne d'organisation",
-            doc.cover.orgLine,
-            (v) => {
-                doc.cover.orgLine = v;
-                renderPreview();
-            },
-        ),
+        fieldText("Ligne d'organisation", doc.cover.orgLine, (v) => {
+            doc.cover.orgLine = v;
+            renderPreview();
+        }),
     );
     box.appendChild(
         fieldText("Sur-titre (kicker)", doc.cover.kicker, (v) => {
@@ -760,24 +717,18 @@ function renderDocSettings(container) {
         fieldText("Texte du tampon", doc.cover.stampText, (v) => {
             doc.cover.stampText = v;
             renderPreview();
-        }),
+        }, true),
     );
     box.appendChild(
-        fieldText(
-            "Marque en pied/en-tête de page",
-            doc.footerBrand,
-            (v) => {
-                doc.footerBrand = v;
-                renderPreview();
-            },
-        ),
+        fieldText("Marque en pied/en-tête de page", doc.footerBrand, (v) => {
+            doc.footerBrand = v;
+            renderPreview();
+        }),
     );
 
     box.appendChild(
         el("label", { style: "margin-top:10px;display:block;" }, [
-            document.createTextNode(
-                "Métadonnées (tableau de couverture)",
-            ),
+            document.createTextNode("Métadonnées (tableau de couverture)"),
         ]),
     );
     const rows = el("div", { class: "rows-list" });
@@ -863,12 +814,7 @@ function renderDocSettings(container) {
         {
             style: "display:flex;align-items:center;gap:6px;font-weight:400;",
         },
-        [
-            cb,
-            document.createTextNode(
-                "Inclure la légende des 4 tags",
-            ),
-        ],
+        [cb, document.createTextNode("Inclure la légende des 4 tags")],
     );
     legendRow.appendChild(lbl);
     box.appendChild(legendRow);
@@ -878,9 +824,7 @@ function renderDocSettings(container) {
 
 function blockHeader(label, s, b, idx) {
     const head = el("div", { class: "block-item-head" });
-    head.appendChild(
-        el("span", {}, [document.createTextNode(label)]),
-    );
+    head.appendChild(el("span", {}, [document.createTextNode(label)]));
     head.appendChild(el("span", { class: "grow" }));
     head.appendChild(
         el(
@@ -957,6 +901,49 @@ function blockHeader(label, s, b, idx) {
     return head;
 }
 
+// Construit l'éditeur d'une ligne de tableau/carte : une première ligne pour les champs courts
+// (badge et/ou libellé) + bouton de suppression, puis une zone de texte multi-ligne pour la valeur.
+function makeRowBlock(row, topFields, valueKey, onChange, onDelete) {
+    const wrap = el("div", { class: "row-block" });
+    const top = el("div", { class: "row-top" });
+    topFields.forEach((f) => {
+        const inp = el("input", {
+            type: "text",
+            value: row[f.key] || "",
+            placeholder: f.placeholder,
+            class: f.narrow ? "narrow" : "",
+        });
+        inp.addEventListener("input", (e) => {
+            row[f.key] = e.target.value;
+            onChange();
+        });
+        top.appendChild(inp);
+    });
+    top.appendChild(
+        el(
+            "button",
+            {
+                class: "icon-btn danger",
+                title: "Supprimer la ligne",
+                onclick: onDelete,
+            },
+            [document.createTextNode("✕")],
+        ),
+    );
+    wrap.appendChild(top);
+    const ta = el("textarea", {
+        class: "row-value",
+        placeholder: "Valeur / contenu…",
+    });
+    ta.value = row[valueKey] || "";
+    ta.addEventListener("input", (e) => {
+        row[valueKey] = e.target.value;
+        onChange();
+    });
+    wrap.appendChild(ta);
+    return wrap;
+}
+
 function renderBlockEditor(s, b, idx) {
     const item = el("div", { class: "block-item" });
     const labels = {
@@ -969,9 +956,7 @@ function renderBlockEditor(s, b, idx) {
         crossref: "Renvoi",
         pagebreak: "Saut de page",
     };
-    item.appendChild(
-        blockHeader(labels[b.type] || b.type, s, b, idx),
-    );
+    item.appendChild(blockHeader(labels[b.type] || b.type, s, b, idx));
     const body = el("div", { class: "block-item-body" });
 
     if (b.type === "heading2") {
@@ -1055,9 +1040,7 @@ function renderBlockEditor(s, b, idx) {
             const btn = el(
                 "button",
                 {
-                    style: active
-                        ? `background:${TAG_META[tagKey].bg};`
-                        : "",
+                    style: active ? `background:${TAG_META[tagKey].bg};` : "",
                     class: active ? "active" : "",
                     onclick: () => {
                         b.tag = tagKey;
@@ -1070,9 +1053,7 @@ function renderBlockEditor(s, b, idx) {
             tagRow.appendChild(btn);
         });
         body.appendChild(
-            el("label", {}, [
-                document.createTextNode("Type de tag"),
-            ]),
+            el("label", {}, [document.createTextNode("Type de tag")]),
         );
         body.appendChild(tagRow);
         body.appendChild(
@@ -1083,29 +1064,44 @@ function renderBlockEditor(s, b, idx) {
         );
         const paraWrap = el("div", {});
         b.paragraphs.forEach((p, i) => {
-            const rp = el("div", { class: "rowpair" });
-            const ta = el("textarea", {});
+            const rowBlock = el("div", { class: "row-block" });
+            const top = el("div", { class: "row-top" });
+            top.appendChild(
+                el(
+                    "span",
+                    {
+                        style: "flex:1;font-size:11px;color:#999;font-weight:600;",
+                    },
+                    [document.createTextNode("Paragraphe " + (i + 1))],
+                ),
+            );
+            top.appendChild(
+                el(
+                    "button",
+                    {
+                        class: "icon-btn danger",
+                        title: "Supprimer le paragraphe",
+                        onclick: () => {
+                            b.paragraphs.splice(i, 1);
+                            renderSidebar();
+                            renderPreview();
+                        },
+                    },
+                    [document.createTextNode("✕")],
+                ),
+            );
+            rowBlock.appendChild(top);
+            const ta = el("textarea", {
+                class: "row-value",
+                placeholder: "Texte du paragraphe…",
+            });
             ta.value = p;
-            ta.style.flex = "1";
             ta.addEventListener("input", (e) => {
                 b.paragraphs[i] = e.target.value;
                 renderPreview();
             });
-            const del = el(
-                "button",
-                {
-                    class: "icon-btn danger",
-                    onclick: () => {
-                        b.paragraphs.splice(i, 1);
-                        renderSidebar();
-                        renderPreview();
-                    },
-                },
-                [document.createTextNode("✕")],
-            );
-            rp.appendChild(ta);
-            rp.appendChild(del);
-            paraWrap.appendChild(rp);
+            rowBlock.appendChild(ta);
+            paraWrap.appendChild(rowBlock);
         });
         body.appendChild(paraWrap);
         body.appendChild(
@@ -1138,10 +1134,7 @@ function renderBlockEditor(s, b, idx) {
         });
         const options = [
             ["label-value", "Libellé + valeur (standard)"],
-            [
-                "badge-value",
-                "Badge + valeur (échelle simple, 2 colonnes)",
-            ],
+            ["badge-value", "Badge + valeur (échelle simple, 2 colonnes)"],
             [
                 "badge-label-value",
                 "Badge + libellé + valeur (échelle à 3 colonnes)",
@@ -1151,8 +1144,7 @@ function renderBlockEditor(s, b, idx) {
             const o = el("option", { value: v }, [
                 document.createTextNode(label),
             ]);
-            if (b.layout === v)
-                o.setAttribute("selected", "selected");
+            if (b.layout === v) o.setAttribute("selected", "selected");
             sel.appendChild(o);
         });
         layoutRow.appendChild(sel);
@@ -1162,54 +1154,32 @@ function renderBlockEditor(s, b, idx) {
         const badgeCol = b.layout === "badge-value" || threeCol;
         const rows = el("div", { class: "rows-list" });
         b.rows.forEach((r, i) => {
-            const rp = el("div", { class: "rowpair" });
-            const ai = el("input", {
-                type: "text",
-                value: r.a,
-                class: "narrow",
-                placeholder: badgeCol ? "Badge" : "Libellé",
-            });
-            ai.addEventListener("input", (e) => {
-                r.a = e.target.value;
-                renderPreview();
-            });
-            rp.appendChild(ai);
-            if (threeCol) {
-                const ci = el("input", {
-                    type: "text",
-                    value: r.c || "",
-                    placeholder: "Libellé",
-                });
-                ci.addEventListener("input", (e) => {
-                    r.c = e.target.value;
-                    renderPreview();
-                });
-                rp.appendChild(ci);
-            }
-            const bi = el("input", {
-                type: "text",
-                value: r.b,
-                placeholder: "Valeur / description",
-            });
-            bi.addEventListener("input", (e) => {
-                r.b = e.target.value;
-                renderPreview();
-            });
-            rp.appendChild(bi);
-            const del = el(
-                "button",
+            const topFields = [
                 {
-                    class: "icon-btn danger",
-                    onclick: () => {
+                    key: "a",
+                    placeholder: badgeCol ? "Badge" : "Libellé",
+                    narrow: badgeCol,
+                },
+            ];
+            if (threeCol)
+                topFields.push({
+                    key: "c",
+                    placeholder: "Libellé",
+                    narrow: false,
+                });
+            rows.appendChild(
+                makeRowBlock(
+                    r,
+                    topFields,
+                    "b",
+                    () => renderPreview(),
+                    () => {
                         b.rows.splice(i, 1);
                         renderSidebar();
                         renderPreview();
                     },
-                },
-                [document.createTextNode("✕")],
+                ),
             );
-            rp.appendChild(del);
-            rows.appendChild(rp);
         });
         body.appendChild(rows);
         body.appendChild(
@@ -1252,37 +1222,25 @@ function renderBlockEditor(s, b, idx) {
         );
         const rows = el("div", { class: "rows-list" });
         b.rows.forEach((r, i) => {
-            const rp = el("div", { class: "rowpair" });
-            const ai = el("input", {
-                type: "text",
-                value: r.a,
-                class: "narrow",
-            });
-            ai.addEventListener("input", (e) => {
-                r.a = e.target.value;
-                renderPreview();
-            });
-            const bi = el("input", { type: "text", value: r.b });
-            bi.addEventListener("input", (e) => {
-                r.b = e.target.value;
-                renderPreview();
-            });
-            const del = el(
-                "button",
-                {
-                    class: "icon-btn danger",
-                    onclick: () => {
+            rows.appendChild(
+                makeRowBlock(
+                    r,
+                    [
+                        {
+                            key: "a",
+                            placeholder: "Libellé",
+                            narrow: false,
+                        },
+                    ],
+                    "b",
+                    () => renderPreview(),
+                    () => {
                         b.rows.splice(i, 1);
                         renderSidebar();
                         renderPreview();
                     },
-                },
-                [document.createTextNode("✕")],
+                ),
             );
-            rp.appendChild(ai);
-            rp.appendChild(bi);
-            rp.appendChild(del);
-            rows.appendChild(rp);
         });
         body.appendChild(rows);
         body.appendChild(
@@ -1349,11 +1307,10 @@ function renderSectionCard(s, idx) {
                 title: "Monter la section",
                 onclick: () => {
                     if (idx > 0) {
-                        [doc.sections[idx - 1], doc.sections[idx]] =
-                            [
-                                doc.sections[idx],
-                                doc.sections[idx - 1],
-                            ];
+                        [doc.sections[idx - 1], doc.sections[idx]] = [
+                            doc.sections[idx],
+                            doc.sections[idx - 1],
+                        ];
                         renderSidebar();
                         renderPreview();
                     }
@@ -1370,11 +1327,10 @@ function renderSectionCard(s, idx) {
                 title: "Descendre la section",
                 onclick: () => {
                     if (idx < doc.sections.length - 1) {
-                        [doc.sections[idx + 1], doc.sections[idx]] =
-                            [
-                                doc.sections[idx],
-                                doc.sections[idx + 1],
-                            ];
+                        [doc.sections[idx + 1], doc.sections[idx]] = [
+                            doc.sections[idx],
+                            doc.sections[idx + 1],
+                        ];
                         renderSidebar();
                         renderPreview();
                     }
@@ -1439,9 +1395,7 @@ function renderSectionCard(s, idx) {
 function renderSections(container) {
     const box = el("div", { class: "side-section" });
     box.appendChild(
-        el("h3", {}, [
-            document.createTextNode("Sections & contenu"),
-        ]),
+        el("h3", {}, [document.createTextNode("Sections & contenu")]),
     );
     doc.sections.forEach((s, idx) =>
         box.appendChild(renderSectionCard(s, idx)),
@@ -1485,18 +1439,14 @@ function renderRegistryPanel(container) {
     });
     titleRow.appendChild(
         el("h3", { style: "margin:0;" }, [
-            document.createTextNode(
-                "Registre des couleurs (aperçu)",
-            ),
+            document.createTextNode("Registre des couleurs (aperçu)"),
         ]),
     );
     titleRow.appendChild(
         el(
             "button",
             {
-                class:
-                    "icon-btn" +
-                    (registryEditMode ? " active" : ""),
+                class: "icon-btn" + (registryEditMode ? " active" : ""),
                 title: "Modifier / retirer des couleurs",
                 style: registryEditMode
                     ? "background:#eae6d8;color:#1a1a1a;"
@@ -1513,15 +1463,11 @@ function renderRegistryPanel(container) {
     const list = el("div", { class: "registry-list" });
     if (registry.length === 0) {
         list.appendChild(
-            el(
-                "div",
-                { style: "padding:8px;color:#999;font-size:11px;" },
-                [
-                    document.createTextNode(
-                        "Aucune couleur enregistrée pour l'instant.",
-                    ),
-                ],
-            ),
+            el("div", { style: "padding:8px;color:#999;font-size:11px;" }, [
+                document.createTextNode(
+                    "Aucune couleur enregistrée pour l'instant.",
+                ),
+            ]),
         );
     }
     registry.forEach((r, idx) => {
@@ -1600,68 +1546,54 @@ function slugify(s) {
     );
 }
 
-document
-    .getElementById("btn-export-json")
-    .addEventListener("click", () => {
-        downloadFile(
-            `dossier-${slugify(doc.cover.title)}.json`,
-            JSON.stringify(doc, null, 2),
-            "application/json",
-        );
-    });
-document
-    .getElementById("file-import")
-    .addEventListener("change", (e) => {
-        const file = e.target.files[0];
-        if (!file) return;
-        const reader = new FileReader();
-        reader.onload = async () => {
-            try {
-                const imported = JSON.parse(reader.result);
-                if (!imported.sections)
-                    throw new Error("format invalide");
-                doc = migrateDoc(imported);
-                if (!doc.id) doc.id = uid();
-                proposals = [
-                    doc.color,
-                    ...generateProposals(
-                        [...registryHexes(), doc.color],
-                        4,
-                    ),
-                ];
-                await registerColor(
-                    doc.id,
-                    doc.color,
-                    doc.cover.title,
-                );
-                renderSidebar();
-                renderPreview();
-            } catch (err) {
-                alert("Fichier JSON invalide : " + err.message);
-            }
-        };
-        reader.readAsText(file);
-        e.target.value = "";
-    });
+document.getElementById("btn-export-json").addEventListener("click", () => {
+    downloadFile(
+        `dossier-${slugify(doc.cover.title)}.json`,
+        JSON.stringify(doc, null, 2),
+        "application/json",
+    );
+});
+document.getElementById("file-import").addEventListener("change", (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = async () => {
+        try {
+            const imported = JSON.parse(reader.result);
+            if (!imported.sections) throw new Error("format invalide");
+            doc = migrateDoc(imported);
+            if (!doc.id) doc.id = uid();
+            proposals = [
+                doc.color,
+                ...generateProposals([...registryHexes(), doc.color], 4),
+            ];
+            await registerColor(doc.id, doc.color, doc.cover.title);
+            renderSidebar();
+            renderPreview();
+        } catch (err) {
+            alert("Fichier JSON invalide : " + err.message);
+        }
+    };
+    reader.readAsText(file);
+    e.target.value = "";
+});
 document.getElementById("btn-pdf").addEventListener("click", () => {
     window.print();
 });
-document
-    .getElementById("btn-new")
-    .addEventListener("click", async () => {
-        if (
-            !confirm(
-                "Créer un nouveau document ? Les modifications non exportées seront perdues.",
-            )
+document.getElementById("btn-new").addEventListener("click", async () => {
+    if (
+        !confirm(
+            "Créer un nouveau document ? Les modifications non exportées seront perdues.",
         )
-            return;
-        doc = defaultDocument();
-        proposals = generateProposals(registryHexes(), 5);
-        doc.color = proposals[0];
-        await registerColor(doc.id, doc.color, doc.cover.title);
-        renderSidebar();
-        renderPreview();
-    });
+    )
+        return;
+    doc = defaultDocument();
+    proposals = generateProposals(registryHexes(), 5);
+    doc.color = proposals[0];
+    await registerColor(doc.id, doc.color, doc.cover.title);
+    renderSidebar();
+    renderPreview();
+});
 
 /* ---------- Modale registre ---------- */
 function renderRegistryModalList() {
@@ -1677,20 +1609,16 @@ function renderRegistryModalList() {
         const left = document.createElement("span");
         left.innerHTML = `<span class="rc" style="background:${r.hex};"></span>${escapeHtml(r.title)}`;
         const right = document.createElement("span");
-        right.style.cssText =
-            "display:flex;align-items:center;gap:8px;";
+        right.style.cssText = "display:flex;align-items:center;gap:8px;";
         right.innerHTML = `<span style="font-family:Consolas,monospace;color:#888;">${r.hex}</span>`;
         if (registryEditMode) {
             const delBtn = document.createElement("button");
             delBtn.className = "icon-btn danger";
-            delBtn.style.cssText =
-                "width:20px;height:20px;font-size:11px;";
+            delBtn.style.cssText = "width:20px;height:20px;font-size:11px;";
             delBtn.title = "Retirer du registre";
             delBtn.textContent = "✕";
             delBtn.addEventListener("click", () =>
-                removeRegistryEntry(idx).then(
-                    renderRegistryModalList,
-                ),
+                removeRegistryEntry(idx).then(renderRegistryModalList),
             );
             right.appendChild(delBtn);
         }
@@ -1701,65 +1629,49 @@ function renderRegistryModalList() {
 }
 function openRegistryModal() {
     renderRegistryModalList();
-    document.getElementById("registry-modal").style.display =
-        "flex";
+    document.getElementById("registry-modal").style.display = "flex";
 }
-document
-    .getElementById("btn-modal-edit")
-    .addEventListener("click", () => {
-        registryEditMode = !registryEditMode;
-        renderRegistryModalList();
-    });
+document.getElementById("btn-modal-edit").addEventListener("click", () => {
+    registryEditMode = !registryEditMode;
+    renderRegistryModalList();
+});
 document
     .getElementById("btn-registry")
     .addEventListener("click", openRegistryModal);
-document
-    .getElementById("btn-registry-close")
-    .addEventListener("click", () => {
-        document.getElementById("registry-modal").style.display =
-            "none";
-    });
-document
-    .getElementById("btn-registry-export")
-    .addEventListener("click", () => {
-        downloadFile(
-            "registre-couleurs.json",
-            JSON.stringify(registry, null, 2),
-            "application/json",
-        );
-    });
-document
-    .getElementById("registry-import")
-    .addEventListener("change", (e) => {
-        const file = e.target.files[0];
-        if (!file) return;
-        const reader = new FileReader();
-        reader.onload = async () => {
-            try {
-                const imported = JSON.parse(reader.result);
-                if (!Array.isArray(imported))
-                    throw new Error(
-                        "format invalide (liste attendue)",
-                    );
-                const byDocId = new Map(
-                    registry.map((r) => [r.docId, r]),
-                );
-                imported.forEach((r) => {
-                    if (r.hex && r.docId) byDocId.set(r.docId, r);
-                });
-                registry = Array.from(byDocId.values());
-                await saveRegistry();
-                openRegistryModal();
-                renderSidebar();
-            } catch (err) {
-                alert(
-                    "Fichier de registre invalide : " + err.message,
-                );
-            }
-        };
-        reader.readAsText(file);
-        e.target.value = "";
-    });
+document.getElementById("btn-registry-close").addEventListener("click", () => {
+    document.getElementById("registry-modal").style.display = "none";
+});
+document.getElementById("btn-registry-export").addEventListener("click", () => {
+    downloadFile(
+        "registre-couleurs.json",
+        JSON.stringify(registry, null, 2),
+        "application/json",
+    );
+});
+document.getElementById("registry-import").addEventListener("change", (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = async () => {
+        try {
+            const imported = JSON.parse(reader.result);
+            if (!Array.isArray(imported))
+                throw new Error("format invalide (liste attendue)");
+            const byDocId = new Map(registry.map((r) => [r.docId, r]));
+            imported.forEach((r) => {
+                if (r.hex && r.docId) byDocId.set(r.docId, r);
+            });
+            registry = Array.from(byDocId.values());
+            await saveRegistry();
+            openRegistryModal();
+            renderSidebar();
+        } catch (err) {
+            alert("Fichier de registre invalide : " + err.message);
+        }
+    };
+    reader.readAsText(file);
+    e.target.value = "";
+});
 
 /* ---------- Initialisation ---------- */
 (async function init() {

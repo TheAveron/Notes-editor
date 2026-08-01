@@ -5,7 +5,7 @@
   "cover": {
     "orgLine": "GUILDE DES ARCHIVISTES — FONDS DOCUMENTAIRE",
     "kicker": "DOSSIER D'INFORMATION",
-    "title": "L'archiviste",
+    "title": "L'Archiviste",
     "subtitle": "Origine du fonds & échelle de classification de la collection",
     "stampText": "Hors-échelle - document premier de la\ncollection",
     "meta": [
@@ -100,7 +100,7 @@
           "id": "id13_csk0x",
           "type": "callout",
           "tag": "hypothese",
-          "title": "Le mécanism de sa mémoire",
+          "title": "Le mécanisme de sa mémoire",
           "paragraphs": [
             "Rien n'explique comment un individu peut retenir la totalité des archives du monde connu. Don inné, artefact,\npacte, malédiction, nature non humaine : tout reste possible."
           ]

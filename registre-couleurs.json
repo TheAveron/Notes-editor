@@ -1,7 +1,12 @@
 [
   {
     "hex": "#5c6b4f",
-    "title": "L'archiviste",
+    "title": "L'Archiviste",
     "docId": "id1_m7u0a"
+  },
+  {
+    "hex": "#a9812e",
+    "title": "Le Gardien",
+    "docId": "id1_5xfmf"
   }
 ]

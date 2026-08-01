@@ -370,16 +370,42 @@ select {
 .block-item-body .field {
     margin-bottom: 6px;
 }
-.bullets-list textarea,
-.rows-list .rowpair {
+.bullets-list textarea {
     margin-bottom: 5px;
+}
+.row-block {
+    border: 1px solid #e5e1d4;
+    border-radius: 6px;
+    padding: 7px;
+    margin-bottom: 7px;
+    background: #fafaf8;
+}
+.row-top {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-bottom: 6px;
+}
+.row-top input {
+    flex: 1;
+    min-width: 0;
+    padding: 5px 6px;
+    border: 1px solid #ddd8c9;
+    border-radius: 4px;
+    font-size: 12px;
+}
+.row-top input.narrow {
+    flex: 0 0 64px;
+    font-family: var(--mono);
 }
 .rowpair {
     display: flex;
     gap: 5px;
+    margin-bottom: 5px;
 }
 .rowpair input {
     flex: 1;
+    min-width: 0;
     padding: 5px 6px;
     border: 1px solid #ddd8c9;
     border-radius: 4px;
@@ -388,6 +414,21 @@ select {
 .rowpair input.narrow {
     flex: 0 0 70px;
     font-family: var(--mono);
+}
+.row-value {
+    width: 100%;
+    padding: 7px 9px;
+    border: 1px solid #d8d4c8;
+    border-radius: 5px;
+    font-size: 12.5px;
+    background: #fff;
+    color: var(--ui-ink);
+    resize: vertical;
+    min-height: 44px;
+    font-family: var(--serif);
+    line-height: 1.4;
+    box-sizing: border-box;
+    display: block;
 }
 .add-row-btn,
 .add-item-btn {
@@ -475,7 +516,7 @@ select {
     display: flex;
     justify-content: space-between;
     font-family: var(--mono);
-    font-size: 7pt;
+    font-size: 7.5pt;
     color: #6b6b6b;
     border-bottom: 1px solid #ddd;
     padding-bottom: 6px;
@@ -779,7 +820,6 @@ table.stat td.badge {
         margin: 0;
         break-after: page;
         width: auto;
-        min-height: 0;
     }
     .page:last-child {
         break-after: auto;
