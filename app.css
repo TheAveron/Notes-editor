@@ -645,6 +645,7 @@ ul.bullets {
 }
 ul.bullets li {
     margin-bottom: 5px;
+    text-align: justify;
 }
 
 .callout {
@@ -686,6 +687,7 @@ table.stat td {
     border-bottom: 1px solid #ddd;
     font-size: 10pt;
     vertical-align: top;
+    text-align: justify;
 }
 table.stat td.label {
     font-family: var(--mono);
@@ -737,6 +739,7 @@ table.stat td.badge {
     padding: 5px 8px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     font-size: 9.5pt;
+    text-align: justify;
 }
 .card table td:first-child {
     font-family: var(--mono);

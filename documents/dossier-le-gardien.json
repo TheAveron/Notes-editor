@@ -208,15 +208,6 @@
           ]
         },
         {
-          "id": "id21_0ozu7",
-          "type": "callout",
-          "tag": "attention",
-          "title": "Titre du callout",
-          "paragraphs": [
-            "Texte du callout."
-          ]
-        },
-        {
           "id": "id24_lpwpz",
           "type": "heading2",
           "text": "Personel"
@@ -385,13 +376,371 @@
     },
     {
       "id": "id52_nkzg2",
-      "title": "Nouvelle section",
+      "title": "Miguel — Portait du Gardien actuel",
       "blocks": [
         {
-          "id": "id53_wsmny",
+          "id": "id4_ixd7g",
+          "type": "crossref",
+          "text": "Voir GLD-VS-001 pour la hiérarchie complète de la Guilde des Animaliens, le Haut Conseil des Archimages et le rôle de la Mage suprême."
+        },
+        {
+          "id": "id5_0ffsi",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Tempérament de jeunesse",
+          "paragraphs": [
+            "Les témoignages disponibles décrivent un garçon curieux, poli, sensible à l'injustice — sa réaction face à la tenancière de Withre en est un exemple — et facilement émerveillé par ce qu'il découvre (les golems, la ville de Narmatin, une simple vitrine de bijoux). Son rapport à son propre don est ambivalent dès l'enfance : frustration de ne pas être obéi par les Esprits de feu chez ses parents, puis stupeur de l'être instantanément dès son arrivée à l'auberge de Withre."
+          ]
+        },
+        {
+          "id": "id6_2lypg",
+          "type": "heading2",
+          "text": "Pistes de caractérisation pour Miguel actuellement (105 ans)"
+        },
+        {
+          "id": "id7_b7c2d",
           "type": "paragraph",
-          "text": "Nouveau paragraphe. Cliquez pour modifier ce texte.",
+          "text": "Aucune de ces trois options n'est établie comme canonique : elles constituent des propositions ouvertes, à choisir ou à combiner selon les besoins de l'histoire ou de la campagne.",
           "italic": false
+        },
+        {
+          "id": "id8_q981r",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Option A — Un Gardien serein",
+          "paragraphs": [
+            "Soixante-cinq années de maîtrise prouvée ont dissous le doute. Miguel se rapproche d'un archétype de sage stable, proche d'un mentor bienveillant, sûr de sa domination intérieure sur les esprits qu'il porte."
+          ]
+        },
+        {
+          "id": "id11_r6efr",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Option B — Un Gardien qui doute",
+          "paragraphs": [
+            "Le contrôle n'étant jamais définitivement acquis (GDN-04), Miguel vit avec une vigilance intérieure permanente, un fond d'inquiétude qu'il dissimule derrière une façade publique de sagesse et d'autorité."
+          ]
+        },
+        {
+          "id": "id10_dbkux",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Option C — Un équilibre fragile",
+          "paragraphs": [
+            "La sérénité de Miguel est réelle, mais fragile : elle peut être mise à mal ponctuellement par la fatigue, une blessure, ou la résurgence inhabituellement forte d'un esprit précis parmi ceux qu'il porte."
+          ]
+        },
+        {
+          "id": "id9_iousw",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Rapport à Udor",
+          "paragraphs": [
+            "Udor étant le dernier esprit absorbé et le plus proche relationnellement de Miguel (mentor direct pendant 20 ans), il pourrit occuper une place particulière dans sa psyché — une voix plus familière et plus présente que les strates plus anciennes."
+          ]
+        },
+        {
+          "id": "id12_dogeh",
+          "type": "crossref",
+          "text": "Miguel entretient une relation amoureuse avec Ambre, l'actuelle Mage suprême et homologue de la Lignée — voir CEL-VC-001 pour le détail du duo Gardien/Mage suprême et de la manière dont ce lien a été délibérément encouragé par la Guilde."
+        },
+        {
+          "id": "id15_94lw8",
+          "type": "pagebreak"
+        },
+        {
+          "id": "id17_92659",
+          "type": "heading2",
+          "text": "Relations connues"
+        },
+        {
+          "id": "id16_z5r89",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "Sirgal",
+              "b": "Premier maître de Miguel dans son village natal. Il l'a recommandé auprès de la Guilde des Animaliens.",
+              "c": ""
+            },
+            {
+              "a": "Célestine",
+              "b": "Ancienne Mage suprême de la Guilde des Animaliens (génération d'Udor). Elle a personnellement évalué et formé Miguel à la Guilde. Elle l'a escorté jusqu'à la Tour à ses 20 ans. Retirée depuis 65 ans — voir CEL-VC-001.",
+              "c": ""
+            },
+            {
+              "a": "Ambre",
+              "b": "Actuelle Mage suprême, petite-fille de Célestine et d'Udor, compagne de Miguel — voir CEL-VC-001 pour le détail de la Lignée.",
+              "c": ""
+            },
+            {
+              "a": "Udor",
+              "b": "Mentor et prédécesseur direct ; Gardien absorbé lors du Rituel de Transmission, aujourd'hui voix intérieure du Gardien actuel.\n",
+              "c": ""
+            },
+            {
+              "a": "Gork, Vork, Lock",
+              "b": "Gobelins au service de la Tour.",
+              "c": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id20_uko79",
+      "title": "Hooks de Scénario",
+      "blocks": [
+        {
+          "id": "id21_gz5ma",
+          "type": "paragraph",
+          "text": "Cinq accroches prêtes à l'emploi, centrées sur le Gardien en tant que PNJ. Pour les accroches d'ordre institutionnel autour de la Guilde, voir GLD-VC-001.",
+          "italic": false
+        },
+        {
+          "id": "id22_kebn2",
+          "type": "card",
+          "badgeText": "HOOK 1",
+          "title": "L'appel de la Tour",
+          "pitch": "Un des personnages se révèle exceptionnellement doué (potentiel de six ou sept liens) et attire l'attention de la Guilde. Le personnage doit être relativement jeune, pour pouvoir être un candidat sérieux pour le poste de Gardien ou de Mage Suprême.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Personnel / régional"
+            },
+            {
+              "a": "Complication",
+              "b": "Accepter signifie potentiellement suivre la voie de Miguel : disparaître, au sens propre, dans vingt ans lors d'un futur Rituel de Transmission."
+            },
+            {
+              "a": "Rôle du Gardien",
+              "b": "Mentionné, jamais rencontré — figure de destin lointain."
+            }
+          ]
+        },
+        {
+          "id": "id23_x9hre",
+          "type": "card",
+          "badgeText": "HOOK 2",
+          "title": "Le Gardien silencieux",
+          "pitch": "Depuis plusieurs semaines, Ambre, la Mage suprême, remarque des signes inhabituels chez lui — absences, visions rapportées par des tiers — suggérant que le contrôle du Gardien pourrait vaciller.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Régional / mondial"
+            },
+            {
+              "a": "Complication",
+              "b": "Elle engage des personnages extérieurs à la Guilde, donc politiquement « jetables », pour enquêter sans alerter l'institution."
+            },
+            {
+              "a": "Rôle du Guardien",
+              "b": "Potentiel antagoniste temporaire, si un esprit ancien reprend le dessus lors de la confrontation finale."
+            }
+          ]
+        },
+        {
+          "id": "id25_5tfbj",
+          "type": "card",
+          "badgeText": "HOOK 3",
+          "title": "Les archives perdues",
+          "pitch": "Une expédition dans d'anciennes ruines ou des sous-sols oubliés de la Guilde permet de retrouver des fragments d'archives antérieures au huitième millénaire, jetant une lumière nouvelle et dérangeante sur l'origine du rituel.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Mondial (implications historiques)"
+            },
+            {
+              "a": "Complication",
+              "b": "Ces révélations pourraient inclure la preuve d'un échec de transmission passé (voir GDN-03, « La transmission ratée »), ou de quelconque histoire sombre autour des agissements d'anciens gardiens."
+            },
+            {
+              "a": "Rôle du Guardien",
+              "b": "Ambigu — peut intervenir pour récupérer ou protéger ces archives, sans que ses intentions soient claires (protection légitime ou dissimulation)."
+            }
+          ]
+        },
+        {
+          "id": "id27_2pq1s",
+          "type": "pagebreak"
+        },
+        {
+          "id": "id26_aaw8t",
+          "type": "card",
+          "badgeText": "HOOK 4",
+          "title": "Les proches en péril",
+          "pitch": "Le village natal de Miguel est frappé par une recrudescence d'attaques et de symptômes étranges (maux de tête, malaises) évoquant une activité du Plan Éthéré (voir MEN-VC-001).",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Local, à résonance personnelle forte"
+            },
+            {
+              "a": "Complication",
+              "b": "Miguel pourrait intervenir personnellement par attachement sentimental — situation rarissime où le Gardien agit hors la Tour pour une raison purement privée."
+            },
+            {
+              "a": "Rôle du Guardien",
+              "b": "Allié exceptionnel, dont l'implication directe soulève des questions politiques : pourquoi lui, pourquoi là, pourquoi maintenant ?"
+            }
+          ]
+        },
+        {
+          "id": "id24_00vqb",
+          "type": "card",
+          "badgeText": "HOOK 5",
+          "title": "Une succession anticipée",
+          "pitch": "Des rumeurs circulent selon lesquelles Miguel chercherait déjà un successeur, bien plus tôt que les décennies de règne habituelles ne le laisseraient supposer.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Mondial"
+            },
+            {
+              "a": "Complication",
+              "b": "Cela peut signifier qu'il se sait affaibli, menacé, ou qu'il a détecté une menace nécessitant un Gardien neuf, plus fort que lui-même en exercice."
+            },
+            {
+              "a": "Rôle du Guardien",
+              "b": "Central mais insaisissable — jamais rencontré en personne, perçu uniquement à travers les conséquences de ses décisions."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id28_f2m0i",
+      "title": "Annexes",
+      "blocks": [
+        {
+          "id": "id30_3lzqp",
+          "type": "heading2",
+          "text": "A. Chronologie indicative"
+        },
+        {
+          "id": "id33_8h5p6",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "IL y a ~12 000 ans",
+              "b": "Chute de la météorite contenant le cristal originel.",
+              "c": ""
+            },
+            {
+              "a": "Antériorité au 8ᵉ millénaire",
+              "b": "Archives perdues — aucune information fiable sur les premiers Gardiens.",
+              "c": ""
+            },
+            {
+              "a": "Il y a 89 ans (Miguel, 16 ans)",
+              "b": "Départ du village natal pour la Guilde des Animaliens à Narmatin.",
+              "c": ""
+            },
+            {
+              "a": "Il y a 85 ans (Miguel, 20 ans)",
+              "b": "Arrivée à la Tour, début de la formation auprès du Gardien Udor.",
+              "c": ""
+            },
+            {
+              "a": "Il y a 65 ans (Miguel, 40 ans)",
+              "b": "Rituel de Transmission entre Udor et Miguel.",
+              "c": ""
+            },
+            {
+              "a": "Aujourd'hui",
+              "b": "Miguel, 105 ans, 65ᵉ année de charge en tant que Gardien.",
+              "c": ""
+            }
+          ]
+        },
+        {
+          "id": "id31_8hga5",
+          "type": "heading2",
+          "text": "B. Glossaire"
+        },
+        {
+          "id": "id34_rqsq0",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "Animalien",
+              "b": "Membre ou système de la Guilde dédiée aux liens télépathiques inter-espèces.",
+              "c": ""
+            },
+            {
+              "a": "Lien",
+              "b": "Connexion télépathique durable entre un individu et une espèce ou entité (esprits de feu, rapaces, etc.).",
+              "c": ""
+            },
+            {
+              "a": "Strite",
+              "b": "Minerai extrait au nord de Narmatin, amplifiant les capacités télépathiques.",
+              "c": ""
+            },
+            {
+              "a": "Rituel de Transmission",
+              "b": "Absorption consentie de l'âme et de la puissance d'un Gardien sortant par son successeur.",
+              "c": ""
+            },
+            {
+              "a": "Plan éthéré",
+              "b": "Second plan d'existence où vivent les créatures affrontées par le Gardien — voir MEN-VC-001.",
+              "c": ""
+            },
+            {
+              "a": "Golem",
+              "b": "Créature majoritairement minérale, utilisée notamment pour la garde de Narmatin. Très peu sont toujours en vie à travers le monde.",
+              "c": ""
+            },
+            {
+              "a": "Korrigan",
+              "b": "Lutin redoutable, actif en particulier à la saison estivale, présent aux abords des villages isolés.",
+              "c": ""
+            },
+            {
+              "a": "Lignée",
+              "b": "Famille fournissant, génération après génération, l'un des deux membres du duo Gardien/Mage suprême — voir CEL-VC-001.",
+              "c": ""
+            }
+          ]
+        },
+        {
+          "id": "id36_aha67",
+          "type": "pagebreak"
+        },
+        {
+          "id": "id32_70otw",
+          "type": "heading2",
+          "text": "C. Documents liés"
+        },
+        {
+          "id": "id35_wj1s9",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "GLD-VC-001",
+              "b": "La Guilde des Animaliens — hiérarchie complète, Haut Conseil des Archimages, secret institutionnel.",
+              "c": ""
+            },
+            {
+              "a": "MEN-VC-001",
+              "b": "La Menace — nature exacte du Plan Éthéré et des créatures affrontées par le Gardien.",
+              "c": ""
+            },
+            {
+              "a": "LIE-VC-001",
+              "b": "Les Liens — mécanique complète des connexions télépathiques, dont celles du Gardien.",
+              "c": ""
+            },
+            {
+              "a": "CEL-VC-001",
+              "b": "Célestine & la Lignée — le duo Gardien/Mage suprême et Ambre, l'actuelle Mage suprême.",
+              "c": ""
+            }
+          ]
         }
       ]
     }
