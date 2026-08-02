@@ -30,6 +30,13 @@ select {
     font-family: var(--sans);
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}
+
 /* ---------- APP SHELL ---------- */
 #app {
     display: flex;
@@ -770,14 +777,32 @@ table.stat td.badge {
     margin: 0;
 }
 .toc-list li {
-    padding: 6px 0;
     border-bottom: 1px dotted #ccc;
     font-size: 11pt;
 }
+
+.toc-list a {
+    display: flex;
+    padding: 6px 0;
+    align-items: center;
+}
+
 .toc-list .code {
     font-family: var(--mono);
     color: var(--doc-accent, #2f6f5e);
-    margin-right: 10px;
+    font-size: 9.5pt;
+}
+
+.toc-list .dot-separator {
+    font-family: var(--mono);
+    color: var(--doc-accent, #2f6f5e);
+    font-size: 9.5pt;
+}
+
+.toc-page {
+    margin-left: auto;
+    font-family: var(--mono);
+    color: var(--doc-accent, #2f6f5e);
     font-size: 9.5pt;
 }
 

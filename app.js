@@ -409,6 +409,30 @@ function renderBlockHtml(b) {
     }
 }
 
+function updateTocPages() {
+    const preview = document.getElementById("preview");
+
+    const pages = [...preview.querySelectorAll(".page")];
+
+    doc.sections.forEach((section) => {
+        const target = document.getElementById(section.id);
+        if (!target) return;
+
+        const pageElement = target.closest(".page");
+        if (!pageElement) return;
+
+        const pageNumber = pages.indexOf(pageElement) + 1;
+
+        const tocEntry = preview.querySelector(
+            `.toc-page[data-toc="${section.id}"]`
+        );
+
+        if (tocEntry) {
+            tocEntry.textContent = pageNumber;
+        }
+    });
+}
+
 function renderPreview() {
     const pal = derivePalette(doc.color);
     const stampColor = doc.stampStyle === "red" ? FIXED.red : pal.accent;
@@ -471,7 +495,7 @@ function renderPreview() {
         doc.sections
             .map(
                 (s, i) =>
-                    `<li><span class="code">${escapeHtml(sectionCode(i))}</span>${escapeHtml(s.title)}</li>`,
+                    `<li><a href="#${s.id}"><span class="code">${escapeHtml(sectionCode(i))}</span><span class="dot-separator">·</span>${escapeHtml(s.title)}<span class="toc-page" data-toc="${s.id}"></span></a></li>`,
             )
             .join("") +
         `</ul>`;
@@ -480,7 +504,7 @@ function renderPreview() {
     // Sections de contenu (avec support des pagebreak)
     // TODO: check if valid
     doc.sections.forEach((s, i) => {
-        let currentPage = `<div class="sec-h1"><span class="code">${escapeHtml(sectionCode(i))}</span><span class="dot-separator">·</span>${escapeHtml(s.title)}
+        let currentPage = `<div class="sec-h1" id="${s.id}"><span class="code">${escapeHtml(sectionCode(i))}</span><span class="dot-separator">·</span>${escapeHtml(s.title)}
         </div>`;
 
         s.blocks.forEach((block) => {
@@ -511,6 +535,7 @@ function renderPreview() {
         .join("");
 
     document.getElementById("preview").innerHTML = html;
+    updateTocPages();
 }
 
 /* ---------- Rendu : SIDEBAR (formulaires) ---------- */

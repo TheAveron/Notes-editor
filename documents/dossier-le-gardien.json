@@ -7,7 +7,7 @@
     "kicker": "DOSSIER D'INFORMATION",
     "title": "Le Gardien",
     "subtitle": "de la Tour du Cinquième Point Cardinal",
-    "stampText": "NIVEAU 7 · A5 — Réservé au personel de la Tour",
+    "stampText": "NIVEAU 7 · A5 — Réservé au personnel\nde la Tour",
     "meta": [
       {
         "a": "N° de dossier",
@@ -312,7 +312,7 @@
     },
     {
       "id": "id39_c2eeh",
-      "title": "MECANIQUE DE LA CONSCIENCE PARTAGEE",
+      "title": "Mécanique de la conscience partagée",
       "blocks": [
         {
           "id": "id42_nt6v2",
