@@ -1,0 +1,112 @@
+{
+  "id": "id4_svqb2",
+  "color": "#8c5383",
+  "stampStyle": "accent",
+  "cover": {
+    "orgLine": "GUILDE DES ARCHIVISTES — FONDS DOCUMENTAIRE",
+    "kicker": "DOSSIER D'INFORMATION",
+    "title": "Célestine",
+    "subtitle": "& la Lignée - le second pilier de la Tour",
+    "stampText": "Niveau 6 · A4 — Mage suprême en\nexercice",
+    "meta": [
+      {
+        "a": "N° de dossier",
+        "b": "CEL-VC-001"
+      },
+      {
+        "a": "Objet",
+        "b": "Célestine, la mécanique de la Lignée et le duo Gardien/Mage suprême"
+      },
+      {
+        "a": "Documents liés",
+        "b": "GLD-VC-001 · GDN-VC-001 · LIE-VC-001"
+      },
+      {
+        "a": "Nature du sujet",
+        "b": "Institution vivante — transmission générationnelle en cours"
+      },
+      {
+        "a": "Confidentialité",
+        "b": "Niveau 6 · A4  — voir ARC-03"
+      }
+    ]
+  },
+  "footerBrand": "Célestine - Niveau 6 · A4 ",
+  "noteUsage": {
+    "includeTagLegend": true,
+    "text": "Ce dossier est conçu pour être utilisé tel quel par un meneur de jeu (MJ) autre que l'auteur de l'univers. Chaque\ninformation est étiquetée selon son statut, afin de distinguer ce qui appartient au canon établi de ce qui reste ouvert à l'interprétation ou à l'adaptation"
+  },
+  "sections": [
+    {
+      "id": "id5_36x26",
+      "title": "Fiche d'identification",
+      "blocks": [
+        {
+          "id": "id7_4jqej",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "Nom Civil",
+              "b": "Célestine",
+              "c": ""
+            },
+            {
+              "a": "Titre",
+              "b": "Ancienne Mage suprême de la Guilde des Animaliens",
+              "c": ""
+            },
+            {
+              "a": "Naissance",
+              "b": "Narmatin, dans les quartiers de la Guilde",
+              "c": ""
+            },
+            {
+              "a": "Origine sociale",
+              "b": "Héritière de la Lignée",
+              "c": ""
+            },
+            {
+              "a": "Âge actuel",
+              "b": "Décédée",
+              "c": ""
+            },
+            {
+              "a": "Période d'activité",
+              "b": "L'investiture d'Udor jusqu'à celle de Miguel, succédée par Ambre.",
+              "c": ""
+            },
+            {
+              "a": "Liens recensés",
+              "b": "Inconnus",
+              "c": ""
+            },
+            {
+              "a": "Superieur Hiérarchique",
+              "b": "Empereur de l'Humanité",
+              "c": ""
+            }
+          ]
+        },
+        {
+          "id": "id8_bdwbn",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Longévité",
+          "paragraphs": [
+            "Comme Udor (136 ans au moment de l'arrivée de Miguel), Célestine atteint un âge très avancé dans l'exercice de sa charge, rendu possible par des potions et des sortilèges. Le détail exact de ce procédé est délibérément laissé dans l'ombre."
+          ]
+        },
+        {
+          "id": "id9_h5qmk",
+          "type": "callout",
+          "tag": "attention",
+          "title": "Inventer les détails du mécanisme",
+          "paragraphs": [
+            "Il n'est pas recommandé de chercher à inventer ou développer le fonctionnement précis des potions et sortilèges de longévité. Pour Udor, seul est confirmé que sa puissance liée aux esprits absorbés facilite l'usage de ces procédés. Le facilitateur équivalent pour Célestine, qui n'est pas Gardien, n'est pas précisé — champ ouvert si nécessaire, mais à traiter avec la même retenue."
+          ]
+        }
+      ]
+    }
+  ]
+}

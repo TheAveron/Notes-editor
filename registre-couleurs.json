@@ -1,12 +1,22 @@
 [
   {
-    "hex": "#5c6b4f",
-    "title": "L'Archiviste",
-    "docId": "id1_m7u0a"
+    "hex": "#5c5346",
+    "title": "Le Culte de Sirozor",
+    "docId": "id1"
   },
   {
     "hex": "#a9812e",
     "title": "Le Gardien",
     "docId": "id1_5xfmf"
+  },
+  {
+    "hex": "#5c6b4f",
+    "title": "L'Archiviste",
+    "docId": "id1_m7u0a"
+  },
+  {
+    "hex": "#8c5383",
+    "title": "Célestine",
+    "docId": "id4_svqb2"
   }
 ]

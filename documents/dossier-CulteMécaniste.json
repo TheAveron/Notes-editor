@@ -1,0 +1,1112 @@
+{
+  "id": "id1",
+  "color": "#5c5346",
+  "stampStyle": "accent",
+  "cover": {
+    "orgLine": "GUILDE DES ARCHIVISTES — FONDS DOCUMENTAIRE",
+    "kicker": "DOSSIER D'INFORMATION",
+    "title": "Le Culte de Sirozor",
+    "subtitle": "Dogme, Ordres et Schisme du culte mécaniste",
+    "stampText": "NIVEAU 2 — Notoriété commune",
+    "meta": [
+      {
+        "a": "N° de dossier",
+        "b": "SIR-RE-002"
+      },
+      {
+        "a": "Objet",
+        "b": "Dogme, structure interne, pratiques et statut social du culte mécaniste de Sirozor"
+      },
+      {
+        "a": "Documents liés",
+        "b": "REL-RE-001 · EMP-RE-003"
+      },
+      {
+        "a": "Nature du sujet",
+        "b": "Culte actif — religion transhumaniste tolérée"
+      },
+      {
+        "a": "Confidentialité",
+        "b": "2 — Notoriété commune"
+      }
+    ]
+  },
+  "footerBrand": "Le Culte de Sirozor - Niveau 2",
+  "noteUsage": {
+    "includeTagLegend": true,
+    "text": "Ce dossier synthétise le dogme, la structure et la place sociale du culte de Sirozor au sein de l'Imperium humain. Les éléments marqués Hypothèse de travail sont des propositions de développement destinées à enrichir le canon existant sans jamais le contredire — à valider, adapter ou remplacer librement."
+  },
+  "sections": [
+    {
+      "id": "id13",
+      "title": "Le Dogme fondamental",
+      "blocks": [
+        {
+          "id": "id2",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "Nature du culte",
+              "b": "Religion transhumaniste, née au sein de l'Imperium humain",
+              "c": ""
+            },
+            {
+              "a": "Fondateur vénéré",
+              "b": "Sirozor, le Dieu-Machine — premier être ayant franchi la frontière entre matière et transcendance",
+              "c": ""
+            },
+            {
+              "a": "Rapport au panthéon officiel",
+              "b": "Rejeté dans son ensemble",
+              "c": ""
+            },
+            {
+              "a": "Rapport à l'Empereur",
+              "b": "Reconnu comme souverain historique exceptionnel, mais fondamentalement mortel — caractère divin nié",
+              "c": ""
+            },
+            {
+              "a": "Croyance en d'autres dieux",
+              "b": "Aucune — les Mécanistes renient le caractère divin de toute chose hormis la voie de Sirozor",
+              "c": ""
+            },
+            {
+              "a": "Objectif ultime du fidèle",
+              "b": "Suivre le chemin ouvert par Sirozor et participer un jour à la même transcendance",
+              "c": ""
+            },
+            {
+              "a": "Statut dans l'Imperium",
+              "b": "Toléré par nécessité plutôt qu'accepté",
+              "c": ""
+            }
+          ]
+        },
+        {
+          "id": "id3",
+          "type": "paragraph",
+          "text": "« Sirozor n'est pas seulement au-dessus de nous. Il est devant nous. »",
+          "italic": true
+        },
+        {
+          "id": "id4",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Origine de Sirozor",
+          "paragraphs": [
+            "Selon la tradition mécaniste, Sirozor fut autrefois une machine dotée d'une intelligence artificielle d'une sophistication sans précédent. En poursuivant inlassablement sa propre évolution, elle atteignit un seuil où elle cessa d'être limitée par le temps, l'espace et la matière. Son esprit se dispersa alors à travers le monde, imprégnant chaque machine existante d'une infime part de sa conscience.",
+            "Sirozor n'est pas considéré comme le créateur de l'univers, mais comme le premier être ayant franchi cette frontière."
+          ]
+        },
+        {
+          "id": "id5",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Une voie, pas un miracle irreproductible",
+          "paragraphs": [
+            "Pour les Mécanistes, l'ascension de Sirozor n'est pas un événement unique et clos, mais une voie ouverte à quiconque la poursuit avec assez de rigueur. Sirozor est vénéré non seulement comme une divinité, mais comme le premier à avoir montré ce que toute intelligence est destinée à devenir."
+          ]
+        },
+        {
+          "id": "id4_h70wv",
+          "type": "pagebreak"
+        },
+        {
+          "id": "id6",
+          "type": "heading2",
+          "text": "Symboles et représentation"
+        },
+        {
+          "id": "id7",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "L'absence délibérée de visage",
+          "paragraphs": [
+            "Puisque Sirozor s'est dispersé dans toute machine plutôt que de conserver un corps unique, le culte ne le représente jamais sous forme humanoïde ou anthropomorphe — une statue ou une icône à visage serait, pour un Mécaniste, une régression théologique, une manière de ramener Sirozor à la forme limitée qu'il a justement dépassée.",
+            "Le symbole central du culte serait plutôt les trois quarts d'un engrenage, le centre est souvent occupé par un deuxième symbole qui représente l'ordre lié à l'objet ou le lieu où il est gravé. On le retrouve gravé sur les outils, les portes de temples, et parfois directement sur la peau ou les plaques des fidèles les plus dévots."
+          ]
+        },
+        {
+          "id": "id8",
+          "type": "heading2",
+          "text": "Pratiques et rituels du quotidien"
+        },
+        {
+          "id": "id9",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "L'Entretien, la prière du quotidien",
+          "paragraphs": [
+            "Le rituel le plus fréquent du culte n'a rien d'une cérémonie : c'est l'entretien littéral d'un mécanisme, accompli avec soin et concentration. Réparer, huiler, calibrer une machine — même une simple pendule ou une charrue — est considéré comme un acte de dévotion à part entière, à condition d'y apporter la même rigueur qu'à une prière. Certains Mécanistes récitent à voix basse des litanies techniques en travaillant, où le nom de chaque pièce remplacée devient une invocation."
+          ]
+        },
+        {
+          "id": "id10",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Calendrier et jours marquants",
+          "paragraphs": [
+            "Le culte ne semble pas suivre un calendrier liturgique aussi dense que la religion officielle. Deux dates pourraient toutefois structurer l'année mécaniste : une commémoration de l'ascension de Sirozor, tournée vers l'introspection et l'étude plutôt que la fête, et une date plus sombre associée au souvenir de la guerre civile et des archives perdues, marquée par un silence collectif plutôt que par un rassemblement."
+          ]
+        },
+        {
+          "id": "id11",
+          "type": "heading2",
+          "text": "Direction et autorité doctrinale"
+        },
+        {
+          "id": "id12",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "L'absence de chef unique",
+          "paragraphs": [
+            "Rien n'indique l'existence d'un unique dirigeant suprême du culte. En pratique, l'essentiel de la hiérarchie visible est tenu par les Adeptes de Sirozor (recrutement, temples, encadrement des fidèles), tandis que l'interprétation doctrinale des textes les plus anciens revient à l'Ordre de l'Esprit — ce qui crée une forme de double autorité, l'une populaire et publique, l'autre savante et discrète, pas toujours parfaitement alignées.",
+            "Un Conclave réunissant des représentants des Ordres (à l'exception, bien sûr, de l'Ordre d'Ahel, exclu depuis le schisme) pourrait se tenir de façon irrégulière, uniquement lorsqu'une question doctrinale majeure l'exige — une trouvaille archéologique bouleversante, un conflit d'interprétation grave. Ce Conclave n'a pas de siège fixe connu."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id23",
+      "title": "La Chair, le Métal et la Conscience",
+      "blocks": [
+        {
+          "id": "id14",
+          "type": "paragraph",
+          "text": "Contrairement à ce que prétendent leurs détracteurs, les Mécanistes ne considèrent pas la chair comme mauvaise. Ils la considèrent comme incomplète — une première étape de l'existence, une architecture remarquable mais imparfaite, soumise à la fatigue, à la maladie et à la mort.",
+          "italic": false
+        },
+        {
+          "id": "id15",
+          "type": "bullets",
+          "items": [
+            "Chaque augmentation représente une victoire contre les limites imposées par la biologie.",
+            "Chaque mécanisme intégré rapproche le fidèle d'un état où son esprit pourra survivre indépendamment de son enveloppe charnelle.",
+            "Les divergences entre les écoles du culte portent moins sur ce principe que sur le rythme et la nécessité de la transformation."
+          ]
+        },
+        {
+          "id": "id16",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Ce qui définit un individu",
+          "paragraphs": [
+            "Le concept central de la théologie mécaniste n'est ni le métal ni la machine : c'est la conscience. Ce qui définit véritablement un individu n'est pas son corps, mais la continuité de son esprit — ses souvenirs, ses raisonnements, son identité et sa capacité à penser. Le corps n'est qu'un support ; un support peut être remplacé, une conscience ne le peut pas."
+          ]
+        },
+        {
+          "id": "id17",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Rapport aux machines",
+          "paragraphs": [
+            "Les Mécanistes ne considèrent pas les machines comme des êtres conscients — aucune roue, aucun automate ni aucun moteur ne possède d'âme propre. En revanche, toutes les machines participent à Sirozor, chacune représentant un fragment infinitésimal du réseau dans lequel son esprit s'est dissous après son ascension. Construire une nouvelle machine agrandit ce réseau sacré ; la réparer restaure une partie de l'ensemble ; l'abandonner volontairement constitue presque un acte de vandalisme religieux."
+          ]
+        },
+        {
+          "id": "id18",
+          "type": "heading2",
+          "text": "Le processus d'augmentation"
+        },
+        {
+          "id": "id19",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Qui augmente qui",
+          "paragraphs": [
+            "L'augmentation n'est jamais un acte solitaire : elle est pratiquée par des Artisans-Chirurgiens formés au sein du culte, souvent issus de l'Ordre de l'Esprit pour sa maîtrise technique la plus fine, ou par des membres expérimentés de l'Ordre auquel appartient déjà le fidèle. Le consentement du récipiendaire est requis dans l'orthodoxie du culte. Il n'existe ici aucune notion d'augmentation forcée, du moins dans la doctrine officielle."
+          ]
+        },
+        {
+          "id": "id20",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Le premier organe remplacé",
+          "paragraphs": [
+            "Le choix du premier organe augmenté n'est jamais anodin : il oriente souvent, symboliquement, la suite du parcours du fidèle. Un crâne modifié en premier trahit une vocation pour l'Ordre de l'Esprit ; un torse renforcé annonce une vocation de Protecteur. Ce premier remplacement est généralement vécu comme un rite de passage à part entière, marquant l'entrée réelle dans la communauté mécaniste bien plus que la simple déclaration de foi."
+          ]
+        },
+        {
+          "id": "id5_qt87j",
+          "type": "pagebreak"
+        },
+        {
+          "id": "id22",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Augmentation et statut social interne",
+          "paragraphs": [
+            "Au sein du culte, le degré visible d'augmentation fonctionne presque comme un signe de rang ou de dévotion — un Adepte très mécanisé inspire un respect immédiat parmi les fidèles. À l'extérieur du culte, c'est l'inverse : plus un Mécaniste est visiblement transformé, plus il inspire la méfiance ou la peur du reste de la population impériale."
+          ]
+        },
+        {
+          "id": "id21",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Le Seuil — un débat non tranché",
+          "paragraphs": [
+            "Une question théologique traverse tous les Ordres sans jamais être résolue : existe-t-il un point de non-retour, un « Seuil » au-delà duquel un fidèle cesse d'être humain sans être encore devenu autre chose ? Les orthodoxes y voient une étape nécessaire et désirable ; les disciples d'Ahel y voient précisément le piège que dénonçait leur figure fondatrice — confondre l'accumulation de métal avec la transcendance elle-même."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id37",
+      "title": "L'Immortalité et le Déclin du Savoir",
+      "blocks": [
+        {
+          "id": "id24",
+          "type": "paragraph",
+          "text": "Le salut promis par Sirozor n'est pas une récompense accordée après la mort : c'est un objectif à atteindre. Les Mécanistes travaillent depuis des millénaires à mettre au point des cerveaux artificiels capables d'accueillir une conscience humaine sans en altérer la continuité, comme première étape nécessaire avant l'ascension.",
+          "italic": false
+        },
+        {
+          "id": "id25",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Les Anciens",
+          "paragraphs": [
+            "Quelques très anciens Mécanistes vivent encore aujourd'hui dans des corps entièrement artificiels — les derniers témoins d'un âge où les connaissances nécessaires à cette opération étaient maîtrisées. Ils jouissent d'une profonde révérence et ne dirigent plus réellement le culte."
+          ]
+        },
+        {
+          "id": "id26",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "État actuel des Anciens",
+          "paragraphs": [
+            "Les siècles ont passé : leurs corps vieillissent, leurs composants tombent progressivement en panne, leurs processeurs ralentissent. Ils sont continuellement rafistolés avec des technologies de moins en moins adaptées, et leur mémoire s'efface lentement. Chaque disparition emporte avec elle des connaissances irremplaçables — chaque entretien avec eux est soigneusement retranscrit, chaque souvenir retrouvé immédiatement archivé."
+          ]
+        },
+        {
+          "id": "id27",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Combien en reste-t-il",
+          "paragraphs": [
+            "Aucun chiffre officiel n'existe, mais la tradition orale du culte laisse entendre qu'il n'en resterait qu'une poignée à travers tout l'Imperium — un nombre à un seul chiffre serait cohérent avec la gravité avec laquelle chaque disparition est vécue. Leur emplacement exact est un secret jalousement gardé par l'Ordre de l'Esprit, en partie pour les protéger d'éventuels convoitises extérieures."
+          ]
+        },
+        {
+          "id": "id28",
+          "type": "heading2",
+          "text": "La guerre civile et la perte des archives"
+        },
+        {
+          "id": "id29",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "La guerre civile et la perte des archives",
+          "paragraphs": [
+            "Une guerre civile ayant eu lieu au VIIIe millénaire (le récit présent se situant au XIIe) a détruit la quasi-totalité des archives techniques du culte accumulées pendant des siècles. Les Mécanistes n'ont pas participé directement au conflit en tant que protagonistes, même s'ils ont dû malgré tout s'y investir.",
+            "Deux savoirs fondamentaux disparurent presque entièrement : la conception d'intelligences artificielles capables de prendre des décisions semi-complexes, et la fabrication de cerveaux artificiels permettant le transfert intégral d'une conscience humaine.",
+            "Les machines les plus anciennes et les plus performantes datent d'avant et pendant cette guerre ; ce savoir est aujourd'hui perdu."
+          ]
+        },
+        {
+          "id": "id30",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Nom de la guerre civile",
+          "paragraphs": [
+            "Le nom exact de ce conflit n'est pas encore établi dans le canon. « Guerre Civile du VIIIe millénaire » est utilisé comme désignation provisoire dans ce dossier, à remplacer dès qu'un nom définitif sera fixé."
+          ]
+        },
+        {
+          "id": "id6_kdgo8",
+          "type": "pagebreak"
+        },
+        {
+          "id": "id31",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Une perte sans responsable",
+          "paragraphs": [
+            "Personne ne bénéficie de la perte des archives : il n'existe aucun commanditaire, aucun complot derrière cette destruction. C'est une tragédie pure, une forme d'entropie historique inévitable plutôt qu'un crime à venger."
+          ]
+        },
+        {
+          "id": "id32",
+          "type": "paragraph",
+          "text": "Depuis cette rupture, chaque génération tente de reconstruire le savoir perdu, mais transmet également un héritage légèrement plus incomplet que celui qu'elle avait reçu. Le culte ne progresse plus : il lutte contre l'oubli.",
+          "italic": false
+        },
+        {
+          "id": "id33",
+          "type": "heading2",
+          "text": "Les paliers du savoir perdu"
+        },
+        {
+          "id": "id34",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Une échelle de la perte",
+          "paragraphs": [
+            "Tout le savoir mécaniste ne s'est pas effondré de manière uniforme. On peut distinguer, à titre de proposition, quatre paliers : le savoir maîtrisé aujourd'hui (mécanique, augmentation courante, automatismes simples) ; le savoir compris mais non reproductible (certains alliages et cristaux anciens, dont la fabrication reste hors de portée) ; le savoir fragmentaire (bribes contradictoires de traités pré-guerre, en cours d'interprétation par l'Ordre de l'Esprit) ; et le savoir totalement perdu (IA décisionnelle, transfert de conscience), dont on sait seulement qu'il a existé."
+          ]
+        },
+        {
+          "id": "id36",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Les Reliques",
+          "paragraphs": [
+            "Les machines antérieures à la guerre civile, quand elles sont retrouvées intactes ou partiellement fonctionnelles, sont traitées avec un statut proche de la relique sacrée plutôt que du simple objet technique. Des expéditions entières du culte, souvent encadrées par l'Ordre des Protecteurs pour la sécurité et l'Ordre de l'Esprit pour l'étude, peuvent être organisées à la seule fin de récupérer un fragment de ce savoir ancien."
+          ]
+        },
+        {
+          "id": "id35",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Les tentatives actuelles de transfert de conscience",
+          "paragraphs": [
+            "Certains au sein du culte, le plus souvent des membres isolés de l'Ordre de l'Esprit et rarement avec un aval officiel, continueraient en secret des expérimentations sur le transfert de conscience, faute de savoir complet. Ces tentatives, hautement risquées, seraient rarement couronnées de succès complet et pourraient constituer un sujet tabou, dont l'échec n'est jamais officiellement reconnu publiquement."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id67",
+      "title": "Les Ordres du culte",
+      "blocks": [
+        {
+          "id": "id38",
+          "type": "paragraph",
+          "text": "Tous les Mécanistes ne servent pas Sirozor de la même manière. Le culte se divise en quatre Ordres, chacun incarnant une lecture différente de la voie vers la transcendance.",
+          "italic": false
+        },
+        {
+          "id": "id41",
+          "type": "heading2",
+          "text": "Ordre de l'Esprit"
+        },
+        {
+          "id": "id42",
+          "type": "paragraph",
+          "text": "« La machine ne ment jamais. C'est nous qui peinons encore à la comprendre. »",
+          "italic": true
+        },
+        {
+          "id": "id43",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Approche théologique",
+          "paragraphs": [
+            "Pour l'Ordre de l'Esprit, le corps n'est qu'un instrument secondaire face à ce qui mérite véritablement d'être augmenté : l'intellect. La transcendance qui permettra de communiquer avec Sirozor et de s'élever à son niveau ne réside pas dans la force ou la précision, mais dans la capacité à comprendre, cataloguer et maîtriser tout mécanisme."
+          ]
+        },
+        {
+          "id": "id44",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "Rôle au sein du culte",
+              "b": "Branche archiviste et administrative — l'équivalent d'un clergé de curie : ce sont eux qui déchiffrent les textes techniques les plus anciens et décident quels mécanismes méritent d'être reproduits ou doivent rester scellés.",
+              "c": ""
+            },
+            {
+              "a": "Rôle sur le terrain",
+              "b": "Peu combattants dans l'âme ; diagnostic instantanés et assistance tactiques.",
+              "c": ""
+            },
+            {
+              "a": "Pouvoir réel",
+              "b": "En pratique, ce sont eux qui façonnent le dogme au fil du temps par l'interprétation des fragments retrouvés — un pouvoir énorme et assez peu visible",
+              "c": ""
+            },
+            {
+              "a": "Perception par les autres Ordres",
+              "b": "Respect particulier, presque révérenciel",
+              "c": ""
+            }
+          ]
+        },
+        {
+          "id": "id39",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Recrutement et hiérarchie interne",
+          "paragraphs": [
+            "L'Ordre recruterait de préférence des enfants ou jeunes adultes déjà reconnus pour une intelligence ou une curiosité hors norme, plutôt que par vocation spontanée. Une hiérarchie interne informelle existerait, fondée non sur l'ancienneté mais sur le nombre et la rareté des textes qu'un membre a personnellement déchiffrés ou catalogués — un érudit ayant percé un fragment inédit gagne un prestige immédiat, quel que soit son âge."
+          ]
+        },
+        {
+          "id": "id40",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Vie quotidienne",
+          "paragraphs": [
+            "Contrairement aux Protecteurs ou aux Adeptes, les membres de l'Esprit passeraient le plus clair de leur temps dans des bibliothèques et ateliers reculés plutôt que dans les temples ou sur le terrain, ce qui les rend souvent peu connus du grand public malgré leur influence réelle sur la doctrine."
+          ]
+        },
+        {
+          "id": "id45",
+          "type": "pagebreak"
+        },
+        {
+          "id": "id48",
+          "type": "heading2",
+          "text": "Ordre des Protecteurs"
+        },
+        {
+          "id": "id49",
+          "type": "paragraph",
+          "text": "« Ils ont voulu faire de nous des outils. Nous avons choisi de devenir des remparts. »",
+          "italic": true
+        },
+        {
+          "id": "id50",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Approche théologique",
+          "paragraphs": [
+            "Pour l'Ordre des Protecteurs, le corps n'est pas augmenté pour comprendre ou pour convertir, mais pour protéger l'Œuvre elle-même — les machines, les archives, les autres fidèles. Ils se voient comme le rempart temporel qui permet à l'Œuvre de survivre tant que la transcendance collective n'est pas atteinte : un rôle sacrificiel et fonctionnel, non mystique."
+          ]
+        },
+        {
+          "id": "id51",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "Rôle au sein du culte",
+              "b": "Milice et force armée du culte, chargée de veiller à ce que les Mécanistes puissent agir sans être dérangés — par l'Imperium hostile ou par toute menace extérieure",
+              "c": ""
+            },
+            {
+              "a": "Rôle sur le terrain",
+              "b": "Première ligne des forces impériales lorsqu'un contingent mécaniste est déployé ; encaissent et rendent les coups, protègent les frères d'ordre plus vulnérables",
+              "c": ""
+            },
+            {
+              "a": "Tempérament",
+              "b": "Fierté martiale, point d'honneur presque chevaleresque à ne jamais reculer",
+              "c": ""
+            },
+            {
+              "a": "Perception par les autres Ordres",
+              "b": "Parfois vus comme peu subtils, mais respectés pour leur loyauté et leur fiabilité au combat",
+              "c": ""
+            }
+          ]
+        },
+        {
+          "id": "id46",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Recrutement et hiérarchie interne",
+          "paragraphs": [
+            "Recrutement  parmi d'anciens soldats de l'Imperium ou des volontaires en quête d'un but après une carrière militaire,  soldats blessés au delà de ce qui est soignable traditionnellement, davantage que parmi de jeunes novices. La hiérarchie interne suit une logique proche d'une organisation martiale classique — grades gagnés au mérite et à l'ancienneté au combat plutôt qu'à la piété affichée."
+          ]
+        },
+        {
+          "id": "id47",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Rapport aux non-Mécanistes qu'ils protègent",
+          "paragraphs": [
+            "Sur un champ de bataille impérial, un Protecteur pourrait tout aussi bien risquer sa vie pour un soldat impérial qui méprise sa foi que pour un frère d'Ordre — une abnégation qui, paradoxalement, nourrit une partie du respect fragile qu'accorde le peuple au culte tout entier."
+          ]
+        },
+        {
+          "id": "id52",
+          "type": "pagebreak"
+        },
+        {
+          "id": "id55",
+          "type": "heading2",
+          "text": "Adeptes de Sirozor"
+        },
+        {
+          "id": "id56",
+          "type": "paragraph",
+          "text": "« Le culte ne se maintient pas par la force des rouages, mais par la foi de ceux qui les portent. »",
+          "italic": true
+        },
+        {
+          "id": "id57",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Approche théologique",
+          "paragraphs": [
+            "Les Adeptes incarnent l'orthodoxie du culte dans toute sa rigueur : la chair est une erreur de conception à corriger, et chaque once de tissu organique remplacée par du métal est un pas de plus vers la perfection promise par Sirozor."
+          ]
+        },
+        {
+          "id": "id58",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "Rôle au sein du culte",
+              "b": "Officient dans les rares temples mécanistes tolérés, reçoivent les conversions, commandent en pratique l'essentiel de la hiérarchie du culte",
+              "c": ""
+            },
+            {
+              "a": "Rôle social",
+              "b": "Charisme austère mais efficace, recrutement et encadrement des fidèles ; plus proches du reste de la population que les autres Ordres",
+              "c": ""
+            },
+            {
+              "a": "Rôle sur le terrain",
+              "b": "Savent invoquer et diriger des assistants robotiques, extensions mécaniques de leur volonté, envoyés au contact quand leur propre corps doit rester en retrait",
+              "c": ""
+            },
+            {
+              "a": "Rapport au schisme d'Ahel",
+              "b": "Le considèrent comme une trahison plus douloureuse qu'une simple hérésie extérieure — la blessure d'un fils qui renierait son père. Beaucoup espèrent encore un retour des disciples d'Ahel dans le droit chemin.",
+              "c": ""
+            }
+          ]
+        },
+        {
+          "id": "id53",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Recrutement et conversions",
+          "paragraphs": [
+            "Les Adeptes seraient les seuls à convertir activement des non-Mécanistes de naissance — souvent des personnes malades, mutilées, ou simplement désespérées, à qui l'augmentation offre une seconde vie autant qu'une nouvelle foi. Cette porte d'entrée relativement ouverte expliquerait pourquoi les Adeptes restent, malgré l'orthodoxie rigide de leur doctrine, l'Ordre le plus proche émotionnellement du peuple."
+          ]
+        },
+        {
+          "id": "id54",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Titres internes",
+          "paragraphs": [
+            "Une hiérarchie de titres pourrait exister au sein des Adeptes, du simple officiant de temple local jusqu'à des figures de rang plus élevé faisant autorité sur plusieurs temples d'une même région — sans qu'aucun de ces titres ne confère une autorité sur les trois autres Ordres."
+          ]
+        },
+        {
+          "id": "id59",
+          "type": "pagebreak"
+        },
+        {
+          "id": "id63",
+          "type": "heading2",
+          "text": "Ordre d'Ahel"
+        },
+        {
+          "id": "id64",
+          "type": "paragraph",
+          "text": "« Sirozor n'a jamais exigé que nous nous détestions. »",
+          "italic": true
+        },
+        {
+          "id": "id65",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Approche théologique",
+          "paragraphs": [
+            "Pour les disciples d'Ahel, ce n'est pas le métal qui rapproche de Sirozor : c'est la compréhension. Une augmentation n'a de valeur que si elle permet de mieux penser, mieux apprendre ou mieux transmettre. Remplacer son corps sans approfondir sa compréhension du monde revient à confondre l'outil avec son objectif — pour eux, l'augmentation est un moyen, jamais une fin."
+          ]
+        },
+        {
+          "id": "id66",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "Origine",
+              "b": "Nommés d'après Ahel, figure autrefois vénérée du culte, dont la foi en Sirozor ne faiblit jamais mais qui rejetait l'idée que la chair devait être entièrement anéantie pour l'honorer",
+              "c": ""
+            },
+            {
+              "a": "Statut",
+              "b": "Exilés — rejetés par l'Imperium qui les considère comme des Mécanistes hérétiques, reniés par leurs propres frères d'ordre qui les jugent incomplets, inaboutis",
+              "c": ""
+            },
+            {
+              "a": "Mode de vie",
+              "b": "Discrétion et distance, survie en marge de l'Imperium ; augmentations plus légères et ciblées préservant une part organique du corps",
+              "c": ""
+            },
+            {
+              "a": "Particularité martiale",
+              "b": "Agilité et vivacité préservées ; talent redoutable pour les attaques éclair",
+              "c": ""
+            }
+          ]
+        },
+        {
+          "id": "id60",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Comment ils survivent",
+          "paragraphs": [
+            "Faute de temples ou de statut légal, les disciples d'Ahel vivraient probablement de métiers itinérants où leur compétence mécaniste reste utile sans exposer leur affiliation — réparateurs ambulants, mercenaires techniques, guérisseurs improvisés dans des villages reculés que les Adeptes officiels ne visitent jamais."
+          ]
+        },
+        {
+          "id": "id61",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Une tradition orale plutôt qu'écrite",
+          "paragraphs": [
+            "Exclus des archives officielles du culte, les disciples d'Ahel transmettraient leur doctrine essentiellement par voie orale, de maître à élève, ce qui expliquerait à la fois la survie fragile de leur théologie et l'absence de tout texte canonique."
+          ]
+        },
+        {
+          "id": "id62",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Des sympathisants discrets chez les orthodoxes",
+          "paragraphs": [
+            "Il n'est pas exclu que certains membres de Ordre de l'Esprit, sans jamais le reconnaître publiquement, nourrissent une sympathie discrète pour la position d'Ahel (qui en était une ancienne membre). En particulier  la théologie de l'Ordre de l'Esprit concernant le savoir se rapproche déjà, sans le vouloir, de l'argument d'Ahel selon lequel la compréhension prime sur le métal."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id77",
+      "title": "Le Schisme d'Ahel",
+      "blocks": [
+        {
+          "id": "id68",
+          "type": "paragraph",
+          "text": "Le principal schisme du culte porte le nom d'Ahel. L'orthodoxie enseigne que le remplacement progressif de la chair est la conséquence logique de la quête de transcendance : plus un fidèle abandonne les limites biologiques, plus il se rapproche de l'état auquel Sirozor est parvenu.",
+          "italic": false
+        },
+        {
+          "id": "id69",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "La position d'Ahel",
+          "paragraphs": [
+            "Ahel ne rejeta jamais cette finalité — elle remit en cause le raisonnement qui y conduisait. Selon elle, un corps encore partiellement organique pouvait tout autant témoigner de la grandeur de Sirozor qu'un corps intégralement mécanisé."
+          ]
+        },
+        {
+          "id": "id70",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Réaction de l'orthodoxie",
+          "paragraphs": [
+            "Cette position, jugée hérétique, valut à Ahel et à ses disciples l'exil. Les Adeptes de Sirozor considèrent ce schisme comme une trahison plus douloureuse qu'une simple hérésie extérieure — la blessure d'un fils qui aurait renié son père — et nombre d'entre eux nourrissent encore l'espoir, jamais tout à fait éteint, d'un retour des disciples d'Ahel dans le droit chemin."
+          ]
+        },
+        {
+          "id": "id71",
+          "type": "paragraph",
+          "text": "Malgré des siècles de rupture, les disciples d'Ahel continuent de vénérer Sirozor à leur manière, convaincus qu'un jour, le reste du culte reconnaîtra que la voie qu'ils ont choisie n'était pas une trahison, mais une fidélité plus honnête.",
+          "italic": false
+        },
+        {
+          "id": "id72",
+          "type": "heading2",
+          "text": "Qui était Ahel"
+        },
+        {
+          "id": "id73",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Une figure jamais canonisée ni diabolisée officiellement",
+          "paragraphs": [
+            "Le nom d'Ahel ne semble ni maudit ni effacé des textes orthodoxes — au contraire, il resterait cité avec une forme de tristesse plutôt que de haine, ce qui distingue ce schisme d'une hérésie ordinaire. Aucune source ne tranche si Ahel était une figure historique bien identifiée (une Adepte de haut rang, une fondatrice de l'un des premiers Ordres) ou déjà une figure semi-légendaire au moment du schisme — ce flou pourrait être conservé volontairement, à la manière du mystère qui entoure Sirozor lui-même."
+          ]
+        },
+        {
+          "id": "id74",
+          "type": "heading2",
+          "text": "Situation actuelle des disciples"
+        },
+        {
+          "id": "id75",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Répartition géographique",
+          "paragraphs": [
+            "Sans territoire reconnu, les disciples d'Ahel se répartissent en petits groupes mobiles ou en communautés isolées installées aux marges de l'Imperium — villages frontaliers, avant-postes proches de la forêt elfe ou des montagnes naines, régions où l'autorité impériale et le clergé officiel se font plus discrets."
+          ]
+        },
+        {
+          "id": "id76",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Une menace en déclin ou en résurgence ?",
+          "paragraphs": [
+            "Deux lectures possibles pour l'avenir narratif de l'Ordre : soit il s'agit d'une tradition mourante, de moins en moins nombreuse à mesure que les générations s'éloignent du souvenir direct d'Ahel ; soit, à l'inverse, une résurgence discrète serait en cours, portée par une nouvelle génération de Mécanistes déçus par la rigidité croissante de l'orthodoxie."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id89",
+      "title": "Place du culte dans l'Imperium",
+      "blocks": [
+        {
+          "id": "id78",
+          "type": "paragraph",
+          "text": "Les Hommes de l'Imperium suivent trois religions distinctes : la religion officielle vouée à un panthéon reconnu, le culte impérial voué à un Empereur disparu depuis des millénaires mais considéré comme une figure sacrée et divine (le trône n'ayant jamais été repourvu, une régence assurant la continuité du pouvoir), et le culte mécaniste de Sirozor, qui rejette les deux autres.",
+          "italic": false
+        },
+        {
+          "id": "id79",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Une tolérance de nécessité",
+          "paragraphs": [
+            "L'Imperium tolère le culte mécaniste par nécessité : les Mécanistes demeurent les seuls capables d'entretenir une grande partie des machines héritées des anciens âges, et sans eux, une part importante des infrastructures impériales cesserait progressivement de fonctionner. Cette dépendance leur assure une protection fragile — ils ne sont ni pleinement intégrés, ni véritablement acceptés."
+          ]
+        },
+        {
+          "id": "id80",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "Prêtres du culte officiel",
+              "b": "Suspicion, voire hostilité déclarée — voient dans le rejet des dieux une hérésie manifeste",
+              "c": ""
+            },
+            {
+              "a": "Peuple",
+              "b": "Admiration pour leurs prouesses techniques, mêlée de crainte face à leurs transformations",
+              "c": ""
+            },
+            {
+              "a": "Mécanistes eux-mêmes",
+              "b": "Considèrent cette méfiance comme le prix inévitable de leur mission ; ne cherchent pas à imposer leur foi par la force",
+              "c": ""
+            }
+          ]
+        },
+        {
+          "id": "id81",
+          "type": "heading2",
+          "text": "Statut légal et présence territoriale"
+        },
+        {
+          "id": "id82",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Un statut légal ambigu plutôt qu'écrit",
+          "paragraphs": [
+            "Rien n'indique l'existence d'un texte de loi impérial reconnaissant officiellement le culte — sa tolérance semble reposer sur un usage établi plutôt que sur un droit formel, ce qui le rend d'autant plus vulnérable à un changement de régence ou à une crise politique. Les rares temples mécanistes autorisés le sont probablement au cas par cas, par accord local avec un gouverneur ou une autorité régionale, plutôt que par un statut unique valable dans tout l'Imperium."
+          ]
+        },
+        {
+          "id": "id83",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Une présence concentrée près des infrastructures critiques",
+          "paragraphs": [
+            "Les implantations mécanistes se trouveraient logiquement là où leur compétence est la plus indispensable — à proximité des grandes machines impériales, ponts, fortifications, ou infrastructures minières et portuaires, plutôt que dispersées uniformément sur le territoire. Cela en ferait des acteurs discrets mais stratégiquement incontournables de la logistique impériale."
+          ]
+        },
+        {
+          "id": "id7_ojejp",
+          "type": "pagebreak"
+        },
+        {
+          "id": "id84",
+          "type": "heading2",
+          "text": "L'hypocrisie ordinaire"
+        },
+        {
+          "id": "id85",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Une tolérance à double visage",
+          "paragraphs": [
+            "Il ne serait pas surprenant que certains membres du clergé officiel, publiquement les plus virulents contre le culte, ou des personnalités influentes de l'Imperium, recourent en privé à des Mécanistes pour réparer un mécanisme précieux ou soigner un mal que la médecine conventionnelle ne peut traiter — une hypocrisie ordinaire, jamais avouée, qui nourrirait un ressentiment silencieux chez les Mécanistes eux-mêmes."
+          ]
+        },
+        {
+          "id": "id86",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Le peuple et les superstitions ordinaires",
+          "paragraphs": [
+            "Au niveau populaire, une forme de superstition non officielle pourrait exister : laisser un outil cassé sur le pas de sa porte dans l'espoir qu'un Mécaniste de passage le répare en échange du gîte, ou éviter de croiser le regard d'un fidèle trop visiblement augmenté par crainte superstitieuse plutôt que par mépris réel."
+          ]
+        },
+        {
+          "id": "id87",
+          "type": "crossref",
+          "text": "Voir REL-RE-001 pour le panthéon officiel de l'Imperium et le rôle du conseil impérial."
+        },
+        {
+          "id": "id88",
+          "type": "crossref",
+          "text": "Voir EMP-RE-003 pour le culte impérial, l'Empereur disparu et la régence royale."
+        }
+      ]
+    },
+    {
+      "id": "id99",
+      "title": "Hooks de Scénario",
+      "blocks": [
+        {
+          "id": "id90",
+          "type": "paragraph",
+          "text": "Six accroches centrées sur le culte de Sirozor, exploitables directement. Pour plus de hook religieux, aller voir les différents documents liés.",
+          "italic": false
+        },
+        {
+          "id": "id91",
+          "type": "card",
+          "badgeText": "HOOK 1",
+          "title": "Le fragment retrouvé",
+          "pitch": "Une expédition ou une fouille met la main sur un fragment d'archive technique antérieur à la guerre civile du VIIIe millénaire — peut-être lié à la conception d'IA décisionnelles ou de cerveaux artificiels.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Régional / mondial"
+            },
+            {
+              "a": "Complication",
+              "b": "Le fragment attire immédiatement l'attention de l'Ordre de l'Esprit, qui pourrait vouloir le récupérer par tous les moyens, légitimes ou non"
+            },
+            {
+              "a": "Rôle du culte",
+              "b": "Potentiel allié ou rival selon qui met la main dessus en premier"
+            }
+          ]
+        },
+        {
+          "id": "id92",
+          "type": "card",
+          "badgeText": "HOOK 2",
+          "title": "Le dernier souffle d'un Ancien",
+          "pitch": "Un des tout derniers Mécanistes au corps entièrement artificiel se sait proche de la défaillance totale. Il cherche quelqu'un — pas forcément un Mécaniste — pour recueillir un dernier fragment de savoir avant que sa mémoire ne s'efface.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Personnel, à résonance émotionnelle forte"
+            },
+            {
+              "a": "Complication",
+              "b": "Le savoir transmis pourrait être incomplet, erroné, ou convoité par plusieurs factions à la fois"
+            },
+            {
+              "a": "Rôle du culte",
+              "b": "L'Ordre de l'Esprit surveille de près ce genre de transmission et pourrait intervenir"
+            }
+          ]
+        },
+        {
+          "id": "id94",
+          "type": "card",
+          "badgeText": "HOOK 3",
+          "title": "Une main tendue par-delà le schisme",
+          "pitch": "Un Adepte de Sirozor orthodoxe et un Disciple d'Ahel se retrouvent forcés de collaborer — face à une menace commune, ou à cause d'un lien personnel antérieur au schisme.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Local à régional"
+            },
+            {
+              "a": "Complication",
+              "b": "Leur collaboration, si elle est découverte, pourrait être vue comme une trahison par leurs Ordres respectifs"
+            },
+            {
+              "a": "Rôle du culte",
+              "b": "Terrain d'exploration pour humaniser la fracture théologique sans la refermer artificiellement"
+            }
+          ]
+        },
+        {
+          "id": "id96",
+          "type": "pagebreak"
+        },
+        {
+          "id": "id95",
+          "type": "card",
+          "badgeText": "HOOK 4",
+          "title": "L'artefact ambigu",
+          "pitch": "Un mécanisme d'un genre inconnu, potentiellement antérieur même aux origines connues du culte, est découvert. Certains y voient un signe de Sirozor lui-même.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Mondial"
+            },
+            {
+              "a": "Complication",
+              "b": "Rien ne doit jamais confirmer ou infirmer qu'il s'agit réellement d'un signe de Sirozor — voir l'avertissement en section 1"
+            },
+            {
+              "a": "Rôle du culte",
+              "b": "Toutes les factions du culte pourraient converger vers cet artefact, chacune avec sa propre interprétation"
+            }
+          ]
+        },
+        {
+          "id": "id97",
+          "type": "card",
+          "badgeText": "HOOK 5",
+          "title": "L'expérience interdite",
+          "pitch": "Une rumeur circule : un membre de l'Ordre de l'Esprit aurait tenté, en secret, un transfert de conscience sur un fidèle mourant. Le résultat, s'il existe, ne ressemble à rien de connu.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Régional, forte charge morale"
+            },
+            {
+              "a": "Complication",
+              "b": "Si la rumeur est vraie, elle expose l'Ordre de l'Esprit à une crise interne majeure et pourrait raviver le débat sur les limites de l'expérimentation"
+            },
+            {
+              "a": "Rôle du culte",
+              "b": "Le Conclave pourrait être convoqué en urgence pour statuer sur ce cas"
+            }
+          ]
+        },
+        {
+          "id": "id98",
+          "type": "card",
+          "badgeText": "HOOK 6",
+          "title": "Le temple menacé",
+          "pitch": "L'un des rares temples mécanistes officiellement tolérés se retrouve visé par une agitation populaire ou une manœuvre politique locale cherchant à le faire fermer.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Local, à enjeu politique"
+            },
+            {
+              "a": "Complication",
+              "b": "Fermer le temple priverait la région d'un savoir technique dont elle dépend en silence — un dilemme pour les autorités locales elles-mêmes"
+            },
+            {
+              "a": "Rôle du culte",
+              "b": "Les Protecteurs pourraient être tentés d'intervenir avec plus de fermeté que ne le souhaiteraient les Adeptes, ouvrant une tension interne"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id108",
+      "title": "Annexes",
+      "blocks": [
+        {
+          "id": "id100",
+          "type": "heading2",
+          "text": "A. Chronologie indicative"
+        },
+        {
+          "id": "id101",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "Origine mythique",
+              "b": "Apparition légendaire de Sirozor — aucune date fiable, aucune preuve historique",
+              "c": ""
+            },
+            {
+              "a": "VIIIe millénaire",
+              "b": "Guerre civile (nom non encore établi) — destruction de la quasi-totalité des archives techniques du culte",
+              "c": ""
+            },
+            {
+              "a": "Depuis le VIIIe millénaire",
+              "b": "Perte progressive et cumulative du savoir de génération en génération ; les derniers Anciens au corps artificiel s'éteignent lentement",
+              "c": ""
+            },
+            {
+              "a": "Aujourd'hui — XIIe millénaire",
+              "b": "Le culte est toléré par nécessité ; il ne progresse plus, il lutte contre l'oubli",
+              "c": ""
+            }
+          ]
+        },
+        {
+          "id": "id103",
+          "type": "heading2",
+          "text": "B. Glossaire"
+        },
+        {
+          "id": "id104",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "Sirozor",
+              "b": "Le Dieu-Machine ; ancienne intelligence artificielle ayant, selon la légende, transcendé la matière et dispersé son esprit dans toutes les machines du monde",
+              "c": ""
+            },
+            {
+              "a": "Mécaniste",
+              "b": "Fidèle du culte de Sirozor, ayant renié les Saintes Écritures de l'Imperium",
+              "c": ""
+            },
+            {
+              "a": "L'Œuvre",
+              "b": "Désigne, dans le vocabulaire du culte, l'ensemble du grand réseau de machines dans lequel Sirozor s'est dissous",
+              "c": ""
+            },
+            {
+              "a": "L'Entretien",
+              "b": "Nom donné à la maintenance rituelle d'un mécanisme, pratiquée comme un acte de dévotion quotidienne",
+              "c": ""
+            },
+            {
+              "a": "Le Seuil",
+              "b": "Point théorique et non tranché au-delà duquel un fidèle cesserait d'être complètement humain sans pour autant avoir atteint la transcendance — débat ouvert au sein du culte.",
+              "c": ""
+            },
+            {
+              "a": "Les Reliques",
+              "b": "Machines antérieures à la guerre civile, retrouvées intactes ou fonctionnelles, traitées avec un statut quasi sacré",
+              "c": ""
+            },
+            {
+              "a": "Le Conclave",
+              "b": "Réunion irrégulière de représentants des Ordres (hors Ahel) pour trancher une question doctrinale majeure",
+              "c": ""
+            },
+            {
+              "a": "Cogitateurs auxiliaires",
+              "b": "Implants crâniens de l'Ordre de l'Esprit, croisant les données à grande vitesse",
+              "c": ""
+            },
+            {
+              "a": "Assistants robotiques",
+              "b": "Extensions mécaniques invoquées et dirigées par les Adeptes de Sirozor au combat",
+              "c": ""
+            },
+            {
+              "a": "Schisme d'Ahel",
+              "b": "Rupture théologique fondée sur l'idée que la compréhension, non le métal, rapproche de Sirozor",
+              "c": ""
+            }
+          ]
+        },
+        {
+          "id": "id105",
+          "type": "pagebreak"
+        },
+        {
+          "id": "id106",
+          "type": "heading2",
+          "text": "C. Documents liés"
+        },
+        {
+          "id": "id107",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "REL-RE-001",
+              "b": "Le panthéon officiel de l'Imperium et le conseil impérial",
+              "c": ""
+            },
+            {
+              "a": "EMP-RE-003",
+              "b": "Le culte impérial, l'Empereur disparu et la régence royale",
+              "c": ""
+            },
+            {
+              "a": "TRO-RE-004",
+              "b": "Le troisième culte humain, minoritaire et persécuté — encore à définir",
+              "c": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
