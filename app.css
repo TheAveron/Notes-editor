@@ -826,34 +826,151 @@ table.stat td.badge {
     font-family: var(--sans);
 }
 
-/* ---------- PRINT ---------- */
+/* ---------- Écran : page qui déborde, focus clavier ---------- */
+.page {
+    position: relative;
+}
+.page.page-overflow {
+    outline: 2px solid #c0392b;
+    outline-offset: -2px;
+}
+.page.page-overflow::after {
+    content: "⚠ " attr(data-overflow);
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    background: #c0392b;
+    color: #fff;
+    font: 600 10px/1.3 var(--sans);
+    padding: 3px 8px;
+    border-radius: 4px;
+}
+.swatch {
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+button:focus-visible,
+.swatch:focus-visible,
+.file-btn:focus-within {
+    outline: 2px solid var(--ui-accent);
+    outline-offset: 2px;
+}
+
+/* ---------- Modale du registre ---------- */
+.modal-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 50;
+    align-items: center;
+    justify-content: center;
+}
+.modal-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 22px;
+    width: 480px;
+    max-width: calc(100vw - 32px);
+    max-height: 80vh;
+    overflow-y: auto;
+}
+.modal-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal-head h3 {
+    margin: 0;
+}
+.modal-edit {
+    background: none;
+    border: 1px solid #d8d4c8;
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+    font-size: 13px;
+    color: #7a746a;
+}
+.modal-note {
+    font-size: 12.5px;
+    color: #666;
+}
+.modal-card .registry-list {
+    max-height: 280px;
+}
+.modal-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 14px;
+}
+.modal-btn {
+    font-size: 13px;
+    font-family: inherit;
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #f4f2ea;
+    color: #1a1a1a;
+    text-align: center;
+    cursor: pointer;
+}
+.modal-btn input {
+    display: none;
+}
+.modal-close {
+    margin-top: 12px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background: #1b1b1a;
+    color: #fff;
+}
+
+/* ---------- PRINT ----------
+   L'interface est retirée du flux (display:none) : avec visibility:hidden elle gardait sa
+   place et ajoutait des pages blanches. Les marges viennent du padding de .page ; la hauteur
+   est légèrement inférieure à 297 mm pour qu'aucun arrondi ne déborde sur une 2e feuille. */
 @media print {
-    body * {
-        visibility: hidden;
+    @page {
+        size: A4;
+        margin: 0;
     }
-    .preview-wrap,
-    .preview-wrap * {
-        visibility: visible;
+    .topbar,
+    .sidebar,
+    .modal-backdrop {
+        display: none !important;
+    }
+    #app,
+    .body-wrap {
+        display: block !important;
+        height: auto !important;
+        overflow: visible !important;
     }
     .preview-wrap {
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 0;
+        position: static !important;
+        overflow: visible !important;
+        padding: 0 !important;
         background: #fff;
         display: block;
     }
     .page {
         box-shadow: none;
         margin: 0;
-        break-after: page;
         width: auto;
+        min-height: 0 !important;
+        height: 296mm;
+        overflow: hidden;
+        outline: none !important;
+        break-after: page;
+    }
+    .page::after {
+        display: none !important;
     }
     .page:last-child {
         break-after: auto;
-    }
-    @page {
-        size: A4;
-        margin: 16mm;
     }
 }

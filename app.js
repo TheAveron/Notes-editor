@@ -146,17 +146,38 @@ function generateProposals(usedHexes, count) {
     return proposals;
 }
 
-/* ---------- Stockage (window.storage avec repli mémoire) ---------- */
+/* ---------- Stockage ----------
+   Ordre de préférence : window.storage (Claude Artifacts) → localStorage → mémoire. */
 const hasStorage =
     typeof window !== "undefined" &&
     window.storage &&
     typeof window.storage.get === "function";
+const STORAGE_PREFIX = "atelier-dossiers:";
+function getLocalStorage() {
+    try {
+        const t = "__atelier_test__";
+        window.localStorage.setItem(t, t);
+        window.localStorage.removeItem(t);
+        return window.localStorage;
+    } catch (e) {
+        return null; // fichier ouvert en file://, navigation privée, quota…
+    }
+}
+const localStore = getLocalStorage();
 let memoryStore = {};
 async function storeGet(key) {
     if (hasStorage) {
         try {
             const r = await window.storage.get(key);
             return r ? JSON.parse(r.value) : null;
+        } catch (e) {
+            return null;
+        }
+    }
+    if (localStore) {
+        try {
+            const v = localStore.getItem(STORAGE_PREFIX + key);
+            return v ? JSON.parse(v) : null;
         } catch (e) {
             return null;
         }
@@ -172,13 +193,38 @@ async function storeSet(key, value) {
             /* fall through */
         }
     }
+    if (localStore) {
+        try {
+            localStore.setItem(STORAGE_PREFIX + key, JSON.stringify(value));
+            return;
+        } catch (e) {
+            /* fall through */
+        }
+    }
     memoryStore[key] = value;
 }
 
 /* ---------- Registre des couleurs ---------- */
 let registry = []; // [{hex, title, docId}]
+// Ne garde que les entrées valides (couleur hexadécimale, id de document) et les normalise.
+function sanitizeRegistry(list) {
+    if (!Array.isArray(list)) return [];
+    return list
+        .filter(
+            (r) =>
+                r &&
+                typeof r.docId === "string" &&
+                r.docId &&
+                isValidHex(String(r.hex ?? "")),
+        )
+        .map((r) => ({
+            hex: normalizeHex(String(r.hex)),
+            title: String(r.title ?? "(sans titre)"),
+            docId: r.docId,
+        }));
+}
 async function loadRegistry() {
-    registry = (await storeGet("color-registry")) || [];
+    registry = sanitizeRegistry(await storeGet("color-registry"));
 }
 async function saveRegistry() {
     await storeSet("color-registry", registry);
@@ -193,9 +239,12 @@ async function registerColor(docId, hex, title) {
 }
 
 /* ---------- Modèle de document ---------- */
-let uidCounter = 1;
 function uid() {
-    return "id" + uidCounter++ + "_" + Math.random().toString(36).slice(2, 7);
+    const r =
+        typeof crypto !== "undefined" && crypto.randomUUID
+            ? crypto.randomUUID().slice(0, 8)
+            : Math.random().toString(36).slice(2, 10);
+    return "id_" + r;
 }
 
 function newBlock(type) {
@@ -257,13 +306,15 @@ function newSection() {
 // Dérive le préfixe du dossier (ex. "GDN") depuis le champ "N° de dossier" des métadonnées,
 // en cherchant la ligne dont le libellé évoque un numéro de dossier plutôt qu'en supposant
 // qu'elle est toujours en première position (l'utilisateur peut réordonner/renommer les lignes).
-function docPrefix() {
+function dossierNumber() {
     const row =
         doc.cover.meta.find((m) =>
             /dossier|n[°o]\s*de|code/i.test(m.a || ""),
         ) || doc.cover.meta[0];
-    const val = row && row.b ? row.b.trim() : "";
-    const prefix = val.split("-")[0].trim().toUpperCase();
+    return row && row.b ? row.b.trim() : "";
+}
+function docPrefix() {
+    const prefix = dossierNumber().split("-")[0].trim().toUpperCase();
     return prefix || "DOC";
 }
 // Code affiché pour la section d'index idx (0-based) : préfixe du dossier + numéro séquentiel à 2 chiffres.
@@ -297,6 +348,84 @@ function migrateDoc(d) {
         });
     });
     return d;
+}
+const BLOCK_TYPES = [
+    "heading2",
+    "paragraph",
+    "bullets",
+    "callout",
+    "table",
+    "card",
+    "crossref",
+    "pagebreak",
+];
+function asRows(rows, withC) {
+    return (Array.isArray(rows) ? rows : []).map((r) => {
+        const row = { a: String(r?.a ?? ""), b: String(r?.b ?? "") };
+        if (withC) row.c = String(r?.c ?? "");
+        return row;
+    });
+}
+// Complète/répare un bloc importé pour que le rendu ne puisse pas planter.
+function normalizeBlock(b) {
+    const out = { ...newBlock(b.type), ...b, type: b.type };
+    out.id = typeof b.id === "string" && b.id ? b.id : uid();
+    if (out.type === "bullets") {
+        out.items = (Array.isArray(b.items) ? b.items : []).map(String);
+    } else if (out.type === "callout") {
+        out.tag = TAG_META[b.tag] ? b.tag : "confirme";
+        out.paragraphs = (Array.isArray(b.paragraphs) ? b.paragraphs : []).map(
+            String,
+        );
+    } else if (out.type === "table") {
+        out.rows = asRows(b.rows, true);
+    } else if (out.type === "card") {
+        out.rows = asRows(b.rows, false);
+        if (isValidHex(String(b.accent ?? "")))
+            out.accent = normalizeHex(String(b.accent));
+        else delete out.accent;
+    }
+    return out;
+}
+// Fusionne un JSON importé avec un document par défaut : champs manquants, types invalides,
+// couleurs non hexadécimales et ids dupliqués sont corrigés avant tout rendu.
+function normalizeDoc(raw) {
+    const base = defaultDocument();
+    const d = raw && typeof raw === "object" ? raw : {};
+    const cover = { ...base.cover, ...(d.cover || {}) };
+    cover.meta = Array.isArray(cover.meta)
+        ? cover.meta.map((m) => ({
+              a: String(m?.a ?? ""),
+              b: String(m?.b ?? ""),
+          }))
+        : base.cover.meta;
+    const seen = new Set();
+    const sections = (Array.isArray(d.sections) ? d.sections : []).map((s) => {
+        let id = typeof s?.id === "string" && s.id ? s.id : uid();
+        while (seen.has(id)) id = uid();
+        seen.add(id);
+        return {
+            id,
+            title: String(s?.title ?? ""),
+            blocks: (Array.isArray(s?.blocks) ? s.blocks : [])
+                .filter((b) => b && BLOCK_TYPES.includes(b.type))
+                .map(normalizeBlock),
+        };
+    });
+    return migrateDoc({
+        id: typeof d.id === "string" && d.id ? d.id : uid(),
+        color: isValidHex(String(d.color ?? ""))
+            ? normalizeHex(String(d.color))
+            : base.color,
+        stampStyle: d.stampStyle === "red" ? "red" : "accent",
+        cover,
+        footerBrand:
+            typeof d.footerBrand === "string"
+                ? d.footerBrand
+                : base.footerBrand,
+        noteUsage: { ...base.noteUsage, ...(d.noteUsage || {}) },
+        sections: sections.length ? sections : [newSection()],
+    });
 }
 function defaultDocument() {
     return {
@@ -338,10 +467,12 @@ let proposals = [];
 
 /* ---------- Rendu : PREVIEW ---------- */
 function escapeHtml(s) {
-    return (s || "")
+    return String(s ?? "")
         .replace(/&/g, "&amp;")
         .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;");
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
 }
 function nl2p(text) {
     return escapeHtml(text).replace(/\n/g, "<br>");
@@ -375,8 +506,9 @@ function renderBlockHtml(b) {
         case "bullets":
             return `<ul class="bullets">${b.items.map((i) => `<li>${escapeHtml(i)}</li>`).join("")}</ul>`;
         case "callout": {
-            const meta = TAG_META[b.tag] || TAG_META.confirme;
-            return `<div class="callout" style="border-left-color:${CALLOUT_BORDER[b.tag]};background:${CALLOUT_BG[b.tag]};">
+            const tag = TAG_META[b.tag] ? b.tag : "confirme";
+            const meta = TAG_META[tag];
+            return `<div class="callout" style="border-left-color:${CALLOUT_BORDER[tag]};background:${CALLOUT_BG[tag]};">
         <span class="ctag" style="background:${meta.bg};">${meta.label}</span><span class="ctitle">${escapeHtml(b.title)}</span>
         ${b.paragraphs.map((p) => `<p>${escapeHtml(p)}</p>`).join("")}
       </div>`;
@@ -390,20 +522,27 @@ function renderBlockHtml(b) {
             }
             return `<table class="stat">${b.rows.map((r) => `<tr><td class="label">${escapeHtml(r.a)}</td><td>${escapeHtml(r.b)}</td></tr>`).join("")}</table>`;
         }
-        case "card":
-            return `<div class="card">
+        case "card": {
+            // Couleur d'accent facultative (ex. paliers/degrés de gravité) ; sinon style "hook" par défaut.
+            const acc = isValidHex(String(b.accent ?? ""))
+                ? normalizeHex(String(b.accent))
+                : null;
+            const cardStyle = acc
+                ? ` style="border-left-color:${acc};background:${derivePalette(acc).accentBg};"`
+                : "";
+            const headStyle = acc ? ` style="color:${acc};"` : "";
+            return `<div class="card"${cardStyle}>
         <div class="card-header">
-        <div class="chead">${escapeHtml(b.badgeText)}</div>
+        <div class="chead"${headStyle}>${escapeHtml(b.badgeText)}</div>
         <div class="dot-separator">·</div>
         <div class="ctitle2">${escapeHtml(b.title)}</div>
         </div>
         <p>${escapeHtml(b.pitch)}</p>
         <table>${b.rows.map((r) => `<tr><td>${escapeHtml(r.a)}</td><td>${escapeHtml(r.b)}</td></tr>`).join("")}</table>
       </div>`;
+        }
         case "crossref":
             return `<div class="crossref"><b>→ RENVOI</b> &nbsp;${escapeHtml(b.text)}</div>`;
-        case "pagebreak":
-            return `</div><div class="page" style="${styleVars}">${headerHtml}`;
         default:
             return "";
     }
@@ -433,14 +572,38 @@ function updateTocPages() {
     });
 }
 
+// Les modifications arrivent à chaque frappe : on regroupe les rendus en un seul par frame
+// et on planifie la sauvegarde automatique.
+let previewScheduled = false;
 function renderPreview() {
+    scheduleAutosave();
+    if (previewScheduled) return;
+    previewScheduled = true;
+    requestAnimationFrame(() => {
+        previewScheduled = false;
+        renderPreviewNow();
+    });
+}
+// Signale (cadre rouge à l'écran) les pages dont le contenu dépasse la hauteur d'une feuille A4.
+function markOverflowPages() {
+    const limit = (297 / 25.4) * 96; // A4 en pixels CSS
+    document.querySelectorAll("#preview .page").forEach((p) => {
+        const over = p.scrollHeight > limit + 2;
+        p.classList.toggle("page-overflow", over);
+        if (over)
+            p.dataset.overflow =
+                "Contenu trop long : la page déborde (ajoutez un saut de page)";
+        else delete p.dataset.overflow;
+    });
+}
+function renderPreviewNow() {
     const pal = derivePalette(doc.color);
     const stampColor = doc.stampStyle === "red" ? FIXED.red : pal.accent;
     const stampBg = doc.stampStyle === "red" ? FIXED.redBg : pal.accentBg;
     const styleVars = `--doc-accent:${pal.accent};--doc-ink:${pal.ink};--doc-inkmid:${pal.inkMid};--doc-card:${pal.card};--stamp-color:${stampColor};--stamp-bg:${stampBg};`;
 
     const header = () =>
-        `<div class="doc-header"><span>DOSSIER ${escapeHtml(doc.cover.meta[0]?.b || "")}</span><span>${escapeHtml(doc.footerBrand)}</span></div>`;
+        `<div class="doc-header"><span>DOSSIER ${escapeHtml(dossierNumber())}</span><span>${escapeHtml(doc.footerBrand)}</span></div>`;
     const footer = (n, total) =>
         `<div class="page-footer">— ${n} / ${total} —</div>`;
 
@@ -502,7 +665,6 @@ function renderPreview() {
     pagesInner.push(toc);
 
     // Sections de contenu (avec support des pagebreak)
-    // TODO: check if valid
     doc.sections.forEach((s, i) => {
         let currentPage = `<div class="sec-h1" id="${s.id}"><span class="code">${escapeHtml(sectionCode(i))}</span><span class="dot-separator">·</span>${escapeHtml(s.title)}
         </div>`;
@@ -536,6 +698,7 @@ function renderPreview() {
 
     document.getElementById("preview").innerHTML = html;
     updateTocPages();
+    markOverflowPages();
 }
 
 /* ---------- Rendu : SIDEBAR (formulaires) ---------- */
@@ -547,11 +710,13 @@ function el(tag, attrs, children) {
             e.addEventListener(k.substring(2), attrs[k]);
         else e.setAttribute(k, attrs[k]);
     }
+    if (attrs && attrs.title && !attrs["aria-label"])
+        e.setAttribute("aria-label", attrs.title);
     (children || []).forEach((c) => c && e.appendChild(c));
     return e;
 }
 
-async function selectColor(hex, isDefault) {
+async function selectColor(hex) {
     doc.color = normalizeHex(hex);
     await registerColor(doc.id, doc.color, doc.cover.title);
     renderSidebar();
@@ -567,9 +732,12 @@ function renderColorPicker(container) {
     const grid = el("div", { class: "swatch-grid" });
     proposals.forEach((hex, i) => {
         const isSelected = normalizeHex(doc.color) === normalizeHex(hex);
-        const sw = el("div", {
+        const sw = el("button", {
+            type: "button",
             class: "swatch" + (isSelected ? " selected" : ""),
-            onclick: () => selectColor(hex, i === 0),
+            title: "Choisir la couleur " + hex,
+            "aria-pressed": String(isSelected),
+            onclick: () => selectColor(hex),
         });
         sw.appendChild(
             el("div", {
@@ -639,10 +807,25 @@ function renderColorPicker(container) {
         colorInput.value = norm;
         selectColor(norm);
     }
+    // Pendant le glissement dans le sélecteur natif, on ne reconstruit pas la sidebar
+    // (sinon le sélecteur est détruit en cours d'usage) : aperçu seul, validation au "change".
     colorInput.addEventListener("input", () => {
-        textInput.value = colorInput.value;
-        tryCustom(colorInput.value);
+        const norm = normalizeHex(colorInput.value);
+        textInput.value = norm;
+        const clash = registry.find(
+            (r) => r.docId !== doc.id && normalizeHex(r.hex) === norm,
+        );
+        if (clash) {
+            msg.className = "hex-warning";
+            msg.textContent = `Déjà utilisée par « ${clash.title} ».`;
+            return;
+        }
+        msg.className = "hex-ok";
+        msg.textContent = "Couleur disponible ✓";
+        doc.color = norm;
+        renderPreview();
     });
+    colorInput.addEventListener("change", () => tryCustom(colorInput.value));
     textInput.addEventListener("change", () => tryCustom(textInput.value));
     customWrap.appendChild(colorInput);
     customWrap.appendChild(textInput);
@@ -730,6 +913,7 @@ function renderDocSettings(container) {
         fieldText("Titre principal", doc.cover.title, (v) => {
             doc.cover.title = v;
             renderPreview();
+            syncRegistryTitle();
         }),
     );
     box.appendChild(
@@ -779,6 +963,7 @@ function renderDocSettings(container) {
             "button",
             {
                 class: "icon-btn danger",
+                title: "Supprimer la ligne",
                 onclick: () => {
                     doc.cover.meta.splice(i, 1);
                     renderSidebar();
@@ -1031,6 +1216,7 @@ function renderBlockEditor(s, b, idx) {
                 "button",
                 {
                     class: "icon-btn danger",
+                    title: "Supprimer la puce",
                     onclick: () => {
                         b.items.splice(i, 1);
                         renderSidebar();
@@ -1245,6 +1431,16 @@ function renderBlockEditor(s, b, idx) {
                 true,
             ),
         );
+        body.appendChild(
+            fieldText(
+                "Couleur d'accent (hex, facultatif)",
+                b.accent || "",
+                (v) => {
+                    b.accent = isValidHex(v) ? normalizeHex(v) : "";
+                    renderPreview();
+                },
+            ),
+        );
         const rows = el("div", { class: "rows-list" });
         b.rows.forEach((r, i) => {
             rows.appendChild(
@@ -1457,8 +1653,26 @@ async function removeRegistryEntry(idx) {
     renderSidebar();
 }
 
+// Garde le titre affiché dans le registre aligné sur le titre du document en cours d'édition.
+let registryTitleTimer;
+function syncRegistryTitle() {
+    clearTimeout(registryTitleTimer);
+    registryTitleTimer = setTimeout(async () => {
+        const entry = registry.find((r) => r.docId === doc.id);
+        const title = doc.cover.title || "(sans titre)";
+        if (!entry || entry.title === title) return;
+        entry.title = title;
+        await saveRegistry();
+        const old = document.querySelector("#sidebar .registry-panel");
+        if (old) {
+            const tmp = document.createElement("div");
+            renderRegistryPanel(tmp);
+            old.replaceWith(tmp.firstChild);
+        }
+    }, 400);
+}
 function renderRegistryPanel(container) {
-    const box = el("div", { class: "side-section" });
+    const box = el("div", { class: "side-section registry-panel" });
     const titleRow = el("div", {
         style: "display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;",
     });
@@ -1541,11 +1755,13 @@ function renderRegistryPanel(container) {
 
 function renderSidebar() {
     const sidebar = document.getElementById("sidebar");
+    const scrollTop = sidebar.scrollTop; // évite de remonter en haut à chaque ajout/suppression
     sidebar.innerHTML = "";
     renderColorPicker(sidebar);
     renderDocSettings(sidebar);
     renderSections(sidebar);
     renderRegistryPanel(sidebar);
+    sidebar.scrollTop = scrollTop;
 }
 
 /* ---------- Export / Import JSON ---------- */
@@ -1585,9 +1801,9 @@ document.getElementById("file-import").addEventListener("change", (e) => {
     reader.onload = async () => {
         try {
             const imported = JSON.parse(reader.result);
-            if (!imported.sections) throw new Error("format invalide");
-            doc = migrateDoc(imported);
-            if (!doc.id) doc.id = uid();
+            if (!imported || !Array.isArray(imported.sections))
+                throw new Error("format invalide");
+            doc = normalizeDoc(imported);
             proposals = [
                 doc.color,
                 ...generateProposals([...registryHexes(), doc.color], 4),
@@ -1603,6 +1819,7 @@ document.getElementById("file-import").addEventListener("change", (e) => {
     e.target.value = "";
 });
 document.getElementById("btn-pdf").addEventListener("click", () => {
+    renderPreviewNow(); // s'assure que l'aperçu est à jour avant impression
     window.print();
 });
 document.getElementById("btn-new").addEventListener("click", async () => {
@@ -1632,10 +1849,10 @@ function renderRegistryModalList() {
         const row = document.createElement("div");
         row.className = "registry-row";
         const left = document.createElement("span");
-        left.innerHTML = `<span class="rc" style="background:${r.hex};"></span>${escapeHtml(r.title)}`;
+        left.innerHTML = `<span class="rc" style="background:${escapeHtml(r.hex)};"></span>${escapeHtml(r.title)}`;
         const right = document.createElement("span");
         right.style.cssText = "display:flex;align-items:center;gap:8px;";
-        right.innerHTML = `<span style="font-family:Consolas,monospace;color:#888;">${r.hex}</span>`;
+        right.innerHTML = `<span style="font-family:Consolas,monospace;color:#888;">${escapeHtml(r.hex)}</span>`;
         if (registryEditMode) {
             const delBtn = document.createElement("button");
             delBtn.className = "icon-btn danger";
@@ -1663,8 +1880,17 @@ document.getElementById("btn-modal-edit").addEventListener("click", () => {
 document
     .getElementById("btn-registry")
     .addEventListener("click", openRegistryModal);
-document.getElementById("btn-registry-close").addEventListener("click", () => {
+function closeRegistryModal() {
     document.getElementById("registry-modal").style.display = "none";
+}
+document
+    .getElementById("btn-registry-close")
+    .addEventListener("click", closeRegistryModal);
+document.getElementById("registry-modal").addEventListener("click", (e) => {
+    if (e.target.id === "registry-modal") closeRegistryModal(); // clic sur le fond
+});
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeRegistryModal();
 });
 document.getElementById("btn-registry-export").addEventListener("click", () => {
     downloadFile(
@@ -1683,9 +1909,7 @@ document.getElementById("registry-import").addEventListener("change", (e) => {
             if (!Array.isArray(imported))
                 throw new Error("format invalide (liste attendue)");
             const byDocId = new Map(registry.map((r) => [r.docId, r]));
-            imported.forEach((r) => {
-                if (r.hex && r.docId) byDocId.set(r.docId, r);
-            });
+            sanitizeRegistry(imported).forEach((r) => byDocId.set(r.docId, r));
             registry = Array.from(byDocId.values());
             await saveRegistry();
             openRegistryModal();
@@ -1698,12 +1922,34 @@ document.getElementById("registry-import").addEventListener("change", (e) => {
     e.target.value = "";
 });
 
+/* ---------- Sauvegarde automatique du document en cours ---------- */
+let autosaveTimer;
+function scheduleAutosave() {
+    clearTimeout(autosaveTimer);
+    autosaveTimer = setTimeout(() => storeSet("current-doc", doc), 500);
+}
+// Dernière chance avant fermeture de l'onglet (localStorage est synchrone).
+window.addEventListener("pagehide", () => {
+    clearTimeout(autosaveTimer);
+    storeSet("current-doc", doc);
+});
+
 /* ---------- Initialisation ---------- */
 (async function init() {
     await loadRegistry();
-    proposals = generateProposals(registryHexes(), 5);
-    doc.color = proposals[0];
+    const saved = await storeGet("current-doc");
+    if (saved && Array.isArray(saved.sections)) {
+        // Reprise du document en cours : on garde sa couleur et son id.
+        doc = normalizeDoc(saved);
+        proposals = [
+            doc.color,
+            ...generateProposals([...registryHexes(), doc.color], 4),
+        ];
+    } else {
+        proposals = generateProposals(registryHexes(), 5);
+        doc.color = proposals[0];
+    }
     await registerColor(doc.id, doc.color, doc.cover.title);
     renderSidebar();
-    renderPreview();
+    renderPreviewNow();
 })();
