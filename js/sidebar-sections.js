@@ -1,9 +1,137 @@
 /* Atelier de Dossiers — Panneau « Sections & contenu » : éditeurs de blocs. */
 
-function blockHeader(label, s, b, idx) {
+// Types de blocs proposés à l'ajout, dans l'ordre des menus.
+const BLOCK_MENU = [
+    ["heading2", "Sous-titre"],
+    ["paragraph", "Paragraphe"],
+    ["bullets", "Liste"],
+    ["callout", "Callout"],
+    ["table", "Tableau"],
+    ["card", "Fiche"],
+    ["crossref", "Renvoi"],
+    ["pagebreak", "Saut de page"],
+];
+
+// Sections repliées dans le panneau (état d'affichage, non enregistré dans le document).
+const collapsedSections = new Set();
+
+/* ---------- Glisser-déposer (blocs et sections) ----------
+   Implémenté avec les événements pointeur plutôt que l'API HTML5 drag & drop : celle-ci
+   interrompt le glissement au passage sur les zones de texte des blocs, et ne fonctionne
+   pas au tactile. Les cibles portent data-drop="block" ou "section" et leur callback. */
+let drag = null; // { data, container, target, after }
+
+function clearDropMarks() {
+    document
+        .querySelectorAll("#sidebar .drop-before, #sidebar .drop-after")
+        .forEach((e) => e.classList.remove("drop-before", "drop-after"));
+}
+function makeDragHandle(container, data, title) {
+    const h = el("span", { class: "drag-handle", title }, [
+        document.createTextNode("⠿"),
+    ]);
+    h.addEventListener("pointerdown", (e) => {
+        if (e.button !== 0) return;
+        e.preventDefault();
+        drag = { data, container, target: null, after: false };
+        container.classList.add("dragging");
+        document.body.classList.add("is-dragging");
+        window.addEventListener("pointermove", onDragMove);
+        window.addEventListener("pointerup", onDragEnd);
+        window.addEventListener("pointercancel", onDragCancel);
+        window.addEventListener("keydown", onDragKey);
+    });
+    return h;
+}
+function onDragMove(e) {
+    if (!drag) return;
+    clearDropMarks();
+    drag.target = null;
+    // Défilement automatique du panneau près de ses bords
+    const sidebar = document.getElementById("sidebar");
+    const sr = sidebar.getBoundingClientRect();
+    if (e.clientY < sr.top + 40) sidebar.scrollTop -= 14;
+    else if (e.clientY > sr.bottom - 40) sidebar.scrollTop += 14;
+
+    const under = document.elementFromPoint(e.clientX, e.clientY);
+    const t = under && under.closest(`[data-drop="${drag.data.kind}"]`);
+    if (!t || t === drag.container || !sidebar.contains(t)) return;
+    const r = t.getBoundingClientRect();
+    drag.target = t;
+    drag.after = e.clientY > r.top + r.height / 2;
+    t.classList.add(drag.after ? "drop-after" : "drop-before");
+}
+function endDrag() {
+    window.removeEventListener("pointermove", onDragMove);
+    window.removeEventListener("pointerup", onDragEnd);
+    window.removeEventListener("pointercancel", onDragCancel);
+    window.removeEventListener("keydown", onDragKey);
+    document.body.classList.remove("is-dragging");
+    clearDropMarks();
+    const d = drag;
+    drag = null;
+    if (d) d.container.classList.remove("dragging");
+    return d;
+}
+function onDragEnd() {
+    const d = endDrag();
+    if (d && d.target && d.target._onDrop) d.target._onDrop(d.data, d.after);
+}
+function onDragCancel() {
+    endDrag();
+}
+function onDragKey(e) {
+    if (e.key === "Escape") endDrag();
+}
+// onDrop(data, after) : after indique si l'on dépose après (moitié basse) ou avant.
+function makeDropTarget(elm, kind, onDrop) {
+    elm.setAttribute("data-drop", kind);
+    elm._onDrop = onDrop;
+}
+function moveItem(fromList, fromIdx, toList, toIdx) {
+    const [it] = fromList.splice(fromIdx, 1);
+    if (fromList === toList && fromIdx < toIdx) toIdx--;
+    toList.splice(toIdx, 0, it);
+}
+function moveBlockTo(d, targetSection, targetIdx) {
+    const from = doc.sections.find((x) => x.id === d.sid);
+    if (!from) return;
+    moveItem(from.blocks, d.idx, targetSection.blocks, targetIdx);
+    collapsedSections.delete(targetSection.id);
+    update({ structure: true });
+}
+
+function blockHeader(label, s, b, idx, item) {
     const head = el("div", { class: "block-item-head" });
+    head.appendChild(
+        makeDragHandle(
+            item,
+            { kind: "block", sid: s.id, idx },
+            "Glisser pour déplacer le bloc (y compris vers une autre section)",
+        ),
+    );
     head.appendChild(el("span", {}, [document.createTextNode(label)]));
     head.appendChild(el("span", { class: "grow" }));
+    // Insertion d'un nouveau bloc juste après celui-ci
+    const ins = el("select", {
+        class: "insert-select",
+        title: "Insérer un bloc après celui-ci",
+        onchange: (e) => {
+            const t = e.target.value;
+            if (!t) return;
+            s.blocks.splice(idx + 1, 0, newBlock(t));
+            update({ structure: true });
+        },
+    });
+    ins.appendChild(el("option", { value: "" }, [document.createTextNode("＋")]));
+    BLOCK_MENU.forEach(([t, l]) =>
+        ins.appendChild(
+            el("option", { value: t }, [
+                document.createTextNode("Insérer après : " + l),
+            ]),
+        ),
+    );
+    head.appendChild(ins);
     head.appendChild(
         el(
             "button",
@@ -87,7 +215,11 @@ function renderBlockEditor(s, b, idx) {
         crossref: "Renvoi",
         pagebreak: "Saut de page",
     };
-    item.appendChild(blockHeader(labels[b.type] || b.type, s, b, idx));
+    item.setAttribute("data-bid", b.id);
+    item.appendChild(blockHeader(labels[b.type] || b.type, s, b, idx, item));
+    makeDropTarget(item, "block", (d, after) =>
+        moveBlockTo(d, s, idx + (after ? 1 : 0)),
+    );
     const body = el("div", { class: "block-item-body" });
 
     if (b.type === "heading2") {
@@ -442,8 +574,38 @@ function renderBlockEditor(s, b, idx) {
 }
 
 function renderSectionCard(s, idx) {
-    const card = el("div", { class: "section-card", "data-sid": s.id });
+    const collapsed = collapsedSections.has(s.id);
+    const card = el("div", {
+        class: "section-card" + (collapsed ? " collapsed" : ""),
+        "data-sid": s.id,
+    });
     const head = el("div", { class: "section-head" });
+    head.appendChild(
+        makeDragHandle(
+            card,
+            { kind: "section", sid: s.id, idx },
+            "Glisser pour déplacer la section",
+        ),
+    );
+    head.appendChild(
+        el(
+            "button",
+            {
+                class: "icon-btn fold-btn",
+                title: collapsed ? "Déplier la section" : "Replier la section",
+                onclick: () => {
+                    if (collapsed) collapsedSections.delete(s.id);
+                    else collapsedSections.add(s.id);
+                    renderSidebar();
+                },
+            },
+            [document.createTextNode(collapsed ? "▸" : "▾")],
+        ),
+    );
+    makeDropTarget(card, "section", (d, after) => {
+        moveItem(doc.sections, d.idx, doc.sections, idx + (after ? 1 : 0));
+        update({ structure: true });
+    });
     const codeBadge = el(
         "span",
         {
@@ -507,6 +669,13 @@ function renderSectionCard(s, idx) {
                 class: "icon-btn danger",
                 title: "Supprimer la section",
                 onclick: () => {
+                    if (
+                        s.blocks.length &&
+                        !confirm(
+                            `Supprimer la section « ${s.title || sectionCode(idx)} » et ses ${s.blocks.length} bloc(s) ?\n(Ctrl+Z permet d'annuler.)`,
+                        )
+                    )
+                        return;
                     doc.sections.splice(idx, 1);
                     update({ structure: true });
                 },
@@ -515,25 +684,34 @@ function renderSectionCard(s, idx) {
         ),
     );
     card.appendChild(head);
+    if (collapsed) {
+        const n = s.blocks.length;
+        card.appendChild(
+            el("div", { class: "collapsed-summary" }, [
+                document.createTextNode(`${n} bloc${n > 1 ? "s" : ""} — section repliée`),
+            ]),
+        );
+        return card;
+    }
 
     const blockList = el("div", { class: "block-list" });
     s.blocks.forEach((b, bidx) =>
         blockList.appendChild(renderBlockEditor(s, b, bidx)),
     );
+    // Section vide : on peut quand même y déposer un bloc.
+    if (!s.blocks.length) {
+        blockList.appendChild(
+            el("div", { class: "empty-drop" }, [
+                document.createTextNode("Section vide — déposez un bloc ici"),
+            ]),
+        );
+        makeDropTarget(blockList, "block", (d) => moveBlockTo(d, s, 0));
+    }
     card.appendChild(blockList);
 
     const menu = el("div", { class: "add-block-menu" });
-    const types = [
-        ["heading2", "+ Sous-titre"],
-        ["paragraph", "+ Paragraphe"],
-        ["bullets", "+ Liste"],
-        ["callout", "+ Callout"],
-        ["table", "+ Tableau"],
-        ["card", "+ Fiche"],
-        ["crossref", "+ Renvoi"],
-        ["pagebreak", "+ Saut de page"],
-    ];
-    types.forEach(([t, label]) => {
+    BLOCK_MENU.forEach(([t, l]) => {
+        const label = "+ " + l;
         menu.appendChild(
             el(
                 "button",
@@ -563,6 +741,32 @@ function renderSections(container) {
     box.appendChild(
         el("div", { class: "format-hint", html: FORMAT_HINT_HTML }),
     );
+    const foldAll = el("div", { class: "fold-all" });
+    foldAll.appendChild(
+        el(
+            "button",
+            {
+                onclick: () => {
+                    doc.sections.forEach((s) => collapsedSections.add(s.id));
+                    renderSidebar();
+                },
+            },
+            [document.createTextNode("▸ Tout replier")],
+        ),
+    );
+    foldAll.appendChild(
+        el(
+            "button",
+            {
+                onclick: () => {
+                    collapsedSections.clear();
+                    renderSidebar();
+                },
+            },
+            [document.createTextNode("▾ Tout déplier")],
+        ),
+    );
+    box.appendChild(foldAll);
     doc.sections.forEach((s, idx) =>
         box.appendChild(renderSectionCard(s, idx)),
     );

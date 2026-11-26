@@ -92,9 +92,20 @@ a {
     opacity: 0.35;
     cursor: default;
 }
+.topbar .status-line {
+    display: flex;
+    gap: 10px;
+    margin-top: 2px;
+    letter-spacing: 0.02em;
+    text-transform: none;
+    font-weight: 400;
+}
 .topbar .save-status {
     font-size: 11px;
     opacity: 0.65;
+}
+.topbar .save-status:empty {
+    display: none;
 }
 .topbar .save-status.warn {
     color: #f0b8bf;
@@ -317,6 +328,19 @@ a {
     padding: 0 3px;
 }
 
+/* Libellés posés directement dans un panneau ou un bloc (hors .field) */
+.block-item-body > label {
+    font-size: 12px;
+    color: var(--ui-ink);
+}
+.side-section > label {
+    display: block;
+    font-size: 11px;
+    color: var(--ui-muted);
+    font-weight: 600;
+    margin: 8px 0 3px 0;
+}
+
 /* Sections / blocks tree */
 .section-card {
     border: 1px solid var(--ui-line);
@@ -461,7 +485,7 @@ a {
     field-sizing: content;
 }
 .rowpair input.narrow {
-    flex: 0 0 70px;
+    flex: 0 0 120px;
     font-family: var(--mono);
 }
 .row-value {
@@ -529,6 +553,88 @@ a {
 }
 .add-block-menu button:hover {
     background: #f4f2ea;
+}
+
+/* Replier / déplier */
+.fold-all {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+.fold-all button {
+    font-size: 11px;
+    padding: 4px 8px;
+    border: 1px solid #d8d4c8;
+    background: #fff;
+    border-radius: 4px;
+    color: var(--ui-muted);
+}
+.fold-all button:hover {
+    background: #f4f2ea;
+    color: var(--ui-ink);
+}
+.section-card.collapsed .section-head {
+    border-radius: 8px;
+}
+.collapsed-summary {
+    font-size: 11px;
+    color: var(--ui-muted);
+    padding: 6px 12px 8px;
+}
+
+/* Glisser-déposer */
+.drag-handle {
+    cursor: grab;
+    touch-action: none;
+    color: #b3ad9c;
+    font-size: 14px;
+    line-height: 1;
+    padding: 0 2px;
+    user-select: none;
+}
+.drag-handle:hover {
+    color: var(--ui-ink);
+}
+.dragging {
+    opacity: 0.45;
+}
+body.is-dragging,
+body.is-dragging * {
+    cursor: grabbing !important;
+    user-select: none;
+}
+.drop-before {
+    box-shadow: 0 -3px 0 0 var(--ui-accent);
+}
+.drop-after {
+    box-shadow: 0 3px 0 0 var(--ui-accent);
+}
+.empty-drop {
+    font-size: 11px;
+    color: #aaa;
+    text-align: center;
+    padding: 10px;
+    border: 1px dashed #d8d4c8;
+    border-radius: 6px;
+}
+
+/* Insertion d'un bloc après un autre */
+.insert-select {
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    border: 1px solid #d8d4c8;
+    border-radius: 4px;
+    background: none;
+    color: var(--ui-muted);
+    font-size: 13px;
+    text-align: center;
+    appearance: none;
+    cursor: pointer;
+}
+.insert-select:hover {
+    background: #eae6d8;
+    color: var(--ui-ink);
 }
 
 .add-section-btn {
