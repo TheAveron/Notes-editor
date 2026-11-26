@@ -39,7 +39,7 @@
   "sections": [
     {
       "id": "id_11a7415a",
-      "title": "Définition & origine du don",
+      "title": "Définition du don",
       "blocks": [
         {
           "id": "id_b772b86e",
@@ -51,18 +51,13 @@
           ]
         },
         {
-          "id": "id_6c9515f4",
+          "id": "id_20f5b72a",
           "type": "callout",
-          "tag": "confirme",
-          "title": "Origine : la connexion au Plan Éthéré",
+          "tag": "attention",
+          "title": "Origine véritable du don",
           "paragraphs": [
-            "La capacité à créer des liens n'est pas un talent isolé : elle découle du fait que l'individu est connecté au Plan Éthéré (voir MEN-01). C'est cette même connexion qui, à une échelle bien plus dangereuse, expose aussi les individus liés à la prédation des créatures de ce plan (voir MEN-03)."
+            "L'origine véritable du don relève d'un savoir de niveau supérieur et n'est pas traitée dans ce dossier (voir MEN-AN-003)."
           ]
-        },
-        {
-          "id": "id_deb7ca56",
-          "type": "crossref",
-          "text": "Pour la mécanique de vulnérabilité associée aux liens, voir MEN-03 — Facteurs de vulnérabilité."
         }
       ]
     },
@@ -104,15 +99,6 @@
           "title": "Délai et rareté selon l'espèce visée",
           "paragraphs": [
             "Rien ne précise combien de temps demande la Voie 3 selon l'espèce ciblée. Il est cohérent avec le reste du système de supposer que ce délai croît fortement avec le niveau de conscience de l'espèce visée (voir LIE-06) : quelques semaines ou mois pour un animal ordinaire, sans doute des années pour un Golem, un Treant ou un élémentaire majeur — si tant est qu'un individu de ces espèces accepte même d'entamer une telle relation."
-          ]
-        },
-        {
-          "id": "id_9873f471",
-          "type": "callout",
-          "tag": "attention",
-          "title": "Ne pas confondre avec le Rituel de Transmission",
-          "paragraphs": [
-            "Le Rituel de Transmission entre un Gardien sortant et son successeur (GDN-03) n'est pas un lien au sens de ce dossier : il s'agit d'une absorption totale d'âme et de puissance entre deux Hommes, un mécanisme distinct, propre à la lignée des Gardiens."
           ]
         }
       ]
@@ -173,9 +159,9 @@
           "id": "id_7b1c015b",
           "type": "callout",
           "tag": "confirme",
-          "title": "Amplification par la strite et par la Tour",
+          "title": "Amplification par la strite",
           "paragraphs": [
-            "Le minerai de strite, extrait au nord de Narmatin, amplifie les capacités télépathiques de ceux qui le portent ou l'utilisent. La Tour du Cinquième Point Cardinal va bien plus loin : elle démultiplie les capacités du Gardien dans des proportions qu'aucun entraînement ordinaire ne peut atteindre (voir GDN-02)."
+            "Le minerai de strite, extrait au nord de Narmatin, amplifie les capacités télépathiques de ceux qui le portent ou l'utilisent."
           ]
         },
         {
@@ -400,33 +386,13 @@
       ]
     },
     {
-      "id": "id_8399f9f0",
-      "title": "Le lien comme vulnérabilité",
-      "blocks": [
-        {
-          "id": "id_efb7024b",
-          "type": "callout",
-          "tag": "confirme",
-          "title": "Rappel de la mécanique de vulnérabilité",
-          "paragraphs": [
-            "Un individu sans lien laisse un espace psychique vacant, plus facile à occuper pour une créature du Plan Éthéré. À l'inverse, un individu aux liens nombreux devient une cible prioritaire — perçu comme une menace potentielle — tout en étant rendu plus vulnérable par l'affaiblissement de sa garde inconsciente. Le détail complet de cette mécanique se trouve dans MEN-03."
-          ]
-        },
-        {
-          "id": "id_53c2a8ed",
-          "type": "crossref",
-          "text": "Voir MEN-03 — Facteurs de vulnérabilité, et MEN-04 pour la hiérarchie des créatures qui exploitent cette vulnérabilité."
-        }
-      ]
-    },
-    {
       "id": "id_0e56779a",
       "title": "Hooks de scénario",
       "blocks": [
         {
           "id": "id_6944eb73",
           "type": "paragraph",
-          "text": "Six accroches prêtes à l'emploi, centrées sur la mécanique des liens plutôt que sur la Tour ou le Plan Éthéré directement.",
+          "text": "Six accroches prêtes à l'emploi, centrées sur la mécanique des liens.",
           "italic": false
         },
         {
@@ -624,7 +590,7 @@
             },
             {
               "a": "GDN-AN-002",
-              "b": "Le Gardien de la Tour — mécanisme de succession, distinct du lien (voir Attention MJ, LIE-02).",
+              "b": "Le Gardien de la Tour — mécanisme de succession, distinct du lien.",
               "c": ""
             },
             {
@@ -638,8 +604,8 @@
               "c": ""
             },
             {
-              "a": "MEN-01, MEN-03",
-              "b": "Origine de la connexion au Plan Éthéré et vulnérabilité associée aux liens.",
+              "a": "MEN-AN-003",
+              "b": "La Menace — secret de niveau supérieur touchant à l'origine du don.",
               "c": ""
             }
           ]

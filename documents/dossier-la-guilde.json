@@ -51,6 +51,15 @@
           ]
         },
         {
+          "id": "id_7e11da3d",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Une autonomie de fait",
+          "paragraphs": [
+            "En pratique, personne ne donne vraiment d'ordre à la Guilde : ceux qui dirigent l'Imperium lui « demandent gentiment » d'agir quand ils en ont besoin. L'Empereur a disparu depuis longtemps, et l'Imperium est aujourd'hui dirigé par une forme de régence dont le détail n'est pas encore précisé."
+          ]
+        },
+        {
           "id": "id_f60de028",
           "type": "crossref",
           "text": "Pour le détail complet du fonctionnement des liens, voir LIE-AN-004."
@@ -139,6 +148,16 @@
           "title": "Rôle et connaissance",
           "paragraphs": [
             "Le Haut Conseil des Archimages constitue l'échelon d'autorité juste en dessous de la Mage suprême. Ses membres savent que la Lignée existe, qu'elle doit être alimentée génération après génération, et que cela concerne la Tour — qui défend le monde contre une menace non identifiée. Ils ignorent tout de la nature exacte de cette menace."
+          ]
+        },
+        {
+          "id": "id_c0080a3a",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Un conseil d'administration, face à une direction exécutive",
+          "paragraphs": [
+            "Le Haut Conseil s'occupe de l'organisation de la Guilde, fait office de tribunal interne quand c'est nécessaire et valide la formation des apprentis. Le pouvoir exécutif appartient à la Mage suprême. La comparaison avec un conseil d'administration face à un directeur général est parlante sans être exacte, d'autant que la Mage suprême exerce une très grande influence sur le Haut Conseil.",
+            "Le Haut Conseil élit officiellement la Mage suprême ; en réalité, il valide par vote le choix de la Mage suprême en exercice (voir CEL-AN-005)."
           ]
         },
         {

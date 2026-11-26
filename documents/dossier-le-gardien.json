@@ -215,7 +215,7 @@
         {
           "id": "id22_a38bc",
           "type": "paragraph",
-          "text": "Trois gobelins nommés — Gork, Vork et Lock — assurent le service de la Tour : accueil, portage des affaires, installation des visiteurs. Ils apparaissent et disparaissent avec une discrétion quasi magique.",
+          "text": "Trois gobelins nommés — Gork, Vork et Lock — assurent le service de la Tour : accueil, portage des affaires, installation des visiteurs, ainsi que le relais des informations. Ils apparaissent et disparaissent avec une discrétion quasi magique.",
           "italic": false
         },
         {
@@ -255,6 +255,15 @@
           "title": "Principe général",
           "paragraphs": [
             "À chaque changement de Gardien, un rituel interdit dans le reste de l'Imperium — mais systématiquement pratiqué au sein de la Tour — permet au successeur d'absorber intégralement l'âme et la puissance du Gardien sortant. Cette absorption requiert le consentement plein et entier du Gardien sortant. Le Mage suprême de la Guilde des Animaliens, seul informé hors des murs de la Tour, tolère cette pratique sans l'approuver moralement, car il considère que le sort du monde dépend du maintien d'un Gardien fonctionnel."
+          ]
+        },
+        {
+          "id": "id_320093dd",
+          "type": "callout",
+          "tag": "attention",
+          "title": "Ne pas confondre avec un lien",
+          "paragraphs": [
+            "Le Rituel de Transmission n'est pas un lien télépathique au sens de LIE-AN-004 : il s'agit d'une absorption totale d'âme et de puissance entre deux Hommes, un mécanisme distinct, propre à la lignée des Gardiens."
           ]
         },
         {

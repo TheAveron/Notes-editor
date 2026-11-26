@@ -109,6 +109,188 @@
       ]
     },
     {
+      "id": "id_a4e5b391",
+      "title": "Fonction de Mage suprême",
+      "blocks": [
+        {
+          "id": "id_b0821133",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Autorité au sommet de la Guilde",
+          "paragraphs": [
+            "La Mage suprême est l'autorité au sommet de la Guilde des Animaliens. Sa connaissance de la Tour et de la menace qu'elle contient est complète (Niveau 6 · A4, voir ARC-03). Le Haut Conseil des Archimages siège juste en dessous d'elle, et les hiérarques locaux, comme celui de Narmatin, lui sont subordonnés."
+          ]
+        },
+        {
+          "id": "id_71e0c094",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Le pouvoir exécutif",
+          "paragraphs": [
+            "La Mage suprême détient le pouvoir exécutif de la Guilde, tandis que le Haut Conseil s'occupe plutôt de l'organisation, fait office de tribunal interne quand c'est nécessaire et valide la formation des apprentis. Cette répartition rappelle, sans lui correspondre tout à fait, celle d'un directeur général face à un conseil d'administration. La Mage suprême exerce une très grande influence sur le Haut Conseil (voir GLD-AN-001)."
+          ]
+        },
+        {
+          "id": "id_d3579049",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Une élection de pure forme",
+          "paragraphs": [
+            "La Mage suprême est officiellement élue par le Haut Conseil. En réalité, celui-ci valide par vote le choix de la Mage suprême en exercice. Ce choix est arrêté très tôt, puisque la Mage suprême entretient déjà une relation avec le candidat à la Tour."
+          ]
+        },
+        {
+          "id": "id_cdcd4c62",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "L'une des deux moitiés du duo",
+          "paragraphs": [
+            "Avec le Gardien, la Mage suprême forme le duo à la tête de la Tour et de la Guilde. Le poste n'est pas attribué par nature à l'une ou l'autre des deux catégories (naturel ou héritier de la Lignée) : pour la génération d'Udor, c'est Célestine, héritière de la Lignée, qui l'occupe, et Udor, naturel, qui est Gardien (voir LIG-AN-006)."
+          ]
+        },
+        {
+          "id": "id_2cf81666",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Maîtresse de l'accès à la Tour",
+          "paragraphs": [
+            "L'accès à la Tour est extrêmement restreint et se fait exclusivement sur accord de la Mage suprême. Aucune mention n'existe d'un accès public, même cérémoniel (voir GDN-AN-002)."
+          ]
+        },
+        {
+          "id": "id_5197c5b9",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Seule informée hors de la Tour",
+          "paragraphs": [
+            "Hors des murs de la Tour, la Mage suprême est la seule à connaître le rituel interdit qui accompagne chaque changement de Gardien. Elle tolère cette pratique sans l'approuver moralement, car elle considère que le sort du monde dépend du maintien d'un Gardien fonctionnel (voir GDN-03)."
+          ]
+        },
+        {
+          "id": "id_6d05a329",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Un savoir presque égal à celui du Gardien",
+          "paragraphs": [
+            "La Mage suprême partage les mêmes informations générales que le Gardien. Elle est peut-être un peu moins au courant que lui de la situation concrète, au jour le jour, dans le Plan Éthéré et face à la menace."
+          ]
+        },
+        {
+          "id": "id_158337a7",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Le repérage des candidats destinés à la Tour",
+          "paragraphs": [
+            "Pour les cas les plus rares, ceux des candidats destinés à la Tour, c'est la Mage suprême elle-même qui se déplace en personne, plutôt que de déléguer cette tâche à un hiérarque local (voir GLD-AN-001)."
+          ]
+        },
+        {
+          "id": "id_e56e148e",
+          "type": "pagebreak"
+        },
+        {
+          "id": "id_762bb4d8",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Le relais des informations",
+          "paragraphs": [
+            "Le relais des informations entre la Tour et la Mage suprême est assuré par les trois gobelins de la Tour (voir GDN-AN-002). Une rupture de ce relais n'est pas censée se produire."
+          ]
+        },
+        {
+          "id": "id_f10d3e48",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Une charge qui se transmet en tandem",
+          "paragraphs": [
+            "La Mage suprême cède sa place l'année même du Rituel de Transmission du Gardien : les deux moitiés du duo transmettent donc leur charge en même temps. C'est ce qu'a fait Célestine l'année où Miguel a succédé à Udor ; Ambre lui a succédé."
+          ]
+        },
+        {
+          "id": "id_3f0cdc69",
+          "type": "callout",
+          "tag": "attention",
+          "title": "Une Mage suprême retirée garde son niveau",
+          "paragraphs": [
+            "Un individu ayant occupé un niveau élevé, par exemple une Mage suprême retirée, ne redescend pas automatiquement de niveau une fois sa charge quittée : rien n'indique de mécanisme d'oubli (voir ARC-03)."
+          ]
+        },
+        {
+          "id": "id_1cf15dac",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Un supérieur hiérarchique de principe",
+          "paragraphs": [
+            "La fiche de Célestine désigne l'Empereur de l'Humanité comme son supérieur hiérarchique. En pratique, personne ne donne vraiment d'ordre à la Guilde : ceux qui dirigent l'Imperium lui « demandent gentiment » d'agir quand ils en ont besoin. L'Empereur a disparu depuis longtemps et l'Imperium est aujourd'hui dirigé par une forme de régence (voir GLD-AN-001)."
+          ]
+        },
+        {
+          "id": "id_bbd62795",
+          "type": "crossref",
+          "text": "Pour la hiérarchie complète de la Guilde, voir GLD-AN-001 ; pour le mécanisme du duo et de la Lignée, voir LIG-AN-006."
+        }
+      ]
+    },
+    {
+      "id": "id_65d34235",
+      "title": "Chronologie de Célestine",
+      "blocks": [
+        {
+          "id": "id_7cafa5c1",
+          "type": "paragraph",
+          "text": "Seuls les repères établis figurent ici. Les dates exprimées « il y a » sont relatives au présent du récit, où Miguel a 105 ans.",
+          "italic": true
+        },
+        {
+          "id": "id_48118fec",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "Naissance",
+              "b": "Narmatin, dans les quartiers de la Guilde, au sein de la Lignée. Date non précisée.",
+              "c": ""
+            },
+            {
+              "a": "Appariement avec Udor",
+              "b": "Rapprochés « en leur temps » par les maîtres de la Guilde, avant leur entrée en fonction, comme le veut l'usage. Ils deviennent amis proches sans tomber amoureux. Date non précisée.",
+              "c": ""
+            },
+            {
+              "a": "Investiture",
+              "b": "Mage suprême à l'investiture d'Udor comme Gardien, jusqu'à celle de Miguel.",
+              "c": ""
+            },
+            {
+              "a": "Enfant unique",
+              "b": "Ils ont l'enfant unique exigé par la Lignée, jamais investi (génération pont), futur parent d'Ambre. Date non précisée.",
+              "c": ""
+            },
+            {
+              "a": "Il y a 89 à 85 ans",
+              "b": "Miguel, de 16 à 20 ans, suit sa formation à la Guilde de Narmatin : Célestine l'évalue et le forme personnellement.",
+              "c": ""
+            },
+            {
+              "a": "Il y a 85 ans",
+              "b": "Célestine, alors Mage suprême, escorte Miguel, 20 ans, jusqu'à la Tour du Cinquième Point Cardinal. Udor, 136 ans, commence alors la formation de vingt ans de son successeur.",
+              "c": ""
+            },
+            {
+              "a": "Il y a 65 ans",
+              "b": "Rituel de Transmission d'Udor à Miguel (40 ans). La même année, Célestine cède sa place de Mage suprême : Ambre lui succède et l'est toujours.",
+              "c": ""
+            },
+            {
+              "a": "Depuis",
+              "b": "Retirée depuis 65 ans, aujourd'hui décédée. Date et circonstances du décès non précisées.",
+              "c": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "id_9ee782b7",
       "title": "Portrait de Célestine",
       "blocks": [
