@@ -187,8 +187,25 @@ async function storeSet(key, value) {
 
 /* ---------- Registre des couleurs ---------- */
 let registry = []; // [{hex, title, docId}]
+// Ne garde que les entrées bien formées ; un fichier importé ne peut ainsi rien injecter
+// dans les attributs style où la couleur est insérée.
+function sanitizeRegistry(list) {
+    if (!Array.isArray(list)) return [];
+    return list
+        .filter(
+            (r) =>
+                r &&
+                isValidHex(r.hex) &&
+                (typeof r.docId === "string" || typeof r.docId === "number"),
+        )
+        .map((r) => ({
+            hex: normalizeHex(r.hex),
+            title: typeof r.title === "string" ? r.title : "(sans titre)",
+            docId: String(r.docId),
+        }));
+}
 async function loadRegistry() {
-    registry = (await storeGet("color-registry")) || [];
+    registry = sanitizeRegistry(await storeGet("color-registry"));
 }
 async function saveRegistry() {
     await storeSet("color-registry", registry);
@@ -219,9 +236,18 @@ async function releaseColorIfPristine(d) {
 }
 
 /* ---------- Modèle de document ---------- */
-let uidCounter = 1;
+// Identifiant unique : horodatage + aléa. (L'ancien compteur repartait de 1 à chaque
+// chargement, ce qui rendait les collisions avec un document importé possibles.)
+let uidCounter = 0;
 function uid() {
-    return "id" + uidCounter++ + "_" + Math.random().toString(36).slice(2, 7);
+    uidCounter = (uidCounter + 1) % 1296;
+    return (
+        "id" +
+        Date.now().toString(36) +
+        uidCounter.toString(36).padStart(2, "0") +
+        "_" +
+        Math.random().toString(36).slice(2, 7)
+    );
 }
 
 function newBlock(type) {
@@ -283,13 +309,15 @@ function newSection() {
 // Dérive le préfixe du dossier (ex. "GDN") depuis le champ "N° de dossier" des métadonnées,
 // en cherchant la ligne dont le libellé évoque un numéro de dossier plutôt qu'en supposant
 // qu'elle est toujours en première position (l'utilisateur peut réordonner/renommer les lignes).
-function docPrefix() {
+function docNumber() {
     const row =
         doc.cover.meta.find((m) =>
             /dossier|n[°o]\s*de|code/i.test(m.a || ""),
         ) || doc.cover.meta[0];
-    const val = row && row.b ? row.b.trim() : "";
-    const prefix = val.split("-")[0].trim().toUpperCase();
+    return row && row.b ? row.b.trim() : "";
+}
+function docPrefix() {
+    const prefix = docNumber().split("-")[0].trim().toUpperCase();
     return prefix || "DOC";
 }
 // Code affiché pour la section d'index idx (0-based) : préfixe du dossier + numéro séquentiel à 2 chiffres.
@@ -304,28 +332,141 @@ function refreshSectionBadges() {
     });
 }
 
-// Compatibilité : les documents exportés avant l'ajout du mode "3 colonnes" utilisaient un
-// booléen `badge` au lieu du champ `layout`. On les met à niveau silencieusement à l'ouverture.
-function migrateDoc(d) {
-    (d.sections || []).forEach((s) => {
-        (s.blocks || []).forEach((b) => {
-            if (b.type === "table") {
-                if (!b.layout) {
-                    b.layout = b.badge ? "badge-value" : "label-value";
-                }
-                delete b.badge;
-                b.rows = (b.rows || []).map((r) => ({
-                    a: r.a || "",
-                    b: r.b || "",
-                    c: r.c || "",
-                }));
-            }
-        });
+/* ---------- Validation / migration des documents importés ---------- */
+// Version du format JSON. Incrémenter à chaque changement de structure et ajouter la
+// migration correspondante dans normalizeDoc().
+//   1 : format d'origine (tableaux avec booléen `badge`)
+//   2 : champ `version`, tableaux avec `layout`
+const DOC_VERSION = 2;
+const BLOCK_TYPES = [
+    "heading2",
+    "paragraph",
+    "bullets",
+    "callout",
+    "table",
+    "card",
+    "crossref",
+    "pagebreak",
+];
+const TABLE_LAYOUTS = ["label-value", "badge-value", "badge-label-value"];
+const SAFE_ID = /^[A-Za-z0-9_-]{1,64}$/;
+
+function asStr(v, fallback = "") {
+    if (typeof v === "string") return v;
+    if (typeof v === "number" || typeof v === "boolean") return String(v);
+    return fallback;
+}
+function asStrList(v) {
+    return Array.isArray(v) ? v.map((x) => asStr(x)) : [];
+}
+function asRows(v, keys) {
+    if (!Array.isArray(v)) return [];
+    return v.map((r) => {
+        const out = {};
+        keys.forEach((k) => (out[k] = asStr(r && r[k])));
+        return out;
     });
-    return d;
+}
+
+function normalizeBlock(b, id) {
+    switch (b.type) {
+        case "heading2":
+        case "crossref":
+            return { id, type: b.type, text: asStr(b.text) };
+        case "paragraph":
+            return { id, type: b.type, text: asStr(b.text), italic: !!b.italic };
+        case "bullets":
+            return { id, type: b.type, items: asStrList(b.items) };
+        case "callout":
+            return {
+                id,
+                type: b.type,
+                tag: TAG_KEYS.includes(b.tag) ? b.tag : "confirme",
+                title: asStr(b.title),
+                paragraphs: asStrList(b.paragraphs),
+            };
+        case "table": {
+            // v1 : booléen `badge` au lieu de `layout`
+            let layout = b.layout;
+            if (!TABLE_LAYOUTS.includes(layout))
+                layout = b.badge ? "badge-value" : "label-value";
+            return {
+                id,
+                type: b.type,
+                layout,
+                badge: undefined, // champ v1 retiré (ignoré par JSON.stringify)
+                rows: asRows(b.rows, ["a", "b", "c"]),
+            };
+        }
+        case "card":
+            return {
+                id,
+                type: b.type,
+                badgeText: asStr(b.badgeText),
+                title: asStr(b.title),
+                pitch: asStr(b.pitch),
+                rows: asRows(b.rows, ["a", "b"]),
+            };
+        default:
+            return { id, type: b.type };
+    }
+}
+
+// Transforme n'importe quel JSON importé en document valide : champs manquants complétés,
+// types inconnus écartés, identifiants et couleur vérifiés (ils sont insérés tels quels
+// dans des attributs HTML), identifiants dupliqués régénérés.
+function normalizeDoc(raw) {
+    if (!raw || typeof raw !== "object" || !Array.isArray(raw.sections))
+        throw new Error("format invalide (liste « sections » absente)");
+    const def = defaultDocument();
+    const seen = new Set();
+    const safeId = (v) => {
+        let id = asStr(v);
+        if (!SAFE_ID.test(id) || seen.has(id)) id = uid();
+        seen.add(id);
+        return id;
+    };
+    const cover = raw.cover && typeof raw.cover === "object" ? raw.cover : {};
+    const note =
+        raw.noteUsage && typeof raw.noteUsage === "object" ? raw.noteUsage : {};
+    return {
+        ...raw,
+        version: DOC_VERSION,
+        id: safeId(raw.id),
+        color: isValidHex(raw.color) ? normalizeHex(raw.color) : def.color,
+        stampStyle: raw.stampStyle === "red" ? "red" : "accent",
+        cover: {
+            orgLine: asStr(cover.orgLine, def.cover.orgLine),
+            kicker: asStr(cover.kicker, def.cover.kicker),
+            title: asStr(cover.title, def.cover.title),
+            subtitle: asStr(cover.subtitle, def.cover.subtitle),
+            stampText: asStr(cover.stampText, def.cover.stampText),
+            meta: Array.isArray(cover.meta)
+                ? asRows(cover.meta, ["a", "b"])
+                : def.cover.meta,
+        },
+        footerBrand: asStr(raw.footerBrand, def.footerBrand),
+        noteUsage: {
+            includeTagLegend: note.includeTagLegend !== false,
+            text: asStr(note.text, def.noteUsage.text),
+        },
+        sections: raw.sections
+            .filter((sec) => sec && typeof sec === "object")
+            .map((sec) => ({
+                ...sec,
+                id: safeId(sec.id),
+                title: asStr(sec.title),
+                blocks: (Array.isArray(sec.blocks) ? sec.blocks : [])
+                    .filter((b) => b && BLOCK_TYPES.includes(b.type))
+                    // Les champs inconnus sont conservés (jamais affichés) pour qu'un
+                    // import suivi d'un export ne perde rien.
+                    .map((b) => ({ ...b, ...normalizeBlock(b, safeId(b.id)) })),
+            })),
+    };
 }
 function defaultDocument() {
     return {
+        version: DOC_VERSION,
         id: uid(),
         color: "#2f6f5e",
         stampStyle: "accent", // 'accent' ou 'red'
@@ -374,11 +515,14 @@ let selectedSwatchIdx = 0;
 let proposals = [];
 
 /* ---------- Rendu : PREVIEW ---------- */
+// Échappe aussi les guillemets : le résultat peut être placé dans un attribut.
 function escapeHtml(s) {
-    return (s || "")
+    return String(s ?? "")
         .replace(/&/g, "&amp;")
         .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;");
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
 }
 function nl2p(text) {
     return escapeHtml(text).replace(/\n/g, "<br>");
@@ -390,6 +534,7 @@ const TAG_META = {
     hook: { label: "Hook MJ", bg: FIXED.teal },
     attention: { label: "Attention MJ", bg: FIXED.red },
 };
+const TAG_KEYS = Object.keys(TAG_META);
 const CALLOUT_BG = {
     confirme: "var(--doc-card)",
     hypothese: FIXED.goldBg,
@@ -402,6 +547,15 @@ const CALLOUT_BORDER = {
     hook: FIXED.teal,
     attention: FIXED.red,
 };
+// Style complet d'un tag, avec repli sur « confirmé » pour une valeur inconnue.
+function tagStyle(tag) {
+    const key = TAG_META[tag] ? tag : "confirme";
+    return {
+        ...TAG_META[key],
+        border: CALLOUT_BORDER[key],
+        calloutBg: CALLOUT_BG[key],
+    };
+}
 
 function renderBlockHtml(b) {
     switch (b.type) {
@@ -412,8 +566,8 @@ function renderBlockHtml(b) {
         case "bullets":
             return `<ul class="bullets">${b.items.map((i) => `<li>${escapeHtml(i)}</li>`).join("")}</ul>`;
         case "callout": {
-            const meta = TAG_META[b.tag] || TAG_META.confirme;
-            return `<div class="callout" style="border-left-color:${CALLOUT_BORDER[b.tag]};background:${CALLOUT_BG[b.tag]};">
+            const meta = tagStyle(b.tag);
+            return `<div class="callout" style="border-left-color:${meta.border};background:${meta.calloutBg};">
         <span class="ctag" style="background:${meta.bg};">${meta.label}</span><span class="ctitle">${escapeHtml(b.title)}</span>
         ${b.paragraphs.map((p) => `<p>${escapeHtml(p)}</p>`).join("")}
       </div>`;
@@ -439,9 +593,7 @@ function renderBlockHtml(b) {
       </div>`;
         case "crossref":
             return `<div class="crossref"><b>→ RENVOI</b> &nbsp;${escapeHtml(b.text)}</div>`;
-        case "pagebreak":
-            return `</div><div class="page" style="${styleVars}">${headerHtml}`;
-        default:
+        default: // pagebreak : géré par renderPreview (découpage des pages)
             return "";
     }
 }
@@ -477,7 +629,7 @@ function renderPreview() {
     const styleVars = `--doc-accent:${pal.accent};--doc-ink:${pal.ink};--doc-inkmid:${pal.inkMid};--doc-card:${pal.card};--stamp-color:${stampColor};--stamp-bg:${stampBg};`;
 
     const header = () =>
-        `<div class="doc-header"><span>DOSSIER ${escapeHtml(doc.cover.meta[0]?.b || "")}</span><span>${escapeHtml(doc.footerBrand)}</span></div>`;
+        `<div class="doc-header"><span>DOSSIER ${escapeHtml(docNumber())}</span><span>${escapeHtml(doc.footerBrand)}</span></div>`;
     const footer = (n, total) =>
         `<div class="page-footer">— ${n} / ${total} —</div>`;
 
@@ -517,8 +669,8 @@ function renderPreview() {
             ],
         ];
         legends.forEach(([tag, txt]) => {
-            const meta = TAG_META[tag];
-            note += `<div class="callout" style="border-left-color:${CALLOUT_BORDER[tag]};background:${CALLOUT_BG[tag]};">
+            const meta = tagStyle(tag);
+            note += `<div class="callout" style="border-left-color:${meta.border};background:${meta.calloutBg};">
         <span class="ctag" style="background:${meta.bg};">${meta.label}</span>
         <p>${escapeHtml(txt)}</p></div>`;
         });
@@ -538,8 +690,7 @@ function renderPreview() {
         `</ul>`;
     pagesInner.push(toc);
 
-    // Sections de contenu (avec support des pagebreak)
-    // TODO: check if valid
+    // Sections de contenu : un saut de page termine la page courante et en ouvre une nouvelle.
     doc.sections.forEach((s, i) => {
         let currentPage = `<div class="sec-h1" id="${s.id}"><span class="code">${escapeHtml(sectionCode(i))}</span><span class="dot-separator">·</span>${escapeHtml(s.title)}
         </div>`;
@@ -1646,11 +1797,9 @@ document.getElementById("file-import").addEventListener("change", (e) => {
     reader.onload = async () => {
         try {
             const imported = JSON.parse(reader.result);
-            if (!imported.sections) throw new Error("format invalide");
             await releaseColorIfPristine(doc);
             colorMsg = null;
-            doc = migrateDoc(imported);
-            if (!doc.id) doc.id = uid();
+            doc = normalizeDoc(imported);
             proposals = [
                 doc.color,
                 ...generateProposals([...registryHexes(), doc.color], 4),
@@ -1697,10 +1846,10 @@ function renderRegistryModalList() {
         const row = document.createElement("div");
         row.className = "registry-row";
         const left = document.createElement("span");
-        left.innerHTML = `<span class="rc" style="background:${r.hex};"></span>${escapeHtml(r.title)}`;
+        left.innerHTML = `<span class="rc" style="background:${escapeHtml(r.hex)};"></span>${escapeHtml(r.title)}`;
         const right = document.createElement("span");
         right.style.cssText = "display:flex;align-items:center;gap:8px;";
-        right.innerHTML = `<span style="font-family:Consolas,monospace;color:#888;">${r.hex}</span>`;
+        right.innerHTML = `<span style="font-family:Consolas,monospace;color:#888;">${escapeHtml(r.hex)}</span>`;
         if (registryEditMode) {
             const delBtn = document.createElement("button");
             delBtn.className = "icon-btn danger";
@@ -1748,9 +1897,7 @@ document.getElementById("registry-import").addEventListener("change", (e) => {
             if (!Array.isArray(imported))
                 throw new Error("format invalide (liste attendue)");
             const byDocId = new Map(registry.map((r) => [r.docId, r]));
-            imported.forEach((r) => {
-                if (r.hex && r.docId) byDocId.set(r.docId, r);
-            });
+            sanitizeRegistry(imported).forEach((r) => byDocId.set(r.docId, r));
             registry = Array.from(byDocId.values());
             await saveRegistry();
             openRegistryModal();
