@@ -104,7 +104,7 @@
       "rows": [
         {
           "a": "Rôle au sein du culte",
-          "b": "Milice et force armée du culte, chargée de veiller à ce que les Mécanistes puissent agir sans être dérangés — par l'Imperium hostile ou par toute menace extérieure",
+          "b": "Milice et force armée du culte, chargée de veiller à ce que les Mécanistes puissent agir sans être dérangés — par l'Empire hostile ou par toute menace extérieure",
           "c": ""
         },
         {
@@ -130,7 +130,7 @@
       "tag": "confirme",
       "title": "Recrutement et hiérarchie interne",
       "paragraphs": [
-        "Recrutement parmi d'anciens soldats de l'Imperium, des volontaires en quête d'un but après une carrière militaire ou des soldats blessés au-delà de ce qui est soignable traditionnellement, davantage que parmi de jeunes novices. La hiérarchie interne suit une logique proche d'une organisation martiale classique — grades gagnés au mérite et à l'ancienneté au combat plutôt qu'à la piété affichée."
+        "Recrutement parmi d'anciens soldats de l'Empire, des volontaires en quête d'un but après une carrière militaire ou des soldats blessés au-delà de ce qui est soignable traditionnellement, davantage que parmi de jeunes novices. La hiérarchie interne suit une logique proche d'une organisation martiale classique — grades gagnés au mérite et à l'ancienneté au combat plutôt qu'à la piété affichée."
       ]
     },
     {
@@ -239,12 +239,12 @@
         },
         {
           "a": "Statut",
-          "b": "Exilés — rejetés par l'Imperium qui les considère comme des Mécanistes hérétiques, reniés par leurs propres frères d'ordre qui les jugent incomplets, inaboutis",
+          "b": "Exilés — rejetés par l'Empire qui les considère comme des Mécanistes hérétiques, reniés par leurs propres frères d'ordre qui les jugent incomplets, inaboutis",
           "c": ""
         },
         {
           "a": "Mode de vie",
-          "b": "Discrétion et distance, survie en marge de l'Imperium ; augmentations plus légères et ciblées préservant une part organique du corps",
+          "b": "Discrétion et distance, survie en marge de l'Empire ; augmentations plus légères et ciblées préservant une part organique du corps",
           "c": ""
         },
         {

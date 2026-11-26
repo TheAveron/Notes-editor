@@ -1,6 +1,6 @@
 {
   "id": "sir-place-du-culte-dans-l-imperium",
-  "title": "Place du culte dans l'Imperium",
+  "title": "Place du culte dans l'Empire",
   "kind": "autre",
   "tags": [
     "Le Culte de Sirozor"
@@ -9,7 +9,7 @@
     {
       "id": "id78",
       "type": "paragraph",
-      "text": "Les Hommes de l'Imperium suivent trois religions distinctes : la religion officielle vouée à un panthéon reconnu, le culte impérial voué à un Empereur disparu depuis des millénaires mais considéré comme une figure sacrée et divine (le trône n'ayant jamais été pourvu à nouveau, une régence assurant la continuité du pouvoir), et le culte mécaniste de Sirozor, qui rejette les deux autres.",
+      "text": "Les Hommes de l'Empire suivent trois religions distinctes : la religion officielle vouée à un panthéon reconnu, le culte impérial voué à un Empereur disparu depuis des millénaires mais considéré comme une figure sacrée et divine (le trône n'ayant jamais été pourvu à nouveau, une régence assurant la continuité du pouvoir), et le culte mécaniste de Sirozor, qui rejette les deux autres.",
       "italic": false
     },
     {
@@ -18,7 +18,7 @@
       "tag": "confirme",
       "title": "Une tolérance de nécessité",
       "paragraphs": [
-        "L'Imperium tolère le culte mécaniste par nécessité : les Mécanistes demeurent les seuls capables d'entretenir une grande partie des machines héritées des anciens âges, et sans eux, une part importante des infrastructures impériales cesserait progressivement de fonctionner. Cette dépendance leur assure une protection fragile — ils ne sont ni pleinement intégrés, ni véritablement acceptés."
+        "L'Empire tolère le culte mécaniste par nécessité : les Mécanistes demeurent les seuls capables d'entretenir une grande partie des machines héritées des anciens âges, et sans eux, une part importante des infrastructures impériales cesserait progressivement de fonctionner. Cette dépendance leur assure une protection fragile — ils ne sont ni pleinement intégrés, ni véritablement acceptés."
       ]
     },
     {
@@ -54,7 +54,7 @@
       "tag": "confirme",
       "title": "Un statut légal ambigu plutôt qu'écrit",
       "paragraphs": [
-        "Rien n'indique l'existence d'un texte de loi impérial reconnaissant officiellement le culte — sa tolérance semble reposer sur un usage établi plutôt que sur un droit formel, ce qui le rend d'autant plus vulnérable à un changement de régence ou à une crise politique. Les rares temples mécanistes autorisés le sont probablement au cas par cas, par accord local avec un gouverneur ou une autorité régionale, plutôt que par un statut unique valable dans tout l'Imperium."
+        "Rien n'indique l'existence d'un texte de loi impérial reconnaissant officiellement le culte — sa tolérance semble reposer sur un usage établi plutôt que sur un droit formel, ce qui le rend d'autant plus vulnérable à un changement de régence ou à une crise politique. Les rares temples mécanistes autorisés le sont probablement au cas par cas, par accord local avec un gouverneur ou une autorité régionale, plutôt que par un statut unique valable dans tout l'Empire."
       ]
     },
     {
@@ -77,7 +77,7 @@
       "tag": "confirme",
       "title": "Une tolérance à double visage",
       "paragraphs": [
-        "Il ne serait pas surprenant que certains membres du clergé officiel, publiquement les plus virulents contre le culte, ou des personnalités influentes de l'Imperium, recourent en privé à des Mécanistes pour réparer un mécanisme précieux ou soigner un mal que la médecine conventionnelle ne peut traiter — une hypocrisie ordinaire, jamais avouée, qui nourrirait un ressentiment silencieux chez les Mécanistes eux-mêmes."
+        "Il ne serait pas surprenant que certains membres du clergé officiel, publiquement les plus virulents contre le culte, ou des personnalités influentes de l'Empire, recourent en privé à des Mécanistes pour réparer un mécanisme précieux ou soigner un mal que la médecine conventionnelle ne peut traiter — une hypocrisie ordinaire, jamais avouée, qui nourrirait un ressentiment silencieux chez les Mécanistes eux-mêmes."
       ]
     },
     {
@@ -92,12 +92,12 @@
     {
       "id": "id87",
       "type": "crossref",
-      "text": "Voir REL-RE-001 pour le panthéon officiel de l'Imperium et le rôle du conseil impérial."
+      "text": "Voir REL-RE-001 pour le panthéon officiel de l'Empire et le rôle du conseil impérial."
     },
     {
       "id": "id88",
       "type": "crossref",
-      "text": "Voir EMP-RE-003 pour le culte impérial, l'Empereur disparu et la régence royale."
+      "text": "Voir EMP-RE-003 pour le culte impérial, l'Empereur disparu et la régence."
     }
   ]
 }
