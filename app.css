@@ -83,6 +83,34 @@ a {
 .topbar .file-btn:hover {
     background: #3d3d3a;
 }
+.topbar button.icon {
+    padding: 7px 10px;
+    font-size: 14px;
+    line-height: 1;
+}
+.topbar button:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+.topbar .status-line {
+    display: flex;
+    gap: 10px;
+    margin-top: 2px;
+    letter-spacing: 0.02em;
+    text-transform: none;
+    font-weight: 400;
+}
+.topbar .save-status {
+    font-size: 11px;
+    opacity: 0.65;
+}
+.topbar .save-status:empty {
+    display: none;
+}
+.topbar .save-status.warn {
+    color: #f0b8bf;
+    opacity: 1;
+}
 .topbar button.primary {
     background: var(--ui-accent);
     border-color: var(--ui-accent);
@@ -287,6 +315,32 @@ a {
     vertical-align: -1px;
 }
 
+.format-hint {
+    font-size: 11px;
+    color: var(--ui-muted);
+    margin: -4px 0 12px 0;
+    line-height: 1.5;
+}
+.format-hint code {
+    font-family: var(--mono);
+    background: #f4f2ea;
+    border-radius: 3px;
+    padding: 0 3px;
+}
+
+/* Libellés posés directement dans un panneau ou un bloc (hors .field) */
+.block-item-body > label {
+    font-size: 12px;
+    color: var(--ui-ink);
+}
+.side-section > label {
+    display: block;
+    font-size: 11px;
+    color: var(--ui-muted);
+    font-weight: 600;
+    margin: 8px 0 3px 0;
+}
+
 /* Sections / blocks tree */
 .section-card {
     border: 1px solid var(--ui-line);
@@ -418,8 +472,20 @@ a {
     border-radius: 4px;
     font-size: 12px;
 }
+.rowpair textarea.bullet-input {
+    flex: 1;
+    min-width: 0;
+    padding: 5px 6px;
+    border: 1px solid #ddd8c9;
+    border-radius: 4px;
+    font-size: 12px;
+    font-family: var(--sans);
+    resize: vertical;
+    min-height: 28px;
+    field-sizing: content;
+}
 .rowpair input.narrow {
-    flex: 0 0 70px;
+    flex: 0 0 120px;
     font-family: var(--mono);
 }
 .row-value {
@@ -489,6 +555,88 @@ a {
     background: #f4f2ea;
 }
 
+/* Replier / déplier */
+.fold-all {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+.fold-all button {
+    font-size: 11px;
+    padding: 4px 8px;
+    border: 1px solid #d8d4c8;
+    background: #fff;
+    border-radius: 4px;
+    color: var(--ui-muted);
+}
+.fold-all button:hover {
+    background: #f4f2ea;
+    color: var(--ui-ink);
+}
+.section-card.collapsed .section-head {
+    border-radius: 8px;
+}
+.collapsed-summary {
+    font-size: 11px;
+    color: var(--ui-muted);
+    padding: 6px 12px 8px;
+}
+
+/* Glisser-déposer */
+.drag-handle {
+    cursor: grab;
+    touch-action: none;
+    color: #b3ad9c;
+    font-size: 14px;
+    line-height: 1;
+    padding: 0 2px;
+    user-select: none;
+}
+.drag-handle:hover {
+    color: var(--ui-ink);
+}
+.dragging {
+    opacity: 0.45;
+}
+body.is-dragging,
+body.is-dragging * {
+    cursor: grabbing !important;
+    user-select: none;
+}
+.drop-before {
+    box-shadow: 0 -3px 0 0 var(--ui-accent);
+}
+.drop-after {
+    box-shadow: 0 3px 0 0 var(--ui-accent);
+}
+.empty-drop {
+    font-size: 11px;
+    color: #aaa;
+    text-align: center;
+    padding: 10px;
+    border: 1px dashed #d8d4c8;
+    border-radius: 6px;
+}
+
+/* Insertion d'un bloc après un autre */
+.insert-select {
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    border: 1px solid #d8d4c8;
+    border-radius: 4px;
+    background: none;
+    color: var(--ui-muted);
+    font-size: 13px;
+    text-align: center;
+    appearance: none;
+    cursor: pointer;
+}
+.insert-select:hover {
+    background: #eae6d8;
+    color: var(--ui-ink);
+}
+
 .add-section-btn {
     width: 100%;
     padding: 10px;
@@ -506,6 +654,10 @@ a {
 
 /* ---------- PREVIEW (mirrors printed doc style) ---------- */
 .page {
+    position: relative;
+    /* Ne pas laisser le conteneur flex écraser une page trop longue : elle doit
+       apparaître à sa vraie hauteur. */
+    flex-shrink: 0;
     background: #fff;
     width: 210mm;
     min-height: 297mm;
@@ -519,6 +671,54 @@ a {
     display: flex;
     flex-direction: column;
 }
+/* Mesure de la hauteur naturelle des pages (voir checkOverflow) */
+.preview-wrap.measuring .page {
+    min-height: 0 !important;
+}
+.page.overflowing {
+    outline: 3px solid #c0392b;
+    outline-offset: -3px;
+}
+/* Repère de la limite de la feuille A4 sur une page trop longue */
+.page.overflowing::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 297mm;
+    border-top: 2px dashed #c0392b;
+    pointer-events: none;
+}
+.overflow-flag {
+    position: absolute;
+    top: 4mm;
+    left: 16mm;
+    right: 16mm;
+    background: #c0392b;
+    color: #fff;
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 9px;
+    border-radius: 4px;
+    z-index: 2;
+}
+.sec-h1 .sec-cont {
+    font-size: 10pt;
+    font-weight: 400;
+    text-transform: none;
+    color: var(--doc-inkmid, #444);
+}
+.section-card.has-overflow {
+    border-color: #c0392b;
+}
+.section-card.has-overflow .section-head::after {
+    content: "⚠";
+    color: #c0392b;
+    font-weight: 700;
+    order: -1;
+}
+
 .doc-header {
     display: flex;
     justify-content: space-between;
@@ -749,6 +949,27 @@ table.stat td.badge {
     width: 26%;
 }
 
+.card.card-accent {
+    border-left-color: var(--doc-accent, #2f6f5e);
+    background: var(--doc-card, #f1f0ec);
+}
+.card.card-accent .chead,
+.card.card-accent .dot-separator {
+    color: var(--doc-accent, #2f6f5e);
+}
+
+/* Renvoi vers une section du dossier */
+a.xref {
+    color: var(--doc-accent, #2f6f5e);
+    font-family: var(--mono);
+    font-size: 0.92em;
+    font-weight: 700;
+    border-bottom: 1px dotted currentColor;
+}
+a.xref:hover {
+    border-bottom-style: solid;
+}
+
 .card-header {
     display: flex;
     align-items: center;
@@ -765,8 +986,8 @@ table.stat td.badge {
 }
 
 .dot-separator {
-    margin-left: 0.8vw;
-    margin-right: 0.8vw;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
     font-family: var(--mono);
     font-weight: 900;
     font-size: 10pt;
@@ -826,34 +1047,83 @@ table.stat td.badge {
     font-family: var(--sans);
 }
 
-/* ---------- PRINT ---------- */
-@media print {
-    body * {
-        visibility: hidden;
+/* ---------- Liaison aperçu ↔ panneau ---------- */
+.preview-wrap [data-bid],
+.preview-wrap .page[data-section],
+.preview-wrap .page[data-panel] {
+    cursor: pointer;
+}
+.preview-wrap [data-bid]:hover {
+    outline: 1px dashed rgba(47, 111, 94, 0.45);
+    outline-offset: 3px;
+}
+.preview-wrap .linked {
+    outline: 2px solid var(--ui-accent);
+    outline-offset: 3px;
+}
+@keyframes flash-bg {
+    from {
+        box-shadow: 0 0 0 3px var(--ui-accent);
     }
-    .preview-wrap,
-    .preview-wrap * {
-        visibility: visible;
+    to {
+        box-shadow: 0 0 0 3px transparent;
+    }
+}
+.flash {
+    animation: flash-bg 1.2s ease-out;
+}
+
+/* ---------- PRINT ---------- */
+/* Chaque .page mesure exactement une feuille A4 (marges internes incluses via son padding) :
+   la marge d'impression doit donc être nulle, sinon chaque page déborde sur la suivante
+   et le PDF contient deux fois plus de feuilles. */
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print {
+    html,
+    body {
+        background: #fff;
+    }
+    /* On retire réellement l'interface de la mise en page (visibility:hidden lui laisserait
+       sa hauteur, ce qui ajoutait des feuilles blanches en fin de PDF). */
+    .topbar,
+    .sidebar,
+    #registry-modal,
+    .no-print {
+        display: none !important;
+    }
+    #app,
+    .body-wrap {
+        display: block;
+        height: auto;
     }
     .preview-wrap {
-        position: absolute;
-        top: 0;
-        left: 0;
         padding: 0;
         background: #fff;
         display: block;
+        overflow: visible;
     }
     .page {
         box-shadow: none;
         margin: 0;
+        width: 210mm;
+        min-height: 297mm;
         break-after: page;
-        width: auto;
+        /* Imprime les fonds colorés même si « Graphiques d'arrière-plan » est décoché */
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
     .page:last-child {
         break-after: auto;
     }
-    @page {
-        size: A4;
-        margin: 16mm;
+    .page.overflowing,
+    .preview-wrap .linked,
+    .preview-wrap [data-bid] {
+        outline: none !important;
+    }
+    .page.overflowing::after {
+        display: none;
     }
 }
