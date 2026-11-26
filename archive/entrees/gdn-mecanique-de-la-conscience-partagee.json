@@ -38,12 +38,48 @@
       "italic": false
     },
     {
+      "id": "id_78aec595",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Des esprits qui gardent leur volonté",
+      "paragraphs": [
+        "Les Gardiens absorbés conservent une volonté propre : consulter l'un d'eux revient à le solliciter, non à puiser dans une mémoire inerte. Les plus anciens savent notamment ce qui s'est passé avant et pendant la guerre civile du VIIIᵉ millénaire, dont les archives écrites ont disparu."
+      ]
+    },
+    {
+      "id": "id_46ebded7",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Un silence délibéré ?",
+      "paragraphs": [
+        "Il est possible que ces esprits anciens jugent plus sûr de ne rien révéler de cette époque, même au Gardien en exercice."
+      ]
+    },
+    {
       "id": "id47_bz122",
       "type": "callout",
       "tag": "confirme",
       "title": "Principe de contrôle",
       "paragraphs": [
         "À tout instant, c'est l'esprit le plus puissant parmi tous ceux présents qui contrôle le corps du Gardien. Il n'existe aucune hiérarchie de préséance liée à l'ordre d'absorption : tous les Gardiens précédents sont placés strictement au même niveau. Un esprit absorbé huit mille ans plus tôt a, en théorie, exactement autant de chances de reprendre le contrôle qu'un esprit absorbé la veille, à la seule condition d'être, à cet instant précis, le plus puissant des esprits en présence."
+      ]
+    },
+    {
+      "id": "id_d6f67a38",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Une puissance qui ne s'érode presque pas",
+      "paragraphs": [
+        "La puissance d'un esprit absorbé ne s'érode que de façon infime, négligeable même à l'échelle des millénaires."
+      ]
+    },
+    {
+      "id": "id_e82451fd",
+      "type": "callout",
+      "tag": "attention",
+      "title": "Un seuil qui ne redescend jamais",
+      "paragraphs": [
+        "Pour rester l'esprit dominant, un novice doit dépasser non seulement son prédécesseur direct, mais le plus puissant de tous les esprits que porte la Tour. Puisque rien n'érode ces esprits, ce seuil ne peut que se maintenir ou monter d'une génération à l'autre."
       ]
     },
     {

@@ -23,7 +23,7 @@
         },
         {
           "a": "Génération Miguel",
-          "b": "Miguel (naturel, Gardien actuel) × Ambre, homologue de la Lignée, petite-fille d'Udor et Célestine (Mage suprême actuelle). Couple amoureux.",
+          "b": "Miguel (naturel, Gardien actuel) × Ambre, homologue de la Lignée, petite-fille d'Udor et Célestine (Mage suprême actuelle). Couple amoureux. Enfant unique encore à naître.",
           "c": ""
         }
       ]
@@ -49,10 +49,10 @@
     {
       "id": "id_f4dc1914",
       "type": "callout",
-      "tag": "attention",
-      "title": "Un enfant encore non tranché",
+      "tag": "confirme",
+      "title": "Un enfant à naître",
       "paragraphs": [
-        "Le duo Miguel / Ambre est, comme tout duo en exercice, tenu d'avoir un unique enfant ensemble pour perpétuer la Lignée. Rien n'indique à ce stade si cet enfant est déjà né, encore à naître, ou déjà en formation à la Guilde sans que cela ait été mentionné. Ce point reste entièrement à la discrétion de l'auteur — et représente un excellent levier dramatique quelle que soit la réponse retenue."
+        "Le duo Miguel / Ambre est, comme tout duo en exercice, tenu d'avoir un unique enfant ensemble pour perpétuer la Lignée. Cet enfant est encore à naître : Ambre n'est pas enceinte à ce jour."
       ]
     }
   ]

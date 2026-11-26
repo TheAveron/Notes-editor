@@ -155,7 +155,7 @@
         },
         {
           "a": "Comportement",
-          "b": "Étend son influence sur toute une région, capable de diriger plusieurs créatures inférieures vers des cibles précises (voir hook « Withre en péril », GDN-06)."
+          "b": "Étend son influence sur toute une région, capable de diriger plusieurs créatures inférieures vers des cibles précises (voir hook « Les proches en péril », GDN-06)."
         },
         {
           "a": "Capacité de possession",
@@ -203,17 +203,8 @@
     {
       "id": "id_48becbdd",
       "type": "paragraph",
-      "text": "Note MJ — Un enjeu de fin de campagne plutôt qu'une menace récurrente. Voir le hook ci-dessous pour un lien possible avec la Tour elle-même.",
+      "text": "Note MJ — Un enjeu de fin de campagne plutôt qu'une menace récurrente.",
       "italic": false
-    },
-    {
-      "id": "id_a02905fd",
-      "type": "callout",
-      "tag": "hook",
-      "title": "Le cristal comme rempart",
-      "paragraphs": [
-        "Et si le cristal au cœur de la Tour (GDN-02), vieux de 12 000 ans, n'était pas seulement une source de pouvoir, mais aussi une entrave — un fragment ou une prison partielle contenant, ou faisant obstacle à, un Souverain Éthéré en particulier ? Cette piste n'est confirmée nulle part, mais elle offrirait un fil conducteur mythique reliant directement les deux dossiers, GDN-AN-002 et MEN-AN-003, jusqu'à l'origine même de la Tour."
-      ]
     }
   ]
 }

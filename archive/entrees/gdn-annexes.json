@@ -18,12 +18,12 @@
       "rows": [
         {
           "a": "Il y a ~12 000 ans",
-          "b": "Chute de la météorite contenant le cristal originel.",
+          "b": "Chute de la météorite contenant le cristal originel. Elle coïncide, à quelques dizaines d'années près, avec l'an 0 du calendrier, dont personne ne sait ce qu'il marque.",
           "c": ""
         },
         {
-          "a": "Antériorité au 8ᵉ millénaire",
-          "b": "Archives perdues — aucune information fiable sur les premiers Gardiens.",
+          "a": "VIIIᵉ millénaire",
+          "b": "Guerre civile : destruction des archives écrites de la Tour, comme de celles du culte mécaniste. Seuls les Gardiens absorbés gardent le souvenir de ce qui précède.",
           "c": ""
         },
         {
@@ -96,6 +96,11 @@
         {
           "a": "Lignée",
           "b": "Famille fournissant, génération après génération, l'un des deux membres du duo Gardien/Mage suprême — voir LIG-AN-006.",
+          "c": ""
+        },
+        {
+          "a": "Withre",
+          "b": "Petit village proche de Narmatin, doté d'une auberge où Miguel fait étape en route vers la Guilde. Ce n'est pas son village natal.",
           "c": ""
         }
       ]

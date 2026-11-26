@@ -59,7 +59,7 @@
       "type": "card",
       "badgeText": "HOOK 3",
       "title": "L'enfant sans nom",
-      "pitch": "La question de l'enfant unique de Miguel et d'Ambre — né, à naître, ou déjà en formation dans l'ombre — devient soudain urgente pour une raison extérieure (menace sur la Lignée, succession anticipée, GDN-06 hook 5).",
+      "pitch": "L'enfant unique que Miguel et Ambre doivent à la Lignée n'est pas encore conçu. La question devient soudain urgente pour une raison extérieure (menace sur la Lignée, succession anticipée, GDN-06 hook 5).",
       "rows": [
         {
           "a": "Niveau",
@@ -67,7 +67,7 @@
         },
         {
           "a": "Complication",
-          "b": "Aucune certitude n'existe sur l'état actuel de cette obligation — un angle mort volontairement laissé ouvert par l'auteur."
+          "b": "Le temps presse : un enfant encore à concevoir, puis à former, représente des décennies que la Lignée n'a peut-être plus."
         },
         {
           "a": "Rôle de la Lignée",

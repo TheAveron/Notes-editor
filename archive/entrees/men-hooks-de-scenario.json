@@ -17,7 +17,7 @@
       "type": "card",
       "badgeText": "HOOK 1",
       "title": "Les nuits de Withre",
-      "pitch": "Un Suceur de veille (Palier I) s'est installé dans un hameau isolé, profitant du grand nombre d'habitants sans lien. Les victimes ne savent pas qu'elles sont attaquées — seulement qu'elles dorment de plus en plus mal.",
+      "pitch": "Un Suceur de veille (Palier I) s'est installé à Withre, petit village voisin de Narmatin, profitant du grand nombre d'habitants sans lien. Les victimes ne savent pas qu'elles sont attaquées — seulement qu'elles dorment de plus en plus mal.",
       "rows": [
         {
           "a": "Niveau",
@@ -79,7 +79,7 @@
       "id": "id_037376ea",
       "type": "card",
       "badgeText": "HOOK 4",
-      "title": "Withre en péril",
+      "title": "Le village natal en péril",
       "pitch": "Un Seigneur de la Faim (Palier IV) étend son influence sur toute une région rurale, dirigeant plusieurs créatures inférieures vers des cibles choisies — dont, potentiellement, le village natal de Miguel.",
       "rows": [
         {
@@ -88,7 +88,7 @@
         },
         {
           "a": "Complication",
-          "b": "Si Miguel apprend la nouvelle, son attachement personnel à Withre pourrait le pousser à intervenir hors de la Tour — un cas rarissime aux conséquences politiques (voir GDN-06, hook 4)."
+          "b": "Si Miguel apprend la nouvelle, son attachement personnel à son village natal pourrait le pousser à intervenir hors de la Tour — un cas rarissime aux conséquences politiques (voir GDN-06, hook 4)."
         },
         {
           "a": "Rôle du Gardien",
