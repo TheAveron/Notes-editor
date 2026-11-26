@@ -1,0 +1,650 @@
+{
+  "id": "id_66249b20",
+  "color": "#b5651d",
+  "stampStyle": "accent",
+  "cover": {
+    "stampText": "Niveau 3 · A1 — Guilde des Animaliens",
+    "meta": [
+      {
+        "a": "N° de dossier",
+        "b": "LIE-AN-004"
+      },
+      {
+        "a": "Objet",
+        "b": "Fonctionnement, acquisition et hiérarchie des liens télépathiques"
+      },
+      {
+        "a": "Documents liés",
+        "b": "ARC-AR-001 · GDN-AN-002 · GLD-AN-001 · MEN-AN-003"
+      },
+      {
+        "a": "Nature du sujet",
+        "b": "Mécanique fondatrice — socle de tout individu lié"
+      },
+      {
+        "a": "Confidentialité",
+        "b": "Niveau 3 · A1 — voir ARC-03 pour l'échelle complète"
+      }
+    ],
+    "orgLine": "GUILDE DES ARCHIVISTES — FONDS DOCUMENTAIRE",
+    "kicker": "DOSSIER DE CLASSIFICATION",
+    "title": "Les Liens",
+    "subtitle": "Nature, acquisition et hiérarchie des connexions télépathiques"
+  },
+  "footerBrand": "Les Liens - Niveau 3 · A1",
+  "noteUsage": {
+    "includeTagLegend": true,
+    "text": "Ce dossier complète GDN-AN-002 et MEN-AN-003 et suit le même système de classification. Une échelle supplémentaire, propre à ce document, gradue le niveau de conscience des espèces et entités avec lesquelles un lien peut se créer.\nLes Degrés I à III graduent le niveau de conscience et de libre arbitre de l'entité avec laquelle un lien est créé — de l'instinct simple jusqu'à la pleine conscience réflexive. Voir LIE-06 pour le détail complet."
+  },
+  "sections": [
+    {
+      "id": "id_11a7415a",
+      "title": "Définition & origine du don",
+      "blocks": [
+        {
+          "id": "id_b772b86e",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Définition",
+          "paragraphs": [
+            "Un lien est une connexion télépathique durable entre un individu et une autre espèce ou entité — un esprit élémentaire, un animal, ou plus rarement une entité d'un niveau de conscience supérieur. Il permet une communication directe, souvent décrite comme la capacité d'entendre et de comprendre les pensées ou l'état intérieur de l'autre partie."
+          ]
+        },
+        {
+          "id": "id_6c9515f4",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Origine : la connexion au Plan Éthéré",
+          "paragraphs": [
+            "La capacité à créer des liens n'est pas un talent isolé : elle découle du fait que l'individu est connecté au Plan Éthéré (voir MEN-01). C'est cette même connexion qui, à une échelle bien plus dangereuse, expose aussi les individus liés à la prédation des créatures de ce plan (voir MEN-03)."
+          ]
+        },
+        {
+          "id": "id_deb7ca56",
+          "type": "crossref",
+          "text": "Pour la mécanique de vulnérabilité associée aux liens, voir MEN-03 — Facteurs de vulnérabilité."
+        }
+      ]
+    },
+    {
+      "id": "id_f61506d0",
+      "title": "Les trois voies d'acquisition",
+      "blocks": [
+        {
+          "id": "id_8fa12729",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Voie 1 — Inné et déjà développé",
+          "paragraphs": [
+            "Le lien est présent et pleinement fonctionnel dès l'enfance, sans travail préalable du porteur. C'est le cas de Miguel avec les Esprits de feu : le lien existait et pouvait déjà être utilisé avant tout entraînement à la Guilde."
+          ]
+        },
+        {
+          "id": "id_52141b3e",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Voie 2 — Inné mais dormant",
+          "paragraphs": [
+            "Le lien existe dès la naissance mais reste quasiment inerte. Il doit d'abord être repéré par son porteur — souvent par hasard ou grâce à un tiers expérimenté — avant de pouvoir être travaillé et rendu réellement utilisable."
+          ]
+        },
+        {
+          "id": "id_c0fac76b",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Voie 3 — Acquis par familiarité",
+          "paragraphs": [
+            "Pour un lien qui n'est pas inné, il faut passer du temps auprès de l'espèce visée et, de préférence, développer une relation quasi amicale avec un individu précis de cette espèce. Un lien peut alors se créer progressivement à partir de cette relation."
+          ]
+        },
+        {
+          "id": "id_68601916",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Délai et rareté selon l'espèce visée",
+          "paragraphs": [
+            "Rien ne précise combien de temps demande la Voie 3 selon l'espèce ciblée. Il est cohérent avec le reste du système de supposer que ce délai croît fortement avec le niveau de conscience de l'espèce visée (voir LIE-06) : quelques semaines ou mois pour un animal ordinaire, sans doute des années pour un Golem, un Treant ou un élémentaire majeur — si tant est qu'un individu de ces espèces accepte même d'entamer une telle relation."
+          ]
+        },
+        {
+          "id": "id_9873f471",
+          "type": "callout",
+          "tag": "attention",
+          "title": "Ne pas confondre avec le Rituel de Transmission",
+          "paragraphs": [
+            "Le Rituel de Transmission entre un Gardien sortant et son successeur (GDN-03) n'est pas un lien au sens de ce dossier : il s'agit d'une absorption totale d'âme et de puissance entre deux Hommes, un mécanisme distinct, propre à la lignée des Gardiens."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_a1b5fbb0",
+      "title": "Tempérament des populations liées",
+      "blocks": [
+        {
+          "id": "id_90a21624",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Sauvage contre domestiqué",
+          "paragraphs": [
+            "Au sein d'une même espèce liée, des populations ou des individus distincts peuvent présenter un tempérament radicalement différent, indépendamment de la force du lien lui-même. Les Esprits de feu rencontrés par Miguel chez ses parents étaient presque sauvages, désobéissant systématiquement ; ceux de l'auberge, en périphérie de Narmatin, étaient presque domestiqués et obéissaient sans résistance dès la première tentative."
+          ]
+        },
+        {
+          "id": "id_1f1bbbc7",
+          "type": "paragraph",
+          "text": "Cette distinction est indépendante du niveau de puissance du porteur : un lien techniquement fonctionnel peut rester largement inefficace si la population ou l'individu lié appartient à une lignée peu encline à coopérer, quelle que soit la compétence de celui qui porte le lien.",
+          "italic": false
+        },
+        {
+          "id": "id_a2a8e031",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Portée générale de cette distinction",
+          "paragraphs": [
+            "Rien ne confirme que toutes les espèces liées connaissent une telle variation sauvage/domestiqué — seul le cas des Esprits de feu est attesté. Il est néanmoins plausible, par cohérence, que ce phénomène concerne au moins les espèces les plus courantes (esprits élémentaires, animaux), en particulier à proximité des zones densément peuplées comme Narmatin, où un contact prolongé avec les Hommes pourrait progressivement « domestiquer » certaines populations."
+          ]
+        },
+        {
+          "id": "id_8d1fc470",
+          "type": "callout",
+          "tag": "hook",
+          "title": "La lignée sauvage introuvable",
+          "paragraphs": [
+            "Un individu porteur d'un lien avec une population domestiquée pourrait devoir, pour une raison précise (rituel, urgence, quête), retrouver et convaincre une population sauvage de la même espèce — sans bénéficier d'aucune des habitudes de coopération acquises par la population domestiquée."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_8851c115",
+      "title": "Progression de puissance & amplification",
+      "blocks": [
+        {
+          "id": "id_bc36acaf",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Progression par l'entraînement",
+          "paragraphs": [
+            "La majorité des Hommes capables de lien peuvent, à partir d'un premier lien, développer deux à trois liens supplémentaires avec de l'entraînement. Une minorité exceptionnelle peut atteindre six à sept liens par le seul entraînement, sans autre apport — c'est le cas du Gardien Udor, et apparemment celui de Miguel, qui avait déjà créé trois nouveaux liens dès sa quatrième année de formation à la Guilde."
+          ]
+        },
+        {
+          "id": "id_7b1c015b",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Amplification par la strite et par la Tour",
+          "paragraphs": [
+            "Le minerai de strite, extrait au nord de Narmatin, amplifie les capacités télépathiques de ceux qui le portent ou l'utilisent. La Tour du Cinquième Point Cardinal va bien plus loin : elle démultiplie les capacités du Gardien dans des proportions qu'aucun entraînement ordinaire ne peut atteindre (voir GDN-02)."
+          ]
+        },
+        {
+          "id": "id_84e6f443",
+          "type": "crossref",
+          "text": "Voir GLD-AN-001 pour le rôle de la Guilde des Animaliens dans la formation et le repérage des talents exceptionnels."
+        }
+      ]
+    },
+    {
+      "id": "id_7a29f1d1",
+      "title": "Permanence et affaiblissement",
+      "blocks": [
+        {
+          "id": "id_2dcd6a56",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Un lien établi ne se rompt jamais",
+          "paragraphs": [
+            "Une fois créé, un lien ne peut jamais être rompu, quelle qu'en soit la voie d'acquisition. Il fait partie intégrante du porteur de façon permanente."
+          ]
+        },
+        {
+          "id": "id_cc6dc845",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Mais il peut s'affaiblir par le non-usage",
+          "paragraphs": [
+            "Un lien qui reste inutilisé pendant plusieurs années s'affaiblit progressivement, jusqu'à devenir presque inutilisable en pratique. Un entraînement adapté permet cependant de lui redonner toute sa puissance d'origine — l'affaiblissement n'est donc jamais définitif, contrairement à la rupture, qui elle, n'existe simplement pas."
+          ]
+        },
+        {
+          "id": "id_848949d3",
+          "type": "callout",
+          "tag": "hook",
+          "title": "Le lien oublié",
+          "paragraphs": [
+            "Un personnage découvre, souvent par accident, qu'il porte un lien ancien et presque éteint par des années de non-usage — hérité d'une enfance, d'un événement oublié, ou d'un proche disparu. Le retravailler pourrait s'avérer vital dans une situation où lui seul offre une solution."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_93b95145",
+      "title": "Hiérarchie de conscience et rareté des liens",
+      "blocks": [
+        {
+          "id": "id_9f0af014",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Tous les liens se valent en puissance",
+          "paragraphs": [
+            "Aucun lien n'est intrinsèquement plus puissant qu'un autre du simple fait de l'espèce ou de l'entité concernée. Ce qui varie radicalement, en revanche, c'est la difficulté à établir ce lien — directement proportionnelle au niveau de conscience et de libre arbitre de l'autre partie."
+          ]
+        },
+        {
+          "id": "id_a377023c",
+          "type": "heading2",
+          "text": "Les trois degrés de conscience"
+        },
+        {
+          "id": "id_2defffd1",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "Degré I — Instinct",
+              "b": "Animaux ordinaires, esprits élémentaires simples. Liens courants, établis par affinité, domestication ou hérédité innée.",
+              "c": ""
+            },
+            {
+              "a": "Degré II — Conscience émergente",
+              "b": "Golems, Treants, élémentaires majeurs. Niveau de conscience juste en dessous des Elfes et des Hommes. Liens extrêmement rares, mais attestés historiquement.",
+              "c": ""
+            },
+            {
+              "a": "Degré III — Pleine conscience",
+              "b": "Hommes, Elfes, et toute entité au libre arbitre plein et entier. Aucun lien connu dans l'histoire entre deux êtres de ce degré.",
+              "c": ""
+            }
+          ]
+        },
+        {
+          "id": "id_fe4c6938",
+          "type": "card",
+          "badgeText": "DEGRÉ I — INSTINCT",
+          "title": "Esprits de feu et entités élémentaires simples",
+          "pitch": "",
+          "rows": [
+            {
+              "a": "Exemples connus",
+              "b": "Esprits de feu (lien de Miguel), petits esprits élémentaires domestiques ou sauvages."
+            },
+            {
+              "a": "Voie d'acquisition typique",
+              "b": "Inné (développé ou dormant) le plus souvent ; acquis par exposition prolongée sinon."
+            }
+          ],
+          "accent": "#6b8e5a"
+        },
+        {
+          "id": "id_a2ee2a34",
+          "type": "paragraph",
+          "text": "Note MJ — Le tempérament sauvage/domestiqué (LIE-03) s'observe en priorité à ce degré.",
+          "italic": false
+        },
+        {
+          "id": "id_7e3ac9bd",
+          "type": "card",
+          "badgeText": "DEGRÉ I — INSTINCT",
+          "title": "Animaux sauvages et rapaces",
+          "pitch": "",
+          "rows": [
+            {
+              "a": "Exemples connus",
+              "b": "Rapaces (lien exceptionnellement pénétrant démontré par Miguel), autres animaux communs."
+            },
+            {
+              "a": "Voie d'acquisition typique",
+              "b": "Inné ou acquis par familiarité — la voie la plus classique enseignée à la Guilde."
+            }
+          ],
+          "accent": "#6b8e5a"
+        },
+        {
+          "id": "id_664d84a7",
+          "type": "card",
+          "badgeText": "DEGRÉ II — CONSCIENCE ÉMERGENTE",
+          "title": "Golems",
+          "pitch": "",
+          "rows": [
+            {
+              "a": "Exemples connus",
+              "b": "Golems de garde de Narmatin, composés de roche et de cristaux."
+            },
+            {
+              "a": "Voie d'acquisition typique",
+              "b": "Acquis par familiarité exclusivement, sur une durée vraisemblablement bien plus longue qu'au Degré I (hypothèse)."
+            }
+          ],
+          "accent": "#b5651d"
+        },
+        {
+          "id": "id_c9e42389",
+          "type": "paragraph",
+          "text": "Note MJ — Un Golem lié serait un allié ou un PNJ extraordinairement rare — sujet idéal pour une quête entière.",
+          "italic": false
+        },
+        {
+          "id": "id_39e3ce18",
+          "type": "pagebreak"
+        },
+        {
+          "id": "id_cfa6985f",
+          "type": "card",
+          "badgeText": "DEGRÉ II — CONSCIENCE ÉMERGENTE",
+          "title": "Treants",
+          "pitch": "",
+          "rows": [
+            {
+              "a": "Exemples connus",
+              "b": "Non encore rencontrés dans les récits disponibles — existence supposée par la hiérarchie établie."
+            },
+            {
+              "a": "Voie d'acquisition typique",
+              "b": "Acquis par familiarité, probablement sur plusieurs années (hypothèse)."
+            }
+          ],
+          "accent": "#b5651d"
+        },
+        {
+          "id": "id_9b2d8e9f",
+          "type": "card",
+          "badgeText": "DEGRÉ II — CONSCIENCE ÉMERGENTE",
+          "title": "Élémentaires majeurs",
+          "pitch": "",
+          "rows": [
+            {
+              "a": "Exemples connus",
+              "b": "Formes supérieures des esprits élémentaires simples du Degré I — distinction de puissance et de conscience, pas seulement de taille."
+            },
+            {
+              "a": "Voie d'acquisition typique",
+              "b": "Acquis par familiarité ; se distingue nettement d'un lien avec un esprit simple de la même famille élémentaire."
+            }
+          ],
+          "accent": "#b5651d"
+        },
+        {
+          "id": "id_3b7c7b8e",
+          "type": "card",
+          "badgeText": "DEGRÉ III — PLEINE CONSCIENCE",
+          "title": "Hommes, Elfes et êtres pleinement conscients",
+          "pitch": "",
+          "rows": [
+            {
+              "a": "Exemples connus",
+              "b": "Aucun cas connu à ce jour."
+            },
+            {
+              "a": "Voie d'acquisition typique",
+              "b": "Inconnue — jamais observée dans l'histoire disponible."
+            }
+          ],
+          "accent": "#5c1a1a"
+        },
+        {
+          "id": "id_d47f8cf2",
+          "type": "paragraph",
+          "text": "Note MJ — Un premier cas avéré constituerait un événement légendaire à l'échelle du monde connu. Voir hook ci-dessous.",
+          "italic": false
+        },
+        {
+          "id": "id_01748ee1",
+          "type": "callout",
+          "tag": "hook",
+          "title": "Le premier lien entre égaux",
+          "paragraphs": [
+            "Et si un personnage devenait le premier cas avéré de l'histoire connue à établir un lien avec un être pleinement conscient — un Elfe, un autre Homme ? Un tel événement dépasserait largement l'anecdote personnelle : il remettrait en question ce que la Guilde elle-même croit savoir sur les limites du don. Une piste à réserver aux enjeux de fin de campagne, tant elle bouleverse la hiérarchie établie."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_8399f9f0",
+      "title": "Le lien comme vulnérabilité",
+      "blocks": [
+        {
+          "id": "id_efb7024b",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Rappel de la mécanique de vulnérabilité",
+          "paragraphs": [
+            "Un individu sans lien laisse un espace psychique vacant, plus facile à occuper pour une créature du Plan Éthéré. À l'inverse, un individu aux liens nombreux devient une cible prioritaire — perçu comme une menace potentielle — tout en étant rendu plus vulnérable par l'affaiblissement de sa garde inconsciente. Le détail complet de cette mécanique se trouve dans MEN-03."
+          ]
+        },
+        {
+          "id": "id_53c2a8ed",
+          "type": "crossref",
+          "text": "Voir MEN-03 — Facteurs de vulnérabilité, et MEN-04 pour la hiérarchie des créatures qui exploitent cette vulnérabilité."
+        }
+      ]
+    },
+    {
+      "id": "id_0e56779a",
+      "title": "Hooks de scénario",
+      "blocks": [
+        {
+          "id": "id_6944eb73",
+          "type": "paragraph",
+          "text": "Six accroches prêtes à l'emploi, centrées sur la mécanique des liens plutôt que sur la Tour ou le Plan Éthéré directement.",
+          "italic": false
+        },
+        {
+          "id": "id_0f1531c4",
+          "type": "card",
+          "badgeText": "HOOK 1",
+          "title": "Le don qui dormait",
+          "pitch": "Un personnage découvre par accident qu'il porte un lien inné mais jamais repéré jusque-là — peut-être révélé par une situation de stress ou de danger.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Personnel"
+            },
+            {
+              "a": "Complication",
+              "b": "Le lien est brut, non travaillé, et peut se manifester de façon incontrôlée avant tout entraînement."
+            },
+            {
+              "a": "Rôle des liens",
+              "b": "La Guilde des Animaliens peut proposer un encadrement si la découverte remonte jusqu'à elle."
+            }
+          ]
+        },
+        {
+          "id": "id_f6146392",
+          "type": "card",
+          "badgeText": "HOOK 2",
+          "title": "Le pacte du solitaire",
+          "pitch": "Un personnage cherche à établir un lien avec une espèce précise en nouant une relation quasi amicale avec un individu — un processus long, incertain, et parfois dangereux si l'espèce visée se méfie des Hommes.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Personnel / local"
+            },
+            {
+              "a": "Complication",
+              "b": "L'échec de cette relation peut rendre toute future tentative avec la même population beaucoup plus difficile."
+            },
+            {
+              "a": "Rôle des liens",
+              "b": "Aucun — pur enjeu de personnage."
+            }
+          ]
+        },
+        {
+          "id": "id_3fa10b84",
+          "type": "card",
+          "badgeText": "HOOK 3",
+          "title": "La population sauvage",
+          "pitch": "Une communauté a besoin d'un lien fonctionnel avec une population sauvage d'une espèce habituellement domestiquée près des grandes villes — car seule une population sauvage possède une capacité recherchée (résistance, force, instinct).",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Local / régional"
+            },
+            {
+              "a": "Complication",
+              "b": "La population sauvage n'a aucune des habitudes de coopération de sa cousine domestiquée, quelle que soit la force du lien technique établi."
+            },
+            {
+              "a": "Rôle des liens",
+              "b": "Absent, sauf si la Guilde a un intérêt dans l'issue de l'opération."
+            }
+          ]
+        },
+        {
+          "id": "id_99734aa2",
+          "type": "pagebreak"
+        },
+        {
+          "id": "id_e124bd5f",
+          "type": "card",
+          "badgeText": "HOOK 4",
+          "title": "Le lien rouillé",
+          "pitch": "Un vétéran ou un ancien porteur de lien doit retrouver, en urgence, l'usage d'un lien ancien laissé à l'abandon depuis des années — une compétence oubliée devenue soudain vitale.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Personnel, à résonance dramatique"
+            },
+            {
+              "a": "Complication",
+              "b": "Le réentraînement prend du temps ; la situation qui le rend nécessaire n'en laisse peut-être pas assez."
+            },
+            {
+              "a": "Rôle des liens",
+              "b": "Aucun direct, sauf recours à la Guilde pour accélérer le processus."
+            }
+          ]
+        },
+        {
+          "id": "id_18ca81b2",
+          "type": "card",
+          "badgeText": "HOOK 5",
+          "title": "L'ami de pierre",
+          "pitch": "Une rumeur circule : un ermite ou un groupe isolé aurait réussi, sur plusieurs décennies, à établir un lien avec un Golem — un cas quasiment sans précédent au Degré II.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Régional"
+            },
+            {
+              "a": "Complication",
+              "b": "Vérifier la rumeur suppose de localiser et de convaincre un individu extrêmement méfiant, peu habitué à recevoir des visiteurs."
+            },
+            {
+              "a": "Rôle des liens",
+              "b": "Intérêt possible de la Guilde si la rumeur s'avère fondée — un tel lien serait une découverte majeure."
+            }
+          ]
+        },
+        {
+          "id": "id_5ecd7d2d",
+          "type": "card",
+          "badgeText": "HOOK 6",
+          "title": "La première fois",
+          "pitch": "Des rumeurs, probablement fausses mais insistantes, prétendent qu'un lien aurait été établi entre un Homme et un Elfe — un événement sans précédent connu dans toute l'histoire du don.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Mondial"
+            },
+            {
+              "a": "Complication",
+              "b": "Si la rumeur s'avère vraie, elle bouleverse une certitude vieille de plusieurs millénaires au sein de la Guilde et au-delà."
+            },
+            {
+              "a": "Rôle des liens",
+              "b": "Aucun rôle direct du Gardien ou de la Tour, mais un enjeu suffisamment vaste pour attirer l'attention d'Ambre, l'actuelle Mage suprême, elle-même — voir LIG-AN-006."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_43fb33ff",
+      "title": "Annexes",
+      "blocks": [
+        {
+          "id": "id_cea4adc3",
+          "type": "heading2",
+          "text": "A. Glossaire"
+        },
+        {
+          "id": "id_cd17d9bb",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "Lien",
+              "b": "Connexion télépathique durable entre un individu et une espèce ou entité, permanente une fois établie.",
+              "c": ""
+            },
+            {
+              "a": "Lien inné",
+              "b": "Lien présent dès la naissance, développé ou dormant.",
+              "c": ""
+            },
+            {
+              "a": "Lien acquis",
+              "b": "Lien créé par familiarité prolongée avec un individu d'une espèce visée.",
+              "c": ""
+            },
+            {
+              "a": "Degré de conscience",
+              "b": "Échelle graduant le niveau de conscience et de libre arbitre d'une entité liée, de I (instinct) à III (pleine conscience).",
+              "c": ""
+            },
+            {
+              "a": "Population sauvage / domestiquée",
+              "b": "Variation de tempérament au sein d'une même espèce liée, indépendante de la force du lien.",
+              "c": ""
+            },
+            {
+              "a": "Strite",
+              "b": "Minerai amplifiant les capacités télépathiques, extrait au nord de Narmatin.",
+              "c": ""
+            }
+          ]
+        },
+        {
+          "id": "id_046054a4",
+          "type": "heading2",
+          "text": "B. Documents liés"
+        },
+        {
+          "id": "id_af143c2d",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "ARC-AR-001",
+              "b": "Document fondateur — échelle de classification à sept niveaux (ARC-03).",
+              "c": ""
+            },
+            {
+              "a": "GDN-AN-002",
+              "b": "Le Gardien de la Tour — mécanisme de succession, distinct du lien (voir Attention MJ, LIE-02).",
+              "c": ""
+            },
+            {
+              "a": "GLD-AN-001",
+              "b": "La Guilde des Animaliens — hiérarchie, repérage des talents, secret institutionnel.",
+              "c": ""
+            },
+            {
+              "a": "LIG-AN-006",
+              "b": "La Lignée, Ambre, et le mécanisme d'appariement Gardien/Mage suprême.",
+              "c": ""
+            },
+            {
+              "a": "MEN-01, MEN-03",
+              "b": "Origine de la connexion au Plan Éthéré et vulnérabilité associée aux liens.",
+              "c": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

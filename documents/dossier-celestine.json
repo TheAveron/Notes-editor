@@ -6,35 +6,35 @@
     "orgLine": "GUILDE DES ARCHIVISTES — FONDS DOCUMENTAIRE",
     "kicker": "DOSSIER D'INFORMATION",
     "title": "Célestine",
-    "subtitle": "& la Lignée - le second pilier de la Tour",
+    "subtitle": "& la Lignée — le second pilier de la Tour",
     "stampText": "Niveau 6 · A4 — Mage suprême en\nexercice",
     "meta": [
       {
         "a": "N° de dossier",
-        "b": "CEL-VC-001"
+        "b": "CEL-AN-005"
       },
       {
         "a": "Objet",
-        "b": "Célestine, la mécanique de la Lignée et le duo Gardien/Mage suprême"
+        "b": "Célestine, ancienne Mage suprême — fiche d'identification et portrait"
       },
       {
         "a": "Documents liés",
-        "b": "GLD-VC-001 · GDN-VC-001 · LIE-VC-001"
+        "b": "GLD-AN-001 · GDN-AN-002 · LIE-AN-004 · LIG-AN-006"
       },
       {
         "a": "Nature du sujet",
-        "b": "Institution vivante — transmission générationnelle en cours"
+        "b": "Personnage décédé — ancienne Mage suprême"
       },
       {
         "a": "Confidentialité",
-        "b": "Niveau 6 · A4  — voir ARC-03"
+        "b": "Niveau 6 · A4 — voir ARC-03"
       }
     ]
   },
-  "footerBrand": "Célestine - Niveau 6 · A4 ",
+  "footerBrand": "Célestine - Niveau 6 · A4",
   "noteUsage": {
     "includeTagLegend": true,
-    "text": "Ce dossier est conçu pour être utilisé tel quel par un meneur de jeu (MJ) autre que l'auteur de l'univers. Chaque\ninformation est étiquetée selon son statut, afin de distinguer ce qui appartient au canon établi de ce qui reste ouvert à l'interprétation ou à l'adaptation"
+    "text": "Ce dossier est conçu pour être utilisé tel quel par un meneur de jeu (MJ) autre que l'auteur de l'univers. Chaque information est étiquetée selon son statut, afin de distinguer ce qui appartient au canon établi de ce qui reste ouvert à l'interprétation ou à l'adaptation"
   },
   "sections": [
     {
@@ -47,7 +47,7 @@
           "layout": "label-value",
           "rows": [
             {
-              "a": "Nom Civil",
+              "a": "Nom civil",
               "b": "Célestine",
               "c": ""
             },
@@ -73,7 +73,7 @@
             },
             {
               "a": "Période d'activité",
-              "b": "L'investiture d'Udor jusqu'à celle de Miguel, succédée par Ambre.",
+              "b": "L'investiture d'Udor jusqu'à celle de Miguel, remplacée par Ambre.",
               "c": ""
             },
             {
@@ -82,7 +82,7 @@
               "c": ""
             },
             {
-              "a": "Superieur Hiérarchique",
+              "a": "Supérieur hiérarchique",
               "b": "Empereur de l'Humanité",
               "c": ""
             }
@@ -104,6 +104,85 @@
           "title": "Inventer les détails du mécanisme",
           "paragraphs": [
             "Il n'est pas recommandé de chercher à inventer ou développer le fonctionnement précis des potions et sortilèges de longévité. Pour Udor, seul est confirmé que sa puissance liée aux esprits absorbés facilite l'usage de ces procédés. Le facilitateur équivalent pour Célestine, qui n'est pas Gardien, n'est pas précisé — champ ouvert si nécessaire, mais à traiter avec la même retenue."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_9ee782b7",
+      "title": "Portrait de Célestine",
+      "blocks": [
+        {
+          "id": "id_edb71940",
+          "type": "paragraph",
+          "text": "Les sources disponibles documentent la fonction de Célestine avec précision, mais laissent presque tout de sa personne ouvert. Les éléments suivants sont des propositions, à adopter ou à réécrire librement.",
+          "italic": true
+        },
+        {
+          "id": "id_bc60d1c1",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Tempérament",
+          "paragraphs": [
+            "Rien n'est établi sur son caractère. Son amitié durable et sans rancœur avec Udor, malgré une union arrangée sans amour, suggère une personne pragmatique, capable de faire la paix avec un devoir qu'elle n'a pas choisi — une piste cohérente avec le ton général de la Lignée, mais qui reste à confirmer ou à réinventer."
+          ]
+        },
+        {
+          "id": "id_f2103eb4",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Apparence physique et âge exact",
+          "paragraphs": [
+            "Non définis. Par cohérence avec Udor (136 ans lors de l'arrivée de Miguel), Célestine devait être proche de cet âge lors de sa propre retraite, 65 ans plus tard dans la chronologie du récit — donc extrêmement âgée, sinon plus, au moment de son retrait."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_6282aca2",
+      "title": "Annexes",
+      "blocks": [
+        {
+          "id": "id_17d6450f",
+          "type": "heading2",
+          "text": "A. Documents liés"
+        },
+        {
+          "id": "id_f27e2412",
+          "type": "paragraph",
+          "text": "Les corrections rendues nécessaires par ce dossier ont été appliquées dans l'ensemble de la collection : GDN-AN-002 reflète le statut de Célestine comme ancienne Mage suprême et nomme Ambre ; GLD-AN-001 porte désormais la hiérarchie complète de la Guilde ; ARC-AR-001 porte l'échelle de classification à sept niveaux.",
+          "italic": true
+        },
+        {
+          "id": "id_29ff21cc",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "ARC-AR-001",
+              "b": "Document fondateur — échelle de classification à sept niveaux (ARC-03), remplaçant les tableaux de secret précédents.",
+              "c": ""
+            },
+            {
+              "a": "GLD-AN-001",
+              "b": "La Guilde des Animaliens — hiérarchie complète, Haut Conseil des Archimages.",
+              "c": ""
+            },
+            {
+              "a": "GDN-AN-002",
+              "b": "Fiche d'identification de Miguel — autorité de tutelle, longévité, parcours attesté, relations.",
+              "c": ""
+            },
+            {
+              "a": "LIG-AN-006",
+              "b": "La Lignée — le duo Gardien/Mage suprême, la généalogie, Ambre, les hooks de scénario.",
+              "c": ""
+            },
+            {
+              "a": "MEN-AN-003",
+              "b": "La Menace — aucune mention directe de Célestine ; sans impact.",
+              "c": ""
+            }
           ]
         }
       ]

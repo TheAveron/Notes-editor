@@ -1,0 +1,336 @@
+{
+  "id": "id_98b08bf6",
+  "color": "#3f5e6b",
+  "stampStyle": "accent",
+  "cover": {
+    "stampText": "Niveau 5 · A3 — Haut Conseil & Lignée",
+    "meta": [
+      {
+        "a": "N° de dossier",
+        "b": "GLD-AN-001"
+      },
+      {
+        "a": "Objet",
+        "b": "Structure, hiérarchie et secrets internes de la Guilde des Animaliens"
+      },
+      {
+        "a": "Documents liés",
+        "b": "ARC-AR-001 · GDN-AN-002 · CEL-AN-005 · LIG-AN-006 · LIE-AN-004"
+      },
+      {
+        "a": "Nature du sujet",
+        "b": "Institution active — hiérarchie en fonction"
+      },
+      {
+        "a": "Confidentialité",
+        "b": "Niveau 5 · A3 — voir ARC-03 pour l'échelle complète"
+      }
+    ],
+    "orgLine": "GUILDE DES ARCHIVISTES — FONDS DOCUMENTAIRE",
+    "kicker": "DOSSIER DE CLASSIFICATION",
+    "title": "La Guilde",
+    "subtitle": "La Guilde des Animaliens — structure, hiérarchie et secrets internes"
+  },
+  "footerBrand": "La Guilde - Niveau 5 · A3",
+  "noteUsage": {
+    "includeTagLegend": true,
+    "text": "Ce dossier centralise ce qui était jusqu'ici dispersé entre GDN-05 et CEL-AN-005 : la structure complète de la Guilde des Animaliens. Il utilise l'échelle de classification définie dans ARC-03 plutôt qu'un système propre."
+  },
+  "sections": [
+    {
+      "id": "id_57a60118",
+      "title": "Vue d'ensemble",
+      "blocks": [
+        {
+          "id": "id_4fc9a0f3",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Fonction",
+          "paragraphs": [
+            "La Guilde des Animaliens est une institution basée à Narmatin, capitale de l'Imperium, dédiée à la formation des individus capables de développer des liens télépathiques avec d'autres espèces. La majorité des Hommes dotés d'un tel don peuvent, avec de l'entraînement, développer deux à trois liens ; une minorité exceptionnelle peut en atteindre six ou sept par le seul entraînement (voir LIE-AN-004)."
+          ]
+        },
+        {
+          "id": "id_f60de028",
+          "type": "crossref",
+          "text": "Pour le détail complet du fonctionnement des liens, voir LIE-AN-004."
+        }
+      ]
+    },
+    {
+      "id": "id_140ad6e6",
+      "title": "Hiérarchie complète",
+      "blocks": [
+        {
+          "id": "id_9cf80d68",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "Apprentis",
+              "b": "Soumis à un couvre-feu strict (21 h) et à l'obligation de porter la marque des apprentis pour circuler après la fermeture. Niveau 3 · A1.",
+              "c": ""
+            },
+            {
+              "a": "Hiérarque local (Narmatin)",
+              "b": "Reçoit les nouveaux apprentis, évalue leurs capacités, correspond avec les anciens maîtres. Sait qu'une poignée d'apprentis exceptionnels sont destinés à une affectation confidentielle. Niveau 4 · A2.",
+              "c": ""
+            },
+            {
+              "a": "Haut Conseil des Archimages",
+              "b": "Autorité juste en dessous de la Mage suprême. Sait que la Lignée existe et doit être alimentée, sans en connaître la raison exacte. Niveau 5 · A3.",
+              "c": ""
+            },
+            {
+              "a": "Mage suprême",
+              "b": "Autorité au sommet de la Guilde. Connaissance complète de la Tour et de la menace qu'elle contient. Niveau 6 · A4.",
+              "c": ""
+            }
+          ]
+        },
+        {
+          "id": "id_4a795559",
+          "type": "crossref",
+          "text": "Voir ARC-03 pour la définition complète de chaque niveau de classification."
+        }
+      ]
+    },
+    {
+      "id": "id_56521dd7",
+      "title": "Le hiérarque local & le repérage des talents",
+      "blocks": [
+        {
+          "id": "id_3ccb66a7",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Le hiérarque de Narmatin",
+          "paragraphs": [
+            "Un hiérarque (grand maître) reçoit les nouveaux apprentis à la Guilde de Narmatin, teste leurs capacités — notamment au cinquième sous-sol du bâtiment de la Guilde — et correspond avec les anciens maîtres régionaux tels que Sirgal. C'est un rouage local, subordonné à la Mage suprême, sans connaissance de la nature réelle de la Tour."
+          ]
+        },
+        {
+          "id": "id_67bf15e2",
+          "type": "callout",
+          "tag": "attention",
+          "title": "Ne pas confondre les deux « cinquièmes sous-sols »",
+          "paragraphs": [
+            "Le cinquième sous-sol de la Guilde à Narmatin, où sont testés les nouveaux apprentis, est un lieu distinct du cinquième sous-sol de la Tour évoqué ailleurs dans la collection. Les deux ne doivent jamais être confondus."
+          ]
+        },
+        {
+          "id": "id_01c1cba5",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Le repérage des candidats exceptionnels",
+          "paragraphs": [
+            "Pour les cas les plus rares — les candidats destinés à la Tour — c'est la Mage suprême elle-même qui se déplace en personne, plutôt que de déléguer cette tâche à un hiérarque local. Voir LIG-AN-006 pour le détail de ce mécanisme et de l'appariement Gardien/Mage suprême."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_9135127b",
+      "title": "Le Haut Conseil des Archimages",
+      "blocks": [
+        {
+          "id": "id_896242ec",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Rôle et connaissance",
+          "paragraphs": [
+            "Le Haut Conseil des Archimages constitue l'échelon d'autorité juste en dessous de la Mage suprême. Ses membres savent que la Lignée existe, qu'elle doit être alimentée génération après génération, et que cela concerne la Tour — qui défend le monde contre une menace non identifiée. Ils ignorent tout de la nature exacte de cette menace."
+          ]
+        },
+        {
+          "id": "id_e0ea14cb",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Composition et fonctionnement",
+          "paragraphs": [
+            "Ni le nombre d'Archimages siégeant au Haut Conseil, ni leur mode de sélection, ni la fréquence de leurs réunions ne sont précisés dans les sources actuelles. Champ ouvert pour l'auteur."
+          ]
+        },
+        {
+          "id": "id_dc5af112",
+          "type": "callout",
+          "tag": "hook",
+          "title": "Rivalité au sommet",
+          "paragraphs": [
+            "Un Archimage du Haut Conseil, ambitieux ou simplement rongé par la curiosité, pourrait chercher à en savoir davantage sur ce que la Tour protège réellement — une enquête risquée qui menace directement le secret de Niveau 6 (voir ARC-03)."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_ab5568be",
+      "title": "Hooks de scénario",
+      "blocks": [
+        {
+          "id": "id_5ab33c10",
+          "type": "paragraph",
+          "text": "Quatre accroches centrées sur la politique et le quotidien de la Guilde, sans nécessiter la Tour ou le Plan Éthéré.",
+          "italic": false
+        },
+        {
+          "id": "id_d481869e",
+          "type": "card",
+          "badgeText": "HOOK 1",
+          "title": "La marque volée",
+          "pitch": "Un groupe d'escrocs de Narmatin a mis la main sur une fausse marque d'apprenti Animalien, leur permettant de circuler après le couvre-feu et de commettre des vols dans le quartier de la Guilde.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Local (Narmatin)"
+            },
+            {
+              "a": "Complication",
+              "b": "Le trafic risque de compromettre la sécurité de tous les apprentis si la Guilde en vient à durcir ses règles d'accès pour tout le monde."
+            },
+            {
+              "a": "Rôle de la Guilde",
+              "b": "Le hiérarque local s'inquiète surtout que l'affaire ne « remonte plus haut »."
+            }
+          ]
+        },
+        {
+          "id": "id_fbec2b39",
+          "type": "card",
+          "badgeText": "HOOK 2",
+          "title": "Le candidat refusé",
+          "pitch": "Un apprenti d'une puissance exceptionnelle est repéré, mais refuse catégoriquement l'affectation confidentielle qu'on lui propose, sans en comprendre les enjeux — et sans qu'on ait le droit de les lui expliquer avant qu'il n'accepte.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Personnel / institutionnel"
+            },
+            {
+              "a": "Complication",
+              "b": "La Guilde n'a, semble-t-il, aucune procédure prévue pour un refus à ce stade du processus."
+            },
+            {
+              "a": "Rôle de la Guilde",
+              "b": "Central — la Guilde ne peut ni forcer la main du candidat, ni renoncer facilement à un tel potentiel."
+            }
+          ]
+        },
+        {
+          "id": "id_9fb2afe8",
+          "type": "card",
+          "badgeText": "HOOK 3",
+          "title": "L'Archimage qui en sait trop",
+          "pitch": "Un membre du Haut Conseil des Archimages a entamé, de sa propre initiative, une enquête sur la nature exacte de la menace que la Tour combat.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Institutionnel"
+            },
+            {
+              "a": "Complication",
+              "b": "Son enquête, même bien intentionnée, pourrait faire remonter le secret de Niveau 6 jusqu'à des oreilles qui ne devraient pas l'entendre."
+            },
+            {
+              "a": "Rôle de la Guilde",
+              "b": "Point de bascule potentiel pour tout le système de classification (voir ARC-03)."
+            }
+          ]
+        },
+        {
+          "id": "id_812bdada",
+          "type": "card",
+          "badgeText": "HOOK 4",
+          "title": "Le sous-sol interdit",
+          "pitch": "Des PJ apprentis, curieux ou téméraires, cherchent à accéder au cinquième sous-sol de la Guilde de Narmatin, où sont testés les candidats les plus prometteurs — en dehors des heures autorisées.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Local"
+            },
+            {
+              "a": "Complication",
+              "b": "Ce qu'ils y trouveront reste à la discrétion du MJ, mais l'endroit n'est probablement pas surveillé pour rien."
+            },
+            {
+              "a": "Rôle de la Guilde",
+              "b": "Le hiérarque local, si l'incursion est découverte, décidera seul des conséquences."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_7ef8a090",
+      "title": "Annexes",
+      "blocks": [
+        {
+          "id": "id_c84cf077",
+          "type": "heading2",
+          "text": "A. Glossaire"
+        },
+        {
+          "id": "id_ddc4442c",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "Animalien",
+              "b": "Membre ou système de la Guilde dédiée aux liens télépathiques inter-espèces.",
+              "c": ""
+            },
+            {
+              "a": "Hiérarque",
+              "b": "Responsable local de la Guilde, par exemple à Narmatin.",
+              "c": ""
+            },
+            {
+              "a": "Haut Conseil des Archimages",
+              "b": "Autorité de la Guilde juste en dessous de la Mage suprême.",
+              "c": ""
+            },
+            {
+              "a": "Mage suprême",
+              "b": "Autorité au sommet de la Guilde — voir LIG-AN-006 pour le détail du rôle dans le duo Gardien/Mage suprême et de sa titulaire actuelle, Ambre.",
+              "c": ""
+            }
+          ]
+        },
+        {
+          "id": "id_8cdca559",
+          "type": "heading2",
+          "text": "B. Documents liés"
+        },
+        {
+          "id": "id_6950ceef",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "ARC-AR-001",
+              "b": "Échelle de classification complète (ARC-03), utilisée par ce dossier.",
+              "c": ""
+            },
+            {
+              "a": "GDN-AN-002",
+              "b": "Le Gardien de la Tour — bénéficiaire final du secret protégé par cette hiérarchie.",
+              "c": ""
+            },
+            {
+              "a": "CEL-AN-005",
+              "b": "Célestine — fiche d'identification de l'ancienne Mage suprême.",
+              "c": ""
+            },
+            {
+              "a": "LIG-AN-006",
+              "b": "La Lignée — le duo Gardien/Mage suprême et le mécanisme de succession.",
+              "c": ""
+            },
+            {
+              "a": "LIE-AN-004",
+              "b": "Les Liens — mécanique complète des capacités que la Guilde forme et cultive.",
+              "c": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,780 @@
+{
+  "id": "id_aa5adcd7",
+  "color": "#4a2160",
+  "stampStyle": "red",
+  "cover": {
+    "stampText": "Niveau 6 · A4 — Mage suprême en exercice",
+    "meta": [
+      {
+        "a": "N° de dossier",
+        "b": "MEN-AN-003"
+      },
+      {
+        "a": "Objet",
+        "b": "Nature, mécanique de prédation et hiérarchie des créatures du Plan Éthéré"
+      },
+      {
+        "a": "Document lié",
+        "b": "ARC-AR-001 · GDN-AN-002 · GLD-AN-001"
+      },
+      {
+        "a": "Nature du sujet",
+        "b": "Menace active — surveillance permanente requise"
+      },
+      {
+        "a": "Confidentialité",
+        "b": "Niveau 6 · A4 — voir ARC-03 pour l'échelle complète"
+      }
+    ],
+    "orgLine": "GUILDE DES ARCHIVISTES — FONDS DOCUMENTAIRE",
+    "kicker": "DOSSIER DE CLASSIFICATION",
+    "title": "La Menace",
+    "subtitle": "Le Plan Éthéré et ses créatures"
+  },
+  "footerBrand": "La Menace - Niveau 6 · A4",
+  "noteUsage": {
+    "includeTagLegend": true,
+    "text": "Ce dossier complète GDN-AN-002 et suit le même système de classification. Une échelle supplémentaire, propre à ce document, permet de graduer le danger que représente chaque créature du Plan Éthéré.\nLes Paliers I à V graduent la puissance et la dangerosité d'une créature du Plan Éthéré, du simple parasite opportuniste jusqu'aux entités quasi mythiques comparables à de grands seigneurs du mal. Voir MEN-04 pour le détail complet."
+  },
+  "sections": [
+    {
+      "id": "id_61eadbae",
+      "title": "Vue d'ensemble du Plan Éthéré",
+      "blocks": [
+        {
+          "id": "id_c8fba78a",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Les deux plans",
+          "paragraphs": [
+            "Le monde connu coexiste avec un second plan d'existence, le Plan Éthéré. Les individus capables de tisser des liens télépathiques avec d'autres espèces le peuvent précisément parce qu'ils sont connectés à ce second plan — le don décrit dans GDN-01 et dans les récits de jeunesse de Miguel n'est donc pas une capacité isolée, mais la manifestation d'une connexion plus large et plus dangereuse qu'elle n'y paraît."
+          ]
+        },
+        {
+          "id": "id_92c27a87",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Nature du combat",
+          "paragraphs": [
+            "Le Plan Éthéré n'a aucune matérialisation physique dans le monde connu. Les créatures qui y vivent ne « traversent » jamais sous une forme corporelle : toute confrontation avec elles — y compris celles menées par le Gardien depuis la Tour — se déroule intégralement sur le plan psychique."
+          ]
+        },
+        {
+          "id": "id_81e628c8",
+          "type": "crossref",
+          "text": "La Tour du Cinquième Point Cardinal (GDN-02) sert de focaliseur permettant au Gardien de projeter sa conscience dans le Plan Éthéré pour y affronter ces créatures."
+        },
+        {
+          "id": "id_6b6340d5",
+          "type": "heading2",
+          "text": "Ce qui habite le Plan Éthéré"
+        },
+        {
+          "id": "id_92e507fc",
+          "type": "paragraph",
+          "text": "Les créatures qui peuplent le Plan Éthéré se nourrissent de l'esprit et de la volonté des êtres connectés au plan — c'est-à-dire, potentiellement, quiconque possède ne serait-ce qu'un lien télépathique naissant. Leur puissance et leur intelligence varient considérablement, de l'automatisme presque animal jusqu'à une conscience et une intentionnalité comparables à celles des plus grandes menaces mythologiques (voir MEN-04).",
+          "italic": false
+        },
+        {
+          "id": "id_dbe62be1",
+          "type": "callout",
+          "tag": "attention",
+          "title": "Sur les Ombres",
+          "paragraphs": [
+            "Rien n'indique à ce stade que les Ombres — l'entité silencieuse rencontrée par Miguel à Withre — soient liées au Plan Éthéré. Elles constituent, en l'état des sources, une espèce à part entière. Éviter de les assimiler aux créatures traitées dans ce dossier tant que l'auteur n'a pas statué sur un éventuel lien entre les deux."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_c1f86629",
+      "title": "Mécanique de prédation",
+      "blocks": [
+        {
+          "id": "id_be4ca466",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Deux issues distinctes",
+          "paragraphs": [
+            "La prédation d'une créature du Plan Éthéré peut mener à deux résultats bien différents, qu'il convient de ne jamais confondre : la consommation totale d'une cible précise, qui entraîne sa mort pure et simple ; ou la possession totale d'un corps, réservée aux créatures devenues suffisamment puissantes, qui détruit l'esprit et l'âme de l'hôte pour laisser la créature s'y installer durablement."
+          ]
+        },
+        {
+          "id": "id_4a267708",
+          "type": "heading2",
+          "text": "Consommation d'une cible"
+        },
+        {
+          "id": "id_588f0154",
+          "type": "paragraph",
+          "text": "Les attaques subies par une cible sont violentes et ponctuelles — jamais une érosion lente et continue. Une cible ressent leurs conséquences sans en identifier la cause : maux de tête soudains, malaises que l'on confond avec de simples vertiges ou des malaises vagaux. Une seule attaque ne suffit jamais à consommer entièrement une cible : il en faut plusieurs, espacées dans le temps. Si la cible est intégralement consommée, elle meurt simplement — aucune possession n'a lieu dans ce cas précis.",
+          "italic": false
+        },
+        {
+          "id": "id_5a45e3bc",
+          "type": "heading2",
+          "text": "Possession totale"
+        },
+        {
+          "id": "id_23c0b732",
+          "type": "paragraph",
+          "text": "La possession est un phénomène distinct, réservé aux créatures ayant suffisamment grandi en puissance — vraisemblablement en se nourrissant, au fil du temps, de nombreuses victimes différentes plutôt que d'une seule. Une fois ce seuil de puissance atteint, la créature peut posséder un corps de façon totale, détruisant l'esprit et l'âme de son hôte pour s'y substituer entièrement.",
+          "italic": false
+        },
+        {
+          "id": "id_0548bc0e",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Quel corps est possédé ?",
+          "paragraphs": [
+            "Les sources ne précisent pas si la créature devenue assez puissante cible un corps déjà affaibli par ses propres attaques, un corps « vacant » (dépourvu de tout lien, cf. MEN-03), ou n'importe quel corps disponible au moment venu. Par cohérence avec le reste du système, un corps affaibli ou vacant serait logiquement plus simple à soumettre — mais ce point reste ouvert à l'auteur."
+          ]
+        },
+        {
+          "id": "id_b2190f39",
+          "type": "callout",
+          "tag": "attention",
+          "title": "Ne pas confondre les échelles",
+          "paragraphs": [
+            "La consommation se joue à l'échelle d'une victime précise, sur plusieurs attaques rapprochées. La possession se joue à l'échelle de la trajectoire de la créature elle-même, construite sur la durée. Un scénario centré sur un PNJ en train d'être « mangé » (MEN-06) n'implique donc pas nécessairement de risque de possession à court terme."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_8b55f7ef",
+      "title": "Facteurs de vulnérabilité",
+      "blocks": [
+        {
+          "id": "id_3a19e050",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Sans lien : la proie par vacance",
+          "paragraphs": [
+            "La majorité de la population ne possède aucun lien télépathique. Chez ces individus, l'espace psychique normalement occupé par un lien reste vacant — une créature du Plan Éthéré peut alors s'y engouffrer pour attaquer et se nourrir plus facilement, en l'absence de toute résistance structurée."
+          ]
+        },
+        {
+          "id": "id_4b95b6d2",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Avec liens nombreux : une double vulnérabilité",
+          "paragraphs": [
+            "Les individus aux liens multiples subissent une double exposition, à la fois protectrice en apparence et dangereuse en réalité. D'une part, ils sont perçus par les créatures comme des menaces potentielles et deviennent, à ce titre, des cibles prioritaires. D'autre part, la possession de nombreux liens affaiblit généralement la « surveillance » inconsciente qu'un esprit exerce sur lui-même, ce qui en fait, paradoxalement, des cibles plus faciles à atteindre malgré leur statut de cible privilégiée."
+          ]
+        },
+        {
+          "id": "id_2ad852c7",
+          "type": "callout",
+          "tag": "attention",
+          "title": "Le paradoxe du Gardien",
+          "paragraphs": [
+            "Le Gardien de la Tour cumule, par construction, davantage de liens et de puissance psychique que quiconque dans le monde connu (voir GDN-01 et GDN-04). Il devrait donc être, en toute logique, la cible la plus prioritaire et la plus vulnérable qui soit pour les créatures les plus puissantes du Plan Éthéré. Reste à savoir si la Tour elle-même le protège de cette exposition accrue, ou si le Gardien vit, consciemment ou non, en étant structurellement l'appât le plus attractif du monde. Non tranché — voir aussi GDN-05."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_f4177c5f",
+      "title": "Hiérarchie des créatures",
+      "blocks": [
+        {
+          "id": "id_b4c072e5",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Principe général",
+          "paragraphs": [
+            "Les créatures du Plan Éthéré forment une hiérarchie de puissance et d'intelligence très étendue. À l'extrémité inférieure, des entités quasi automatiques attaquent leurs cibles au hasard. À l'extrémité supérieure, certaines créatures atteignent une puissance et une intentionnalité comparables à celles des plus grands seigneurs du mal des récits mythologiques — des figures à l'échelle d'un Sauron ou d'un dieu du Chaos."
+          ]
+        },
+        {
+          "id": "id_a76cba0f",
+          "type": "paragraph",
+          "text": "Le système de paliers suivant est une proposition destinée à rendre cette hiérarchie directement utilisable en jeu. Les noms, comportements précis et exemples sont des créations pour ce dossier — à adapter librement.",
+          "italic": true
+        },
+        {
+          "id": "id_1b462474",
+          "type": "heading2",
+          "text": "Grille des paliers"
+        },
+        {
+          "id": "id_5ef7eb39",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "Palier I",
+              "b": "Larves — automatismes quasi instinctifs, attaques opportunistes et aléatoires, aucune capacité de possession.",
+              "c": ""
+            },
+            {
+              "a": "Palier II",
+              "b": "Rôdeurs — comportement erratique mais capable de reconnaître et de traquer une cible sur plusieurs jours.",
+              "c": ""
+            },
+            {
+              "a": "Palier III",
+              "b": "Dévoreurs — intelligence réelle, premiers cas connus de possession totale sur des corps affaiblis ou vacants.",
+              "c": ""
+            },
+            {
+              "a": "Palier IV",
+              "b": "Seigneurs de la Faim — puissance régionale, capables d'orchestrer plusieurs créatures inférieures.",
+              "c": ""
+            },
+            {
+              "a": "Palier V",
+              "b": "Souverains Éthérés — entités quasi mythiques, enjeux à l'échelle du monde connu.",
+              "c": ""
+            }
+          ]
+        },
+        {
+          "id": "id_1d43d936",
+          "type": "card",
+          "badgeText": "PALIER I",
+          "title": "Suceur de veille",
+          "pitch": "",
+          "rows": [
+            {
+              "a": "Intelligence",
+              "b": "Quasi nulle — automatisme instinctif"
+            },
+            {
+              "a": "Comportement",
+              "b": "S'engouffre dans l'espace psychique vacant d'individus sans lien, particulièrement lors du sommeil ou de la fatigue extrême. Attaque au hasard, sans discernement."
+            },
+            {
+              "a": "Capacité de possession",
+              "b": "Aucune"
+            },
+            {
+              "a": "Symptômes typiques",
+              "b": "Réveils nocturnes inexpliqués, sensation de froid localisé, fatigue disproportionnée au repos pris."
+            }
+          ],
+          "accent": "#6b8e5a"
+        },
+        {
+          "id": "id_b8ce0fb0",
+          "type": "pagebreak"
+        },
+        {
+          "id": "id_648421d9",
+          "type": "card",
+          "badgeText": "PALIER II",
+          "title": "Traqueur des liens",
+          "pitch": "",
+          "rows": [
+            {
+              "a": "Intelligence",
+              "b": "Limitée mais orientée — reconnaît un lien télépathique comme une menace"
+            },
+            {
+              "a": "Comportement",
+              "b": "Cible en priorité les individus à liens multiples pour leur garde affaiblie ; peut suivre une même cible sur plusieurs jours avant de frapper."
+            },
+            {
+              "a": "Capacité de possession",
+              "b": "Aucune"
+            },
+            {
+              "a": "Symptômes typiques",
+              "b": "Maux de tête sourds et récurrents, malaises confondus avec des vertiges, absences de quelques secondes."
+            }
+          ],
+          "accent": "#b5892e"
+        },
+        {
+          "id": "id_c90126b7",
+          "type": "card",
+          "badgeText": "PALIER III",
+          "title": "Dévoreur de seuil",
+          "pitch": "",
+          "rows": [
+            {
+              "a": "Intelligence",
+              "b": "Réelle — capable de stratégie simple"
+            },
+            {
+              "a": "Comportement",
+              "b": "Après avoir consommé plusieurs victimes, atteint un seuil de puissance suffisant pour tenter une possession totale sur un corps affaibli ou vacant."
+            },
+            {
+              "a": "Capacité de possession",
+              "b": "Oui — sur corps affaibli ou vacant"
+            },
+            {
+              "a": "Symptômes typiques",
+              "b": "Syncopes fréquentes, teint blafard, perte de poids inexpliquée, désorientation croissante."
+            }
+          ],
+          "accent": "#b5502b"
+        },
+        {
+          "id": "id_dfdce271",
+          "type": "paragraph",
+          "text": "Note MJ — Un Dévoreur de seuil ayant réussi sa possession est un formidable levier d'enquête : le PNJ « possédé » peut sembler socialement normal, la créature imitant son hôte pour ne pas se faire repérer.",
+          "italic": false
+        },
+        {
+          "id": "id_781d8e4e",
+          "type": "card",
+          "badgeText": "PALIER IV",
+          "title": "Seigneur de la Faim",
+          "pitch": "",
+          "rows": [
+            {
+              "a": "Intelligence",
+              "b": "Élevée — intentionnalité et planification"
+            },
+            {
+              "a": "Comportement",
+              "b": "Étend son influence sur toute une région, capable de diriger plusieurs créatures inférieures vers des cibles précises (voir hook « Withre en péril », GDN-06)."
+            },
+            {
+              "a": "Capacité de possession",
+              "b": "Oui — sur cibles choisies, parfois préparées de longue date"
+            },
+            {
+              "a": "Symptômes typiques",
+              "b": "Recrudescence localisée et anormale d'attaques de créatures inférieures sur une même région."
+            }
+          ],
+          "accent": "#8b2635"
+        },
+        {
+          "id": "id_e46cddf8",
+          "type": "paragraph",
+          "text": "Note MJ — Un antagoniste récurrent crédible pour une campagne régionale, sans nécessiter l'intervention directe du Gardien à chaque incident.",
+          "italic": false
+        },
+        {
+          "id": "id_c293dd06",
+          "type": "pagebreak"
+        },
+        {
+          "id": "id_f766d454",
+          "type": "card",
+          "badgeText": "PALIER V",
+          "title": "Souverain Éthéré",
+          "pitch": "",
+          "rows": [
+            {
+              "a": "Intelligence",
+              "b": "Quasi incompréhensible à l'échelle humaine"
+            },
+            {
+              "a": "Comportement",
+              "b": "Inconnu dans le détail — sa seule attention prolongée sur une région semble suffire à en corrompre les esprits les plus sensibles."
+            },
+            {
+              "a": "Capacité de possession",
+              "b": "Présumée totale et irréversible"
+            },
+            {
+              "a": "Symptômes typiques",
+              "b": "Non documentés — aucun témoin connu n'a survécu assez longtemps pour les décrire de façon fiable."
+            }
+          ],
+          "accent": "#4a2160"
+        },
+        {
+          "id": "id_48becbdd",
+          "type": "paragraph",
+          "text": "Note MJ — Un enjeu de fin de campagne plutôt qu'une menace récurrente. Voir le hook ci-dessous pour un lien possible avec la Tour elle-même.",
+          "italic": false
+        },
+        {
+          "id": "id_a02905fd",
+          "type": "callout",
+          "tag": "hook",
+          "title": "Le cristal comme rempart",
+          "paragraphs": [
+            "Et si le cristal au cœur de la Tour (GDN-02), vieux de 12 000 ans, n'était pas seulement une source de pouvoir, mais aussi une entrave — un fragment ou une prison partielle contenant, ou faisant obstacle à, un Souverain Éthéré en particulier ? Cette piste n'est confirmée nulle part, mais elle offrirait un fil conducteur mythique reliant directement les deux dossiers, GDN-AN-002 et MEN-AN-003, jusqu'à l'origine même de la Tour."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_aa6334df",
+      "title": "Le combat du Gardien",
+      "blocks": [
+        {
+          "id": "id_d4eb607d",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Un combat strictement psychique",
+          "paragraphs": [
+            "Le Gardien ne combat jamais les créatures du Plan Éthéré sous une forme physique ou matérielle : la Tour lui permet de projeter sa conscience dans le Plan pour s'y confronter directement à elles. Aucune matérialisation corporelle de ces créatures n'existe dans le monde connu."
+          ]
+        },
+        {
+          "id": "id_d715c1f2",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Un rôle proactif ou réactif ?",
+          "paragraphs": [
+            "Rien ne tranche si le Gardien traque activement les créatures du Plan Éthéré (patrouille, chasse méthodique) ou s'il intervient seulement lorsqu'une victime ou une menace est repérée (posture réactive, façon exorciste). Les deux postures sont cohérentes avec tout ce qui a été établi, mais elles impliquent un rythme de vie et un type de récit très différents pour le Gardien."
+          ]
+        },
+        {
+          "id": "id_2db6c688",
+          "type": "crossref",
+          "text": "Voir GDN-01 et GDN-05 pour le profil du Gardien actuel, et MEN-03 pour le paradoxe de son exposition en tant que cible prioritaire."
+        }
+      ]
+    },
+    {
+      "id": "id_19b4bdf6",
+      "title": "Symptômes & diagnostic",
+      "blocks": [
+        {
+          "id": "id_4f2dc6e6",
+          "type": "paragraph",
+          "text": "Les symptômes confirmés par les sources — maux de tête et malaises assimilables à des vertiges ou des malaises vagaux — sont ici replacés dans une grille plus large, utile pour faire progresser une scène d'enquête ou de sauvetage. Seuls les deux symptômes de base sont attestés ; le reste est une extrapolation clinique proposée pour l'usage MJ.",
+          "italic": false
+        },
+        {
+          "id": "id_ad18855b",
+          "type": "heading2",
+          "text": "Stade précoce (premières attaques)"
+        },
+        {
+          "id": "id_2fcf3445",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Symptômes attestés",
+          "paragraphs": [
+            "Maux de tête soudains ; malaises confondus avec de simples vertiges ou des malaises vagaux."
+          ]
+        },
+        {
+          "id": "id_726392e5",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Signes complémentaires proposés",
+          "paragraphs": [
+            "Fatigue disproportionnée au repos pris, sensation de froid localisé sans cause apparente, réveils nocturnes inexpliqués, pertes ponctuelles du fil des pensées."
+          ]
+        },
+        {
+          "id": "id_46d7cf41",
+          "type": "heading2",
+          "text": "Stade intermédiaire (attaques répétées, cible identifiée par une créature)"
+        },
+        {
+          "id": "id_8ac94087",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Signes complémentaires proposés",
+          "paragraphs": [
+            "Syncopes plus fréquentes, absences de quelques secondes, sensation diffuse d'être observé, variations d'humeur inexpliquées par l'entourage."
+          ]
+        },
+        {
+          "id": "id_714be455",
+          "type": "heading2",
+          "text": "Stade tardif (consommation avancée)"
+        },
+        {
+          "id": "id_1ccff1ca",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Signes complémentaires proposés",
+          "paragraphs": [
+            "Teint blafard, perte de poids inexpliquée, désorientation croissante, discours par moments incohérent. Sans intervention, ce stade mène à la mort de la cible (voir MEN-02)."
+          ]
+        },
+        {
+          "id": "id_35088e0a",
+          "type": "heading2",
+          "text": "Après une possession réussie"
+        },
+        {
+          "id": "id_59eacd6e",
+          "type": "callout",
+          "tag": "attention",
+          "title": "Une possession est difficile à détecter",
+          "paragraphs": [
+            "Une créature ayant réussi une possession totale a tout intérêt à imiter le comportement de son hôte pour ne pas se faire repérer. Il n'existe, en l'état des sources, aucun signe extérieur fiable et systématique permettant de distinguer un PNJ possédé d'un PNJ ordinaire — ce qui en fait un excellent ressort d'enquête, mais aussi un point à doser avec soin pour ne pas rendre la menace insoluble ou au contraire trop évidente pour les joueurs."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_e1bf1252",
+      "title": "Hooks de scénario",
+      "blocks": [
+        {
+          "id": "id_c78cc709",
+          "type": "paragraph",
+          "text": "Six accroches prêtes à l'emploi, graduées du plus local au plus vaste, et couvrant l'ensemble des paliers de menace définis dans MEN-04.",
+          "italic": false
+        },
+        {
+          "id": "id_97d8aab6",
+          "type": "card",
+          "badgeText": "HOOK 1",
+          "title": "Les nuits de Withre",
+          "pitch": "Un Suceur de veille (Palier I) s'est installé dans un hameau isolé, profitant du grand nombre d'habitants sans lien. Les victimes ne savent pas qu'elles sont attaquées — seulement qu'elles dorment de plus en plus mal.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Local"
+            },
+            {
+              "a": "Complication",
+              "b": "Convaincre des villageois sceptiques qu'un mal invisible les frappe, sans preuve tangible à leur montrer."
+            },
+            {
+              "a": "Rôle du Gardien",
+              "b": "Absent — un scénario à la portée de personnages sans lien avec la Tour ou la Guilde."
+            }
+          ]
+        },
+        {
+          "id": "id_641020f4",
+          "type": "card",
+          "badgeText": "HOOK 2",
+          "title": "La cible qui en savait trop",
+          "pitch": "Un PJ ou PNJ à liens multiples est repéré et traqué par un Traqueur des liens (Palier II), qui a identifié sa garde affaiblie comme une opportunité.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Personnel"
+            },
+            {
+              "a": "Complication",
+              "b": "La cible ignore tout du danger : les symptômes ressemblent à un simple surmenage jusqu'à ce que les attaques s'intensifient."
+            },
+            {
+              "a": "Rôle du Gardien",
+              "b": "Absent, mais la Guilde des Animaliens peut fournir un premier diagnostic si les PJ savent où chercher."
+            }
+          ]
+        },
+        {
+          "id": "id_7192c3ad",
+          "type": "card",
+          "badgeText": "HOOK 3",
+          "title": "Le voisin qui n'en est plus un",
+          "pitch": "Un Dévoreur de seuil (Palier III) a réussi une possession totale sur un habitant respecté d'une communauté. Rien ne semble anormal en apparence — jusqu'à ce que de petits détails ne collent plus.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Local, à forte tension d'enquête"
+            },
+            {
+              "a": "Complication",
+              "b": "Aucune preuve définitive n'existe pour confirmer la possession avant qu'il ne soit peut-être trop tard."
+            },
+            {
+              "a": "Rôle du Gardien",
+              "b": "Absent — mais un émissaire de la Guilde peut confirmer l'existence du phénomène sans se déplacer en personne."
+            }
+          ]
+        },
+        {
+          "id": "id_e0061cf7",
+          "type": "pagebreak"
+        },
+        {
+          "id": "id_037376ea",
+          "type": "card",
+          "badgeText": "HOOK 4",
+          "title": "Withre en péril",
+          "pitch": "Un Seigneur de la Faim (Palier IV) étend son influence sur toute une région rurale, dirigeant plusieurs créatures inférieures vers des cibles choisies — dont, potentiellement, le village natal de Miguel.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Régional"
+            },
+            {
+              "a": "Complication",
+              "b": "Si Miguel apprend la nouvelle, son attachement personnel à Withre pourrait le pousser à intervenir hors de la Tour — un cas rarissime aux conséquences politiques (voir GDN-06, hook 4)."
+            },
+            {
+              "a": "Rôle du Gardien",
+              "b": "Allié exceptionnel si informé et impliqué ; absent sinon."
+            }
+          ]
+        },
+        {
+          "id": "id_1d8fdb22",
+          "type": "card",
+          "badgeText": "HOOK 5",
+          "title": "Le culte du Seuil",
+          "pitch": "Une secte a découvert des fragments de vérité sur le Plan Éthéré et cherche à négocier, voire à s'allier, avec un Dévoreur ou un Seigneur de la Faim, dans l'espoir d'en tirer un pouvoir personnel.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Régional / politique"
+            },
+            {
+              "a": "Complication",
+              "b": "Le culte pourrait, sans le savoir, préparer les conditions d'une possession à grande échelle — ou d'une attention accrue d'un Souverain Éthéré."
+            },
+            {
+              "a": "Rôle du Gardien",
+              "b": "Possible intervention si l'affaire remonte jusqu'à la Guilde ou jusqu'à la Tour."
+            }
+          ]
+        },
+        {
+          "id": "id_1d13d1d7",
+          "type": "card",
+          "badgeText": "HOOK 6",
+          "title": "Le silence du Souverain",
+          "pitch": "Des signes indirects et fragmentaires (créatures de paliers inférieurs anormalement nombreuses et coordonnées) suggèrent l'éveil ou l'approche d'un Souverain Éthéré (Palier V).",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Mondial"
+            },
+            {
+              "a": "Complication",
+              "b": "Aucun témoignage fiable n'existe sur un tel événement ; les PJ avancent en terrain quasi inconnu, sans certitude sur ce qui les attend."
+            },
+            {
+              "a": "Rôle du Gardien",
+              "b": "Central — un enjeu de cette ampleur nécessite presque certainement l'intervention du Gardien en personne."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_9e960fb6",
+      "title": "Annexes",
+      "blocks": [
+        {
+          "id": "id_957add87",
+          "type": "heading2",
+          "text": "A. Glossaire"
+        },
+        {
+          "id": "id_e83b7151",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "Plan Éthéré",
+              "b": "Second plan d'existence où vivent les créatures traitées dans ce dossier ; sans matérialisation physique dans le monde connu.",
+              "c": ""
+            },
+            {
+              "a": "Lien",
+              "b": "Connexion télépathique durable entre un individu et une espèce ou entité, signe d'une connexion au Plan Éthéré.",
+              "c": ""
+            },
+            {
+              "a": "Consommation",
+              "b": "Processus par lequel une créature se nourrit de l'esprit et de la volonté d'une cible précise, au fil de plusieurs attaques.",
+              "c": ""
+            },
+            {
+              "a": "Possession totale",
+              "b": "Prise de contrôle intégrale et destructrice d'un corps par une créature devenue suffisamment puissante.",
+              "c": ""
+            },
+            {
+              "a": "Palier",
+              "b": "Niveau de puissance et d'intelligence d'une créature du Plan Éthéré, de I (Larves) à V (Souverains Éthérés).",
+              "c": ""
+            },
+            {
+              "a": "Vacance psychique",
+              "b": "Espace laissé libre dans l'esprit d'un individu sans lien, exploitable par une créature pour attaquer plus facilement.",
+              "c": ""
+            }
+          ]
+        },
+        {
+          "id": "id_29e23985",
+          "type": "heading2",
+          "text": "B. Tableau récapitulatif des paliers"
+        },
+        {
+          "id": "id_97eeb612",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "Palier I — Larves",
+              "b": "Attaques aléatoires, aucune possession, ex. : Suceur de veille.",
+              "c": ""
+            },
+            {
+              "a": "Palier II — Rôdeurs",
+              "b": "Ciblage des liens multiples, aucune possession, ex. : Traqueur des liens.",
+              "c": ""
+            },
+            {
+              "a": "Palier III — Dévoreurs",
+              "b": "Possession sur corps affaibli ou vacant, ex. : Dévoreur de seuil.",
+              "c": ""
+            },
+            {
+              "a": "Palier IV — Seigneurs de la Faim",
+              "b": "Influence régionale, coordination de créatures inférieures, ex. : Seigneur de la Faim.",
+              "c": ""
+            },
+            {
+              "a": "Palier V — Souverains Éthérés",
+              "b": "Menace à l'échelle du monde connu, ex. : Souverain Éthéré.",
+              "c": ""
+            }
+          ]
+        },
+        {
+          "id": "id_ef5f663d",
+          "type": "pagebreak"
+        },
+        {
+          "id": "id_a16b8c3b",
+          "type": "heading2",
+          "text": "C. Documents liés"
+        },
+        {
+          "id": "id_6e3a8d89",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "ARC-AR-001",
+              "b": "Document fondateur — échelle de classification à sept niveaux (ARC-03).",
+              "c": ""
+            },
+            {
+              "a": "GDN-AN-002",
+              "b": "Le Gardien de la Tour du Cinquième Point Cardinal — identité, mécanisme de succession, environnement.",
+              "c": ""
+            },
+            {
+              "a": "GDN-02",
+              "b": "Architecture et origine de la Tour, dont le cristal évoqué comme piste de rempart en MEN-04.",
+              "c": ""
+            },
+            {
+              "a": "GLD-AN-001",
+              "b": "La Guilde des Animaliens — hiérarchie et secret institutionnel entourant la Tour.",
+              "c": ""
+            },
+            {
+              "a": "LIE-AN-004",
+              "b": "Les Liens — origine de la connexion au Plan Éthéré (LIE-01) et facteurs de vulnérabilité (LIE-07).",
+              "c": ""
+            },
+            {
+              "a": "LIG-AN-006",
+              "b": "La Lignée — Ambre, actuelle Mage suprême, et le secret de Niveau 6.",
+              "c": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
