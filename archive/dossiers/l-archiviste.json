@@ -7,11 +7,11 @@
     "kicker": "DOSSIER D'INFORMATION",
     "title": "L'Archiviste",
     "subtitle": "Origine du fonds & échelle de classification de la collection",
-    "stampText": "Hors-échelle - document premier de la\ncollection",
+    "stampText": "Hors-échelle — document premier de la\ncollection",
     "meta": [
       {
         "a": "N° de dossier",
-        "b": "ARC-VC-001"
+        "b": "ARC-AR-001"
       },
       {
         "a": "Objet",
@@ -23,7 +23,7 @@
       },
       {
         "a": "Nature du sujet",
-        "b": "Infrastucture documentaire — à lire en premier"
+        "b": "Infrastructure documentaire — à lire en premier"
       },
       {
         "a": "Confidentialité",
@@ -34,7 +34,7 @@
   "footerBrand": "L'ARCHIVISTE - DOCUMENT FONDATEUR",
   "noteUsage": {
     "includeTagLegend": true,
-    "text": "Ce dossier est le socle de toute la collection. Il explique d'où viennent réellement ces documents, ce que\nvaut leur estampille officielle, et définit l'échelle de classification de confidentialité. À lire avant tout autre dossier."
+    "text": "Ce dossier est le socle de toute la collection. Il explique d'où viennent réellement ces documents, ce que vaut leur estampille officielle, et définit l'échelle de classification de confidentialité. À lire avant tout autre dossier."
   },
   "sections": [
     {

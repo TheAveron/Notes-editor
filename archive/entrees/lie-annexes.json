@@ -1,0 +1,89 @@
+{
+  "id": "lie-annexes",
+  "title": "Annexes",
+  "kind": "autre",
+  "tags": [
+    "Les Liens"
+  ],
+  "blocks": [
+    {
+      "id": "id_cea4adc3",
+      "type": "heading2",
+      "text": "A. Glossaire"
+    },
+    {
+      "id": "id_cd17d9bb",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "Lien",
+          "b": "Connexion télépathique durable entre un individu et une espèce ou entité, permanente une fois établie.",
+          "c": ""
+        },
+        {
+          "a": "Lien inné",
+          "b": "Lien présent dès la naissance, développé ou dormant.",
+          "c": ""
+        },
+        {
+          "a": "Lien acquis",
+          "b": "Lien créé par familiarité prolongée avec un individu d'une espèce visée.",
+          "c": ""
+        },
+        {
+          "a": "Degré de conscience",
+          "b": "Échelle graduant le niveau de conscience et de libre arbitre d'une entité liée, de I (instinct) à III (pleine conscience).",
+          "c": ""
+        },
+        {
+          "a": "Population sauvage / domestiquée",
+          "b": "Variation de tempérament au sein d'une même espèce liée, indépendante de la force du lien.",
+          "c": ""
+        },
+        {
+          "a": "Strite",
+          "b": "Minerai amplifiant les capacités télépathiques, extrait au nord de Narmatin.",
+          "c": ""
+        }
+      ]
+    },
+    {
+      "id": "id_046054a4",
+      "type": "heading2",
+      "text": "B. Documents liés"
+    },
+    {
+      "id": "id_af143c2d",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "ARC-AR-001",
+          "b": "Document fondateur — échelle de classification à sept niveaux (ARC-03).",
+          "c": ""
+        },
+        {
+          "a": "GDN-AN-002",
+          "b": "Le Gardien de la Tour — mécanisme de succession, distinct du lien.",
+          "c": ""
+        },
+        {
+          "a": "GLD-AN-001",
+          "b": "La Guilde des Animaliens — hiérarchie, repérage des talents, secret institutionnel.",
+          "c": ""
+        },
+        {
+          "a": "LIG-AN-006",
+          "b": "La Lignée, Ambre, et le mécanisme d'appariement Gardien/Mage suprême.",
+          "c": ""
+        },
+        {
+          "a": "MEN-AN-003",
+          "b": "La Menace — secret de niveau supérieur touchant à l'origine du don.",
+          "c": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "id": "arc-hooks-de-scenario",
-  "title": "Hooks de Scénario",
+  "title": "Hooks de scénario",
   "kind": "autre",
   "tags": [
     "L'Archiviste"
@@ -17,7 +17,7 @@
       "type": "card",
       "badgeText": "HOOK 1",
       "title": "Le document égaré",
-      "pitch": "Les PJ mettent la main sur l'un des dossiers de cette collection portant l'estampille de la Guilde des Archivistes. Une piste logique serait de la contacter... pour découvrir qu'elle nie\ntoute paternité.",
+      "pitch": "Les PJ mettent la main sur l'un des dossiers de cette collection portant l'estampille de la Guilde des Archivistes. Une piste logique serait de la contacter... pour découvrir qu'elle nie toute paternité.",
       "rows": [
         {
           "a": "Niveau",
@@ -25,7 +25,7 @@
         },
         {
           "a": "Complication",
-          "b": "La Guilde des Archivistes, légitimement perplexe, pourrait vouloir enquêter elle- même sur l'origine de ce faux, tout en étant étonnée de la précision et du professionalisme de celui-ci."
+          "b": "La Guilde des Archivistes, légitimement perplexe, pourrait vouloir enquêter elle-même sur l'origine de ce faux, tout en étant étonnée de la précision et du professionnalisme de celui-ci."
         },
         {
           "a": "Rôle de l'Archiviste",
@@ -38,7 +38,7 @@
       "type": "card",
       "badgeText": "HOOK 2",
       "title": "L'enquête de la vraie Guilde",
-      "pitch": "La Guilde des Archivistes, ayant eu vent de documents circulant sous son nom sans son autorisation, ouvre une\nenquête interne pour identifier le faussaire.",
+      "pitch": "La Guilde des Archivistes, ayant eu vent de documents circulant sous son nom sans son autorisation, ouvre une enquête interne pour identifier le faussaire.",
       "rows": [
         {
           "a": "Niveau",
@@ -59,7 +59,7 @@
       "type": "card",
       "badgeText": "HOOK 3",
       "title": "Celui qui savait déjà",
-      "pitch": "Un PNJ mineur, croisé en chemin, fait une remarque anodine sur un événement que les PJ n'ont partagé avec\npersonne — une information qu'il ne devrait avoir aucun moyen de connaître.",
+      "pitch": "Un PNJ mineur, croisé en chemin, fait une remarque anodine sur un événement que les PJ n'ont partagé avec personne — une information qu'il ne devrait avoir aucun moyen de connaître.",
       "rows": [
         {
           "a": "Niveau",
@@ -80,7 +80,7 @@
       "type": "card",
       "badgeText": "HOOK 4",
       "title": "La collection incomplète",
-      "pitch": "Un personnage érudit affirme posséder un fragment d'un dossier de cette même collection, mais portant un\nnuméro que personne ne connaît — suggérant que l'Archiviste a produit bien plus de documents que ceux déjà\ndécouverts.",
+      "pitch": "Un personnage érudit affirme posséder un fragment d'un dossier de cette même collection, mais portant un numéro que personne ne connaît — suggérant que l'Archiviste a produit bien plus de documents que ceux déjà découverts.",
       "rows": [
         {
           "a": "Niveau",

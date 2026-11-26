@@ -11,7 +11,7 @@
     "meta": [
       {
         "a": "N° de dossier",
-        "b": "GRD-VC-001"
+        "b": "GDN-AN-002"
       },
       {
         "a": "Objet",
@@ -19,11 +19,11 @@
       },
       {
         "a": "Documents liés",
-        "b": "GLD-VC-001·MEN-VC-001·CEL-VC-001"
+        "b": "GLD-AN-001 · MEN-AN-003 · CEL-AN-005 · LIG-AN-006"
       },
       {
         "a": "Nature du sujet",
-        "b": "Vivant - en fonction"
+        "b": "Vivant — en fonction"
       },
       {
         "a": "Confidentialité",
@@ -31,7 +31,7 @@
       }
     ]
   },
-  "footerBrand": "Le Guardien - Niveau 7 · A5",
+  "footerBrand": "Le Gardien - Niveau 7 · A5",
   "noteUsage": {
     "includeTagLegend": true,
     "text": "Ce dossier est conçu pour être utilisé tel quel par un meneur de jeu (MJ) autre que l'auteur de l'univers. Chaque information est étiquetée selon son statut, afin de distinguer ce qui appartient au canon établi de ce qui reste ouvert à l'interprétation ou à l'adaptation."
@@ -39,7 +39,7 @@
   "sections": [
     {
       "id": "id2_ca0sx",
-      "entry": "grd-fiche-d-identification",
+      "entry": "gdn-fiche-d-identification",
       "pageBreaks": [
         {
           "after": "id9_2asm5",
@@ -49,7 +49,7 @@
     },
     {
       "id": "id14_3p9mg",
-      "entry": "grd-la-tour-du-cinquieme-point-cardinal",
+      "entry": "gdn-la-tour-du-cinquieme-point-cardinal",
       "pageBreaks": [
         {
           "after": "id23_y7h3l",
@@ -59,15 +59,15 @@
     },
     {
       "id": "id31_tsx0f",
-      "entry": "grd-la-lignee-des-gardiens-et-le-rituel-de-transmission"
+      "entry": "gdn-la-lignee-des-gardiens-et-le-rituel-de-transmission"
     },
     {
       "id": "id39_c2eeh",
-      "entry": "grd-mecanique-de-la-conscience-partagee"
+      "entry": "gdn-mecanique-de-la-conscience-partagee"
     },
     {
       "id": "id52_nkzg2",
-      "entry": "grd-miguel-portait-du-gardien-actuel",
+      "entry": "gdn-miguel-portrait-du-gardien-actuel",
       "pageBreaks": [
         {
           "after": "id12_dogeh",
@@ -77,7 +77,7 @@
     },
     {
       "id": "id20_uko79",
-      "entry": "grd-hooks-de-scenario",
+      "entry": "gdn-hooks-de-scenario",
       "pageBreaks": [
         {
           "after": "id25_5tfbj",
@@ -87,7 +87,7 @@
     },
     {
       "id": "id28_f2m0i",
-      "entry": "grd-annexes",
+      "entry": "gdn-annexes",
       "pageBreaks": [
         {
           "after": "id34_rqsq0",

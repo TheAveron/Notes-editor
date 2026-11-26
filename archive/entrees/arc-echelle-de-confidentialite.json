@@ -9,7 +9,7 @@
     {
       "id": "id18_xtbqw",
       "type": "paragraph",
-      "text": "La Guilde des Archivistes utilise, pour l'ensemble de ses fonds, une échelle de confidentialité à sept niveaux, neutre vis-à-vis du sujet traité, puisque ses archives couvrent absolument tout ce qui se passe dans l'Imperium, sans distinction de domaine. Cette échelle mesure avant tout un ordre de grandeur : combien de personnes, approximativement, détiennent l'information. Des registres sont tenus de manière séparés pour savoir qui est en mesure d’accéder aux documents les plus secrets.",
+      "text": "La Guilde des Archivistes utilise, pour l'ensemble de ses fonds, une échelle de confidentialité à sept niveaux, neutre vis-à-vis du sujet traité, puisque ses archives couvrent absolument tout ce qui se passe dans l'Imperium, sans distinction de domaine. Cette échelle mesure avant tout un ordre de grandeur : combien de personnes, approximativement, détiennent l'information. Des registres sont tenus de manière séparée pour savoir qui est en mesure d'accéder aux documents les plus secrets.",
       "italic": false
     },
     {
@@ -65,7 +65,7 @@
       "tag": "confirme",
       "title": "Une échelle neutre et formelle",
       "paragraphs": [
-        "Cette échelle appartient à la véritable Guilde des Archivistes. Elle sert à classer indifféremment un secret d'État, une recette alchimique rare, ou\nun scandale de cour — c'est précisément pour cela que l'Archiviste l'a reprise telle quelle pour couvrir ses\npropres dossiers, plutôt que d'inventer un système entièrement nouveau."
+        "Cette échelle appartient à la véritable Guilde des Archivistes. Elle sert à classer indifféremment un secret d'État, une recette alchimique rare, ou un scandale de cour — c'est précisément pour cela que l'Archiviste l'a reprise telle quelle pour couvrir ses propres dossiers, plutôt que d'inventer un système entièrement nouveau."
       ]
     },
     {
@@ -76,7 +76,7 @@
     {
       "id": "id29_cr8qa",
       "type": "paragraph",
-      "text": "Étant donné la nature particulière de certains dossiers comme ceux touchant à la Tour et à la menace qu'elle contient, l'Archiviste a jugé l'échelle officielle trop imprécise : elle indique un ordre de grandeur, mais pas qui, exactement, détient l'information. Il a donc ajouté, pour certins documents, des paliers spéciaux de son invention, désignant des rôles précis plutôt que de simples volumes de population. Ces paliers n'ont aucune existence officielle au sein de la Guilde des Archivistes : ils se superposent à l'échelle neutre sans la  remplacer, et n'apparaissent que dans les dossiers où l'Archiviste a jugé utile de les préciser. ",
+      "text": "Étant donné la nature particulière de certains dossiers comme ceux touchant à la Tour et à la menace qu'elle contient, l'Archiviste a jugé l'échelle officielle trop imprécise : elle indique un ordre de grandeur, mais pas qui, exactement, détient l'information. Il a donc ajouté, pour certains documents, des paliers spéciaux de son invention, désignant des rôles précis plutôt que de simples volumes de population. Ces paliers n'ont aucune existence officielle au sein de la Guilde des Archivistes : ils se superposent à l'échelle neutre sans la remplacer, et n'apparaissent que dans les dossiers où l'Archiviste a jugé utile de les préciser.",
       "italic": false
     },
     {
@@ -85,12 +85,12 @@
       "rows": [
         {
           "a": "Hors-échelle",
-          "b": "Ce document. L'Archiviste détenant la totalité des archives du monde connu, sans filtre institutionnel ni allégeance à aucune hiérarchies  — y compris les paliers spéciaux qu'il a lui-même inventés. Sa connaissance n'est ni un privilège accordé, ni un rôle occupé : elle échappe entièrement au système qu'elle décrit. Ce document est ainsi également en dehors du système.",
+          "b": "Ce document. L'Archiviste détient la totalité des archives du monde connu, sans filtre institutionnel ni allégeance à aucune hiérarchie — y compris les paliers spéciaux qu'il a lui-même inventés. Sa connaissance n'est ni un privilège accordé, ni un rôle occupé : elle échappe entièrement au système qu'elle décrit. Ce document est ainsi également en dehors du système.",
           "c": ""
         },
         {
           "a": "A1-A5 Secrets de la Guilde des Animaliens",
-          "b": " Ces cinq niveaux parcourent l'intégralité de la hiérarchie de la Guilde. A1 : l'ensemble de la Guilde; A2 : Maîtres et professeurs travaillant à Narmatin; A3 : Le Haut Conseil et la Lignée; A4 : Mage Suprême; A5 : Gardien et personnel de la Tour.",
+          "b": "Ces cinq niveaux parcourent l'intégralité de la hiérarchie de la Guilde. A1 : l'ensemble de la Guilde ; A2 : Maîtres et professeurs travaillant à Narmatin ; A3 : Le Haut Conseil et la Lignée ; A4 : Mage suprême ; A5 : Gardien et personnel de la Tour.",
           "c": ""
         }
       ],
@@ -102,7 +102,7 @@
       "tag": "attention",
       "title": "Lecture d'une classification à deux marques",
       "paragraphs": [
-        "Un document touchant à la Tour affiche donc, en couverture, à la fois son niveau officiel (1 à 7) et, si\nl'Archiviste l'a jugé utile, un palier spécial (A1 à A5). Les deux ne s'excluent pas : le niveau officiel donne l'ordre\nde grandeur, le palier spécial précise le rôle exact. Un futur dossier sur un sujet sans rapport avec la Tour\nn'affichera, lui, que le niveau officiel — voir note en tête de ARC-03."
+        "Un document touchant à la Tour affiche donc, en couverture, à la fois son niveau officiel (1 à 7) et, si l'Archiviste l'a jugé utile, un palier spécial (A1 à A5). Les deux ne s'excluent pas : le niveau officiel donne l'ordre de grandeur, le palier spécial précise le rôle exact. Un futur dossier sur un sujet sans rapport avec la Tour n'affichera, lui, que le niveau officiel — voir note en tête de ARC-03."
       ]
     },
     {
@@ -111,13 +111,13 @@
       "tag": "attention",
       "title": "Anciens détenteurs et statut retraité",
       "paragraphs": [
-        "Un individu ayant occupé un niveau élevé (par exemple une Mage suprême retirée, voir CEL-VC-001) ne redescend pas automatiquement de niveau une fois sa charge quittée : rien n'indique de mécanisme d'oubli.\nLe niveau de classification décrit un accès institutionnel nécessaire pour avoir accès aux connaissance, mais ne décrit pas une interdiction."
+        "Un individu ayant occupé un niveau élevé (par exemple une Mage suprême retirée, voir CEL-AN-005) ne redescend pas automatiquement de niveau une fois sa charge quittée : rien n'indique de mécanisme d'oubli.\nLe niveau de classification décrit un accès institutionnel nécessaire pour avoir accès aux connaissances, mais ne décrit pas une interdiction."
       ]
     },
     {
       "id": "id48_xmwto",
       "type": "crossref",
-      "text": "Voir GLD-VC-002 pour plus de détails sur la Guilde des Animaliens et la Tour."
+      "text": "Voir GLD-AN-001 pour plus de détails sur la Guilde des Animaliens et la Tour."
     }
   ]
 }

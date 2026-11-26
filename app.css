@@ -1484,6 +1484,92 @@ mark {
     }
 }
 
+/* ---------- Focus clavier ---------- */
+.swatch {
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+button:focus-visible,
+.swatch:focus-visible,
+.file-btn:focus-within {
+    outline: 2px solid var(--ui-accent);
+    outline-offset: 2px;
+}
+
+/* ---------- Modale du registre ---------- */
+.modal-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 50;
+    align-items: center;
+    justify-content: center;
+}
+.modal-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 22px;
+    width: 480px;
+    max-width: calc(100vw - 32px);
+    max-height: 80vh;
+    overflow-y: auto;
+}
+.modal-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.modal-head h3 {
+    margin: 0;
+}
+.modal-edit {
+    background: none;
+    border: 1px solid #d8d4c8;
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+    font-size: 13px;
+    color: #7a746a;
+}
+.modal-note {
+    font-size: 12.5px;
+    color: #666;
+}
+.modal-card .registry-list {
+    max-height: 280px;
+}
+.modal-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 14px;
+}
+.modal-btn {
+    font-size: 13px;
+    font-family: inherit;
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    background: #f4f2ea;
+    color: #1a1a1a;
+    text-align: center;
+    cursor: pointer;
+}
+.modal-btn input {
+    display: none;
+}
+.modal-close {
+    margin-top: 12px;
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background: #1b1b1a;
+    color: #fff;
+}
+
 /* ---------- PRINT ---------- */
 /* Chaque .page mesure exactement une feuille A4 (marges internes incluses via son padding) :
    la marge d'impression doit donc être nulle, sinon chaque page déborde sur la suivante

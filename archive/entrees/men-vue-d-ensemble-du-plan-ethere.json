@@ -1,0 +1,53 @@
+{
+  "id": "men-vue-d-ensemble-du-plan-ethere",
+  "title": "Vue d'ensemble du Plan Éthéré",
+  "kind": "autre",
+  "tags": [
+    "La Menace"
+  ],
+  "blocks": [
+    {
+      "id": "id_c8fba78a",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Les deux plans",
+      "paragraphs": [
+        "Le monde connu coexiste avec un second plan d'existence, le Plan Éthéré. Les individus capables de tisser des liens télépathiques avec d'autres espèces le peuvent précisément parce qu'ils sont connectés à ce second plan — le don décrit dans GDN-01 et dans les récits de jeunesse de Miguel n'est donc pas une capacité isolée, mais la manifestation d'une connexion plus large et plus dangereuse qu'elle n'y paraît."
+      ]
+    },
+    {
+      "id": "id_92c27a87",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Nature du combat",
+      "paragraphs": [
+        "Le Plan Éthéré n'a aucune matérialisation physique dans le monde connu. Les créatures qui y vivent ne « traversent » jamais sous une forme corporelle : toute confrontation avec elles — y compris celles menées par le Gardien depuis la Tour — se déroule intégralement sur le plan psychique."
+      ]
+    },
+    {
+      "id": "id_81e628c8",
+      "type": "crossref",
+      "text": "La Tour du Cinquième Point Cardinal (GDN-02) sert de focaliseur permettant au Gardien de projeter sa conscience dans le Plan Éthéré pour y affronter ces créatures."
+    },
+    {
+      "id": "id_6b6340d5",
+      "type": "heading2",
+      "text": "Ce qui habite le Plan Éthéré"
+    },
+    {
+      "id": "id_92e507fc",
+      "type": "paragraph",
+      "text": "Les créatures qui peuplent le Plan Éthéré se nourrissent de l'esprit et de la volonté des êtres connectés au plan — c'est-à-dire, potentiellement, quiconque possède ne serait-ce qu'un lien télépathique naissant. Leur puissance et leur intelligence varient considérablement, de l'automatisme presque animal jusqu'à une conscience et une intentionnalité comparables à celles des plus grandes menaces mythologiques (voir MEN-04).",
+      "italic": false
+    },
+    {
+      "id": "id_dbe62be1",
+      "type": "callout",
+      "tag": "attention",
+      "title": "Sur les Ombres",
+      "paragraphs": [
+        "Rien n'indique à ce stade que les Ombres — l'entité silencieuse rencontrée par Miguel à Withre — soient liées au Plan Éthéré. Elles constituent, en l'état des sources, une espèce à part entière. Éviter de les assimiler aux créatures traitées dans ce dossier tant que l'auteur n'a pas statué sur un éventuel lien entre les deux."
+      ]
+    }
+  ]
+}

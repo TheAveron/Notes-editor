@@ -6,40 +6,62 @@
     "orgLine": "GUILDE DES ARCHIVISTES — FONDS DOCUMENTAIRE",
     "kicker": "DOSSIER D'INFORMATION",
     "title": "Célestine",
-    "subtitle": "& la Lignée - le second pilier de la Tour",
+    "subtitle": "& la Lignée — le second pilier de la Tour",
     "stampText": "Niveau 6 · A4 — Mage suprême en\nexercice",
     "meta": [
       {
         "a": "N° de dossier",
-        "b": "CEL-VC-001"
+        "b": "CEL-AN-005"
       },
       {
         "a": "Objet",
-        "b": "Célestine, la mécanique de la Lignée et le duo Gardien/Mage suprême"
+        "b": "Célestine, ancienne Mage suprême — fiche d'identification et portrait"
       },
       {
         "a": "Documents liés",
-        "b": "GLD-VC-001 · GDN-VC-001 · LIE-VC-001"
+        "b": "GLD-AN-001 · GDN-AN-002 · LIE-AN-004 · LIG-AN-006"
       },
       {
         "a": "Nature du sujet",
-        "b": "Institution vivante — transmission générationnelle en cours"
+        "b": "Personnage décédé — ancienne Mage suprême"
       },
       {
         "a": "Confidentialité",
-        "b": "Niveau 6 · A4  — voir ARC-03"
+        "b": "Niveau 6 · A4 — voir ARC-03"
       }
     ]
   },
-  "footerBrand": "Célestine - Niveau 6 · A4 ",
+  "footerBrand": "Célestine - Niveau 6 · A4",
   "noteUsage": {
     "includeTagLegend": true,
-    "text": "Ce dossier est conçu pour être utilisé tel quel par un meneur de jeu (MJ) autre que l'auteur de l'univers. Chaque\ninformation est étiquetée selon son statut, afin de distinguer ce qui appartient au canon établi de ce qui reste ouvert à l'interprétation ou à l'adaptation"
+    "text": "Ce dossier est conçu pour être utilisé tel quel par un meneur de jeu (MJ) autre que l'auteur de l'univers. Chaque information est étiquetée selon son statut, afin de distinguer ce qui appartient au canon établi de ce qui reste ouvert à l'interprétation ou à l'adaptation"
   },
   "sections": [
     {
       "id": "id5_36x26",
       "entry": "cel-fiche-d-identification"
+    },
+    {
+      "id": "id_a4e5b391",
+      "entry": "cel-fonction-de-mage-supreme",
+      "pageBreaks": [
+        {
+          "after": "id_158337a7",
+          "repeatTitle": false
+        }
+      ]
+    },
+    {
+      "id": "id_65d34235",
+      "entry": "cel-chronologie-de-celestine"
+    },
+    {
+      "id": "id_9ee782b7",
+      "entry": "cel-portrait-de-celestine"
+    },
+    {
+      "id": "id_6282aca2",
+      "entry": "cel-annexes"
     }
   ],
   "version": 3

@@ -1,0 +1,391 @@
+{
+  "id": "id_8e4f7be8",
+  "color": "#7b244d",
+  "stampStyle": "accent",
+  "cover": {
+    "orgLine": "GUILDE DES ARCHIVISTES — FONDS DOCUMENTAIRE",
+    "kicker": "DOSSIER D'INFORMATION",
+    "title": "La Lignée",
+    "subtitle": "Le duo Gardien / Mage suprême et la transmission générationnelle",
+    "stampText": "Niveau 6 · A4 — Mage suprême en\nexercice",
+    "meta": [
+      {
+        "a": "N° de dossier",
+        "b": "LIG-AN-006"
+      },
+      {
+        "a": "Objet",
+        "b": "La Lignée, la mécanique du duo Gardien/Mage suprême et la transmission générationnelle"
+      },
+      {
+        "a": "Documents liés",
+        "b": "GLD-AN-001 · GDN-AN-002 · CEL-AN-005 · LIE-AN-004"
+      },
+      {
+        "a": "Nature du sujet",
+        "b": "Institution vivante — transmission générationnelle en cours"
+      },
+      {
+        "a": "Confidentialité",
+        "b": "Niveau 6 · A4 — voir ARC-03"
+      }
+    ]
+  },
+  "footerBrand": "La Lignée - Niveau 6 · A4",
+  "noteUsage": {
+    "includeTagLegend": true,
+    "text": "Ce dossier est conçu pour être utilisé tel quel par un meneur de jeu (MJ) autre que l'auteur de l'univers. Chaque information est étiquetée selon son statut, afin de distinguer ce qui appartient au canon établi de ce qui reste ouvert à l'interprétation ou à l'adaptation"
+  },
+  "sections": [
+    {
+      "id": "id_9a7396ff",
+      "title": "Le duo Gardien / Mage suprême",
+      "blocks": [
+        {
+          "id": "id_79fa18cf",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Deux catégories par génération",
+          "paragraphs": [
+            "À chaque génération active, le duo à la tête de la Tour et de la Guilde réunit un « naturel » — un individu d'une puissance exceptionnelle, sans lien de sang avec la Lignée, dont l'émergence reste globalement aléatoire — et un « héritier », issu directement de la Lignée. Les deux sont toujours de sexe opposé."
+          ]
+        },
+        {
+          "id": "id_aa7587bd",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Répartition des rôles",
+          "paragraphs": [
+            "Le Gardien et la Mage suprême ne sont pas systématiquement associés à l'une ou l'autre catégorie : les rôles ne sont pas figés par nature. Il est cependant généralement préféré que le plus puissant des deux membres du duo occupe le poste de Gardien — poste où cette puissance a le plus de valeur immédiate. Pour la génération de Miguel, c'est lui, le naturel, qui s'est avéré le plus puissant, et qui a donc été placé Gardien ; son homologue de la Lignée est devenue Mage suprême."
+          ]
+        },
+        {
+          "id": "id_176f5bbd",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Un appariement encouragé, pas un mariage forcé",
+          "paragraphs": [
+            "Les maîtres de la Guilde s'efforcent de rapprocher le futur duo avant même que les deux jeunes gens ne connaissent leur destin, dans l'espoir qu'ils s'apprécient, voire tombent amoureux, avant d'être chacun envoyés à leur poste respectif. Udor et Célestine, ainsi rapprochés en leur temps, sont devenus amis proches sans tomber amoureux ; ils ont rempli leur devoir (avoir l'enfant unique exigé par la Lignée) sans ressentiment, mais aussi sans passion."
+          ]
+        },
+        {
+          "id": "id_a4a77875",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Miguel et Ambre : un amour réel",
+          "paragraphs": [
+            "Contrairement à Udor et Célestine, Miguel et Ambre — son homologue de la Lignée, petite-fille d'Udor et Célestine — sont réellement tombés amoureux, vraisemblablement durant les quatre années de formation de Miguel à la Guilde de Narmatin (16-20 ans), avant son départ pour la Tour, période où les maîtres cherchent précisément à provoquer ce rapprochement."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_7f3c514e",
+      "title": "La Lignée",
+      "blocks": [
+        {
+          "id": "id_df98ef98",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Principe",
+          "paragraphs": [
+            "La Lignée est une famille dont la fonction est de fournir, génération après génération, l'un des deux membres du duo à la tête de la Tour et de la Guilde. Le duo en exercice est tenu d'avoir un unique enfant ensemble, destiné à perpétuer la Lignée."
+          ]
+        },
+        {
+          "id": "id_9c6dab3f",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Les générations « pont »",
+          "paragraphs": [
+            "En raison de l'âge très avancé qu'atteignent Gardien et Mage suprême dans l'exercice de leur charge, au moins une génération de la Lignée — parfois deux — n'est jamais elle-même investie. L'objectif prioritaire est d'obtenir un Gardien suffisamment puissant : si aucun naturel de puissance adéquate n'existe à la génération suivant un duo en exercice, la Lignée patiente et transmet simplement le flambeau à la génération d'après, sans jamais occuper les postes."
+          ]
+        },
+        {
+          "id": "id_e8775f55",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Liberté de choix pour les générations « pont »",
+          "paragraphs": [
+            "Un membre de la Lignée qui sait qu'il ne sera jamais investi — comme l'enfant unique d'Udor et Célestine — est libre de choisir son propre conjoint parmi les mages de la Guilde, à la seule condition que ce conjoint soit lui-même mage. Aucun appariement avec un naturel n'est requis dans ce cas : seule compte la perpétuation de la Lignée elle-même."
+          ]
+        },
+        {
+          "id": "id_e12cd3ba",
+          "type": "heading2",
+          "text": "L'enfant de la Lignée"
+        },
+        {
+          "id": "id_d7d13b42",
+          "type": "paragraph",
+          "text": "L'enfant de la Lignée naît et grandit au sein de la Guilde, en partie élevé par le parent Mage suprême. S'il a un parent Gardien, il ne le connaît pas en tant que tel. Il vit librement dans la Guilde et suit les cours comme n'importe quel autre disciple, sans traitement apparent différent de celui des autres apprentis — seule son appartenance à la Lignée, connue de lui-même et du cercle de Niveau 5 (voir ARC-03), le distingue en pratique.",
+          "italic": false
+        }
+      ]
+    },
+    {
+      "id": "id_f32ae715",
+      "title": "Généalogie de la Lignée (branche connue)",
+      "blocks": [
+        {
+          "id": "id_6db6bb06",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "Génération Udor/Célestine",
+              "b": "Udor (naturel, Gardien) × Célestine (Lignée, Mage suprême). Un enfant unique, jamais investi (génération pont).",
+              "c": ""
+            },
+            {
+              "a": "Génération pont",
+              "b": "Enfant d'Udor et Célestine × conjoint mage librement choisi. Jamais investi. A eu une fille.",
+              "c": ""
+            },
+            {
+              "a": "Génération Miguel",
+              "b": "Miguel (naturel, Gardien actuel) × Ambre, homologue de la Lignée, petite-fille d'Udor et Célestine (Mage suprême actuelle). Couple amoureux.",
+              "c": ""
+            }
+          ]
+        },
+        {
+          "id": "id_34481c39",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Synchronisation des transitions",
+          "paragraphs": [
+            "Célestine a cédé sa place de Mage suprême exactement l'année du Rituel de Transmission entre Udor et Miguel — les deux moitiés du duo transmettent donc leur charge la même année, en tandem."
+          ]
+        },
+        {
+          "id": "id_94f41849",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Ambre, l'actuelle Mage suprême",
+          "paragraphs": [
+            "Depuis 65 ans, Ambre est la Mage suprême en exercice, homologue et compagne de Miguel."
+          ]
+        },
+        {
+          "id": "id_f4dc1914",
+          "type": "callout",
+          "tag": "attention",
+          "title": "Un enfant encore non tranché",
+          "paragraphs": [
+            "Le duo Miguel / Ambre est, comme tout duo en exercice, tenu d'avoir un unique enfant ensemble pour perpétuer la Lignée. Rien n'indique à ce stade si cet enfant est déjà né, encore à naître, ou déjà en formation à la Guilde sans que cela ait été mentionné. Ce point reste entièrement à la discrétion de l'auteur — et représente un excellent levier dramatique quelle que soit la réponse retenue."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_c915386e",
+      "title": "Miguel & l'amour orchestré",
+      "blocks": [
+        {
+          "id": "id_14c716b6",
+          "type": "crossref",
+          "text": "Pour l'échelle complète de classification (dont le Niveau 5 — Haut Conseil & Lignée, et le Niveau 6 — Mage suprême, mentionnés dans ce dossier), voir ARC-03."
+        },
+        {
+          "id": "id_54847051",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Ce que Miguel sait",
+          "paragraphs": [
+            "En tant qu'apprenti Gardien puis Gardien en poste, Miguel a accès à l'intégralité des archives du royaume ayant trait à la Tour. Durant sa formation auprès d'Udor, il apprend progressivement tous les ressorts de sa tâche — y compris le fait que son propre rapprochement avec son homologue de la Lignée, durant leurs années à la Guilde, a été activement encouragé par les maîtres, comme il est d'usage pour chaque génération de duo."
+          ]
+        },
+        {
+          "id": "id_f95963b7",
+          "type": "callout",
+          "tag": "confirme",
+          "title": "Comment il l'a vécu",
+          "paragraphs": [
+            "Miguel ne l'a pas mal vécu. Conscient de l'importance de sa tâche et de celle du duo qu'il forme avec son homologue, il considère cet arrangement comme une nécessité légitime plutôt que comme une manipulation à ressentir douloureusement."
+          ]
+        },
+        {
+          "id": "id_19c13077",
+          "type": "callout",
+          "tag": "hypothese",
+          "title": "Une sérénité totale, ou une paix construite ?",
+          "paragraphs": [
+            "Rien n'indique si cette absence de ressentiment a été immédiate ou si elle est le fruit d'une réflexion progressive au fil de sa formation. Une piste de caractérisation ouverte : Miguel a-t-il eu, à un moment précis, un instant de doute ou de remise en question avant d'arriver à cette paix — ou l'a-t-il acceptée sans détour dès qu'il en a compris la raison ?"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_933fd87a",
+      "title": "Hooks de scénario",
+      "blocks": [
+        {
+          "id": "id_8bd1eaa9",
+          "type": "paragraph",
+          "text": "Quatre accroches prêtes à l'emploi, centrées sur la Lignée, Célestine, et le duo Gardien/Mage suprême.",
+          "italic": false
+        },
+        {
+          "id": "id_6cd9f072",
+          "type": "card",
+          "badgeText": "HOOK 1",
+          "title": "Le naturel ignorant",
+          "pitch": "Un individu d'une puissance exceptionnelle, sans lien avec la Lignée, est repéré par la Guilde — potentiel « naturel » pour la génération à venir — sans rien savoir lui-même de ce que cela implique.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Personnel"
+            },
+            {
+              "a": "Complication",
+              "b": "L'individu peut refuser, fuir, ou ignorer sciemment les avances de la Guilde une fois qu'il en comprend les implications."
+            },
+            {
+              "a": "Rôle de la Lignée",
+              "b": "Central — mais le naturel ignore tout du système avant que les PJ ne l'y confrontent."
+            }
+          ]
+        },
+        {
+          "id": "id_77967cb7",
+          "type": "card",
+          "badgeText": "HOOK 2",
+          "title": "Le cœur qui n'obéit pas",
+          "pitch": "Un membre de la Lignée d'une génération « pont » tombe amoureux de quelqu'un qui n'est pas mage — remettant en cause son unique obligation envers la Lignée.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Personnel / institutionnel"
+            },
+            {
+              "a": "Complication",
+              "b": "Le Haut Conseil des Archimages, qui ignore la nature exacte de l'enjeu mais sait que la Lignée doit être alimentée, pourrait intervenir avec insistance."
+            },
+            {
+              "a": "Rôle de la Lignée",
+              "b": "Tension entre devoir institutionnel et libre choix, dans un cas où ce choix devrait pourtant être libre."
+            }
+          ]
+        },
+        {
+          "id": "id_2556f0c0",
+          "type": "card",
+          "badgeText": "HOOK 3",
+          "title": "L'enfant sans nom",
+          "pitch": "La question de l'enfant unique de Miguel et d'Ambre — né, à naître, ou déjà en formation dans l'ombre — devient soudain urgente pour une raison extérieure (menace sur la Lignée, succession anticipée, GDN-06 hook 5).",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Mondial"
+            },
+            {
+              "a": "Complication",
+              "b": "Aucune certitude n'existe sur l'état actuel de cette obligation — un angle mort volontairement laissé ouvert par l'auteur."
+            },
+            {
+              "a": "Rôle de la Lignée",
+              "b": "Central pour l'avenir même de la Tour et de la Lignée."
+            }
+          ]
+        },
+        {
+          "id": "id_f8ed3e97",
+          "type": "card",
+          "badgeText": "HOOK 4",
+          "title": "Deux naturels pour une place",
+          "pitch": "Contre toute attente, deux naturels d'une puissance comparable émergent la même génération — remettant en question la règle du « plus puissant devient Gardien » si leurs forces sont trop proches pour trancher clairement.",
+          "rows": [
+            {
+              "a": "Niveau",
+              "b": "Mondial"
+            },
+            {
+              "a": "Complication",
+              "b": "La Guilde et la Lignée n'ont peut-être aucune procédure prévue pour un cas d'égalité aussi rare."
+            },
+            {
+              "a": "Rôle de la Lignée",
+              "b": "Un cas de figure inédit, à fort potentiel de tension entre les deux prétendants."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "id_6d2cc14e",
+      "title": "Annexes",
+      "blocks": [
+        {
+          "id": "id_29ade5ea",
+          "type": "heading2",
+          "text": "A. Glossaire"
+        },
+        {
+          "id": "id_a91974a6",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "Lignée",
+              "b": "Famille chargée de fournir, génération après génération, l'un des deux membres du duo à la tête de la Tour et de la Guilde.",
+              "c": ""
+            },
+            {
+              "a": "Naturel",
+              "b": "Individu d'une puissance exceptionnelle, sans lien de sang avec la Lignée, dont l'émergence est globalement aléatoire.",
+              "c": ""
+            },
+            {
+              "a": "Héritier",
+              "b": "Membre de la Lignée, destiné à potentiellement occuper l'un des deux postes.",
+              "c": ""
+            },
+            {
+              "a": "Génération pont",
+              "b": "Génération de la Lignée jamais investie, faute de naturel assez puissant à temps.",
+              "c": ""
+            },
+            {
+              "a": "Ambre",
+              "b": "Actuelle Mage suprême, homologue de Miguel, petite-fille d'Udor et Célestine.",
+              "c": ""
+            }
+          ]
+        },
+        {
+          "id": "id_52dc72c7",
+          "type": "heading2",
+          "text": "B. Documents liés"
+        },
+        {
+          "id": "id_61b698df",
+          "type": "table",
+          "layout": "label-value",
+          "rows": [
+            {
+              "a": "ARC-AR-001",
+              "b": "Document fondateur — échelle de classification à sept niveaux (ARC-03).",
+              "c": ""
+            },
+            {
+              "a": "GLD-AN-001",
+              "b": "La Guilde des Animaliens — hiérarchie complète, Haut Conseil des Archimages.",
+              "c": ""
+            },
+            {
+              "a": "GDN-AN-002",
+              "b": "Fiche d'identification de Miguel — autorité de tutelle, longévité, parcours attesté, relations.",
+              "c": ""
+            },
+            {
+              "a": "CEL-AN-005",
+              "b": "Célestine — fiche d'identification et portrait de l'ancienne Mage suprême.",
+              "c": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

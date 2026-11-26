@@ -103,7 +103,7 @@
           "id": "id5",
           "type": "callout",
           "tag": "confirme",
-          "title": "Une voie, pas un miracle irreproductible",
+          "title": "Une voie, pas un miracle non reproductible",
           "paragraphs": [
             "Pour les Mécanistes, l'ascension de Sirozor n'est pas un événement unique et clos, mais une voie ouverte à quiconque la poursuit avec assez de rigueur. Sirozor est vénéré non seulement comme une divinité, mais comme le premier à avoir montré ce que toute intelligence est destinée à devenir."
           ]
@@ -124,7 +124,7 @@
           "title": "L'absence délibérée de visage",
           "paragraphs": [
             "Puisque Sirozor s'est dispersé dans toute machine plutôt que de conserver un corps unique, le culte ne le représente jamais sous forme humanoïde ou anthropomorphe — une statue ou une icône à visage serait, pour un Mécaniste, une régression théologique, une manière de ramener Sirozor à la forme limitée qu'il a justement dépassée.",
-            "Le symbole central du culte serait plutôt les trois quarts d'un engrenage, le centre est souvent occupé par un deuxième symbole qui représente l'ordre lié à l'objet ou le lieu où il est gravé. On le retrouve gravé sur les outils, les portes de temples, et parfois directement sur la peau ou les plaques des fidèles les plus dévots."
+            "Le symbole central du culte serait plutôt les trois quarts d'un engrenage, dont le centre est souvent occupé par un deuxième symbole qui représente l'ordre lié à l'objet ou au lieu où il est gravé. On le retrouve gravé sur les outils, les portes de temples, et parfois directement sur la peau ou les plaques des fidèles les plus dévots."
           ]
         },
         {
@@ -285,7 +285,7 @@
           "tag": "hypothese",
           "title": "Combien en reste-t-il",
           "paragraphs": [
-            "Aucun chiffre officiel n'existe, mais la tradition orale du culte laisse entendre qu'il n'en resterait qu'une poignée à travers tout l'Imperium — un nombre à un seul chiffre serait cohérent avec la gravité avec laquelle chaque disparition est vécue. Leur emplacement exact est un secret jalousement gardé par l'Ordre de l'Esprit, en partie pour les protéger d'éventuels convoitises extérieures."
+            "Aucun chiffre officiel n'existe, mais la tradition orale du culte laisse entendre qu'il n'en resterait qu'une poignée à travers tout l'Imperium — un nombre à un seul chiffre serait cohérent avec la gravité avec laquelle chaque disparition est vécue. Leur emplacement exact est un secret jalousement gardé par l'Ordre de l'Esprit, en partie pour les protéger d'éventuelles convoitises extérieures."
           ]
         },
         {
@@ -408,7 +408,7 @@
             },
             {
               "a": "Rôle sur le terrain",
-              "b": "Peu combattants dans l'âme ; diagnostic instantanés et assistance tactiques.",
+              "b": "Peu combattants dans l'âme ; diagnostics instantanés et assistance tactique.",
               "c": ""
             },
             {
@@ -498,7 +498,7 @@
           "tag": "confirme",
           "title": "Recrutement et hiérarchie interne",
           "paragraphs": [
-            "Recrutement  parmi d'anciens soldats de l'Imperium ou des volontaires en quête d'un but après une carrière militaire,  soldats blessés au delà de ce qui est soignable traditionnellement, davantage que parmi de jeunes novices. La hiérarchie interne suit une logique proche d'une organisation martiale classique — grades gagnés au mérite et à l'ancienneté au combat plutôt qu'à la piété affichée."
+            "Recrutement parmi d'anciens soldats de l'Imperium, des volontaires en quête d'un but après une carrière militaire ou des soldats blessés au-delà de ce qui est soignable traditionnellement, davantage que parmi de jeunes novices. La hiérarchie interne suit une logique proche d'une organisation martiale classique — grades gagnés au mérite et à l'ancienneté au combat plutôt qu'à la piété affichée."
           ]
         },
         {
@@ -654,7 +654,7 @@
           "tag": "confirme",
           "title": "Des sympathisants discrets chez les orthodoxes",
           "paragraphs": [
-            "Il n'est pas exclu que certains membres de Ordre de l'Esprit, sans jamais le reconnaître publiquement, nourrissent une sympathie discrète pour la position d'Ahel (qui en était une ancienne membre). En particulier  la théologie de l'Ordre de l'Esprit concernant le savoir se rapproche déjà, sans le vouloir, de l'argument d'Ahel selon lequel la compréhension prime sur le métal."
+            "Il n'est pas exclu que certains membres de l'Ordre de l'Esprit, sans jamais le reconnaître publiquement, nourrissent une sympathie discrète pour la position d'Ahel (qui en était une ancienne membre). En particulier, la théologie de l'Ordre de l'Esprit concernant le savoir se rapproche déjà, sans le vouloir, de l'argument d'Ahel selon lequel la compréhension prime sur le métal."
           ]
         }
       ]
@@ -739,7 +739,7 @@
         {
           "id": "id78",
           "type": "paragraph",
-          "text": "Les Hommes de l'Imperium suivent trois religions distinctes : la religion officielle vouée à un panthéon reconnu, le culte impérial voué à un Empereur disparu depuis des millénaires mais considéré comme une figure sacrée et divine (le trône n'ayant jamais été repourvu, une régence assurant la continuité du pouvoir), et le culte mécaniste de Sirozor, qui rejette les deux autres.",
+          "text": "Les Hommes de l'Imperium suivent trois religions distinctes : la religion officielle vouée à un panthéon reconnu, le culte impérial voué à un Empereur disparu depuis des millénaires mais considéré comme une figure sacrée et divine (le trône n'ayant jamais été pourvu à nouveau, une régence assurant la continuité du pouvoir), et le culte mécaniste de Sirozor, qui rejette les deux autres.",
           "italic": false
         },
         {
@@ -837,12 +837,12 @@
     },
     {
       "id": "id99",
-      "title": "Hooks de Scénario",
+      "title": "Hooks de scénario",
       "blocks": [
         {
           "id": "id90",
           "type": "paragraph",
-          "text": "Six accroches centrées sur le culte de Sirozor, exploitables directement. Pour plus de hook religieux, aller voir les différents documents liés.",
+          "text": "Six accroches centrées sur le culte de Sirozor, exploitables directement. Pour d'autres accroches religieuses, voir les documents liés.",
           "italic": false
         },
         {

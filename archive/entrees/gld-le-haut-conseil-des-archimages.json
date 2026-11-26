@@ -1,0 +1,47 @@
+{
+  "id": "gld-le-haut-conseil-des-archimages",
+  "title": "Le Haut Conseil des Archimages",
+  "kind": "autre",
+  "tags": [
+    "La Guilde"
+  ],
+  "blocks": [
+    {
+      "id": "id_896242ec",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Rôle et connaissance",
+      "paragraphs": [
+        "Le Haut Conseil des Archimages constitue l'échelon d'autorité juste en dessous de la Mage suprême. Ses membres savent que la Lignée existe, qu'elle doit être alimentée génération après génération, et que cela concerne la Tour — qui défend le monde contre une menace non identifiée. Ils ignorent tout de la nature exacte de cette menace."
+      ]
+    },
+    {
+      "id": "id_c0080a3a",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Un conseil d'administration, face à une direction exécutive",
+      "paragraphs": [
+        "Le Haut Conseil s'occupe de l'organisation de la Guilde, fait office de tribunal interne quand c'est nécessaire et valide la formation des apprentis. Le pouvoir exécutif appartient à la Mage suprême. La comparaison avec un conseil d'administration face à un directeur général est parlante sans être exacte, d'autant que la Mage suprême exerce une très grande influence sur le Haut Conseil.",
+        "Le Haut Conseil élit officiellement la Mage suprême ; en réalité, il valide par vote le choix de la Mage suprême en exercice (voir CEL-AN-005)."
+      ]
+    },
+    {
+      "id": "id_e0ea14cb",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Composition et fonctionnement",
+      "paragraphs": [
+        "Ni le nombre d'Archimages siégeant au Haut Conseil, ni leur mode de sélection, ni la fréquence de leurs réunions ne sont précisés dans les sources actuelles. Champ ouvert pour l'auteur."
+      ]
+    },
+    {
+      "id": "id_dc5af112",
+      "type": "callout",
+      "tag": "hook",
+      "title": "Rivalité au sommet",
+      "paragraphs": [
+        "Un Archimage du Haut Conseil, ambitieux ou simplement rongé par la curiosité, pourrait chercher à en savoir davantage sur ce que la Tour protège réellement — une enquête risquée qui menace directement le secret de Niveau 6 (voir ARC-03)."
+      ]
+    }
+  ]
+}

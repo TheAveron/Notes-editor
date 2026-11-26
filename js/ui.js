@@ -9,6 +9,8 @@ function el(tag, attrs, children) {
             e.addEventListener(k.substring(2), attrs[k]);
         else e.setAttribute(k, attrs[k]);
     }
+    if (attrs && attrs.title && !attrs["aria-label"])
+        e.setAttribute("aria-label", attrs.title);
     (children || []).forEach((c) => c && e.appendChild(c));
     return e;
 }

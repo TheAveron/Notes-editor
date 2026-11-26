@@ -1,0 +1,79 @@
+{
+  "id": "gld-annexes",
+  "title": "Annexes",
+  "kind": "autre",
+  "tags": [
+    "La Guilde"
+  ],
+  "blocks": [
+    {
+      "id": "id_c84cf077",
+      "type": "heading2",
+      "text": "A. Glossaire"
+    },
+    {
+      "id": "id_ddc4442c",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "Animalien",
+          "b": "Membre ou système de la Guilde dédiée aux liens télépathiques inter-espèces.",
+          "c": ""
+        },
+        {
+          "a": "Hiérarque",
+          "b": "Responsable local de la Guilde, par exemple à Narmatin.",
+          "c": ""
+        },
+        {
+          "a": "Haut Conseil des Archimages",
+          "b": "Autorité de la Guilde juste en dessous de la Mage suprême.",
+          "c": ""
+        },
+        {
+          "a": "Mage suprême",
+          "b": "Autorité au sommet de la Guilde — voir LIG-AN-006 pour le détail du rôle dans le duo Gardien/Mage suprême et de sa titulaire actuelle, Ambre.",
+          "c": ""
+        }
+      ]
+    },
+    {
+      "id": "id_8cdca559",
+      "type": "heading2",
+      "text": "B. Documents liés"
+    },
+    {
+      "id": "id_6950ceef",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "ARC-AR-001",
+          "b": "Échelle de classification complète (ARC-03), utilisée par ce dossier.",
+          "c": ""
+        },
+        {
+          "a": "GDN-AN-002",
+          "b": "Le Gardien de la Tour — bénéficiaire final du secret protégé par cette hiérarchie.",
+          "c": ""
+        },
+        {
+          "a": "CEL-AN-005",
+          "b": "Célestine — fiche d'identification de l'ancienne Mage suprême.",
+          "c": ""
+        },
+        {
+          "a": "LIG-AN-006",
+          "b": "La Lignée — le duo Gardien/Mage suprême et le mécanisme de succession.",
+          "c": ""
+        },
+        {
+          "a": "LIE-AN-004",
+          "b": "Les Liens — mécanique complète des capacités que la Guilde forme et cultive.",
+          "c": ""
+        }
+      ]
+    }
+  ]
+}

@@ -44,7 +44,7 @@
         },
         {
           "a": "Rôle sur le terrain",
-          "b": "Peu combattants dans l'âme ; diagnostic instantanés et assistance tactiques.",
+          "b": "Peu combattants dans l'âme ; diagnostics instantanés et assistance tactique.",
           "c": ""
         },
         {
@@ -130,7 +130,7 @@
       "tag": "confirme",
       "title": "Recrutement et hiérarchie interne",
       "paragraphs": [
-        "Recrutement  parmi d'anciens soldats de l'Imperium ou des volontaires en quête d'un but après une carrière militaire,  soldats blessés au delà de ce qui est soignable traditionnellement, davantage que parmi de jeunes novices. La hiérarchie interne suit une logique proche d'une organisation martiale classique — grades gagnés au mérite et à l'ancienneté au combat plutôt qu'à la piété affichée."
+        "Recrutement parmi d'anciens soldats de l'Imperium, des volontaires en quête d'un but après une carrière militaire ou des soldats blessés au-delà de ce qui est soignable traditionnellement, davantage que parmi de jeunes novices. La hiérarchie interne suit une logique proche d'une organisation martiale classique — grades gagnés au mérite et à l'ancienneté au combat plutôt qu'à la piété affichée."
       ]
     },
     {
@@ -278,7 +278,7 @@
       "tag": "confirme",
       "title": "Des sympathisants discrets chez les orthodoxes",
       "paragraphs": [
-        "Il n'est pas exclu que certains membres de Ordre de l'Esprit, sans jamais le reconnaître publiquement, nourrissent une sympathie discrète pour la position d'Ahel (qui en était une ancienne membre). En particulier  la théologie de l'Ordre de l'Esprit concernant le savoir se rapproche déjà, sans le vouloir, de l'argument d'Ahel selon lequel la compréhension prime sur le métal."
+        "Il n'est pas exclu que certains membres de l'Ordre de l'Esprit, sans jamais le reconnaître publiquement, nourrissent une sympathie discrète pour la position d'Ahel (qui en était une ancienne membre). En particulier, la théologie de l'Ordre de l'Esprit concernant le savoir se rapproche déjà, sans le vouloir, de l'argument d'Ahel selon lequel la compréhension prime sur le métal."
       ]
     }
   ]

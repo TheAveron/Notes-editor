@@ -1,5 +1,5 @@
 {
-  "id": "grd-annexes",
+  "id": "gdn-annexes",
   "title": "Annexes",
   "kind": "autre",
   "tags": [
@@ -17,7 +17,7 @@
       "layout": "label-value",
       "rows": [
         {
-          "a": "IL y a ~12 000 ans",
+          "a": "Il y a ~12 000 ans",
           "b": "Chute de la météorite contenant le cristal originel.",
           "c": ""
         },
@@ -79,8 +79,8 @@
           "c": ""
         },
         {
-          "a": "Plan éthéré",
-          "b": "Second plan d'existence où vivent les créatures affrontées par le Gardien — voir MEN-VC-001.",
+          "a": "Plan Éthéré",
+          "b": "Second plan d'existence où vivent les créatures affrontées par le Gardien — voir MEN-AN-003.",
           "c": ""
         },
         {
@@ -95,7 +95,7 @@
         },
         {
           "a": "Lignée",
-          "b": "Famille fournissant, génération après génération, l'un des deux membres du duo Gardien/Mage suprême — voir CEL-VC-001.",
+          "b": "Famille fournissant, génération après génération, l'un des deux membres du duo Gardien/Mage suprême — voir LIG-AN-006.",
           "c": ""
         }
       ]
@@ -111,23 +111,28 @@
       "layout": "label-value",
       "rows": [
         {
-          "a": "GLD-VC-001",
+          "a": "GLD-AN-001",
           "b": "La Guilde des Animaliens — hiérarchie complète, Haut Conseil des Archimages, secret institutionnel.",
           "c": ""
         },
         {
-          "a": "MEN-VC-001",
+          "a": "MEN-AN-003",
           "b": "La Menace — nature exacte du Plan Éthéré et des créatures affrontées par le Gardien.",
           "c": ""
         },
         {
-          "a": "LIE-VC-001",
+          "a": "LIE-AN-004",
           "b": "Les Liens — mécanique complète des connexions télépathiques, dont celles du Gardien.",
           "c": ""
         },
         {
-          "a": "CEL-VC-001",
-          "b": "Célestine & la Lignée — le duo Gardien/Mage suprême et Ambre, l'actuelle Mage suprême.",
+          "a": "CEL-AN-005",
+          "b": "Célestine — fiche d'identification de l'ancienne Mage suprême.",
+          "c": ""
+        },
+        {
+          "a": "LIG-AN-006",
+          "b": "La Lignée — le duo Gardien/Mage suprême et Ambre, l'actuelle Mage suprême.",
           "c": ""
         }
       ]

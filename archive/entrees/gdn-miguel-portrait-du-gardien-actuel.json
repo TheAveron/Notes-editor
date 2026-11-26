@@ -1,6 +1,6 @@
 {
-  "id": "grd-miguel-portait-du-gardien-actuel",
-  "title": "Miguel — Portait du Gardien actuel",
+  "id": "gdn-miguel-portrait-du-gardien-actuel",
+  "title": "Miguel — Portrait du Gardien actuel",
   "kind": "autre",
   "tags": [
     "Le Gardien"
@@ -9,7 +9,7 @@
     {
       "id": "id4_ixd7g",
       "type": "crossref",
-      "text": "Voir GLD-VS-001 pour la hiérarchie complète de la Guilde des Animaliens, le Haut Conseil des Archimages et le rôle de la Mage suprême."
+      "text": "Voir GLD-AN-001 pour la hiérarchie complète de la Guilde des Animaliens, le Haut Conseil des Archimages et le rôle de la Mage suprême."
     },
     {
       "id": "id5_0ffsi",
@@ -64,13 +64,13 @@
       "tag": "hypothese",
       "title": "Rapport à Udor",
       "paragraphs": [
-        "Udor étant le dernier esprit absorbé et le plus proche relationnellement de Miguel (mentor direct pendant 20 ans), il pourrit occuper une place particulière dans sa psyché — une voix plus familière et plus présente que les strates plus anciennes."
+        "Udor étant le dernier esprit absorbé et le plus proche relationnellement de Miguel (mentor direct pendant 20 ans), il pourrait occuper une place particulière dans sa psyché — une voix plus familière et plus présente que les strates plus anciennes."
       ]
     },
     {
       "id": "id12_dogeh",
       "type": "crossref",
-      "text": "Miguel entretient une relation amoureuse avec Ambre, l'actuelle Mage suprême et homologue de la Lignée — voir CEL-VC-001 pour le détail du duo Gardien/Mage suprême et de la manière dont ce lien a été délibérément encouragé par la Guilde."
+      "text": "Miguel entretient une relation amoureuse avec Ambre, l'actuelle Mage suprême et homologue de la Lignée — voir LIG-AN-006 pour le détail du duo Gardien/Mage suprême et de la manière dont ce lien a été délibérément encouragé par la Guilde."
     },
     {
       "id": "id17_92659",
@@ -89,17 +89,17 @@
         },
         {
           "a": "Célestine",
-          "b": "Ancienne Mage suprême de la Guilde des Animaliens (génération d'Udor). Elle a personnellement évalué et formé Miguel à la Guilde. Elle l'a escorté jusqu'à la Tour à ses 20 ans. Retirée depuis 65 ans — voir CEL-VC-001.",
+          "b": "Ancienne Mage suprême de la Guilde des Animaliens (génération d'Udor). Elle a personnellement évalué et formé Miguel à la Guilde. Elle l'a escorté jusqu'à la Tour à ses 20 ans. Retirée depuis 65 ans — voir CEL-AN-005.",
           "c": ""
         },
         {
           "a": "Ambre",
-          "b": "Actuelle Mage suprême, petite-fille de Célestine et d'Udor, compagne de Miguel — voir CEL-VC-001 pour le détail de la Lignée.",
+          "b": "Actuelle Mage suprême, petite-fille de Célestine et d'Udor, compagne de Miguel — voir LIG-AN-006 pour le détail de la Lignée.",
           "c": ""
         },
         {
           "a": "Udor",
-          "b": "Mentor et prédécesseur direct ; Gardien absorbé lors du Rituel de Transmission, aujourd'hui voix intérieure du Gardien actuel.\n",
+          "b": "Mentor et prédécesseur direct ; Gardien absorbé lors du Rituel de Transmission, aujourd'hui voix intérieure du Gardien actuel.",
           "c": ""
         },
         {

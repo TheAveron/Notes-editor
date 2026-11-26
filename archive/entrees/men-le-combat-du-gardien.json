@@ -1,0 +1,33 @@
+{
+  "id": "men-le-combat-du-gardien",
+  "title": "Le combat du Gardien",
+  "kind": "autre",
+  "tags": [
+    "La Menace"
+  ],
+  "blocks": [
+    {
+      "id": "id_d4eb607d",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Un combat strictement psychique",
+      "paragraphs": [
+        "Le Gardien ne combat jamais les créatures du Plan Éthéré sous une forme physique ou matérielle : la Tour lui permet de projeter sa conscience dans le Plan pour s'y confronter directement à elles. Aucune matérialisation corporelle de ces créatures n'existe dans le monde connu."
+      ]
+    },
+    {
+      "id": "id_d715c1f2",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Un rôle proactif ou réactif ?",
+      "paragraphs": [
+        "Rien ne tranche si le Gardien traque activement les créatures du Plan Éthéré (patrouille, chasse méthodique) ou s'il intervient seulement lorsqu'une victime ou une menace est repérée (posture réactive, façon exorciste). Les deux postures sont cohérentes avec tout ce qui a été établi, mais elles impliquent un rythme de vie et un type de récit très différents pour le Gardien."
+      ]
+    },
+    {
+      "id": "id_2db6c688",
+      "type": "crossref",
+      "text": "Voir GDN-01 et GDN-05 pour le profil du Gardien actuel, et MEN-03 pour le paradoxe de son exposition en tant que cible prioritaire."
+    }
+  ]
+}

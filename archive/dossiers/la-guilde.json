@@ -1,0 +1,66 @@
+{
+  "id": "la-guilde",
+  "color": "#3f5e6b",
+  "stampStyle": "accent",
+  "cover": {
+    "stampText": "Niveau 5 · A3 — Haut Conseil & Lignée",
+    "meta": [
+      {
+        "a": "N° de dossier",
+        "b": "GLD-AN-001"
+      },
+      {
+        "a": "Objet",
+        "b": "Structure, hiérarchie et secrets internes de la Guilde des Animaliens"
+      },
+      {
+        "a": "Documents liés",
+        "b": "ARC-AR-001 · GDN-AN-002 · CEL-AN-005 · LIG-AN-006 · LIE-AN-004"
+      },
+      {
+        "a": "Nature du sujet",
+        "b": "Institution active — hiérarchie en fonction"
+      },
+      {
+        "a": "Confidentialité",
+        "b": "Niveau 5 · A3 — voir ARC-03 pour l'échelle complète"
+      }
+    ],
+    "orgLine": "GUILDE DES ARCHIVISTES — FONDS DOCUMENTAIRE",
+    "kicker": "DOSSIER DE CLASSIFICATION",
+    "title": "La Guilde",
+    "subtitle": "La Guilde des Animaliens — structure, hiérarchie et secrets internes"
+  },
+  "footerBrand": "La Guilde - Niveau 5 · A3",
+  "noteUsage": {
+    "includeTagLegend": true,
+    "text": "Ce dossier centralise ce qui était jusqu'ici dispersé entre GDN-05 et CEL-AN-005 : la structure complète de la Guilde des Animaliens. Il utilise l'échelle de classification définie dans ARC-03 plutôt qu'un système propre."
+  },
+  "sections": [
+    {
+      "id": "id_57a60118",
+      "entry": "gld-vue-d-ensemble"
+    },
+    {
+      "id": "id_140ad6e6",
+      "entry": "gld-hierarchie-complete"
+    },
+    {
+      "id": "id_56521dd7",
+      "entry": "gld-le-hierarque-local-le-reperage-des-talents"
+    },
+    {
+      "id": "id_9135127b",
+      "entry": "gld-le-haut-conseil-des-archimages"
+    },
+    {
+      "id": "id_ab5568be",
+      "entry": "gld-hooks-de-scenario"
+    },
+    {
+      "id": "id_7ef8a090",
+      "entry": "gld-annexes"
+    }
+  ],
+  "version": 3
+}

@@ -1,0 +1,33 @@
+{
+  "id": "gld-vue-d-ensemble",
+  "title": "Vue d'ensemble",
+  "kind": "autre",
+  "tags": [
+    "La Guilde"
+  ],
+  "blocks": [
+    {
+      "id": "id_4fc9a0f3",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Fonction",
+      "paragraphs": [
+        "La Guilde des Animaliens est une institution basée à Narmatin, capitale de l'Imperium, dédiée à la formation des individus capables de développer des liens télépathiques avec d'autres espèces. La majorité des Hommes dotés d'un tel don peuvent, avec de l'entraînement, développer deux à trois liens ; une minorité exceptionnelle peut en atteindre six ou sept par le seul entraînement (voir LIE-AN-004)."
+      ]
+    },
+    {
+      "id": "id_7e11da3d",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Une autonomie de fait",
+      "paragraphs": [
+        "En pratique, personne ne donne vraiment d'ordre à la Guilde : ceux qui dirigent l'Imperium lui « demandent gentiment » d'agir quand ils en ont besoin. L'Empereur a disparu depuis longtemps, et l'Imperium est aujourd'hui dirigé par une forme de régence dont le détail n'est pas encore précisé."
+      ]
+    },
+    {
+      "id": "id_f60de028",
+      "type": "crossref",
+      "text": "Pour le détail complet du fonctionnement des liens, voir LIE-AN-004."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "men-symptomes-diagnostic",
+  "title": "Symptômes & diagnostic",
+  "kind": "autre",
+  "tags": [
+    "La Menace"
+  ],
+  "blocks": [
+    {
+      "id": "id_4f2dc6e6",
+      "type": "paragraph",
+      "text": "Les symptômes confirmés par les sources — maux de tête et malaises assimilables à des vertiges ou des malaises vagaux — sont ici replacés dans une grille plus large, utile pour faire progresser une scène d'enquête ou de sauvetage. Seuls les deux symptômes de base sont attestés ; le reste est une extrapolation clinique proposée pour l'usage MJ.",
+      "italic": false
+    },
+    {
+      "id": "id_ad18855b",
+      "type": "heading2",
+      "text": "Stade précoce (premières attaques)"
+    },
+    {
+      "id": "id_2fcf3445",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Symptômes attestés",
+      "paragraphs": [
+        "Maux de tête soudains ; malaises confondus avec de simples vertiges ou des malaises vagaux."
+      ]
+    },
+    {
+      "id": "id_726392e5",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Signes complémentaires proposés",
+      "paragraphs": [
+        "Fatigue disproportionnée au repos pris, sensation de froid localisé sans cause apparente, réveils nocturnes inexpliqués, pertes ponctuelles du fil des pensées."
+      ]
+    },
+    {
+      "id": "id_46d7cf41",
+      "type": "heading2",
+      "text": "Stade intermédiaire (attaques répétées, cible identifiée par une créature)"
+    },
+    {
+      "id": "id_8ac94087",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Signes complémentaires proposés",
+      "paragraphs": [
+        "Syncopes plus fréquentes, absences de quelques secondes, sensation diffuse d'être observé, variations d'humeur inexpliquées par l'entourage."
+      ]
+    },
+    {
+      "id": "id_714be455",
+      "type": "heading2",
+      "text": "Stade tardif (consommation avancée)"
+    },
+    {
+      "id": "id_1ccff1ca",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Signes complémentaires proposés",
+      "paragraphs": [
+        "Teint blafard, perte de poids inexpliquée, désorientation croissante, discours par moments incohérent. Sans intervention, ce stade mène à la mort de la cible (voir MEN-02)."
+      ]
+    },
+    {
+      "id": "id_35088e0a",
+      "type": "heading2",
+      "text": "Après une possession réussie"
+    },
+    {
+      "id": "id_59eacd6e",
+      "type": "callout",
+      "tag": "attention",
+      "title": "Une possession est difficile à détecter",
+      "paragraphs": [
+        "Une créature ayant réussi une possession totale a tout intérêt à imiter le comportement de son hôte pour ne pas se faire repérer. Il n'existe, en l'état des sources, aucun signe extérieur fiable et systématique permettant de distinguer un PNJ possédé d'un PNJ ordinaire — ce qui en fait un excellent ressort d'enquête, mais aussi un point à doser avec soin pour ne pas rendre la menace insoluble ou au contraire trop évidente pour les joueurs."
+      ]
+    }
+  ]
+}

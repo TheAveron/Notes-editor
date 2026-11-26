@@ -1,0 +1,46 @@
+{
+  "id": "lie-les-trois-voies-d-acquisition",
+  "title": "Les trois voies d'acquisition",
+  "kind": "autre",
+  "tags": [
+    "Les Liens"
+  ],
+  "blocks": [
+    {
+      "id": "id_8fa12729",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Voie 1 — Inné et déjà développé",
+      "paragraphs": [
+        "Le lien est présent et pleinement fonctionnel dès l'enfance, sans travail préalable du porteur. C'est le cas de Miguel avec les Esprits de feu : le lien existait et pouvait déjà être utilisé avant tout entraînement à la Guilde."
+      ]
+    },
+    {
+      "id": "id_52141b3e",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Voie 2 — Inné mais dormant",
+      "paragraphs": [
+        "Le lien existe dès la naissance mais reste quasiment inerte. Il doit d'abord être repéré par son porteur — souvent par hasard ou grâce à un tiers expérimenté — avant de pouvoir être travaillé et rendu réellement utilisable."
+      ]
+    },
+    {
+      "id": "id_c0fac76b",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Voie 3 — Acquis par familiarité",
+      "paragraphs": [
+        "Pour un lien qui n'est pas inné, il faut passer du temps auprès de l'espèce visée et, de préférence, développer une relation quasi amicale avec un individu précis de cette espèce. Un lien peut alors se créer progressivement à partir de cette relation."
+      ]
+    },
+    {
+      "id": "id_68601916",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Délai et rareté selon l'espèce visée",
+      "paragraphs": [
+        "Rien ne précise combien de temps demande la Voie 3 selon l'espèce ciblée. Il est cohérent avec le reste du système de supposer que ce délai croît fortement avec le niveau de conscience de l'espèce visée (voir LIE-06) : quelques semaines ou mois pour un animal ordinaire, sans doute des années pour un Golem, un Treant ou un élémentaire majeur — si tant est qu'un individu de ces espèces accepte même d'entamer une telle relation."
+      ]
+    }
+  ]
+}

@@ -99,16 +99,23 @@ function renderBlockHtml(b) {
             }
             return `<table class="stat">${b.rows.map((r) => `<tr><td class="label">${escapeHtml(r.a)}</td><td>${rich(r.b)}</td></tr>`).join("")}</table>`;
         }
-        case "card":
-            return `<div class="card${b.tone === "accent" ? " card-accent" : ""}">
+        case "card": {
+            // Couleur d'accent facultative (ex. degrés de gravité) ; elle prime sur `tone`.
+            const acc = isValidHex(b.accent || "") ? normalizeHex(b.accent) : null;
+            const cardStyle = acc
+                ? ` style="border-left-color:${acc};background:${derivePalette(acc).accentBg};"`
+                : "";
+            const headStyle = acc ? ` style="color:${acc};"` : "";
+            return `<div class="card${b.tone === "accent" ? " card-accent" : ""}"${cardStyle}>
         <div class="card-header">
-        <div class="chead">${escapeHtml(b.badgeText)}</div>
-        <div class="dot-separator">·</div>
+        <div class="chead"${headStyle}>${escapeHtml(b.badgeText)}</div>
+        <div class="dot-separator"${headStyle}>·</div>
         <div class="ctitle2">${escapeHtml(b.title)}</div>
         </div>
         <p>${rich(b.pitch)}</p>
         <table>${b.rows.map((r) => `<tr><td>${escapeHtml(r.a)}</td><td>${rich(r.b)}</td></tr>`).join("")}</table>
       </div>`;
+        }
         case "crossref":
             return `<div class="crossref"><b>→ RENVOI</b> &nbsp;${rich(b.text)}</div>`;
         default: // pagebreak : géré par renderPreview (découpage des pages)

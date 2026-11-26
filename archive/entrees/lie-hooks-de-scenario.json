@@ -1,0 +1,142 @@
+{
+  "id": "lie-hooks-de-scenario",
+  "title": "Hooks de scénario",
+  "kind": "autre",
+  "tags": [
+    "Les Liens"
+  ],
+  "blocks": [
+    {
+      "id": "id_6944eb73",
+      "type": "paragraph",
+      "text": "Six accroches prêtes à l'emploi, centrées sur la mécanique des liens.",
+      "italic": false
+    },
+    {
+      "id": "id_0f1531c4",
+      "type": "card",
+      "badgeText": "HOOK 1",
+      "title": "Le don qui dormait",
+      "pitch": "Un personnage découvre par accident qu'il porte un lien inné mais jamais repéré jusque-là — peut-être révélé par une situation de stress ou de danger.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Personnel"
+        },
+        {
+          "a": "Complication",
+          "b": "Le lien est brut, non travaillé, et peut se manifester de façon incontrôlée avant tout entraînement."
+        },
+        {
+          "a": "Rôle des liens",
+          "b": "La Guilde des Animaliens peut proposer un encadrement si la découverte remonte jusqu'à elle."
+        }
+      ]
+    },
+    {
+      "id": "id_f6146392",
+      "type": "card",
+      "badgeText": "HOOK 2",
+      "title": "Le pacte du solitaire",
+      "pitch": "Un personnage cherche à établir un lien avec une espèce précise en nouant une relation quasi amicale avec un individu — un processus long, incertain, et parfois dangereux si l'espèce visée se méfie des Hommes.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Personnel / local"
+        },
+        {
+          "a": "Complication",
+          "b": "L'échec de cette relation peut rendre toute future tentative avec la même population beaucoup plus difficile."
+        },
+        {
+          "a": "Rôle des liens",
+          "b": "Aucun — pur enjeu de personnage."
+        }
+      ]
+    },
+    {
+      "id": "id_3fa10b84",
+      "type": "card",
+      "badgeText": "HOOK 3",
+      "title": "La population sauvage",
+      "pitch": "Une communauté a besoin d'un lien fonctionnel avec une population sauvage d'une espèce habituellement domestiquée près des grandes villes — car seule une population sauvage possède une capacité recherchée (résistance, force, instinct).",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Local / régional"
+        },
+        {
+          "a": "Complication",
+          "b": "La population sauvage n'a aucune des habitudes de coopération de sa cousine domestiquée, quelle que soit la force du lien technique établi."
+        },
+        {
+          "a": "Rôle des liens",
+          "b": "Absent, sauf si la Guilde a un intérêt dans l'issue de l'opération."
+        }
+      ]
+    },
+    {
+      "id": "id_e124bd5f",
+      "type": "card",
+      "badgeText": "HOOK 4",
+      "title": "Le lien rouillé",
+      "pitch": "Un vétéran ou un ancien porteur de lien doit retrouver, en urgence, l'usage d'un lien ancien laissé à l'abandon depuis des années — une compétence oubliée devenue soudain vitale.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Personnel, à résonance dramatique"
+        },
+        {
+          "a": "Complication",
+          "b": "Le réentraînement prend du temps ; la situation qui le rend nécessaire n'en laisse peut-être pas assez."
+        },
+        {
+          "a": "Rôle des liens",
+          "b": "Aucun direct, sauf recours à la Guilde pour accélérer le processus."
+        }
+      ]
+    },
+    {
+      "id": "id_18ca81b2",
+      "type": "card",
+      "badgeText": "HOOK 5",
+      "title": "L'ami de pierre",
+      "pitch": "Une rumeur circule : un ermite ou un groupe isolé aurait réussi, sur plusieurs décennies, à établir un lien avec un Golem — un cas quasiment sans précédent au Degré II.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Régional"
+        },
+        {
+          "a": "Complication",
+          "b": "Vérifier la rumeur suppose de localiser et de convaincre un individu extrêmement méfiant, peu habitué à recevoir des visiteurs."
+        },
+        {
+          "a": "Rôle des liens",
+          "b": "Intérêt possible de la Guilde si la rumeur s'avère fondée — un tel lien serait une découverte majeure."
+        }
+      ]
+    },
+    {
+      "id": "id_5ecd7d2d",
+      "type": "card",
+      "badgeText": "HOOK 6",
+      "title": "La première fois",
+      "pitch": "Des rumeurs, probablement fausses mais insistantes, prétendent qu'un lien aurait été établi entre un Homme et un Elfe — un événement sans précédent connu dans toute l'histoire du don.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Mondial"
+        },
+        {
+          "a": "Complication",
+          "b": "Si la rumeur s'avère vraie, elle bouleverse une certitude vieille de plusieurs millénaires au sein de la Guilde et au-delà."
+        },
+        {
+          "a": "Rôle des liens",
+          "b": "Aucun rôle direct du Gardien ou de la Tour, mais un enjeu suffisamment vaste pour attirer l'attention d'Ambre, l'actuelle Mage suprême, elle-même — voir LIG-AN-006."
+        }
+      ]
+    }
+  ]
+}

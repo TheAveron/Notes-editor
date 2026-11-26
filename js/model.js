@@ -175,6 +175,10 @@ function normalizeBlock(b, id) {
                 type: b.type,
                 // "hook" : sarcelle des hooks MJ (historique) ; "accent" : couleur du document
                 tone: b.tone === "accent" ? "accent" : "hook",
+                // couleur hexadécimale facultative, prioritaire sur `tone`
+                accent: isValidHex(asStr(b.accent))
+                    ? normalizeHex(b.accent)
+                    : undefined,
                 badgeText: asStr(b.badgeText),
                 title: asStr(b.title),
                 pitch: asStr(b.pitch),

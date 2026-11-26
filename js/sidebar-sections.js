@@ -550,6 +550,16 @@ function renderBlockEditor(s, b, idx) {
         toneRow.appendChild(toneSel);
         body.appendChild(toneRow);
         body.appendChild(
+            fieldText(
+                "Couleur d'accent (hex, facultatif)",
+                b.accent || "",
+                (v) => {
+                    b.accent = isValidHex(v) ? normalizeHex(v) : undefined;
+                    update();
+                },
+            ),
+        );
+        body.appendChild(
             fieldText("Badge (ex. HOOK 1)", b.badgeText, (v) => {
                 b.badgeText = v;
                 update();

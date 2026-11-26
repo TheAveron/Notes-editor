@@ -19,8 +19,11 @@ function renderColorPicker(container) {
     const grid = el("div", { class: "swatch-grid" });
     proposals.forEach((hex, i) => {
         const isSelected = normalizeHex(doc.color) === normalizeHex(hex);
-        const sw = el("div", {
+        const sw = el("button", {
+            type: "button",
             class: "swatch" + (isSelected ? " selected" : ""),
+            title: "Choisir la couleur " + hex,
+            "aria-pressed": String(isSelected),
             onclick: () => {
                 colorMsg = null;
                 selectColor(hex);

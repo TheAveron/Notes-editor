@@ -1,0 +1,86 @@
+{
+  "id": "les-liens",
+  "color": "#b5651d",
+  "stampStyle": "accent",
+  "cover": {
+    "stampText": "Niveau 3 · A1 — Guilde des Animaliens",
+    "meta": [
+      {
+        "a": "N° de dossier",
+        "b": "LIE-AN-004"
+      },
+      {
+        "a": "Objet",
+        "b": "Fonctionnement, acquisition et hiérarchie des liens télépathiques"
+      },
+      {
+        "a": "Documents liés",
+        "b": "ARC-AR-001 · GDN-AN-002 · GLD-AN-001 · MEN-AN-003"
+      },
+      {
+        "a": "Nature du sujet",
+        "b": "Mécanique fondatrice — socle de tout individu lié"
+      },
+      {
+        "a": "Confidentialité",
+        "b": "Niveau 3 · A1 — voir ARC-03 pour l'échelle complète"
+      }
+    ],
+    "orgLine": "GUILDE DES ARCHIVISTES — FONDS DOCUMENTAIRE",
+    "kicker": "DOSSIER DE CLASSIFICATION",
+    "title": "Les Liens",
+    "subtitle": "Nature, acquisition et hiérarchie des connexions télépathiques"
+  },
+  "footerBrand": "Les Liens - Niveau 3 · A1",
+  "noteUsage": {
+    "includeTagLegend": true,
+    "text": "Ce dossier complète GDN-AN-002 et MEN-AN-003 et suit le même système de classification. Une échelle supplémentaire, propre à ce document, gradue le niveau de conscience des espèces et entités avec lesquelles un lien peut se créer.\nLes Degrés I à III graduent le niveau de conscience et de libre arbitre de l'entité avec laquelle un lien est créé — de l'instinct simple jusqu'à la pleine conscience réflexive. Voir LIE-06 pour le détail complet."
+  },
+  "sections": [
+    {
+      "id": "id_11a7415a",
+      "entry": "lie-definition-du-don"
+    },
+    {
+      "id": "id_f61506d0",
+      "entry": "lie-les-trois-voies-d-acquisition"
+    },
+    {
+      "id": "id_a1b5fbb0",
+      "entry": "lie-temperament-des-populations-liees"
+    },
+    {
+      "id": "id_8851c115",
+      "entry": "lie-progression-de-puissance-amplification"
+    },
+    {
+      "id": "id_7a29f1d1",
+      "entry": "lie-permanence-et-affaiblissement"
+    },
+    {
+      "id": "id_93b95145",
+      "entry": "lie-hierarchie-de-conscience-et-rarete-des-liens",
+      "pageBreaks": [
+        {
+          "after": "id_c9e42389",
+          "repeatTitle": false
+        }
+      ]
+    },
+    {
+      "id": "id_0e56779a",
+      "entry": "lie-hooks-de-scenario",
+      "pageBreaks": [
+        {
+          "after": "id_3fa10b84",
+          "repeatTitle": false
+        }
+      ]
+    },
+    {
+      "id": "id_43fb33ff",
+      "entry": "lie-annexes"
+    }
+  ],
+  "version": 3
+}

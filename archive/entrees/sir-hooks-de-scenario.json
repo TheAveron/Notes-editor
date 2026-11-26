@@ -1,6 +1,6 @@
 {
   "id": "sir-hooks-de-scenario",
-  "title": "Hooks de Scénario",
+  "title": "Hooks de scénario",
   "kind": "autre",
   "tags": [
     "Le Culte de Sirozor"
@@ -9,7 +9,7 @@
     {
       "id": "id90",
       "type": "paragraph",
-      "text": "Six accroches centrées sur le culte de Sirozor, exploitables directement. Pour plus de hook religieux, aller voir les différents documents liés.",
+      "text": "Six accroches centrées sur le culte de Sirozor, exploitables directement. Pour d'autres accroches religieuses, voir les documents liés.",
       "italic": false
     },
     {

@@ -160,8 +160,17 @@ document.getElementById("btn-modal-edit").addEventListener("click", () => {
 document
     .getElementById("btn-registry")
     .addEventListener("click", openRegistryModal);
-document.getElementById("btn-registry-close").addEventListener("click", () => {
+function closeRegistryModal() {
     document.getElementById("registry-modal").style.display = "none";
+}
+document
+    .getElementById("btn-registry-close")
+    .addEventListener("click", closeRegistryModal);
+document.getElementById("registry-modal").addEventListener("click", (e) => {
+    if (e.target.id === "registry-modal") closeRegistryModal(); // clic sur le fond
+});
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeRegistryModal();
 });
 document.getElementById("btn-registry-export").addEventListener("click", () => {
     downloadFile(

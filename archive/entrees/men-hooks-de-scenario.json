@@ -1,0 +1,142 @@
+{
+  "id": "men-hooks-de-scenario",
+  "title": "Hooks de scénario",
+  "kind": "autre",
+  "tags": [
+    "La Menace"
+  ],
+  "blocks": [
+    {
+      "id": "id_c78cc709",
+      "type": "paragraph",
+      "text": "Six accroches prêtes à l'emploi, graduées du plus local au plus vaste, et couvrant l'ensemble des paliers de menace définis dans MEN-04.",
+      "italic": false
+    },
+    {
+      "id": "id_97d8aab6",
+      "type": "card",
+      "badgeText": "HOOK 1",
+      "title": "Les nuits de Withre",
+      "pitch": "Un Suceur de veille (Palier I) s'est installé dans un hameau isolé, profitant du grand nombre d'habitants sans lien. Les victimes ne savent pas qu'elles sont attaquées — seulement qu'elles dorment de plus en plus mal.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Local"
+        },
+        {
+          "a": "Complication",
+          "b": "Convaincre des villageois sceptiques qu'un mal invisible les frappe, sans preuve tangible à leur montrer."
+        },
+        {
+          "a": "Rôle du Gardien",
+          "b": "Absent — un scénario à la portée de personnages sans lien avec la Tour ou la Guilde."
+        }
+      ]
+    },
+    {
+      "id": "id_641020f4",
+      "type": "card",
+      "badgeText": "HOOK 2",
+      "title": "La cible qui en savait trop",
+      "pitch": "Un PJ ou PNJ à liens multiples est repéré et traqué par un Traqueur des liens (Palier II), qui a identifié sa garde affaiblie comme une opportunité.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Personnel"
+        },
+        {
+          "a": "Complication",
+          "b": "La cible ignore tout du danger : les symptômes ressemblent à un simple surmenage jusqu'à ce que les attaques s'intensifient."
+        },
+        {
+          "a": "Rôle du Gardien",
+          "b": "Absent, mais la Guilde des Animaliens peut fournir un premier diagnostic si les PJ savent où chercher."
+        }
+      ]
+    },
+    {
+      "id": "id_7192c3ad",
+      "type": "card",
+      "badgeText": "HOOK 3",
+      "title": "Le voisin qui n'en est plus un",
+      "pitch": "Un Dévoreur de seuil (Palier III) a réussi une possession totale sur un habitant respecté d'une communauté. Rien ne semble anormal en apparence — jusqu'à ce que de petits détails ne collent plus.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Local, à forte tension d'enquête"
+        },
+        {
+          "a": "Complication",
+          "b": "Aucune preuve définitive n'existe pour confirmer la possession avant qu'il ne soit peut-être trop tard."
+        },
+        {
+          "a": "Rôle du Gardien",
+          "b": "Absent — mais un émissaire de la Guilde peut confirmer l'existence du phénomène sans se déplacer en personne."
+        }
+      ]
+    },
+    {
+      "id": "id_037376ea",
+      "type": "card",
+      "badgeText": "HOOK 4",
+      "title": "Withre en péril",
+      "pitch": "Un Seigneur de la Faim (Palier IV) étend son influence sur toute une région rurale, dirigeant plusieurs créatures inférieures vers des cibles choisies — dont, potentiellement, le village natal de Miguel.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Régional"
+        },
+        {
+          "a": "Complication",
+          "b": "Si Miguel apprend la nouvelle, son attachement personnel à Withre pourrait le pousser à intervenir hors de la Tour — un cas rarissime aux conséquences politiques (voir GDN-06, hook 4)."
+        },
+        {
+          "a": "Rôle du Gardien",
+          "b": "Allié exceptionnel si informé et impliqué ; absent sinon."
+        }
+      ]
+    },
+    {
+      "id": "id_1d8fdb22",
+      "type": "card",
+      "badgeText": "HOOK 5",
+      "title": "Le culte du Seuil",
+      "pitch": "Une secte a découvert des fragments de vérité sur le Plan Éthéré et cherche à négocier, voire à s'allier, avec un Dévoreur ou un Seigneur de la Faim, dans l'espoir d'en tirer un pouvoir personnel.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Régional / politique"
+        },
+        {
+          "a": "Complication",
+          "b": "Le culte pourrait, sans le savoir, préparer les conditions d'une possession à grande échelle — ou d'une attention accrue d'un Souverain Éthéré."
+        },
+        {
+          "a": "Rôle du Gardien",
+          "b": "Possible intervention si l'affaire remonte jusqu'à la Guilde ou jusqu'à la Tour."
+        }
+      ]
+    },
+    {
+      "id": "id_1d13d1d7",
+      "type": "card",
+      "badgeText": "HOOK 6",
+      "title": "Le silence du Souverain",
+      "pitch": "Des signes indirects et fragmentaires (créatures de paliers inférieurs anormalement nombreuses et coordonnées) suggèrent l'éveil ou l'approche d'un Souverain Éthéré (Palier V).",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Mondial"
+        },
+        {
+          "a": "Complication",
+          "b": "Aucun témoignage fiable n'existe sur un tel événement ; les PJ avancent en terrain quasi inconnu, sans certitude sur ce qui les attend."
+        },
+        {
+          "a": "Rôle du Gardien",
+          "b": "Central — un enjeu de cette ampleur nécessite presque certainement l'intervention du Gardien en personne."
+        }
+      ]
+    }
+  ]
+}

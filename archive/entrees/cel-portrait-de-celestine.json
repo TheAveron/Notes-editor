@@ -1,0 +1,34 @@
+{
+  "id": "cel-portrait-de-celestine",
+  "title": "Portrait de Célestine",
+  "kind": "autre",
+  "tags": [
+    "Célestine"
+  ],
+  "blocks": [
+    {
+      "id": "id_edb71940",
+      "type": "paragraph",
+      "text": "Les sources disponibles documentent la fonction de Célestine avec précision, mais laissent presque tout de sa personne ouvert. Les éléments suivants sont des propositions, à adopter ou à réécrire librement.",
+      "italic": true
+    },
+    {
+      "id": "id_bc60d1c1",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Tempérament",
+      "paragraphs": [
+        "Rien n'est établi sur son caractère. Son amitié durable et sans rancœur avec Udor, malgré une union arrangée sans amour, suggère une personne pragmatique, capable de faire la paix avec un devoir qu'elle n'a pas choisi — une piste cohérente avec le ton général de la Lignée, mais qui reste à confirmer ou à réinventer."
+      ]
+    },
+    {
+      "id": "id_f2103eb4",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Apparence physique et âge exact",
+      "paragraphs": [
+        "Non définis. Par cohérence avec Udor (136 ans lors de l'arrivée de Miguel), Célestine devait être proche de cet âge lors de sa propre retraite, 65 ans plus tard dans la chronologie du récit — donc extrêmement âgée, sinon plus, au moment de son retrait."
+      ]
+    }
+  ]
+}

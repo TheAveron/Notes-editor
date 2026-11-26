@@ -1,6 +1,6 @@
 {
-  "id": "grd-hooks-de-scenario",
-  "title": "Hooks de Scénario",
+  "id": "gdn-hooks-de-scenario",
+  "title": "Hooks de scénario",
   "kind": "autre",
   "tags": [
     "Le Gardien"
@@ -9,7 +9,7 @@
     {
       "id": "id21_gz5ma",
       "type": "paragraph",
-      "text": "Cinq accroches prêtes à l'emploi, centrées sur le Gardien en tant que PNJ. Pour les accroches d'ordre institutionnel autour de la Guilde, voir GLD-VC-001.",
+      "text": "Cinq accroches prêtes à l'emploi, centrées sur le Gardien en tant que PNJ. Pour les accroches d'ordre institutionnel autour de la Guilde, voir GLD-AN-001.",
       "italic": false
     },
     {
@@ -17,7 +17,7 @@
       "type": "card",
       "badgeText": "HOOK 1",
       "title": "L'appel de la Tour",
-      "pitch": "Un des personnages se révèle exceptionnellement doué (potentiel de six ou sept liens) et attire l'attention de la Guilde. Le personnage doit être relativement jeune, pour pouvoir être un candidat sérieux pour le poste de Gardien ou de Mage Suprême.",
+      "pitch": "Un des personnages se révèle exceptionnellement doué (potentiel de six ou sept liens) et attire l'attention de la Guilde. Le personnage doit être relativement jeune, pour pouvoir être un candidat sérieux pour le poste de Gardien ou de Mage suprême.",
       "rows": [
         {
           "a": "Niveau",
@@ -49,7 +49,7 @@
           "b": "Elle engage des personnages extérieurs à la Guilde, donc politiquement « jetables », pour enquêter sans alerter l'institution."
         },
         {
-          "a": "Rôle du Guardien",
+          "a": "Rôle du Gardien",
           "b": "Potentiel antagoniste temporaire, si un esprit ancien reprend le dessus lors de la confrontation finale."
         }
       ]
@@ -67,10 +67,10 @@
         },
         {
           "a": "Complication",
-          "b": "Ces révélations pourraient inclure la preuve d'un échec de transmission passé (voir GDN-03, « La transmission ratée »), ou de quelconque histoire sombre autour des agissements d'anciens gardiens."
+          "b": "Ces révélations pourraient inclure la preuve d'un échec de transmission passé (voir GDN-03, « La transmission ratée »), ou d'une quelconque histoire sombre autour des agissements d'anciens gardiens."
         },
         {
-          "a": "Rôle du Guardien",
+          "a": "Rôle du Gardien",
           "b": "Ambigu — peut intervenir pour récupérer ou protéger ces archives, sans que ses intentions soient claires (protection légitime ou dissimulation)."
         }
       ]
@@ -80,7 +80,7 @@
       "type": "card",
       "badgeText": "HOOK 4",
       "title": "Les proches en péril",
-      "pitch": "Le village natal de Miguel est frappé par une recrudescence d'attaques et de symptômes étranges (maux de tête, malaises) évoquant une activité du Plan Éthéré (voir MEN-VC-001).",
+      "pitch": "Le village natal de Miguel est frappé par une recrudescence d'attaques et de symptômes étranges (maux de tête, malaises) évoquant une activité du Plan Éthéré (voir MEN-AN-003).",
       "rows": [
         {
           "a": "Niveau",
@@ -88,10 +88,10 @@
         },
         {
           "a": "Complication",
-          "b": "Miguel pourrait intervenir personnellement par attachement sentimental — situation rarissime où le Gardien agit hors la Tour pour une raison purement privée."
+          "b": "Miguel pourrait intervenir personnellement par attachement sentimental — situation rarissime où le Gardien agit hors de la Tour pour une raison purement privée."
         },
         {
-          "a": "Rôle du Guardien",
+          "a": "Rôle du Gardien",
           "b": "Allié exceptionnel, dont l'implication directe soulève des questions politiques : pourquoi lui, pourquoi là, pourquoi maintenant ?"
         }
       ]
@@ -112,7 +112,7 @@
           "b": "Cela peut signifier qu'il se sait affaibli, menacé, ou qu'il a détecté une menace nécessitant un Gardien neuf, plus fort que lui-même en exercice."
         },
         {
-          "a": "Rôle du Guardien",
+          "a": "Rôle du Gardien",
           "b": "Central mais insaisissable — jamais rencontré en personne, perçu uniquement à travers les conséquences de ses décisions."
         }
       ]

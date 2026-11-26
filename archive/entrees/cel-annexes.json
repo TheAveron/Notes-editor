@@ -1,0 +1,53 @@
+{
+  "id": "cel-annexes",
+  "title": "Annexes",
+  "kind": "autre",
+  "tags": [
+    "Célestine"
+  ],
+  "blocks": [
+    {
+      "id": "id_17d6450f",
+      "type": "heading2",
+      "text": "A. Documents liés"
+    },
+    {
+      "id": "id_f27e2412",
+      "type": "paragraph",
+      "text": "Les corrections rendues nécessaires par ce dossier ont été appliquées dans l'ensemble de la collection : GDN-AN-002 reflète le statut de Célestine comme ancienne Mage suprême et nomme Ambre ; GLD-AN-001 porte désormais la hiérarchie complète de la Guilde ; ARC-AR-001 porte l'échelle de classification à sept niveaux.",
+      "italic": true
+    },
+    {
+      "id": "id_29ff21cc",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "ARC-AR-001",
+          "b": "Document fondateur — échelle de classification à sept niveaux (ARC-03), remplaçant les tableaux de secret précédents.",
+          "c": ""
+        },
+        {
+          "a": "GLD-AN-001",
+          "b": "La Guilde des Animaliens — hiérarchie complète, Haut Conseil des Archimages.",
+          "c": ""
+        },
+        {
+          "a": "GDN-AN-002",
+          "b": "Fiche d'identification de Miguel — autorité de tutelle, longévité, parcours attesté, relations.",
+          "c": ""
+        },
+        {
+          "a": "LIG-AN-006",
+          "b": "La Lignée — le duo Gardien/Mage suprême, la généalogie, Ambre, les hooks de scénario.",
+          "c": ""
+        },
+        {
+          "a": "MEN-AN-003",
+          "b": "La Menace — aucune mention directe de Célestine ; sans impact.",
+          "c": ""
+        }
+      ]
+    }
+  ]
+}

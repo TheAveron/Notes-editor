@@ -1,0 +1,96 @@
+{
+  "id": "la-menace",
+  "color": "#4a2160",
+  "stampStyle": "red",
+  "cover": {
+    "stampText": "Niveau 6 · A4 — Mage suprême en exercice",
+    "meta": [
+      {
+        "a": "N° de dossier",
+        "b": "MEN-AN-003"
+      },
+      {
+        "a": "Objet",
+        "b": "Nature, mécanique de prédation et hiérarchie des créatures du Plan Éthéré"
+      },
+      {
+        "a": "Document lié",
+        "b": "ARC-AR-001 · GDN-AN-002 · GLD-AN-001"
+      },
+      {
+        "a": "Nature du sujet",
+        "b": "Menace active — surveillance permanente requise"
+      },
+      {
+        "a": "Confidentialité",
+        "b": "Niveau 6 · A4 — voir ARC-03 pour l'échelle complète"
+      }
+    ],
+    "orgLine": "GUILDE DES ARCHIVISTES — FONDS DOCUMENTAIRE",
+    "kicker": "DOSSIER DE CLASSIFICATION",
+    "title": "La Menace",
+    "subtitle": "Le Plan Éthéré et ses créatures"
+  },
+  "footerBrand": "La Menace - Niveau 6 · A4",
+  "noteUsage": {
+    "includeTagLegend": true,
+    "text": "Ce dossier complète GDN-AN-002 et suit le même système de classification. Une échelle supplémentaire, propre à ce document, permet de graduer le danger que représente chaque créature du Plan Éthéré.\nLes Paliers I à V graduent la puissance et la dangerosité d'une créature du Plan Éthéré, du simple parasite opportuniste jusqu'aux entités quasi mythiques comparables à de grands seigneurs du mal. Voir MEN-04 pour le détail complet."
+  },
+  "sections": [
+    {
+      "id": "id_61eadbae",
+      "entry": "men-vue-d-ensemble-du-plan-ethere"
+    },
+    {
+      "id": "id_c1f86629",
+      "entry": "men-mecanique-de-predation"
+    },
+    {
+      "id": "id_8b55f7ef",
+      "entry": "men-facteurs-de-vulnerabilite"
+    },
+    {
+      "id": "id_f4177c5f",
+      "entry": "men-hierarchie-des-creatures",
+      "pageBreaks": [
+        {
+          "after": "id_1d43d936",
+          "repeatTitle": false
+        },
+        {
+          "after": "id_e46cddf8",
+          "repeatTitle": false
+        }
+      ]
+    },
+    {
+      "id": "id_aa6334df",
+      "entry": "men-le-combat-du-gardien"
+    },
+    {
+      "id": "id_19b4bdf6",
+      "entry": "men-symptomes-diagnostic"
+    },
+    {
+      "id": "id_e1bf1252",
+      "entry": "men-hooks-de-scenario",
+      "pageBreaks": [
+        {
+          "after": "id_7192c3ad",
+          "repeatTitle": false
+        }
+      ]
+    },
+    {
+      "id": "id_9e960fb6",
+      "entry": "men-annexes",
+      "pageBreaks": [
+        {
+          "after": "id_97eeb612",
+          "repeatTitle": false
+        }
+      ]
+    }
+  ],
+  "version": 3
+}

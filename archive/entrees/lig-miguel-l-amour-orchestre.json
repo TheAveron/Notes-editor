@@ -1,0 +1,42 @@
+{
+  "id": "lig-miguel-l-amour-orchestre",
+  "title": "Miguel & l'amour orchestré",
+  "kind": "autre",
+  "tags": [
+    "La Lignée"
+  ],
+  "blocks": [
+    {
+      "id": "id_14c716b6",
+      "type": "crossref",
+      "text": "Pour l'échelle complète de classification (dont le Niveau 5 — Haut Conseil & Lignée, et le Niveau 6 — Mage suprême, mentionnés dans ce dossier), voir ARC-03."
+    },
+    {
+      "id": "id_54847051",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Ce que Miguel sait",
+      "paragraphs": [
+        "En tant qu'apprenti Gardien puis Gardien en poste, Miguel a accès à l'intégralité des archives du royaume ayant trait à la Tour. Durant sa formation auprès d'Udor, il apprend progressivement tous les ressorts de sa tâche — y compris le fait que son propre rapprochement avec son homologue de la Lignée, durant leurs années à la Guilde, a été activement encouragé par les maîtres, comme il est d'usage pour chaque génération de duo."
+      ]
+    },
+    {
+      "id": "id_f95963b7",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Comment il l'a vécu",
+      "paragraphs": [
+        "Miguel ne l'a pas mal vécu. Conscient de l'importance de sa tâche et de celle du duo qu'il forme avec son homologue, il considère cet arrangement comme une nécessité légitime plutôt que comme une manipulation à ressentir douloureusement."
+      ]
+    },
+    {
+      "id": "id_19c13077",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Une sérénité totale, ou une paix construite ?",
+      "paragraphs": [
+        "Rien n'indique si cette absence de ressentiment a été immédiate ou si elle est le fruit d'une réflexion progressive au fil de sa formation. Une piste de caractérisation ouverte : Miguel a-t-il eu, à un moment précis, un instant de doute ou de remise en question avant d'arriver à cette paix — ou l'a-t-il acceptée sans détour dès qu'il en a compris la raison ?"
+      ]
+    }
+  ]
+}

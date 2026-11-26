@@ -1,0 +1,100 @@
+{
+  "id": "gld-hooks-de-scenario",
+  "title": "Hooks de scénario",
+  "kind": "autre",
+  "tags": [
+    "La Guilde"
+  ],
+  "blocks": [
+    {
+      "id": "id_5ab33c10",
+      "type": "paragraph",
+      "text": "Quatre accroches centrées sur la politique et le quotidien de la Guilde, sans nécessiter la Tour ou le Plan Éthéré.",
+      "italic": false
+    },
+    {
+      "id": "id_d481869e",
+      "type": "card",
+      "badgeText": "HOOK 1",
+      "title": "La marque volée",
+      "pitch": "Un groupe d'escrocs de Narmatin a mis la main sur une fausse marque d'apprenti Animalien, leur permettant de circuler après le couvre-feu et de commettre des vols dans le quartier de la Guilde.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Local (Narmatin)"
+        },
+        {
+          "a": "Complication",
+          "b": "Le trafic risque de compromettre la sécurité de tous les apprentis si la Guilde en vient à durcir ses règles d'accès pour tout le monde."
+        },
+        {
+          "a": "Rôle de la Guilde",
+          "b": "Le hiérarque local s'inquiète surtout que l'affaire ne « remonte plus haut »."
+        }
+      ]
+    },
+    {
+      "id": "id_fbec2b39",
+      "type": "card",
+      "badgeText": "HOOK 2",
+      "title": "Le candidat refusé",
+      "pitch": "Un apprenti d'une puissance exceptionnelle est repéré, mais refuse catégoriquement l'affectation confidentielle qu'on lui propose, sans en comprendre les enjeux — et sans qu'on ait le droit de les lui expliquer avant qu'il n'accepte.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Personnel / institutionnel"
+        },
+        {
+          "a": "Complication",
+          "b": "La Guilde n'a, semble-t-il, aucune procédure prévue pour un refus à ce stade du processus."
+        },
+        {
+          "a": "Rôle de la Guilde",
+          "b": "Central — la Guilde ne peut ni forcer la main du candidat, ni renoncer facilement à un tel potentiel."
+        }
+      ]
+    },
+    {
+      "id": "id_9fb2afe8",
+      "type": "card",
+      "badgeText": "HOOK 3",
+      "title": "L'Archimage qui en sait trop",
+      "pitch": "Un membre du Haut Conseil des Archimages a entamé, de sa propre initiative, une enquête sur la nature exacte de la menace que la Tour combat.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Institutionnel"
+        },
+        {
+          "a": "Complication",
+          "b": "Son enquête, même bien intentionnée, pourrait faire remonter le secret de Niveau 6 jusqu'à des oreilles qui ne devraient pas l'entendre."
+        },
+        {
+          "a": "Rôle de la Guilde",
+          "b": "Point de bascule potentiel pour tout le système de classification (voir ARC-03)."
+        }
+      ]
+    },
+    {
+      "id": "id_812bdada",
+      "type": "card",
+      "badgeText": "HOOK 4",
+      "title": "Le sous-sol interdit",
+      "pitch": "Des PJ apprentis, curieux ou téméraires, cherchent à accéder au cinquième sous-sol de la Guilde de Narmatin, où sont testés les candidats les plus prometteurs — en dehors des heures autorisées.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Local"
+        },
+        {
+          "a": "Complication",
+          "b": "Ce qu'ils y trouveront reste à la discrétion du MJ, mais l'endroit n'est probablement pas surveillé pour rien."
+        },
+        {
+          "a": "Rôle de la Guilde",
+          "b": "Le hiérarque local, si l'incursion est découverte, décidera seul des conséquences."
+        }
+      ]
+    }
+  ]
+}

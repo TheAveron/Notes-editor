@@ -12,7 +12,7 @@
       "layout": "label-value",
       "rows": [
         {
-          "a": "Nom Civil",
+          "a": "Nom civil",
           "b": "Célestine",
           "c": ""
         },
@@ -38,7 +38,7 @@
         },
         {
           "a": "Période d'activité",
-          "b": "L'investiture d'Udor jusqu'à celle de Miguel, succédée par Ambre.",
+          "b": "L'investiture d'Udor jusqu'à celle de Miguel, remplacée par Ambre.",
           "c": ""
         },
         {
@@ -47,7 +47,7 @@
           "c": ""
         },
         {
-          "a": "Superieur Hiérarchique",
+          "a": "Supérieur hiérarchique",
           "b": "Empereur de l'Humanité",
           "c": ""
         }

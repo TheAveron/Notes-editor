@@ -48,7 +48,7 @@ dossier ne supprime pas l'entrée ; supprimer un dossier garde toutes ses entré
   compte des accents. Chaque bloc correspondant est listé avec un extrait surligné et mène
   directement à l'information dans sa page.
 - **Page d'une entrée** : lecture dans le style des dossiers, avec les dossiers (et codes de
-  section) où elle figure. Les codes comme `ARC-03` ou `GRD-05`, de n'importe quel dossier,
+  section) où elle figure. Les codes comme `ARC-03` ou `GDN-05`, de n'importe quel dossier,
   et les numéros de dossier comme `CEL-VC-001` sont des liens.
 - Onglets **Dossiers** (avec leur sommaire) et **Blocs partagés**.
 
@@ -81,7 +81,7 @@ Dans l'éditeur : glisser-déposer avec la poignée ⠿, sections repliables, an
 | Liste | Liste à puces |
 | Callout | Encadré étiqueté par un tag : *Confirmé*, *Hypothèse de travail*, *Hook MJ*, *Attention MJ* |
 | Tableau | Libellé + valeur, badge + valeur, ou badge + libellé + valeur |
-| Fiche | Carte « hook » : badge, titre, accroche et tableau |
+| Fiche | Carte « hook » : badge, titre, accroche et tableau ; sarcelle, couleur du document ou couleur d'accent libre (hex) |
 | Renvoi | Ligne « → RENVOI » |
 | Saut de page | Dans un dossier seulement ; peut répéter le titre de la section (« suite ») |
 
@@ -107,9 +107,9 @@ de style. Une page trop longue pour une feuille A4 est encadrée en rouge dans l
 ## Formats des fichiers
 
 ```jsonc
-// archive/entrees/grd-fiche-d-identification.json
+// archive/entrees/gdn-fiche-d-identification.json
 {
-  "id": "grd-fiche-d-identification",
+  "id": "gdn-fiche-d-identification",
   "title": "Fiche d'identification",
   "kind": "personnage",           // personnage, lieu, institution, evenement, objet, concept, autre
   "tags": ["Le Gardien"],
@@ -126,12 +126,12 @@ de style. Une page trop longue pour une feuille A4 est encadrée en rouge dans l
 {
   "id": "le-gardien", "version": 3, "color": "#a9812e", "stampStyle": "red",
   "cover": { "orgLine": "…", "kicker": "…", "title": "Le Gardien", "subtitle": "…", "stampText": "…",
-             "meta": [{ "a": "N° de dossier", "b": "GRD-VC-001" }] },
+             "meta": [{ "a": "N° de dossier", "b": "GDN-VC-001" }] },
   "footerBrand": "…",
   "noteUsage": { "includeTagLegend": true, "text": "…" },
   "sections": [
-    { "id": "…", "entry": "grd-fiche-d-identification" },
-    { "id": "…", "entry": "grd-la-tour-du-cinquieme-point-cardinal",
+    { "id": "…", "entry": "gdn-fiche-d-identification" },
+    { "id": "…", "entry": "gdn-la-tour-du-cinquieme-point-cardinal",
       "pageBreaks": [{ "after": "<id du bloc>", "repeatTitle": true }] }
   ]
 }

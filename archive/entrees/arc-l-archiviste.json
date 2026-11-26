@@ -12,7 +12,7 @@
       "tag": "confirme",
       "title": "Ce qui est su",
       "paragraphs": [
-        "L'Archiviste est un voyageur solitaire, dont l'existence n'est connue d'aucune institution de l'Imperium — ni l'Administration impériale, ni la Guilde des Archivistes, ni aucune autre organisation. Il conserve en lui, par un\nmoyen inconnu, l'intégralité ou presque de ce qui s'est passé et de ce qui se passe dans le monde. C'est lui qui a\ncompilé et conservé l'ensemble des dossiers de cette collection."
+        "L'Archiviste est un voyageur solitaire, dont l'existence n'est connue d'aucune institution de l'Imperium — ni l'Administration impériale, ni la Guilde des Archivistes, ni aucune autre organisation. Il conserve en lui, par un moyen inconnu, l'intégralité ou presque de ce qui s'est passé et de ce qui se passe dans le monde. C'est lui qui a compilé et conservé l'ensemble des dossiers de cette collection."
       ]
     },
     {
@@ -21,7 +21,7 @@
       "tag": "confirme",
       "title": "Une fausse estampille délibérée",
       "paragraphs": [
-        "L'Archiviste a choisi que ses documents se présentent comme émanant de la Guilde des Archivistes, alors que\nce n'est pas le cas. Il n'est affilié à aucune de ses branches et n'a jamais été officiellement en contact avec elle. Certaines de ses informations pourraient en revanche provenir de la Guilde, nul ne sait."
+        "L'Archiviste a choisi que ses documents se présentent comme émanant de la Guilde des Archivistes, alors que ce n'est pas le cas. Il n'est affilié à aucune de ses branches et n'a jamais été officiellement en contact avec elle. Certaines de ses informations pourraient en revanche provenir de la Guilde ; nul ne sait."
       ]
     },
     {
@@ -35,16 +35,16 @@
       "tag": "hypothese",
       "title": "Le mécanisme de sa mémoire",
       "paragraphs": [
-        "Rien n'explique comment un individu peut retenir la totalité des archives du monde connu. Don inné, artefact,\npacte, malédiction, nature non humaine : tout reste possible."
+        "Rien n'explique comment un individu peut retenir la totalité des archives du monde connu. Don inné, artefact, pacte, malédiction, nature non humaine : tout reste possible."
       ]
     },
     {
       "id": "id15_ewl7h",
       "type": "callout",
       "tag": "hypothese",
-      "title": "Pourquoi l'emprunt du nom de la Guide des Archivistes",
+      "title": "Pourquoi l'emprunt du nom de la Guilde des Archivistes",
       "paragraphs": [
-        "Camouflage pour donner une apparence de légitimité et de neutralité à ses documents, hommage à une\ninstitution qu'il admire sans en faire partie, ou raison plus trouble encore : rien n'est tranché. Ce choix, en\ntout cas, n'est pas anodin — il cherche visiblement à ce que ses écrits soient pris au sérieux sans qu'on remonte\njusqu'à lui."
+        "Camouflage pour donner une apparence de légitimité et de neutralité à ses documents, hommage à une institution qu'il admire sans en faire partie, ou raison plus trouble encore : rien n'est tranché. Ce choix, en tout cas, n'est pas anodin — il cherche visiblement à ce que ses écrits soient pris au sérieux sans qu'on remonte jusqu'à lui."
       ]
     },
     {
@@ -53,7 +53,7 @@
       "tag": "hypothese",
       "title": "Ses motivations et son itinéraire",
       "paragraphs": [
-        "On ignore pourquoi il voyage, ce qu'il cherche, s'il a un but précis en consignant ces événements, et s'il a une\nquelconque limite — géographique, temporelle, ou autre — à ce qu'il peut consigner."
+        "On ignore pourquoi il voyage, ce qu'il cherche, s'il a un but précis en consignant ces événements, et s'il a une quelconque limite — géographique, temporelle, ou autre — à ce qu'il peut consigner."
       ]
     },
     {
@@ -62,7 +62,7 @@
       "tag": "hook",
       "title": "Une rencontre impossible",
       "paragraphs": [
-        "Un PNJ mystérieux, croisé par les PJ, semble en savoir bien trop sur des événements qu'il n'aurait aucun\nmoyen légitime de connaître. Rien n'indique qu'il se présentera jamais comme « l'Archiviste » — mais rien\nn'empêche non plus qu'il le soit."
+        "Un PNJ mystérieux, croisé par les PJ, semble en savoir bien trop sur des événements qu'il n'aurait aucun moyen légitime de connaître. Rien n'indique qu'il se présentera jamais comme « l'Archiviste » — mais rien n'empêche non plus qu'il le soit."
       ]
     }
   ]

@@ -1,0 +1,43 @@
+{
+  "id": "lie-temperament-des-populations-liees",
+  "title": "Tempérament des populations liées",
+  "kind": "autre",
+  "tags": [
+    "Les Liens"
+  ],
+  "blocks": [
+    {
+      "id": "id_90a21624",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Sauvage contre domestiqué",
+      "paragraphs": [
+        "Au sein d'une même espèce liée, des populations ou des individus distincts peuvent présenter un tempérament radicalement différent, indépendamment de la force du lien lui-même. Les Esprits de feu rencontrés par Miguel chez ses parents étaient presque sauvages, désobéissant systématiquement ; ceux de l'auberge, en périphérie de Narmatin, étaient presque domestiqués et obéissaient sans résistance dès la première tentative."
+      ]
+    },
+    {
+      "id": "id_1f1bbbc7",
+      "type": "paragraph",
+      "text": "Cette distinction est indépendante du niveau de puissance du porteur : un lien techniquement fonctionnel peut rester largement inefficace si la population ou l'individu lié appartient à une lignée peu encline à coopérer, quelle que soit la compétence de celui qui porte le lien.",
+      "italic": false
+    },
+    {
+      "id": "id_a2a8e031",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Portée générale de cette distinction",
+      "paragraphs": [
+        "Rien ne confirme que toutes les espèces liées connaissent une telle variation sauvage/domestiqué — seul le cas des Esprits de feu est attesté. Il est néanmoins plausible, par cohérence, que ce phénomène concerne au moins les espèces les plus courantes (esprits élémentaires, animaux), en particulier à proximité des zones densément peuplées comme Narmatin, où un contact prolongé avec les Hommes pourrait progressivement « domestiquer » certaines populations."
+      ]
+    },
+    {
+      "id": "id_8d1fc470",
+      "type": "callout",
+      "tag": "hook",
+      "title": "La lignée sauvage introuvable",
+      "paragraphs": [
+        "Un individu porteur d'un lien avec une population domestiquée pourrait devoir, pour une raison précise (rituel, urgence, quête), retrouver et convaincre une population sauvage de la même espèce — sans bénéficier d'aucune des habitudes de coopération acquises par la population domestiquée."
+      ]
+    }
+  ]
+}

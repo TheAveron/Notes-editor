@@ -1,5 +1,5 @@
 {
-  "id": "grd-fiche-d-identification",
+  "id": "gdn-fiche-d-identification",
   "title": "Fiche d'identification",
   "kind": "autre",
   "tags": [
@@ -18,7 +18,7 @@
         },
         {
           "a": "Titre",
-          "b": "Guardien de la Tour du Cinquième Point Cardinal",
+          "b": "Gardien de la Tour du Cinquième Point Cardinal",
           "c": ""
         },
         {
@@ -37,7 +37,7 @@
           "c": ""
         },
         {
-          "a": "Guardien depuis",
+          "a": "Gardien depuis",
           "b": "65 ans",
           "c": ""
         },
@@ -47,13 +47,13 @@
           "c": ""
         },
         {
-          "a": "Liens additionels recensés",
+          "a": "Liens additionnels recensés",
           "b": "Au moins 7 avant de se rendre à la Tour, total indéterminé depuis.",
           "c": ""
         },
         {
-          "a": "Superieur hiérarchique",
-          "b": "Ambre, actuelle Mage Suprême de la Guilde des Animaliens. Elle est également sa compagne.",
+          "a": "Supérieur hiérarchique",
+          "b": "Ambre, actuelle Mage suprême de la Guilde des Animaliens. Elle est également sa compagne.",
           "c": ""
         },
         {
@@ -66,12 +66,12 @@
     {
       "id": "id5_317fz",
       "type": "crossref",
-      "text": "Voir GLD-VC-001 pour plus de détails sur la Guilde de Animaliens"
+      "text": "Voir GLD-AN-001 pour plus de détails sur la Guilde des Animaliens."
     },
     {
       "id": "id6_yaozw",
       "type": "crossref",
-      "text": "Voir CEL-VC-001 pour plus de détails sur la fonction de Mage suprême"
+      "text": "Voir CEL-AN-005 pour plus de détails sur la fonction de Mage suprême."
     },
     {
       "id": "id7_7h5mk",
@@ -82,13 +82,13 @@
       "id": "id9_2asm5",
       "type": "bullets",
       "items": [
-        "Naissance et enfance au foyer famillial. Premier lien (Esprits de feu) découvert en son sein, avec des résultats inconstants.",
-        "Repéré par le maître local Sirgal, qui perçoit en lui des capacités téléphatiques inhabituellement puissante, notamment détecté au vu des comportement des rapaces aux alentours.",
-        "Départ pour Narmatin à 16 ans afin de reçevoir une formation plus poussée et d'intégrer la Guilde des Animaliens.",
-        "Quatre années de formation à la Guide, avec 4 liens cumulés la premiière année, et 7 lors de sa quatrième année.",
-        "À 20ans, il est envoyé à la Tour du Cinquième point Cardinal, accompagné de Célestine, alors Mage Suprême.",
+        "Naissance et enfance au foyer familial. Premier lien (Esprits de feu) découvert en son sein, avec des résultats inconstants.",
+        "Repéré par le maître local Sirgal, qui perçoit en lui des capacités télépathiques inhabituellement puissantes, notamment détectées au vu du comportement des rapaces aux alentours.",
+        "Départ pour Narmatin à 16 ans afin de recevoir une formation plus poussée et d'intégrer la Guilde des Animaliens.",
+        "Quatre années de formation à la Guilde, avec 4 liens cumulés la première année, et 7 lors de sa quatrième année.",
+        "À 20 ans, il est envoyé à la Tour du Cinquième Point Cardinal, accompagné de Célestine, alors Mage suprême.",
         "Formation de 20 années supplémentaires auprès d'Udor pour prendre sa relève. Ce dernier était alors âgé de 136 à 156 ans.",
-        "À 40 ans, Rituel de Transmission : absorption consentie de l'âme et de la puissance d'Udor. Miguel devient alors le Guardien.",
+        "À 40 ans, Rituel de Transmission : absorption consentie de l'âme et de la puissance d'Udor. Miguel devient alors le Gardien.",
         "65 années en poste à ce jour."
       ]
     },
@@ -98,7 +98,7 @@
       "tag": "confirme",
       "title": "Longévité",
       "paragraphs": [
-        "Comme tout Guardien, Miguel doit sa longévité à des potions et sortilèges divers. Sa puissance liée aux esprits absorbés renforce d'autant plus ces effets, ce qui lui permet généralement de vivre substantiellement plus longtemps que son homologue Mage Suprême."
+        "Comme tout Gardien, Miguel doit sa longévité à des potions et sortilèges divers. Sa puissance liée aux esprits absorbés renforce d'autant plus ces effets, ce qui lui permet généralement de vivre substantiellement plus longtemps que son homologue Mage suprême."
       ]
     },
     {
@@ -107,13 +107,13 @@
       "tag": "hypothese",
       "title": "Apparence physique",
       "paragraphs": [
-        "Aucune propriété physique n'est prédéfinie, à la seule exception de l'espèce. Miguels, et les Gardiens de manière générale sont des Humains. Tout le reste est laissé au plaisir des MJ."
+        "Aucune propriété physique n'est prédéfinie, à la seule exception de l'espèce. Miguel et les Gardiens, de manière générale, sont des Humains. Tout le reste est laissé au plaisir des MJ."
       ]
     },
     {
       "id": "id41_w4os5",
       "type": "crossref",
-      "text": "Voir GDN-03 et GDN-04 pour plus de détails sur le mécanisme de conscience partagée et du rituel de transmission."
+      "text": "Voir GDN-03 et GDN-04 pour plus de détails sur le mécanisme de conscience partagée et sur le rituel de transmission."
     }
   ]
 }
