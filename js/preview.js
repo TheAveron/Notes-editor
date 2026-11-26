@@ -123,10 +123,14 @@ let overflowingSections = new Set();
 // (sans sa hauteur minimale) et on signale celles qui dépassent.
 function checkOverflow() {
     const preview = document.getElementById("preview");
+    // Pendant la mesure l'aperçu raccourcit : on rétablit ensuite sa position de défilement,
+    // sinon elle serait ramenée en arrière à chaque frappe en fin de document.
+    const scrollTop = preview.scrollTop;
     preview.classList.add("measuring");
     const pages = [...preview.querySelectorAll(".page")];
     const heights = pages.map((p) => p.offsetHeight);
     preview.classList.remove("measuring");
+    preview.scrollTop = scrollTop;
 
     overflowingSections = new Set();
     let count = 0;
