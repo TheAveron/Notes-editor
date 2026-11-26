@@ -1047,6 +1047,32 @@ a.xref:hover {
     font-family: var(--sans);
 }
 
+/* ---------- Liaison aperçu ↔ panneau ---------- */
+.preview-wrap [data-bid],
+.preview-wrap .page[data-section],
+.preview-wrap .page[data-panel] {
+    cursor: pointer;
+}
+.preview-wrap [data-bid]:hover {
+    outline: 1px dashed rgba(47, 111, 94, 0.45);
+    outline-offset: 3px;
+}
+.preview-wrap .linked {
+    outline: 2px solid var(--ui-accent);
+    outline-offset: 3px;
+}
+@keyframes flash-bg {
+    from {
+        box-shadow: 0 0 0 3px var(--ui-accent);
+    }
+    to {
+        box-shadow: 0 0 0 3px transparent;
+    }
+}
+.flash {
+    animation: flash-bg 1.2s ease-out;
+}
+
 /* ---------- PRINT ---------- */
 /* Chaque .page mesure exactement une feuille A4 (marges internes incluses via son padding) :
    la marge d'impression doit donc être nulle, sinon chaque page déborde sur la suivante
@@ -1092,8 +1118,10 @@ a.xref:hover {
     .page:last-child {
         break-after: auto;
     }
-    .page.overflowing {
-        outline: none;
+    .page.overflowing,
+    .preview-wrap .linked,
+    .preview-wrap [data-bid] {
+        outline: none !important;
     }
     .page.overflowing::after {
         display: none;

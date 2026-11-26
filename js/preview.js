@@ -237,6 +237,8 @@ function renderPreview() {
     // Chaque page de contenu retient la section à laquelle elle appartient (data-section),
     // pour signaler dans le panneau les sections dont une page déborde.
     const pageSection = pagesInner.map(() => null);
+    // Couverture et note d'usage : réglées dans le panneau « Couverture du document »
+    const pagePanel = ["cover", "cover", null];
     doc.sections.forEach((s, i) => {
         const title = (cont) =>
             `<div class="sec-h1"${cont ? "" : ` id="${s.id}"`}><span class="code">${escapeHtml(sectionCode(i))}</span><span class="dot-separator">·</span>${escapeHtml(s.title)}${cont ? ` <span class="sec-cont">(suite)</span>` : ""}</div>`;
@@ -248,7 +250,11 @@ function renderPreview() {
                 pageSection.push(s.id);
                 currentPage = block.repeatTitle ? title(true) : "";
             } else {
-                currentPage += renderBlockHtml(block);
+                // data-bid relie l'élément rendu à son éditeur dans le panneau
+                currentPage += renderBlockHtml(block).replace(
+                    /^\s*<([a-z0-9]+)/i,
+                    `<$1 data-bid="${block.id}"`,
+                );
             }
         });
 
@@ -263,11 +269,12 @@ function renderPreview() {
     const html = pagesInner
         .map(
             (inner, i) =>
-                `<div class="page" style="${styleVars}"${pageSection[i] ? ` data-section="${pageSection[i]}"` : ""}>${header()}${inner}${footer(i + 1, total)}</div>`,
+                `<div class="page" style="${styleVars}"${pageSection[i] ? ` data-section="${pageSection[i]}"` : ""}${pagePanel[i] ? ` data-panel="${pagePanel[i]}"` : ""}>${header()}${inner}${footer(i + 1, total)}</div>`,
         )
         .join("");
 
     document.getElementById("preview").innerHTML = html;
     updateTocPages();
     checkOverflow();
+    applyLinkedHighlight();
 }

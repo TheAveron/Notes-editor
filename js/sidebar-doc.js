@@ -1,7 +1,7 @@
 /* Atelier de Dossiers — Panneau « Couverture du document » et note d'usage. */
 
 function renderDocSettings(container) {
-    const box = el("div", { class: "side-section" });
+    const box = el("div", { class: "side-section", id: "panel-cover" });
     box.appendChild(
         el("h3", {}, [document.createTextNode("Couverture du document")]),
     );
