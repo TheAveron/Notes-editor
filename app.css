@@ -548,6 +548,10 @@ a {
 
 /* ---------- PREVIEW (mirrors printed doc style) ---------- */
 .page {
+    position: relative;
+    /* Ne pas laisser le conteneur flex écraser une page trop longue : elle doit
+       apparaître à sa vraie hauteur. */
+    flex-shrink: 0;
     background: #fff;
     width: 210mm;
     min-height: 297mm;
@@ -561,6 +565,54 @@ a {
     display: flex;
     flex-direction: column;
 }
+/* Mesure de la hauteur naturelle des pages (voir checkOverflow) */
+.preview-wrap.measuring .page {
+    min-height: 0 !important;
+}
+.page.overflowing {
+    outline: 3px solid #c0392b;
+    outline-offset: -3px;
+}
+/* Repère de la limite de la feuille A4 sur une page trop longue */
+.page.overflowing::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 297mm;
+    border-top: 2px dashed #c0392b;
+    pointer-events: none;
+}
+.overflow-flag {
+    position: absolute;
+    top: 4mm;
+    left: 16mm;
+    right: 16mm;
+    background: #c0392b;
+    color: #fff;
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 600;
+    padding: 5px 9px;
+    border-radius: 4px;
+    z-index: 2;
+}
+.sec-h1 .sec-cont {
+    font-size: 10pt;
+    font-weight: 400;
+    text-transform: none;
+    color: var(--doc-inkmid, #444);
+}
+.section-card.has-overflow {
+    border-color: #c0392b;
+}
+.section-card.has-overflow .section-head::after {
+    content: "⚠";
+    color: #c0392b;
+    font-weight: 700;
+    order: -1;
+}
+
 .doc-header {
     display: flex;
     justify-content: space-between;
@@ -912,5 +964,11 @@ table.stat td.badge {
     }
     .page:last-child {
         break-after: auto;
+    }
+    .page.overflowing {
+        outline: none;
+    }
+    .page.overflowing::after {
+        display: none;
     }
 }

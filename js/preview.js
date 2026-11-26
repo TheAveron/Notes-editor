@@ -96,6 +96,55 @@ function updateTocPages() {
     });
 }
 
+/* ---------- Pages trop longues ---------- */
+// Hauteur d'une feuille A4 en pixels CSS, et tolérance avant de signaler un débordement.
+const A4_HEIGHT_PX = (297 * 96) / 25.4;
+const OVERFLOW_TOLERANCE_PX = 2;
+let overflowingSections = new Set();
+
+// Une page est une feuille A4 : si son contenu dépasse, l'impression le coupe sur deux
+// feuilles et décale la numérotation. On mesure la hauteur naturelle de chaque page
+// (sans sa hauteur minimale) et on signale celles qui dépassent.
+function checkOverflow() {
+    const preview = document.getElementById("preview");
+    preview.classList.add("measuring");
+    const pages = [...preview.querySelectorAll(".page")];
+    const heights = pages.map((p) => p.offsetHeight);
+    preview.classList.remove("measuring");
+
+    overflowingSections = new Set();
+    let count = 0;
+    pages.forEach((p, i) => {
+        const excess = heights[i] - A4_HEIGHT_PX;
+        if (excess <= OVERFLOW_TOLERANCE_PX) return;
+        count++;
+        if (p.dataset.section) overflowingSections.add(p.dataset.section);
+        p.classList.add("overflowing");
+        const mm = Math.ceil((excess * 25.4) / 96);
+        p.insertAdjacentHTML(
+            "afterbegin",
+            `<div class="overflow-flag no-print">⚠ Page trop longue d'environ ${mm} mm : à l'impression, elle sera coupée sur deux feuilles. Ajoutez un saut de page ou raccourcissez le contenu.</div>`,
+        );
+    });
+
+    const status = document.getElementById("layout-status");
+    if (status)
+        status.textContent = count
+            ? `⚠ ${count} page${count > 1 ? "s" : ""} trop longue${count > 1 ? "s" : ""}`
+            : "";
+    markSidebarOverflow();
+}
+
+// Reporte l'avertissement sur les sections concernées dans le panneau de gauche.
+function markSidebarOverflow() {
+    document.querySelectorAll("#sidebar .section-card").forEach((card) => {
+        card.classList.toggle(
+            "has-overflow",
+            overflowingSections.has(card.dataset.sid),
+        );
+    });
+}
+
 function renderPreview() {
     const pal = derivePalette(doc.color);
     const stampColor = doc.stampStyle === "red" ? FIXED.red : pal.accent;
@@ -165,18 +214,19 @@ function renderPreview() {
     pagesInner.push(toc);
 
     // Sections de contenu : un saut de page termine la page courante et en ouvre une nouvelle.
+    // Chaque page de contenu retient la section à laquelle elle appartient (data-section),
+    // pour signaler dans le panneau les sections dont une page déborde.
+    const pageSection = pagesInner.map(() => null);
     doc.sections.forEach((s, i) => {
-        let currentPage = `<div class="sec-h1" id="${s.id}"><span class="code">${escapeHtml(sectionCode(i))}</span><span class="dot-separator">·</span>${escapeHtml(s.title)}
-        </div>`;
+        const title = (cont) =>
+            `<div class="sec-h1"${cont ? "" : ` id="${s.id}"`}><span class="code">${escapeHtml(sectionCode(i))}</span><span class="dot-separator">·</span>${escapeHtml(s.title)}${cont ? ` <span class="sec-cont">(suite)</span>` : ""}</div>`;
+        let currentPage = title(false);
 
         s.blocks.forEach((block) => {
             if (block.type === "pagebreak") {
-                // On termine la page courante
                 pagesInner.push(currentPage);
-
-                // La suivante démarre vide
-                // (ou remets l'en-tête de section ici si tu souhaites le répéter)
-                currentPage = "";
+                pageSection.push(s.id);
+                currentPage = block.repeatTitle ? title(true) : "";
             } else {
                 currentPage += renderBlockHtml(block);
             }
@@ -185,6 +235,7 @@ function renderPreview() {
         // Dernière page de la section
         if (currentPage.trim() !== "") {
             pagesInner.push(currentPage);
+            pageSection.push(s.id);
         }
     });
 
@@ -192,10 +243,11 @@ function renderPreview() {
     const html = pagesInner
         .map(
             (inner, i) =>
-                `<div class="page" style="${styleVars}">${header()}${inner}${footer(i + 1, total)}</div>`,
+                `<div class="page" style="${styleVars}"${pageSection[i] ? ` data-section="${pageSection[i]}"` : ""}>${header()}${inner}${footer(i + 1, total)}</div>`,
         )
         .join("");
 
     document.getElementById("preview").innerHTML = html;
     updateTocPages();
+    checkOverflow();
 }

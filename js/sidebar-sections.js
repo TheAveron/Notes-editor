@@ -389,11 +389,31 @@ function renderBlockEditor(s, b, idx) {
         );
     } else if (b.type === "pagebreak") {
         body.appendChild(
-            el("div", { style: "font-size:12px;color:#999;" }, [
+            el("div", { style: "font-size:12px;color:#999;margin-bottom:6px;" }, [
                 document.createTextNode(
                     "Force un saut de page à l'impression.",
                 ),
             ]),
+        );
+        const cb = el("input", { type: "checkbox" });
+        cb.checked = !!b.repeatTitle;
+        cb.addEventListener("change", (e) => {
+            b.repeatTitle = e.target.checked;
+            update();
+        });
+        body.appendChild(
+            el(
+                "label",
+                {
+                    style: "display:flex;gap:6px;align-items:center;font-weight:400;font-size:12px;",
+                },
+                [
+                    cb,
+                    document.createTextNode(
+                        "Répéter le titre de la section sur la page suivante (suite)",
+                    ),
+                ],
+            ),
         );
     }
 
@@ -402,7 +422,7 @@ function renderBlockEditor(s, b, idx) {
 }
 
 function renderSectionCard(s, idx) {
-    const card = el("div", { class: "section-card" });
+    const card = el("div", { class: "section-card", "data-sid": s.id });
     const head = el("div", { class: "section-head" });
     const codeBadge = el(
         "span",

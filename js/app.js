@@ -31,6 +31,7 @@ function renderSidebar() {
     renderDocSettings(sidebar);
     renderSections(sidebar);
     renderRegistryPanel(sidebar);
+    markSidebarOverflow();
 }
 
 /* ---------- Export / Import JSON ---------- */

@@ -58,7 +58,7 @@ function newBlock(type) {
                 text: "Voir XXX-00 pour plus de détails.",
             };
         case "pagebreak":
-            return { ...base };
+            return { ...base, repeatTitle: false };
         default:
             return base;
     }
@@ -172,6 +172,8 @@ function normalizeBlock(b, id) {
                 pitch: asStr(b.pitch),
                 rows: asRows(b.rows, ["a", "b"]),
             };
+        case "pagebreak":
+            return { id, type: b.type, repeatTitle: !!b.repeatTitle };
         default:
             return { id, type: b.type };
     }
