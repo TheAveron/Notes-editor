@@ -15,6 +15,9 @@
                         >Éditeur de fiches de lore — style classification</small
                     >
                 </div>
+                <span id="save-status" class="save-status"></span>
+                <button id="btn-undo" class="icon" title="Annuler (Ctrl+Z)" disabled>↶</button>
+                <button id="btn-redo" class="icon" title="Rétablir (Ctrl+Maj+Z / Ctrl+Y)" disabled>↷</button>
                 <button id="btn-new">+ Nouveau document</button>
                 <label class="file-btn"
                     >Importer JSON<input
@@ -146,6 +149,7 @@
         <script src="./js/storage.js"></script>
         <script src="./js/registry.js"></script>
         <script src="./js/model.js"></script>
+        <script src="./js/history.js"></script>
         <script src="./js/preview.js"></script>
         <script src="./js/ui.js"></script>
         <script src="./js/sidebar-color.js"></script>

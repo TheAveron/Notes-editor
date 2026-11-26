@@ -6,6 +6,22 @@
 function update({ structure = false } = {}) {
     if (structure) renderSidebar();
     renderPreview();
+    if (historyRecord({ typing: !structure })) scheduleAutosave();
+    refreshStatus();
+}
+
+// Remplace le document courant (import, nouveau document, chargement).
+async function loadDocument(d, { exported = true } = {}) {
+    await releaseColorIfPristine(doc);
+    colorMsg = null;
+    doc = d;
+    await registerColor(doc.id, doc.color, doc.cover.title);
+    renderSidebar();
+    renderPreview();
+    historyReset();
+    if (exported) markExported();
+    scheduleAutosave();
+    refreshStatus();
 }
 
 function renderSidebar() {
@@ -46,6 +62,7 @@ document.getElementById("btn-export-json").addEventListener("click", () => {
         JSON.stringify(doc, null, 2),
         "application/json",
     );
+    markExported();
 });
 document.getElementById("file-import").addEventListener("change", (e) => {
     const file = e.target.files[0];
@@ -53,16 +70,19 @@ document.getElementById("file-import").addEventListener("change", (e) => {
     const reader = new FileReader();
     reader.onload = async () => {
         try {
-            const imported = JSON.parse(reader.result);
-            await releaseColorIfPristine(doc);
-            colorMsg = null;
-            doc = normalizeDoc(imported);
+            const imported = normalizeDoc(JSON.parse(reader.result));
+            if (
+                hasUnexportedChanges() &&
+                !confirm(
+                    "Le document actuel a des modifications non exportées. Les remplacer par le fichier importé ?",
+                )
+            )
+                return;
             proposals = [
-                doc.color,
-                ...generateProposals([...registryHexes(), doc.color], 4),
+                imported.color,
+                ...generateProposals([...registryHexes(), imported.color], 4),
             ];
-            await registerColor(doc.id, doc.color, doc.cover.title);
-            update({ structure: true });
+            await loadDocument(imported);
         } catch (err) {
             alert("Fichier JSON invalide : " + err.message);
         }
@@ -75,18 +95,41 @@ document.getElementById("btn-pdf").addEventListener("click", () => {
 });
 document.getElementById("btn-new").addEventListener("click", async () => {
     if (
+        hasUnexportedChanges() &&
         !confirm(
             "Créer un nouveau document ? Les modifications non exportées seront perdues.",
         )
     )
         return;
+    // La couleur du document vierge actuel est libérée avant de calculer les propositions.
     await releaseColorIfPristine(doc);
-    colorMsg = null;
-    doc = defaultDocument();
+    const fresh = defaultDocument();
     proposals = generateProposals(registryHexes(), 5);
-    doc.color = proposals[0];
-    await registerColor(doc.id, doc.color, doc.cover.title);
-    update({ structure: true });
+    fresh.color = proposals[0];
+    await loadDocument(fresh);
+});
+
+/* ---------- Annuler / rétablir ---------- */
+document.getElementById("btn-undo").addEventListener("click", undo);
+document.getElementById("btn-redo").addEventListener("click", redo);
+document.addEventListener("keydown", (e) => {
+    if (!(e.ctrlKey || e.metaKey) || e.altKey) return;
+    const k = e.key.toLowerCase();
+    if (k === "z" && !e.shiftKey) {
+        e.preventDefault();
+        undo();
+    } else if ((k === "z" && e.shiftKey) || k === "y") {
+        e.preventDefault();
+        redo();
+    }
+});
+
+// Sans sauvegarde persistante, fermer l'onglet perdrait le travail : on prévient.
+window.addEventListener("beforeunload", (e) => {
+    if (storageIsPersistent && autosaveOk) return;
+    if (!hasUnexportedChanges()) return;
+    e.preventDefault();
+    e.returnValue = "";
 });
 
 document.getElementById("btn-modal-edit").addEventListener("click", () => {
@@ -132,8 +175,20 @@ document.getElementById("registry-import").addEventListener("change", (e) => {
 /* ---------- Initialisation ---------- */
 (async function init() {
     await loadRegistry();
-    proposals = generateProposals(registryHexes(), 5);
-    doc.color = proposals[0];
-    await registerColor(doc.id, doc.color, doc.cover.title);
-    update({ structure: true });
+    // Reprend le document en cours lors de la dernière visite, s'il y en a un.
+    const saved = await loadAutosave();
+    let start;
+    if (saved) {
+        start = saved;
+        proposals = [
+            saved.color,
+            ...generateProposals([...registryHexes(), saved.color], 4),
+        ];
+    } else {
+        start = doc;
+        proposals = generateProposals(registryHexes(), 5);
+        start.color = proposals[0];
+    }
+    // Un document restauré n'est pas considéré comme exporté.
+    await loadDocument(start, { exported: !saved });
 })();

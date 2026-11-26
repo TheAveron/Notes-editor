@@ -83,6 +83,23 @@ a {
 .topbar .file-btn:hover {
     background: #3d3d3a;
 }
+.topbar button.icon {
+    padding: 7px 10px;
+    font-size: 14px;
+    line-height: 1;
+}
+.topbar button:disabled {
+    opacity: 0.35;
+    cursor: default;
+}
+.topbar .save-status {
+    font-size: 11px;
+    opacity: 0.65;
+}
+.topbar .save-status.warn {
+    color: #f0b8bf;
+    opacity: 1;
+}
 .topbar button.primary {
     background: var(--ui-accent);
     border-color: var(--ui-accent);
