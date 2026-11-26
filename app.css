@@ -765,8 +765,8 @@ table.stat td.badge {
 }
 
 .dot-separator {
-    margin-left: 0.8vw;
-    margin-right: 0.8vw;
+    margin-left: 0.6em;
+    margin-right: 0.6em;
     font-family: var(--mono);
     font-weight: 900;
     font-size: 10pt;
@@ -827,33 +827,48 @@ table.stat td.badge {
 }
 
 /* ---------- PRINT ---------- */
+/* Chaque .page mesure exactement une feuille A4 (marges internes incluses via son padding) :
+   la marge d'impression doit donc être nulle, sinon chaque page déborde sur la suivante
+   et le PDF contient deux fois plus de feuilles. */
+@page {
+    size: A4;
+    margin: 0;
+}
 @media print {
-    body * {
-        visibility: hidden;
+    html,
+    body {
+        background: #fff;
     }
-    .preview-wrap,
-    .preview-wrap * {
-        visibility: visible;
+    /* On retire réellement l'interface de la mise en page (visibility:hidden lui laisserait
+       sa hauteur, ce qui ajoutait des feuilles blanches en fin de PDF). */
+    .topbar,
+    .sidebar,
+    #registry-modal,
+    .no-print {
+        display: none !important;
+    }
+    #app,
+    .body-wrap {
+        display: block;
+        height: auto;
     }
     .preview-wrap {
-        position: absolute;
-        top: 0;
-        left: 0;
         padding: 0;
         background: #fff;
         display: block;
+        overflow: visible;
     }
     .page {
         box-shadow: none;
         margin: 0;
+        width: 210mm;
+        min-height: 297mm;
         break-after: page;
-        width: auto;
+        /* Imprime les fonds colorés même si « Graphiques d'arrière-plan » est décoché */
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
     .page:last-child {
         break-after: auto;
-    }
-    @page {
-        size: A4;
-        margin: 16mm;
     }
 }
