@@ -1,0 +1,33 @@
+{
+  "id": "lie-progression-de-puissance-amplification",
+  "title": "Progression de puissance & amplification",
+  "kind": "autre",
+  "tags": [
+    "Les Liens"
+  ],
+  "blocks": [
+    {
+      "id": "id_bc36acaf",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Progression par l'entraînement",
+      "paragraphs": [
+        "La majorité des Hommes capables de lien peuvent, à partir d'un premier lien, atteindre deux à trois liens au total avec de l'entraînement. Une minorité exceptionnelle peut atteindre six à sept liens par le seul entraînement, sans autre apport — c'est le cas du Gardien Udor, et apparemment celui de Miguel, qui comptait quatre liens dès sa première année de formation à la Guilde et sept lors de sa quatrième."
+      ]
+    },
+    {
+      "id": "id_7b1c015b",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Amplification par la strite",
+      "paragraphs": [
+        "Le minerai de strite, extrait au nord de Narmatin, amplifie les capacités télépathiques de ceux qui le portent ou l'utilisent."
+      ]
+    },
+    {
+      "id": "id_84e6f443",
+      "type": "crossref",
+      "text": "Voir GLD-AN-001 pour le rôle de la Guilde des Animaliens dans la formation et le repérage des talents exceptionnels."
+    }
+  ]
+}

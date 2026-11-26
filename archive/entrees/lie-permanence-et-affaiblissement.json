@@ -1,0 +1,37 @@
+{
+  "id": "lie-permanence-et-affaiblissement",
+  "title": "Permanence et affaiblissement",
+  "kind": "autre",
+  "tags": [
+    "Les Liens"
+  ],
+  "blocks": [
+    {
+      "id": "id_2dcd6a56",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Un lien établi ne se rompt jamais",
+      "paragraphs": [
+        "Une fois créé, un lien ne peut jamais être rompu, quelle qu'en soit la voie d'acquisition. Il fait partie intégrante du porteur de façon permanente."
+      ]
+    },
+    {
+      "id": "id_cc6dc845",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Mais il peut s'affaiblir par le non-usage",
+      "paragraphs": [
+        "Un lien qui reste inutilisé pendant plusieurs années s'affaiblit progressivement, jusqu'à devenir presque inutilisable en pratique. Un entraînement adapté permet cependant de lui redonner toute sa puissance d'origine — l'affaiblissement n'est donc jamais définitif, contrairement à la rupture, qui elle, n'existe simplement pas."
+      ]
+    },
+    {
+      "id": "id_848949d3",
+      "type": "callout",
+      "tag": "hook",
+      "title": "Le lien oublié",
+      "paragraphs": [
+        "Un personnage découvre, souvent par accident, qu'il porte un lien ancien et presque éteint par des années de non-usage — hérité d'une enfance, d'un événement oublié, ou d'un proche disparu. Le retravailler pourrait s'avérer vital dans une situation où lui seul offre une solution."
+      ]
+    }
+  ]
+}

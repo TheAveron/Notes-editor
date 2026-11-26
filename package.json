@@ -1,0 +1,13 @@
+{
+  "name": "atelier-de-dossiers",
+  "private": true,
+  "description": "Archive et éditeur de dossiers de lore",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/*.test.js",
+    "migrate": "node tools/migrate-documents.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

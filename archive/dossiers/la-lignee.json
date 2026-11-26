@@ -1,0 +1,66 @@
+{
+  "id": "la-lignee",
+  "color": "#7b244d",
+  "stampStyle": "accent",
+  "cover": {
+    "orgLine": "GUILDE DES ARCHIVISTES — FONDS DOCUMENTAIRE",
+    "kicker": "DOSSIER D'INFORMATION",
+    "title": "La Lignée",
+    "subtitle": "Le duo Gardien / Mage suprême et la transmission générationnelle",
+    "stampText": "Niveau 6 · A4 — Mage suprême en\nexercice",
+    "meta": [
+      {
+        "a": "N° de dossier",
+        "b": "LIG-AN-006"
+      },
+      {
+        "a": "Objet",
+        "b": "La Lignée, la mécanique du duo Gardien/Mage suprême et la transmission générationnelle"
+      },
+      {
+        "a": "Documents liés",
+        "b": "GLD-AN-001 · GDN-AN-002 · CEL-AN-005 · LIE-AN-004"
+      },
+      {
+        "a": "Nature du sujet",
+        "b": "Institution vivante — transmission générationnelle en cours"
+      },
+      {
+        "a": "Confidentialité",
+        "b": "Niveau 6 · A4 — voir ARC-03"
+      }
+    ]
+  },
+  "footerBrand": "La Lignée - Niveau 6 · A4",
+  "noteUsage": {
+    "includeTagLegend": true,
+    "text": "Chaque information de ce dossier est étiquetée selon son statut, afin de distinguer ce qui est établi avec certitude de ce qui relève de la reconstitution, de la supposition ou de la simple piste"
+  },
+  "sections": [
+    {
+      "id": "id_9a7396ff",
+      "entry": "lig-le-duo-gardien-mage-supreme"
+    },
+    {
+      "id": "id_7f3c514e",
+      "entry": "lig-la-lignee"
+    },
+    {
+      "id": "id_f32ae715",
+      "entry": "lig-genealogie-de-la-lignee-branche-connue"
+    },
+    {
+      "id": "id_c915386e",
+      "entry": "lig-miguel-l-amour-orchestre"
+    },
+    {
+      "id": "id_933fd87a",
+      "entry": "lig-hooks-de-scenario"
+    },
+    {
+      "id": "id_6d2cc14e",
+      "entry": "lig-annexes"
+    }
+  ],
+  "version": 3
+}

@@ -1,0 +1,181 @@
+{
+  "id": "lie-hierarchie-de-conscience-et-rarete-des-liens",
+  "title": "Hiérarchie de conscience et rareté des liens",
+  "kind": "autre",
+  "tags": [
+    "Les Liens"
+  ],
+  "blocks": [
+    {
+      "id": "id_9f0af014",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Tous les liens se valent en puissance",
+      "paragraphs": [
+        "Aucun lien n'est intrinsèquement plus puissant qu'un autre du simple fait de l'espèce ou de l'entité concernée. Ce qui varie radicalement, en revanche, c'est la difficulté à établir ce lien — directement proportionnelle au niveau de conscience et de libre arbitre de l'autre partie."
+      ]
+    },
+    {
+      "id": "id_a377023c",
+      "type": "heading2",
+      "text": "Les trois degrés de conscience"
+    },
+    {
+      "id": "id_2defffd1",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "Degré I — Instinct",
+          "b": "Animaux ordinaires, esprits élémentaires simples. Liens courants, établis par affinité, domestication ou hérédité innée.",
+          "c": ""
+        },
+        {
+          "a": "Degré II — Conscience émergente",
+          "b": "Golems, Treants, élémentaires majeurs. Niveau de conscience juste en dessous des Elfes et des Hommes. Liens extrêmement rares, mais attestés historiquement.",
+          "c": ""
+        },
+        {
+          "a": "Degré III — Pleine conscience",
+          "b": "Hommes, Elfes, et toute entité au libre arbitre plein et entier. Aucun lien connu dans l'histoire entre deux êtres de ce degré.",
+          "c": ""
+        }
+      ]
+    },
+    {
+      "id": "id_fe4c6938",
+      "type": "card",
+      "badgeText": "DEGRÉ I — INSTINCT",
+      "title": "Esprits de feu et entités élémentaires simples",
+      "pitch": "",
+      "rows": [
+        {
+          "a": "Exemples connus",
+          "b": "Esprits de feu (lien de Miguel), petits esprits élémentaires domestiques ou sauvages."
+        },
+        {
+          "a": "Voie d'acquisition typique",
+          "b": "Inné (développé ou dormant) le plus souvent ; acquis par exposition prolongée sinon."
+        }
+      ],
+      "accent": "#6b8e5a"
+    },
+    {
+      "id": "id_a2ee2a34",
+      "type": "paragraph",
+      "text": "Note — Le tempérament sauvage/domestiqué (LIE-03) s'observe en priorité à ce degré.",
+      "italic": false
+    },
+    {
+      "id": "id_7e3ac9bd",
+      "type": "card",
+      "badgeText": "DEGRÉ I — INSTINCT",
+      "title": "Animaux sauvages et rapaces",
+      "pitch": "",
+      "rows": [
+        {
+          "a": "Exemples connus",
+          "b": "Rapaces (lien exceptionnellement pénétrant démontré par Miguel), autres animaux communs."
+        },
+        {
+          "a": "Voie d'acquisition typique",
+          "b": "Inné ou acquis par familiarité — la voie la plus classique enseignée à la Guilde."
+        }
+      ],
+      "accent": "#6b8e5a"
+    },
+    {
+      "id": "id_664d84a7",
+      "type": "card",
+      "badgeText": "DEGRÉ II — CONSCIENCE ÉMERGENTE",
+      "title": "Golems",
+      "pitch": "",
+      "rows": [
+        {
+          "a": "Exemples connus",
+          "b": "Golems de garde de Narmatin, composés de roche et de cristaux."
+        },
+        {
+          "a": "Voie d'acquisition typique",
+          "b": "Acquis par familiarité exclusivement, sur une durée vraisemblablement bien plus longue qu'au Degré I (hypothèse)."
+        }
+      ],
+      "accent": "#b5651d"
+    },
+    {
+      "id": "id_c9e42389",
+      "type": "paragraph",
+      "text": "Note — Un Golem lié serait un allié ou un PNJ extraordinairement rare — sujet idéal pour une quête entière.",
+      "italic": false
+    },
+    {
+      "id": "id_cfa6985f",
+      "type": "card",
+      "badgeText": "DEGRÉ II — CONSCIENCE ÉMERGENTE",
+      "title": "Treants",
+      "pitch": "",
+      "rows": [
+        {
+          "a": "Exemples connus",
+          "b": "Non encore rencontrés dans les récits disponibles — existence supposée par la hiérarchie établie."
+        },
+        {
+          "a": "Voie d'acquisition typique",
+          "b": "Acquis par familiarité, probablement sur plusieurs années (hypothèse)."
+        }
+      ],
+      "accent": "#b5651d"
+    },
+    {
+      "id": "id_9b2d8e9f",
+      "type": "card",
+      "badgeText": "DEGRÉ II — CONSCIENCE ÉMERGENTE",
+      "title": "Élémentaires majeurs",
+      "pitch": "",
+      "rows": [
+        {
+          "a": "Exemples connus",
+          "b": "Formes supérieures des esprits élémentaires simples du Degré I — distinction de puissance et de conscience, pas seulement de taille."
+        },
+        {
+          "a": "Voie d'acquisition typique",
+          "b": "Acquis par familiarité ; se distingue nettement d'un lien avec un esprit simple de la même famille élémentaire."
+        }
+      ],
+      "accent": "#b5651d"
+    },
+    {
+      "id": "id_3b7c7b8e",
+      "type": "card",
+      "badgeText": "DEGRÉ III — PLEINE CONSCIENCE",
+      "title": "Hommes, Elfes et êtres pleinement conscients",
+      "pitch": "",
+      "rows": [
+        {
+          "a": "Exemples connus",
+          "b": "Aucun cas connu à ce jour."
+        },
+        {
+          "a": "Voie d'acquisition typique",
+          "b": "Inconnue — jamais observée dans l'histoire disponible."
+        }
+      ],
+      "accent": "#5c1a1a"
+    },
+    {
+      "id": "id_d47f8cf2",
+      "type": "paragraph",
+      "text": "Note — Un premier cas avéré constituerait un événement légendaire à l'échelle du monde connu. Voir hook ci-dessous.",
+      "italic": false
+    },
+    {
+      "id": "id_01748ee1",
+      "type": "callout",
+      "tag": "hook",
+      "title": "Le premier lien entre égaux",
+      "paragraphs": [
+        "Et si un personnage devenait le premier cas avéré de l'histoire connue à établir un lien avec un être pleinement conscient — un Elfe, un autre Homme ? Un tel événement dépasserait largement l'anecdote personnelle : il remettrait en question ce que la Guilde elle-même croit savoir sur les limites du don. Une piste à réserver aux enjeux de fin de campagne, tant elle bouleverse la hiérarchie établie."
+      ]
+    }
+  ]
+}

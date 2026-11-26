@@ -1,0 +1,100 @@
+{
+  "id": "arc-hooks-de-scenario",
+  "title": "Hooks de scénario",
+  "kind": "autre",
+  "tags": [
+    "L'Archiviste"
+  ],
+  "blocks": [
+    {
+      "id": "id39_vi552",
+      "type": "paragraph",
+      "text": "Quatre accroches centrées sur l'Archiviste et la Guilde des Archivistes elle-même.",
+      "italic": false
+    },
+    {
+      "id": "id40_hpbbt",
+      "type": "card",
+      "badgeText": "HOOK 1",
+      "title": "Le document égaré",
+      "pitch": "Les PJ mettent la main sur l'un des dossiers de cette collection portant l'estampille de la Guilde des Archivistes. Une piste logique serait de la contacter... pour découvrir qu'elle nie toute paternité.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Local, point d'entrée de campagne"
+        },
+        {
+          "a": "Complication",
+          "b": "La Guilde des Archivistes, légitimement perplexe, pourrait vouloir enquêter elle-même sur l'origine de ce faux, tout en étant étonnée de la précision et du professionnalisme de celui-ci."
+        },
+        {
+          "a": "Rôle de l'Archiviste",
+          "b": "Absent, sauf apparition indirecte via le contenu du document trouvé."
+        }
+      ]
+    },
+    {
+      "id": "id43_3e5bd",
+      "type": "card",
+      "badgeText": "HOOK 2",
+      "title": "L'enquête de la vraie Guilde",
+      "pitch": "La Guilde des Archivistes, ayant eu vent de documents circulant sous son nom sans son autorisation, ouvre une enquête interne pour identifier le faussaire.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Régional"
+        },
+        {
+          "a": "Complication",
+          "b": "Les PJ pourraient être engagés pour cette enquête sans se douter qu'elle les mènera vers une figure quasi mythique plutôt qu'un simple escroc."
+        },
+        {
+          "a": "Rôle de l'Archiviste",
+          "b": "Cible de l'enquête, sans jamais être directement rencontré."
+        }
+      ]
+    },
+    {
+      "id": "id42_0vjmm",
+      "type": "card",
+      "badgeText": "HOOK 3",
+      "title": "Celui qui savait déjà",
+      "pitch": "Un PNJ mineur, croisé en chemin, fait une remarque anodine sur un événement que les PJ n'ont partagé avec personne — une information qu'il ne devrait avoir aucun moyen de connaître.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Personnel, ambiance"
+        },
+        {
+          "a": "Complication",
+          "b": "Rien ne confirme qu'il s'agit de l'Archiviste ; l'ambiguïté est le point fort de ce hook"
+        },
+        {
+          "a": "Rôle de l'Archiviste",
+          "b": "Possible incarnation directe, jamais confirmée."
+        }
+      ]
+    },
+    {
+      "id": "id41_c2gye",
+      "type": "card",
+      "badgeText": "HOOK 4",
+      "title": "La collection incomplète",
+      "pitch": "Un personnage érudit affirme posséder un fragment d'un dossier de cette même collection, mais portant un numéro que personne ne connaît — suggérant que l'Archiviste a produit bien plus de documents que ceux déjà découverts.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Mondial, fil rouge de campagne"
+        },
+        {
+          "a": "Complication",
+          "b": "Ce fragment pourrait concerner absolument n'importe quel sujet du monde connu."
+        },
+        {
+          "a": "Rôle de l'Archiviste",
+          "b": "Auteur indirect d'un fil narratif entier, sans jamais apparaître."
+        }
+      ]
+    }
+  ]
+}

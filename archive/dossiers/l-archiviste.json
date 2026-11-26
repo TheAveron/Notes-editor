@@ -1,0 +1,72 @@
+{
+  "id": "l-archiviste",
+  "color": "#5c6b4f",
+  "stampStyle": "accent",
+  "cover": {
+    "orgLine": "GUILDE DES ARCHIVISTES — FONDS DOCUMENTAIRE",
+    "kicker": "DOSSIER D'INFORMATION",
+    "title": "L'Archiviste",
+    "subtitle": "Origine du fonds & échelle de classification de la collection",
+    "stampText": "Hors-échelle — document premier de la\ncollection",
+    "meta": [
+      {
+        "a": "N° de dossier",
+        "b": "ARC-AR-001"
+      },
+      {
+        "a": "Objet",
+        "b": "L'Archiviste, la Guilde des Archivistes, et l'échelle de classification commune"
+      },
+      {
+        "a": "Documents liés",
+        "b": "Aucun"
+      },
+      {
+        "a": "Nature du sujet",
+        "b": "Infrastructure documentaire — à lire en premier"
+      },
+      {
+        "a": "Confidentialité",
+        "b": "Hors-échelle"
+      }
+    ]
+  },
+  "footerBrand": "L'ARCHIVISTE - DOCUMENT FONDATEUR",
+  "noteUsage": {
+    "includeTagLegend": true,
+    "text": "Ce dossier est le socle de toute la collection. Il explique d'où viennent réellement ces documents, ce que vaut leur estampille officielle, et définit l'échelle de classification de confidentialité. À lire avant tout autre dossier."
+  },
+  "sections": [
+    {
+      "id": "id2_qexfk",
+      "entry": "arc-la-guilde-des-archivistes"
+    },
+    {
+      "id": "id7_5jywo",
+      "entry": "arc-l-archiviste"
+    },
+    {
+      "id": "id17_0lhq2",
+      "entry": "arc-echelle-de-confidentialite",
+      "pageBreaks": [
+        {
+          "after": "id26_gjws3",
+          "repeatTitle": false
+        }
+      ]
+    },
+    {
+      "id": "id34_zvkav",
+      "entry": "arc-fiabilite-des-archives"
+    },
+    {
+      "id": "id38_z98sd",
+      "entry": "arc-hooks-de-scenario"
+    },
+    {
+      "id": "id44_5w95j",
+      "entry": "arc-annexes"
+    }
+  ],
+  "version": 3
+}

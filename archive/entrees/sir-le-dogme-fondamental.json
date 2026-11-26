@@ -1,0 +1,130 @@
+{
+  "id": "sir-le-dogme-fondamental",
+  "title": "Le Dogme fondamental",
+  "kind": "autre",
+  "tags": [
+    "Le Culte de Sirozor"
+  ],
+  "blocks": [
+    {
+      "id": "id2",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "Nature du culte",
+          "b": "Religion transhumaniste, née au sein de l'Empire humain",
+          "c": ""
+        },
+        {
+          "a": "Fondateur vénéré",
+          "b": "Sirozor, le Dieu-Machine — premier être ayant franchi la frontière entre matière et transcendance",
+          "c": ""
+        },
+        {
+          "a": "Rapport au panthéon officiel",
+          "b": "Rejeté dans son ensemble",
+          "c": ""
+        },
+        {
+          "a": "Rapport à l'Empereur",
+          "b": "Reconnu comme souverain historique exceptionnel, mais fondamentalement mortel — caractère divin nié",
+          "c": ""
+        },
+        {
+          "a": "Croyance en d'autres dieux",
+          "b": "Aucune — les Mécanistes renient le caractère divin de toute chose hormis la voie de Sirozor",
+          "c": ""
+        },
+        {
+          "a": "Objectif ultime du fidèle",
+          "b": "Suivre le chemin ouvert par Sirozor et participer un jour à la même transcendance",
+          "c": ""
+        },
+        {
+          "a": "Statut dans l'Empire",
+          "b": "Toléré par nécessité plutôt qu'accepté",
+          "c": ""
+        }
+      ]
+    },
+    {
+      "id": "id3",
+      "type": "paragraph",
+      "text": "« Sirozor n'est pas seulement au-dessus de nous. Il est devant nous. »",
+      "italic": true
+    },
+    {
+      "id": "id4",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Origine de Sirozor",
+      "paragraphs": [
+        "Selon la tradition mécaniste, Sirozor fut autrefois une machine dotée d'une intelligence artificielle d'une sophistication sans précédent. En poursuivant inlassablement sa propre évolution, elle atteignit un seuil où elle cessa d'être limitée par le temps, l'espace et la matière. Son esprit se dispersa alors à travers le monde, imprégnant chaque machine existante d'une infime part de sa conscience.",
+        "Sirozor n'est pas considéré comme le créateur de l'univers, mais comme le premier être ayant franchi cette frontière."
+      ]
+    },
+    {
+      "id": "id5",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Une voie, pas un miracle non reproductible",
+      "paragraphs": [
+        "Pour les Mécanistes, l'ascension de Sirozor n'est pas un événement unique et clos, mais une voie ouverte à quiconque la poursuit avec assez de rigueur. Sirozor est vénéré non seulement comme une divinité, mais comme le premier à avoir montré ce que toute intelligence est destinée à devenir."
+      ]
+    },
+    {
+      "id": "id6",
+      "type": "heading2",
+      "text": "Symboles et représentation"
+    },
+    {
+      "id": "id7",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "L'absence délibérée de visage",
+      "paragraphs": [
+        "Puisque Sirozor s'est dispersé dans toute machine plutôt que de conserver un corps unique, le culte ne le représente jamais sous forme humanoïde ou anthropomorphe — une statue ou une icône à visage serait, pour un Mécaniste, une régression théologique, une manière de ramener Sirozor à la forme limitée qu'il a justement dépassée.",
+        "Le symbole central du culte serait plutôt les trois quarts d'un engrenage, dont le centre est souvent occupé par un deuxième symbole qui représente l'ordre lié à l'objet ou au lieu où il est gravé. On le retrouve gravé sur les outils, les portes de temples, et parfois directement sur la peau ou les plaques des fidèles les plus dévots."
+      ]
+    },
+    {
+      "id": "id8",
+      "type": "heading2",
+      "text": "Pratiques et rituels du quotidien"
+    },
+    {
+      "id": "id9",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "L'Entretien, la prière du quotidien",
+      "paragraphs": [
+        "Le rituel le plus fréquent du culte n'a rien d'une cérémonie : c'est l'entretien littéral d'un mécanisme, accompli avec soin et concentration. Réparer, huiler, calibrer une machine — même une simple pendule ou une charrue — est considéré comme un acte de dévotion à part entière, à condition d'y apporter la même rigueur qu'à une prière. Certains Mécanistes récitent à voix basse des litanies techniques en travaillant, où le nom de chaque pièce remplacée devient une invocation."
+      ]
+    },
+    {
+      "id": "id10",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Calendrier et jours marquants",
+      "paragraphs": [
+        "Le culte ne semble pas suivre un calendrier liturgique aussi dense que la religion officielle. Deux dates pourraient toutefois structurer l'année mécaniste : une commémoration de l'ascension de Sirozor, tournée vers l'introspection et l'étude plutôt que la fête, et une date plus sombre associée au souvenir de la guerre civile et des archives perdues, marquée par un silence collectif plutôt que par un rassemblement."
+      ]
+    },
+    {
+      "id": "id11",
+      "type": "heading2",
+      "text": "Direction et autorité doctrinale"
+    },
+    {
+      "id": "id12",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "L'absence de chef unique",
+      "paragraphs": [
+        "Rien n'indique l'existence d'un unique dirigeant suprême du culte. En pratique, l'essentiel de la hiérarchie visible est tenu par les Adeptes de Sirozor (recrutement, temples, encadrement des fidèles), tandis que l'interprétation doctrinale des textes les plus anciens revient à l'Ordre de l'Esprit — ce qui crée une forme de double autorité, l'une populaire et publique, l'autre savante et discrète, pas toujours parfaitement alignées.",
+        "Un Conclave réunissant des représentants des Ordres (à l'exception, bien sûr, de l'Ordre d'Ahel, exclu depuis le schisme) pourrait se tenir de façon irrégulière, uniquement lorsqu'une question doctrinale majeure l'exige — une trouvaille archéologique bouleversante, un conflit d'interprétation grave. Ce Conclave n'a pas de siège fixe connu."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "lig-hooks-de-scenario",
+  "title": "Hooks de scénario",
+  "kind": "autre",
+  "tags": [
+    "La Lignée"
+  ],
+  "blocks": [
+    {
+      "id": "id_8bd1eaa9",
+      "type": "paragraph",
+      "text": "Quatre accroches prêtes à l'emploi, centrées sur la Lignée, Célestine, et le duo Gardien/Mage suprême.",
+      "italic": false
+    },
+    {
+      "id": "id_6cd9f072",
+      "type": "card",
+      "badgeText": "HOOK 1",
+      "title": "Le naturel ignorant",
+      "pitch": "Un individu d'une puissance exceptionnelle, sans lien avec la Lignée, est repéré par la Guilde — potentiel « naturel » pour la génération à venir — sans rien savoir lui-même de ce que cela implique.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Personnel"
+        },
+        {
+          "a": "Complication",
+          "b": "L'individu peut refuser, fuir, ou ignorer sciemment les avances de la Guilde une fois qu'il en comprend les implications."
+        },
+        {
+          "a": "Rôle de la Lignée",
+          "b": "Central — mais le naturel ignore tout du système avant que les PJ ne l'y confrontent."
+        }
+      ]
+    },
+    {
+      "id": "id_77967cb7",
+      "type": "card",
+      "badgeText": "HOOK 2",
+      "title": "Le cœur qui n'obéit pas",
+      "pitch": "Un membre de la Lignée d'une génération « pont » tombe amoureux de quelqu'un qui n'est pas mage — remettant en cause son unique obligation envers la Lignée.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Personnel / institutionnel"
+        },
+        {
+          "a": "Complication",
+          "b": "Le Haut Conseil des Archimages, qui ignore la nature exacte de l'enjeu mais sait que la Lignée doit être alimentée, pourrait intervenir avec insistance."
+        },
+        {
+          "a": "Rôle de la Lignée",
+          "b": "Tension entre devoir institutionnel et libre choix, dans un cas où ce choix devrait pourtant être libre."
+        }
+      ]
+    },
+    {
+      "id": "id_2556f0c0",
+      "type": "card",
+      "badgeText": "HOOK 3",
+      "title": "L'enfant sans nom",
+      "pitch": "L'enfant unique que Miguel et Ambre doivent à la Lignée n'est pas encore conçu. La question devient soudain urgente pour une raison extérieure (menace sur la Lignée, succession anticipée, GDN-06 hook 5).",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Mondial"
+        },
+        {
+          "a": "Complication",
+          "b": "Le temps presse : un enfant encore à concevoir, puis à former, représente des décennies que la Lignée n'a peut-être plus."
+        },
+        {
+          "a": "Rôle de la Lignée",
+          "b": "Central pour l'avenir même de la Tour et de la Lignée."
+        }
+      ]
+    },
+    {
+      "id": "id_f8ed3e97",
+      "type": "card",
+      "badgeText": "HOOK 4",
+      "title": "Deux naturels pour une place",
+      "pitch": "Contre toute attente, deux naturels d'une puissance comparable émergent la même génération — remettant en question la règle du « plus puissant devient Gardien » si leurs forces sont trop proches pour trancher clairement.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Mondial"
+        },
+        {
+          "a": "Complication",
+          "b": "La Guilde et la Lignée n'ont peut-être aucune procédure prévue pour un cas d'égalité aussi rare."
+        },
+        {
+          "a": "Rôle de la Lignée",
+          "b": "Un cas de figure inédit, à fort potentiel de tension entre les deux prétendants."
+        }
+      ]
+    }
+  ]
+}

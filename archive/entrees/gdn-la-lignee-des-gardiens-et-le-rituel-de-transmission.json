@@ -1,0 +1,70 @@
+{
+  "id": "gdn-la-lignee-des-gardiens-et-le-rituel-de-transmission",
+  "title": "La Lignée des Gardiens et le Rituel de Transmission",
+  "kind": "autre",
+  "tags": [
+    "Le Gardien"
+  ],
+  "blocks": [
+    {
+      "id": "id33_ygzja",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Principe général",
+      "paragraphs": [
+        "À chaque changement de Gardien, un rituel interdit dans le reste de l'Empire — mais systématiquement pratiqué au sein de la Tour — permet au successeur d'absorber intégralement l'âme et la puissance du Gardien sortant. Cette absorption requiert le consentement plein et entier du Gardien sortant. La Mage suprême de la Guilde des Animaliens, seule informée en exercice hors des murs de la Tour, tolère cette pratique sans l'approuver moralement, car elle considère que le sort du monde dépend du maintien d'un Gardien fonctionnel."
+      ]
+    },
+    {
+      "id": "id_320093dd",
+      "type": "callout",
+      "tag": "attention",
+      "title": "Ne pas confondre avec un lien",
+      "paragraphs": [
+        "Le Rituel de Transmission n'est pas un lien télépathique au sens de LIE-AN-004 : il s'agit d'une absorption totale d'âme et de puissance entre deux Hommes, un mécanisme distinct, propre à la lignée des Gardiens."
+      ]
+    },
+    {
+      "id": "id34_pgi4y",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Rôle de la formation de 20 ans",
+      "paragraphs": [
+        "La formation qui précède chaque transmission poursuit un double objectif : élever la puissance psychique du novice jusqu'à un niveau lui permettant de rester l'esprit dominant après l'absorption (voir GDN-04) et de construire, entre le novice et son prédécesseur, une relation de confiance qui rend la transmission plus harmonieuse qu'une greffe forcée sur un inconnu."
+      ]
+    },
+    {
+      "id": "id35_7g93f",
+      "type": "heading2",
+      "text": "Déroulement supposé du rituel"
+    },
+    {
+      "id": "id36_16du8",
+      "type": "paragraph",
+      "text": "Aucun témoignage direct du déroulement précis du rituel n'existe dans les sources disponibles. La reconstruction suivante est une proposition de trame scénique, cohérente avec les éléments établis, à utiliser ou à réécrire librement.",
+      "italic": false
+    },
+    {
+      "id": "id37_x6qx0",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Étapes proposées",
+      "paragraphs": [
+        "1. Préparatifs — isolement du binôme dans les niveaux supérieurs de la Tour, à un étage peut-être créé à cet effet.",
+        "2. Le lien d'ouverture — le Gardien sortant ouvre volontairement son esprit au novice via un contact psychique profond, facilité par le cristal lui-même.",
+        "3. L'absorption — bascule progressive de la conscience et de la puissance du sortant vers le successeur, décrite par la tradition orale de la Tour comme extrêmement douloureuse pour le récipiendaire.",
+        "4. Le silence — aucun témoignage ne fait état d'un Gardien sortant s'étant exprimé de nouveau en tant qu'entité séparément identifiable après le rituel.",
+        "5. La reconnaissance — le nouveau Gardien avertit par courrier la Mage suprême, seule informée en exercice hors de la Tour, du succès de la passation."
+      ]
+    },
+    {
+      "id": "id38_d7k5r",
+      "type": "callout",
+      "tag": "hook",
+      "title": "La transmission ratée",
+      "paragraphs": [
+        "La légende interne de la Tour évoque, sans le confirmer, l'existence d'au moins une transmission passée où le novice n'a pas su rester l'esprit dominant : le corps du nouveau Gardien aurait alors été repris par la conscience d'un prédécesseur plus fort que lui. Si cette légende est vraie, ses conséquences sont un formidable matériau de campagne — que ce soit comme rumeur à vérifier, comme vérité dérangeante à découvrir, ou comme menace en train de se reproduire dans le présent du récit."
+      ]
+    }
+  ]
+}

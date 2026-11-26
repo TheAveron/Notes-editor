@@ -35,7 +35,35 @@ function rich(text) {
 // section, cliquables dans l'aperçu comme dans le PDF. Les codes d'autres dossiers
 // (autre préfixe) et les numéros sans section correspondante restent du texte simple.
 // N'opère que sur du texte déjà échappé : aucune balise de rich() ne porte d'attribut.
+// "doc" : les codes renvoient aux sections du dossier affiché (aperçu, PDF) ;
+// "archive" : tout code connu de l'archive (ARC-03, GRD-05…) renvoie à la page de
+// l'entrée correspondante (vues de l'archive, édition d'une entrée).
+let richLinkMode = "doc";
+let codeIndexCache = null;
+let numberIndexCache = null;
+
 function linkSectionCodes(html) {
+    if (richLinkMode === "archive") {
+        if (!codeIndexCache) codeIndexCache = codeIndex();
+        if (!numberIndexCache) numberIndexCache = dossierNumberIndex();
+        // N° de dossier complet (CEL-VC-001) → le dossier
+        html = html.replace(
+            /(^|[^A-Za-z0-9-])([A-Z]{2,6}-[A-Z0-9]{1,6}-\d{2,4})(?![A-Za-z0-9-])/g,
+            (m, before, num) => {
+                const id = numberIndexCache.get(num);
+                return id ? `${before}<a class="xref" href="#/dossier/${id}">${num}</a>` : m;
+            },
+        );
+        return html.replace(
+            /(^|[^A-Za-z0-9-])([A-Z]{2,6}-\d{2})(?![A-Za-z0-9-])/g,
+            (m, before, code) => {
+                const hit = codeIndexCache.get(code);
+                if (!hit || !archive.entries.has(hit.entry)) return m;
+                const title = escapeHtml(archive.entries.get(hit.entry).title);
+                return `${before}<a class="xref" href="#/entree/${hit.entry}" title="${title}">${code}</a>`;
+            },
+        );
+    }
     const prefix = docPrefix().replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
     const re = new RegExp(`(^|[^A-Za-z0-9-])(${prefix}-(\\d{2}))(?![A-Za-z0-9-])`, "g");
     return html.replace(re, (m, before, code, num) => {
@@ -172,11 +200,43 @@ function markSidebarOverflow() {
     });
 }
 
+// Aperçu d'une entrée seule : une page de lecture à la largeur A4 et de hauteur libre
+// (la pagination n'existe que dans les dossiers), sans couverture ni sommaire.
+function renderEntryPreview(styleVars) {
+    const sec = doc.sections[0];
+    const kinds = Object.fromEntries(ArchiveModel.KINDS);
+    const header = `<div class="doc-header"><span>ENTRÉE · ${escapeHtml((kinds[sec._kind] || "").toUpperCase())}</span><span>${escapeHtml(sec._entry || "")}</span></div>`;
+    const pages = [];
+    let cur = `<div class="sec-h1" id="${sec.id}">${escapeHtml(sec.title)}</div>`;
+    sec.blocks.forEach((block) => {
+        cur += renderBlockHtml(block).replace(
+            /^\s*<([a-z0-9]+)/i,
+            `<$1 data-bid="${block.id}"`,
+        );
+    });
+    pages.push(cur);
+    document.getElementById("preview").innerHTML = pages
+        .map(
+            (inner) =>
+                `<div class="page reading-page" style="${styleVars}" data-section="${sec.id}">${header}${inner}</div>`,
+        )
+        .join("");
+    overflowingSections = new Set();
+    const status = document.getElementById("layout-status");
+    if (status) status.textContent = "";
+    applyLinkedHighlight();
+}
+
 function renderPreview() {
+    codeIndexCache = null;
+    numberIndexCache = null;
+    richLinkMode = editorMode === "entry" ? "archive" : "doc";
     const pal = derivePalette(doc.color);
     const stampColor = doc.stampStyle === "red" ? FIXED.red : pal.accent;
     const stampBg = doc.stampStyle === "red" ? FIXED.redBg : pal.accentBg;
     const styleVars = `--doc-accent:${pal.accent};--doc-ink:${pal.ink};--doc-inkmid:${pal.inkMid};--doc-card:${pal.card};--stamp-color:${stampColor};--stamp-bg:${stampBg};`;
+
+    if (editorMode === "entry") return renderEntryPreview(styleVars);
 
     const header = () =>
         `<div class="doc-header"><span>DOSSIER ${escapeHtml(docNumber())}</span><span>${escapeHtml(doc.footerBrand)}</span></div>`;
@@ -203,19 +263,19 @@ function renderPreview() {
         const legends = [
             [
                 "confirme",
-                "Fait établi dans le lore central. Ne devrait pas être contredit à la légère car cela pourrait créer des incohérences dans l'histoire.",
+                "Fait établi avec certitude. Le contredire fragiliserait la cohérence de l'ensemble de la collection.",
             ],
             [
                 "hypothese",
-                "Proposition cohérente avec le canon existant, mais non tranchée. Le MJ peut l'adopter telle quelle, l'adapter, ou la remplacer par sa propre idée.",
+                "Reconstitution ou supposition cohérente avec les faits établis, mais non tranchée : elle peut être retenue telle quelle, adaptée ou remplacée.",
             ],
             [
                 "hook",
-                "Accroche de scénario prête à l'emploi, directement exploitable en jeu.",
+                "Situation ou tension qui pourrait servir de point de départ à qui voudrait agir.",
             ],
             [
                 "attention",
-                "Point de vigilance : risque d'incohérence, d'équilibrage, ou de spoil à ne pas dévoiler trop tôt aux joueurs.",
+                "Point de vigilance : risque de confusion, d'incohérence, ou information à ne pas révéler trop tôt.",
             ],
         ];
         legends.forEach(([tag, txt]) => {

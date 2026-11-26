@@ -1,0 +1,88 @@
+{
+  "id": "gdn-la-tour-du-cinquieme-point-cardinal",
+  "title": "La Tour du Cinquième Point Cardinal",
+  "kind": "autre",
+  "tags": [
+    "Le Gardien"
+  ],
+  "blocks": [
+    {
+      "id": "id16_i9dst",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Localisation & origine",
+      "paragraphs": [
+        "La Tour se dresse au centre d'une clairière circulaire, au cœur d'une forêt immense couvrant une bonne partie de l'est du territoire de l'Empire. Elle se situe à plusieurs jours de voyage à cheval de Narmatin. Elle a été bâtie autour d'une météorite tombée il y a environ 12 000 ans, dont le cœur renferme un cristal unique en son genre, jamais retrouvé ailleurs dans le monde connu."
+      ]
+    },
+    {
+      "id": "id17_ppx3d",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Fonction",
+      "paragraphs": [
+        "La Tour agit comme un focaliseur magique : elle démultiplie les capacités psychiques du Gardien et lui permet de projeter sa conscience dans le Plan Éthéré pour y affronter les créatures qui s'y trouvent et ainsi défendre le monde. Le cristal est uniquement une source de puissance : il ne retient ni n'emprisonne aucune entité."
+      ]
+    },
+    {
+      "id": "id27_jnp5p",
+      "type": "crossref",
+      "text": "Voir MEN-AN-003 pour plus de détails."
+    },
+    {
+      "id": "id18_qf1rc",
+      "type": "heading2",
+      "text": "Architecture connue"
+    },
+    {
+      "id": "id19_e49vv",
+      "type": "bullets",
+      "items": [
+        "Entrée : une porte modeste, presque dérisoire au regard de l'ampleur du bâtiment, ouvrant sur un vestibule étroit meublé d'un seul petit meuble.",
+        "Un escalier mène à un hall circulaire, utilisé pour l'accueil et les audiences.",
+        "Quartiers résidentiels : quatre niveaux en sous-sol, desservis par un long couloir bordé de chambres numérotées.",
+        "Salon d'entretien : situé cinq étages au-dessus du hall, lieu des échanges plus personnels entre le Gardien et ses hôtes."
+      ]
+    },
+    {
+      "id": "id20_1qaal",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Le cœur du cristal",
+      "paragraphs": [
+        "L'emplacement exact du cristal originel n'est décrit dans aucune source disponible. Par cohérence architecturale, il est raisonnable de le situer sous les quartiers résidentiels, au point le plus bas et le plus central de la Tour — mais ce choix reste ouvert."
+      ]
+    },
+    {
+      "id": "id24_lpwpz",
+      "type": "heading2",
+      "text": "Personnel"
+    },
+    {
+      "id": "id22_a38bc",
+      "type": "paragraph",
+      "text": "Trois gobelins nommés — Gork, Vork et Lock — assurent le service de la Tour : accueil, portage des affaires, installation des visiteurs, ainsi que le relais des informations. Ils apparaissent et disparaissent avec une discrétion quasi magique.",
+      "italic": false
+    },
+    {
+      "id": "id23_y7h3l",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Statut des gobelins",
+      "paragraphs": [
+        "Leur statut exact n'est pas précisé : simples serviteurs sous contrat, créatures liées magiquement à la Tour elle-même plutôt qu'au Gardien personnellement, ou entités plus anciennes que la lignée des Gardiens ?\nChacune de ces pistes ouvre des possibilités différentes — notamment si un Gardien venait à disparaître sans successeur immédiat."
+      ]
+    },
+    {
+      "id": "id25_aalnj",
+      "type": "heading2",
+      "text": "Accès"
+    },
+    {
+      "id": "id26_zj3lf",
+      "type": "paragraph",
+      "text": "L'accès à la Tour est extrêmement restreint et se fait exclusivement sur accord de la Mage suprême. Aucune mention n'existe d'un accès public, même cérémoniel.",
+      "italic": false
+    }
+  ]
+}

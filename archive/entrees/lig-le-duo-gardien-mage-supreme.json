@@ -1,0 +1,46 @@
+{
+  "id": "lig-le-duo-gardien-mage-supreme",
+  "title": "Le duo Gardien / Mage suprême",
+  "kind": "autre",
+  "tags": [
+    "La Lignée"
+  ],
+  "blocks": [
+    {
+      "id": "id_79fa18cf",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Deux catégories par génération",
+      "paragraphs": [
+        "À chaque génération active, le duo à la tête de la Tour et de la Guilde réunit un « naturel » — un individu d'une puissance exceptionnelle, sans lien de sang avec la Lignée, dont l'émergence reste globalement aléatoire — et un « héritier », issu directement de la Lignée. Les deux sont toujours de sexe opposé."
+      ]
+    },
+    {
+      "id": "id_aa7587bd",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Répartition des rôles",
+      "paragraphs": [
+        "Le Gardien et la Mage suprême ne sont pas systématiquement associés à l'une ou l'autre catégorie : les rôles ne sont pas figés par nature. Il est cependant généralement préféré que le plus puissant des deux membres du duo occupe le poste de Gardien — poste où cette puissance a le plus de valeur immédiate. Pour la génération de Miguel, c'est lui, le naturel, qui s'est avéré le plus puissant, et qui a donc été placé Gardien ; son homologue de la Lignée est devenue Mage suprême."
+      ]
+    },
+    {
+      "id": "id_176f5bbd",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Un appariement encouragé, pas un mariage forcé",
+      "paragraphs": [
+        "Les maîtres de la Guilde s'efforcent de rapprocher le futur duo avant même que les deux jeunes gens ne connaissent leur destin, dans l'espoir qu'ils s'apprécient, voire tombent amoureux, avant d'être chacun envoyés à leur poste respectif. Udor et Célestine, ainsi rapprochés en leur temps, sont devenus amis proches sans tomber amoureux ; ils ont rempli leur devoir (avoir l'enfant unique exigé par la Lignée) sans ressentiment, mais aussi sans passion."
+      ]
+    },
+    {
+      "id": "id_a4a77875",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Miguel et Ambre : un amour réel",
+      "paragraphs": [
+        "Contrairement à Udor et Célestine, Miguel et Ambre — son homologue de la Lignée, petite-fille d'Udor et Célestine — sont réellement tombés amoureux, vraisemblablement durant les quatre années de formation de Miguel à la Guilde de Narmatin (16-20 ans), avant son départ pour la Tour, période où les maîtres cherchent précisément à provoquer ce rapprochement."
+      ]
+    }
+  ]
+}

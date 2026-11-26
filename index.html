@@ -7,35 +7,53 @@
 
         <link rel="stylesheet" href="./app.css" />
     </head>
-    <body>
+    <body data-view="loading">
         <div id="app">
             <div class="topbar">
                 <div class="brand">
-                    Atelier de Dossiers<small
-                        >Éditeur de fiches de lore — style classification</small
-                    >
+                    <a class="brand-link" href="#/">Atelier de Dossiers</a
+                    ><small>Archive de lore — style classification</small>
                     <div class="status-line">
                         <span id="layout-status" class="save-status warn"></span>
                         <span id="save-status" class="save-status"></span>
                     </div>
                 </div>
-                <button id="btn-undo" class="icon" title="Annuler (Ctrl+Z)" disabled>↶</button>
-                <button id="btn-redo" class="icon" title="Rétablir (Ctrl+Maj+Z / Ctrl+Y)" disabled>↷</button>
-                <button id="btn-new">+ Nouveau document</button>
-                <label class="file-btn"
-                    >Importer JSON<input
-                        type="file"
-                        id="file-import"
-                        accept="application/json"
-                /></label>
-                <button id="btn-export-json">Exporter JSON</button>
-                <button id="btn-registry">Registre des couleurs</button>
-                <button class="primary" id="btn-pdf">Exporter en PDF</button>
+
+                <!-- Pages de l'archive -->
+                <div class="tb-group archive-only needs-write">
+                    <button id="btn-new-entry">+ Nouvelle entrée</button>
+                    <button id="btn-new-dossier">+ Nouveau dossier</button>
+                    <label class="file-btn" title="Ajoute à l'archive un dossier au format autonome (exporté par l'éditeur)"
+                        >Importer un dossier JSON<input
+                            type="file"
+                            id="archive-import"
+                            accept="application/json"
+                    /></label>
+                </div>
+
+                <!-- Éditeur -->
+                <div class="tb-group editor-only">
+                    <a id="btn-back" class="tb-link" href="#/dossiers">← Archive</a>
+                    <a id="btn-done" class="tb-link entry-only" href="#/">✓ Terminer</a>
+                    <button id="btn-undo" class="icon needs-write" title="Annuler (Ctrl+Z)" disabled>↶</button>
+                    <button id="btn-redo" class="icon needs-write" title="Rétablir (Ctrl+Maj+Z / Ctrl+Y)" disabled>↷</button>
+                    <button id="btn-new" class="standalone-only">+ Nouveau document</button>
+                    <label class="file-btn standalone-only"
+                        >Importer JSON<input
+                            type="file"
+                            id="file-import"
+                            accept="application/json"
+                    /></label>
+                    <button id="btn-export-json" class="not-entry" title="Dossier autonome, réimportable">Exporter JSON</button>
+                    <button id="btn-registry" class="not-entry needs-write">Registre des couleurs</button>
+                    <button class="primary not-entry" id="btn-pdf">Exporter en PDF</button>
+                </div>
             </div>
             <div class="body-wrap">
                 <div class="sidebar" id="sidebar"></div>
                 <div class="preview-wrap" id="preview"></div>
             </div>
+            <div class="archive-view" id="archive-view"></div>
         </div>
 
         <div
@@ -82,9 +100,13 @@
 
         <!-- Scripts classiques (et non modules ES) : l'éditeur fonctionne ouvert
              directement depuis le disque (file://). L'ordre compte. -->
+        <!-- Scripts classiques (et non modules ES) : sans serveur, l'éditeur s'ouvre aussi
+             directement depuis le disque (file://). L'ordre compte. -->
         <script src="./js/colors.js"></script>
         <script src="./js/tags.js"></script>
         <script src="./js/storage.js"></script>
+        <script src="./js/archive-model.js"></script>
+        <script src="./js/archive-store.js"></script>
         <script src="./js/registry.js"></script>
         <script src="./js/model.js"></script>
         <script src="./js/history.js"></script>
@@ -95,6 +117,9 @@
         <script src="./js/sidebar-sections.js"></script>
         <script src="./js/sidebar-registry.js"></script>
         <script src="./js/sync.js"></script>
+        <script src="./js/archive-editor.js"></script>
+        <script src="./js/archive-views.js"></script>
         <script src="./js/app.js"></script>
+        <script src="./js/router.js"></script>
     </body>
 </html>

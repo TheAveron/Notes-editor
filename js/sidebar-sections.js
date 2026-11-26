@@ -12,6 +12,37 @@ const BLOCK_MENU = [
     ["pagebreak", "Saut de page"],
 ];
 
+const isArchiveEditor = () => editorMode === "dossier" || editorMode === "entry";
+// Une entrée seule n'a pas de mise en page : pas de saut de page (il appartient au dossier).
+function availableBlockTypes() {
+    return editorMode === "entry"
+        ? BLOCK_MENU.filter(([t]) => t !== "pagebreak")
+        : BLOCK_MENU;
+}
+// Liste déroulante des blocs partagés de l'archive ; onPick(bloc prêt à insérer).
+function sharedBlockSelect(firstLabel, onPick, cls) {
+    const sel = el("select", {
+        class: cls,
+        onchange: (e) => {
+            const ref = e.target.value;
+            if (!ref) return;
+            const b = sharedBlockForDoc(ref);
+            if (b) onPick(b);
+        },
+    });
+    sel.appendChild(el("option", { value: "" }, [document.createTextNode(firstLabel)]));
+    [...archive.blocks.values()]
+        .sort((a, b) => (a.name || a.id).localeCompare(b.name || b.id, "fr"))
+        .forEach((sb) =>
+            sel.appendChild(
+                el("option", { value: sb.id }, [
+                    document.createTextNode(sb.name || sb.id),
+                ]),
+            ),
+        );
+    return sel;
+}
+
 // Sections repliées dans le panneau (état d'affichage, non enregistré dans le document).
 const collapsedSections = new Set();
 
@@ -111,7 +142,35 @@ function blockHeader(label, s, b, idx, item) {
         ),
     );
     head.appendChild(el("span", {}, [document.createTextNode(label)]));
+    if (b._shared) {
+        const n = entriesUsingBlock(b._shared).length;
+        head.appendChild(
+            el(
+                "a",
+                {
+                    class: "shared-badge",
+                    href: `#/bloc/${b._shared}`,
+                    title: `Bloc partagé : le modifier ici le modifie dans ${n > 1 ? `les ${n} entrées qui l'utilisent` : "toutes les entrées qui l'utiliseront"}.`,
+                },
+                [document.createTextNode("⇄ " + (b._sharedName || b._shared))],
+            ),
+        );
+    }
     head.appendChild(el("span", { class: "grow" }));
+    if (isArchiveEditor() && b.type !== "pagebreak" && !b._missingRef)
+        head.appendChild(
+            el(
+                "button",
+                {
+                    class: "icon-btn",
+                    title: b._shared
+                        ? "Détacher : remplacer par une copie propre à cette entrée"
+                        : "Partager : en faire un bloc réutilisable dans d'autres entrées",
+                    onclick: () => (b._shared ? detachBlock(b) : shareBlock(b)),
+                },
+                [document.createTextNode(b._shared ? "⇥" : "⇄")],
+            ),
+        );
     // Insertion d'un nouveau bloc juste après celui-ci
     const ins = el("select", {
         class: "insert-select",
@@ -119,18 +178,30 @@ function blockHeader(label, s, b, idx, item) {
         onchange: (e) => {
             const t = e.target.value;
             if (!t) return;
-            s.blocks.splice(idx + 1, 0, newBlock(t));
+            const nb = t.startsWith("partage:")
+                ? sharedBlockForDoc(t.slice(8))
+                : newBlock(t);
+            if (!nb) return;
+            s.blocks.splice(idx + 1, 0, nb);
             update({ structure: true });
         },
     });
     ins.appendChild(el("option", { value: "" }, [document.createTextNode("＋")]));
-    BLOCK_MENU.forEach(([t, l]) =>
+    availableBlockTypes().forEach(([t, l]) =>
         ins.appendChild(
             el("option", { value: t }, [
                 document.createTextNode("Insérer après : " + l),
             ]),
         ),
     );
+    if (isArchiveEditor())
+        archive.blocks.forEach((sb) =>
+            ins.appendChild(
+                el("option", { value: "partage:" + sb.id }, [
+                    document.createTextNode("Insérer après : ⇄ " + (sb.name || sb.id)),
+                ]),
+            ),
+        );
     head.appendChild(ins);
     head.appendChild(
         el(
@@ -179,6 +250,10 @@ function blockHeader(label, s, b, idx, item) {
                 onclick: () => {
                     const copy = JSON.parse(JSON.stringify(b));
                     copy.id = uid();
+                    // La copie d'un bloc partagé est une copie indépendante
+                    delete copy._shared;
+                    delete copy._sharedName;
+                    delete copy._origId;
                     s.blocks.splice(idx + 1, 0, copy);
                     update({ structure: true });
                 },
@@ -584,11 +659,17 @@ function renderBlockEditor(s, b, idx) {
 }
 
 function renderSectionCard(s, idx) {
-    const collapsed = collapsedSections.has(s.id);
+    const entryMode = editorMode === "entry";
+    const collapsed = !entryMode && collapsedSections.has(s.id);
     const card = el("div", {
         class: "section-card" + (collapsed ? " collapsed" : ""),
         "data-sid": s.id,
     });
+    // Entrée seule : son titre et ses métadonnées sont dans le panneau « Entrée »
+    if (entryMode) {
+        renderSectionBody(card, s);
+        return card;
+    }
     const head = el("div", { class: "section-head" });
     head.appendChild(
         makeDragHandle(
@@ -677,15 +758,16 @@ function renderSectionCard(s, idx) {
             "button",
             {
                 class: "icon-btn danger",
-                title: "Supprimer la section",
+                title:
+                    editorMode === "dossier"
+                        ? "Retirer la section du dossier (l'entrée reste dans l'archive)"
+                        : "Supprimer la section",
                 onclick: () => {
-                    if (
-                        s.blocks.length &&
-                        !confirm(
-                            `Supprimer la section « ${s.title || sectionCode(idx)} » et ses ${s.blocks.length} bloc(s) ?\n(Ctrl+Z permet d'annuler.)`,
-                        )
-                    )
-                        return;
+                    const msg =
+                        editorMode === "dossier"
+                            ? `Retirer « ${s.title || sectionCode(idx)} » de ce dossier ?\nL'entrée reste dans l'archive. (Ctrl+Z permet d'annuler.)`
+                            : `Supprimer la section « ${s.title || sectionCode(idx)} » et ses ${s.blocks.length} bloc(s) ?\n(Ctrl+Z permet d'annuler.)`;
+                    if (s.blocks.length && !confirm(msg)) return;
                     doc.sections.splice(idx, 1);
                     update({ structure: true });
                 },
@@ -694,6 +776,7 @@ function renderSectionCard(s, idx) {
         ),
     );
     card.appendChild(head);
+    if (editorMode === "dossier") card.appendChild(sectionEntryLine(s));
     if (collapsed) {
         const n = s.blocks.length;
         card.appendChild(
@@ -703,7 +786,47 @@ function renderSectionCard(s, idx) {
         );
         return card;
     }
+    renderSectionBody(card, s);
+    return card;
+}
 
+// Ligne « Entrée : … · aussi dans … » sous le titre d'une section de dossier
+function sectionEntryLine(s) {
+    const line = el("div", { class: "section-entry-line" });
+    if (s._missingEntry) {
+        line.classList.add("warn");
+        line.appendChild(
+            document.createTextNode(`⚠ L'entrée « ${s._missingEntry} » n'existe plus dans l'archive.`),
+        );
+        return line;
+    }
+    const saved = s._entry && archive.entries.has(s._entry);
+    line.appendChild(document.createTextNode("Entrée : "));
+    line.appendChild(
+        saved
+            ? el("a", { href: `#/entree/${s._entry}` }, [document.createTextNode(s._entry)])
+            : el("span", {}, [document.createTextNode("nouvelle (créée à l'enregistrement)")]),
+    );
+    const others = s._entry
+        ? dossiersUsingEntry(s._entry).filter((u) => u.dossier.id !== doc.id)
+        : [];
+    if (others.length) {
+        line.appendChild(document.createTextNode(" · aussi dans "));
+        others.forEach((u, i) => {
+            if (i) line.appendChild(document.createTextNode(", "));
+            line.appendChild(
+                el("a", { href: `#/dossier/${u.dossier.id}` }, [
+                    document.createTextNode(dossierTitle(u.dossier)),
+                ]),
+            );
+        });
+        line.title = "Les modifications de cette section s'appliquent aussi à ces dossiers.";
+        line.classList.add("shared");
+    }
+    return line;
+}
+
+function renderSectionBody(card, s) {
     const blockList = el("div", { class: "block-list" });
     s.blocks.forEach((b, bidx) =>
         blockList.appendChild(renderBlockEditor(s, b, bidx)),
@@ -720,7 +843,7 @@ function renderSectionCard(s, idx) {
     card.appendChild(blockList);
 
     const menu = el("div", { class: "add-block-menu" });
-    BLOCK_MENU.forEach(([t, l]) => {
+    availableBlockTypes().forEach(([t, l]) => {
         const label = "+ " + l;
         menu.appendChild(
             el(
@@ -735,8 +858,18 @@ function renderSectionCard(s, idx) {
             ),
         );
     });
+    if (isArchiveEditor() && archive.blocks.size)
+        menu.appendChild(
+            sharedBlockSelect(
+                "+ Bloc partagé…",
+                (b) => {
+                    s.blocks.push(b);
+                    update({ structure: true });
+                },
+                "add-shared-select",
+            ),
+        );
     card.appendChild(menu);
-    return card;
 }
 
 const FORMAT_HINT_HTML =
@@ -744,13 +877,21 @@ const FORMAT_HINT_HTML =
     "<code>\\*</code> pour un astérisque. Laisser une ligne vide pour aller à la ligne.";
 
 function renderSections(container) {
+    const entryMode = editorMode === "entry";
     const box = el("div", { class: "side-section" });
     box.appendChild(
-        el("h3", {}, [document.createTextNode("Sections & contenu")]),
+        el("h3", {}, [
+            document.createTextNode(entryMode ? "Contenu de l'entrée" : "Sections & contenu"),
+        ]),
     );
     box.appendChild(
         el("div", { class: "format-hint", html: FORMAT_HINT_HTML }),
     );
+    if (entryMode) {
+        doc.sections.forEach((s, idx) => box.appendChild(renderSectionCard(s, idx)));
+        container.appendChild(box);
+        return;
+    }
     const foldAll = el("div", { class: "fold-all" });
     foldAll.appendChild(
         el(
@@ -786,12 +927,55 @@ function renderSections(container) {
             {
                 class: "add-section-btn",
                 onclick: () => {
-                    doc.sections.push(newSection());
+                    // Dans l'archive, le titre donne aussi l'identifiant (nom du fichier)
+                    let title;
+                    if (editorMode === "dossier") {
+                        title = prompt("Titre de la nouvelle section (une nouvelle entrée de l'archive) :");
+                        if (!title || !title.trim()) return;
+                        title = title.trim();
+                    }
+                    doc.sections.push(newSection(title));
                     update({ structure: true });
                 },
             },
-            [document.createTextNode("+ Ajouter une section")],
+            [
+                document.createTextNode(
+                    editorMode === "dossier"
+                        ? "+ Nouvelle section (nouvelle entrée)"
+                        : "+ Ajouter une section",
+                ),
+            ],
         ),
     );
+    // Dossier de l'archive : réutiliser une entrée existante comme section
+    if (editorMode === "dossier") {
+        const sel = el("select", {
+            class: "insert-entry-select",
+            onchange: (e) => {
+                const id = e.target.value;
+                if (!id || !archive.entries.has(id)) return;
+                doc.sections.push(sectionForEntry(id));
+                update({ structure: true });
+            },
+        });
+        sel.appendChild(
+            el("option", { value: "" }, [
+                document.createTextNode("+ Insérer une entrée existante…"),
+            ]),
+        );
+        const inDoc = new Set(doc.sections.map((s) => s._entry));
+        [...archive.entries.values()]
+            .sort((a, b) => a.title.localeCompare(b.title, "fr"))
+            .forEach((e) =>
+                sel.appendChild(
+                    el("option", { value: e.id }, [
+                        document.createTextNode(
+                            (inDoc.has(e.id) ? "✓ " : "") + `${e.title} (${e.id})`,
+                        ),
+                    ]),
+                ),
+            );
+        box.appendChild(sel);
+    }
     container.appendChild(box);
 }

@@ -1,0 +1,42 @@
+[
+  {
+    "hex": "#5c5346",
+    "title": "Le Culte de Sirozor",
+    "docId": "le-culte-de-sirozor"
+  },
+  {
+    "hex": "#a9812e",
+    "title": "Le Gardien",
+    "docId": "le-gardien"
+  },
+  {
+    "hex": "#5c6b4f",
+    "title": "L'Archiviste",
+    "docId": "l-archiviste"
+  },
+  {
+    "hex": "#8c5383",
+    "title": "Célestine",
+    "docId": "celestine"
+  },
+  {
+    "hex": "#3f5e6b",
+    "title": "La Guilde",
+    "docId": "la-guilde"
+  },
+  {
+    "hex": "#4a2160",
+    "title": "La Menace",
+    "docId": "la-menace"
+  },
+  {
+    "hex": "#b5651d",
+    "title": "Les Liens",
+    "docId": "les-liens"
+  },
+  {
+    "hex": "#7b244d",
+    "title": "La Lignée",
+    "docId": "la-lignee"
+  }
+]

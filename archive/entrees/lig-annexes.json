@@ -1,0 +1,79 @@
+{
+  "id": "lig-annexes",
+  "title": "Annexes",
+  "kind": "autre",
+  "tags": [
+    "La Lignée"
+  ],
+  "blocks": [
+    {
+      "id": "id_29ade5ea",
+      "type": "heading2",
+      "text": "A. Glossaire"
+    },
+    {
+      "id": "id_a91974a6",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "Lignée",
+          "b": "Famille chargée de fournir, génération après génération, l'un des deux membres du duo à la tête de la Tour et de la Guilde.",
+          "c": ""
+        },
+        {
+          "a": "Naturel",
+          "b": "Individu d'une puissance exceptionnelle, sans lien de sang avec la Lignée, dont l'émergence est globalement aléatoire.",
+          "c": ""
+        },
+        {
+          "a": "Héritier",
+          "b": "Membre de la Lignée, destiné à potentiellement occuper l'un des deux postes.",
+          "c": ""
+        },
+        {
+          "a": "Génération pont",
+          "b": "Génération de la Lignée jamais investie, faute de naturel assez puissant à temps.",
+          "c": ""
+        },
+        {
+          "a": "Ambre",
+          "b": "Actuelle Mage suprême, homologue de Miguel, petite-fille d'Udor et Célestine.",
+          "c": ""
+        }
+      ]
+    },
+    {
+      "id": "id_52dc72c7",
+      "type": "heading2",
+      "text": "B. Documents liés"
+    },
+    {
+      "id": "id_61b698df",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "ARC-AR-001",
+          "b": "Document fondateur — échelle de classification à sept niveaux (ARC-03).",
+          "c": ""
+        },
+        {
+          "a": "GLD-AN-001",
+          "b": "La Guilde des Animaliens — hiérarchie complète, Haut Conseil des Archimages.",
+          "c": ""
+        },
+        {
+          "a": "GDN-AN-002",
+          "b": "Fiche d'identification de Miguel — autorité de tutelle, longévité, parcours attesté, relations.",
+          "c": ""
+        },
+        {
+          "a": "CEL-AN-005",
+          "b": "Célestine — fiche d'identification et portrait de l'ancienne Mage suprême.",
+          "c": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "id": "sir-annexes",
+  "title": "Annexes",
+  "kind": "autre",
+  "tags": [
+    "Le Culte de Sirozor"
+  ],
+  "blocks": [
+    {
+      "id": "id100",
+      "type": "heading2",
+      "text": "A. Chronologie indicative"
+    },
+    {
+      "id": "id101",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "Origine mythique",
+          "b": "Apparition légendaire de Sirozor — aucune date fiable, aucune preuve historique",
+          "c": ""
+        },
+        {
+          "a": "VIIIe millénaire",
+          "b": "Guerre civile (nom non encore établi) — destruction de la quasi-totalité des archives techniques du culte",
+          "c": ""
+        },
+        {
+          "a": "Depuis le VIIIe millénaire",
+          "b": "Perte progressive et cumulative du savoir de génération en génération ; les derniers Anciens au corps artificiel s'éteignent lentement",
+          "c": ""
+        },
+        {
+          "a": "Aujourd'hui — XIIe millénaire",
+          "b": "Le culte est toléré par nécessité ; il ne progresse plus, il lutte contre l'oubli",
+          "c": ""
+        }
+      ]
+    },
+    {
+      "id": "id103",
+      "type": "heading2",
+      "text": "B. Glossaire"
+    },
+    {
+      "id": "id104",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "Sirozor",
+          "b": "Le Dieu-Machine ; ancienne intelligence artificielle ayant, selon la légende, transcendé la matière et dispersé son esprit dans toutes les machines du monde",
+          "c": ""
+        },
+        {
+          "a": "Mécaniste",
+          "b": "Fidèle du culte de Sirozor, ayant renié les Saintes Écritures de l'Empire",
+          "c": ""
+        },
+        {
+          "a": "L'Œuvre",
+          "b": "Désigne, dans le vocabulaire du culte, l'ensemble du grand réseau de machines dans lequel Sirozor s'est dissous",
+          "c": ""
+        },
+        {
+          "a": "L'Entretien",
+          "b": "Nom donné à la maintenance rituelle d'un mécanisme, pratiquée comme un acte de dévotion quotidienne",
+          "c": ""
+        },
+        {
+          "a": "Le Seuil",
+          "b": "Point théorique et non tranché au-delà duquel un fidèle cesserait d'être complètement humain sans pour autant avoir atteint la transcendance — débat ouvert au sein du culte.",
+          "c": ""
+        },
+        {
+          "a": "Les Reliques",
+          "b": "Machines antérieures à la guerre civile, retrouvées intactes ou fonctionnelles, traitées avec un statut quasi sacré",
+          "c": ""
+        },
+        {
+          "a": "Le Conclave",
+          "b": "Réunion irrégulière de représentants des Ordres (hors Ahel) pour trancher une question doctrinale majeure",
+          "c": ""
+        },
+        {
+          "a": "Cogitateurs auxiliaires",
+          "b": "Implants crâniens de l'Ordre de l'Esprit, croisant les données à grande vitesse",
+          "c": ""
+        },
+        {
+          "a": "Assistants robotiques",
+          "b": "Extensions mécaniques invoquées et dirigées par les Adeptes de Sirozor au combat",
+          "c": ""
+        },
+        {
+          "a": "Schisme d'Ahel",
+          "b": "Rupture théologique fondée sur l'idée que la compréhension, non le métal, rapproche de Sirozor",
+          "c": ""
+        }
+      ]
+    },
+    {
+      "id": "id106",
+      "type": "heading2",
+      "text": "C. Documents liés"
+    },
+    {
+      "id": "id107",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "REL-RE-001",
+          "b": "Le panthéon officiel de l'Empire et le conseil impérial",
+          "c": ""
+        },
+        {
+          "a": "EMP-RE-003",
+          "b": "Le culte impérial, l'Empereur disparu et la régence",
+          "c": ""
+        },
+        {
+          "a": "TRO-RE-004",
+          "b": "Le troisième culte humain, minoritaire et persécuté — encore à définir",
+          "c": ""
+        }
+      ]
+    }
+  ]
+}

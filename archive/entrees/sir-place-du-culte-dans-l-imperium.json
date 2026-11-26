@@ -1,0 +1,103 @@
+{
+  "id": "sir-place-du-culte-dans-l-imperium",
+  "title": "Place du culte dans l'Empire",
+  "kind": "autre",
+  "tags": [
+    "Le Culte de Sirozor"
+  ],
+  "blocks": [
+    {
+      "id": "id78",
+      "type": "paragraph",
+      "text": "Les Hommes de l'Empire suivent trois religions distinctes : la religion officielle vouée à un panthéon reconnu, le culte impérial voué à un Empereur disparu depuis des millénaires mais considéré comme une figure sacrée et divine (le trône n'ayant jamais été pourvu à nouveau, une régence assurant la continuité du pouvoir), et le culte mécaniste de Sirozor, qui rejette les deux autres.",
+      "italic": false
+    },
+    {
+      "id": "id79",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Une tolérance de nécessité",
+      "paragraphs": [
+        "L'Empire tolère le culte mécaniste par nécessité : les Mécanistes demeurent les seuls capables d'entretenir une grande partie des machines héritées des anciens âges, et sans eux, une part importante des infrastructures impériales cesserait progressivement de fonctionner. Cette dépendance leur assure une protection fragile — ils ne sont ni pleinement intégrés, ni véritablement acceptés."
+      ]
+    },
+    {
+      "id": "id80",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "Prêtres du culte officiel",
+          "b": "Suspicion, voire hostilité déclarée — voient dans le rejet des dieux une hérésie manifeste",
+          "c": ""
+        },
+        {
+          "a": "Peuple",
+          "b": "Admiration pour leurs prouesses techniques, mêlée de crainte face à leurs transformations",
+          "c": ""
+        },
+        {
+          "a": "Mécanistes eux-mêmes",
+          "b": "Considèrent cette méfiance comme le prix inévitable de leur mission ; ne cherchent pas à imposer leur foi par la force",
+          "c": ""
+        }
+      ]
+    },
+    {
+      "id": "id81",
+      "type": "heading2",
+      "text": "Statut légal et présence territoriale"
+    },
+    {
+      "id": "id82",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Un statut légal ambigu plutôt qu'écrit",
+      "paragraphs": [
+        "Rien n'indique l'existence d'un texte de loi impérial reconnaissant officiellement le culte — sa tolérance semble reposer sur un usage établi plutôt que sur un droit formel, ce qui le rend d'autant plus vulnérable à un changement de régent ou à une crise politique. Les rares temples mécanistes autorisés le sont probablement au cas par cas, par accord local avec un gouverneur ou une autorité régionale, plutôt que par un statut unique valable dans tout l'Empire."
+      ]
+    },
+    {
+      "id": "id83",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Une présence concentrée près des infrastructures critiques",
+      "paragraphs": [
+        "Les implantations mécanistes se trouveraient logiquement là où leur compétence est la plus indispensable — à proximité des grandes machines impériales, ponts, fortifications, ou infrastructures minières et portuaires, plutôt que dispersées uniformément sur le territoire. Cela en ferait des acteurs discrets mais stratégiquement incontournables de la logistique impériale."
+      ]
+    },
+    {
+      "id": "id84",
+      "type": "heading2",
+      "text": "L'hypocrisie ordinaire"
+    },
+    {
+      "id": "id85",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Une tolérance à double visage",
+      "paragraphs": [
+        "Il ne serait pas surprenant que certains membres du clergé officiel, publiquement les plus virulents contre le culte, ou des personnalités influentes de l'Empire, recourent en privé à des Mécanistes pour réparer un mécanisme précieux ou soigner un mal que la médecine conventionnelle ne peut traiter — une hypocrisie ordinaire, jamais avouée, qui nourrirait un ressentiment silencieux chez les Mécanistes eux-mêmes."
+      ]
+    },
+    {
+      "id": "id86",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Le peuple et les superstitions ordinaires",
+      "paragraphs": [
+        "Au niveau populaire, une forme de superstition non officielle pourrait exister : laisser un outil cassé sur le pas de sa porte dans l'espoir qu'un Mécaniste de passage le répare en échange du gîte, ou éviter de croiser le regard d'un fidèle trop visiblement augmenté par crainte superstitieuse plutôt que par mépris réel."
+      ]
+    },
+    {
+      "id": "id87",
+      "type": "crossref",
+      "text": "Voir REL-RE-001 pour le panthéon officiel de l'Empire et le rôle du conseil impérial."
+    },
+    {
+      "id": "id88",
+      "type": "crossref",
+      "text": "Voir EMP-RE-003 pour le culte impérial, l'Empereur disparu et la régence."
+    }
+  ]
+}

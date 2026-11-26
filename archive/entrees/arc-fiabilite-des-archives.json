@@ -1,0 +1,44 @@
+{
+  "id": "arc-fiabilite-des-archives",
+  "title": "Fiabilité des archives",
+  "kind": "autre",
+  "tags": [
+    "L'Archiviste"
+  ],
+  "blocks": [
+    {
+      "id": "id35_ln538",
+      "type": "paragraph",
+      "text": "Une question se pose logiquement : si l'Archiviste conserve la totalité des événements du monde, pourquoi ses propres dossiers contiennent-ils des zones d'ombre, des hypothèses non tranchées, et des points explicitement marqués comme incertains ?",
+      "italic": false
+    },
+    {
+      "id": "id36_vvesn",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Une hypothèse de lecture",
+      "paragraphs": [
+        "Il est probable que la mémoire de l'Archiviste ne soit pas uniforme : certains événements y sont fixés avec une précision totale, d'autres ne lui parviennent que sous forme d'impressions, de déductions, ou de rumeurs qu'il n'a pas pu vérifier lui-même. Le système de balises utilisé dans toute la collection — Confirmé, Hypothèse de travail, Piste, Attention — peut ainsi se lire, en creux, comme le propre système d'annotation de l'Archiviste : sa façon à lui de distinguer ce qu'il sait avec certitude de ce qu'il reconstitue, suppose, ou choisit de signaler comme utile sans le garantir."
+      ]
+    },
+    {
+      "id": "id_7c3e9a51",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Des pistes pour ceux qui agiront",
+      "paragraphs": [
+        "Les Pistes et les mises en garde ne décrivent pas le monde : elles s'adressent à quelqu'un. Tout porte à croire que l'Archiviste annote ce qui pourrait servir à ceux qui liront ses dossiers et voudront agir — une tension qui couve, une question restée sans réponse, un danger qu'il vaudrait mieux ne pas réveiller trop tôt.",
+        "Pour qui ces dossiers sont-ils réellement écrits, et pourquoi l'Archiviste souhaite-t-il que l'on agisse ? Rien ne permet encore de le dire."
+      ]
+    },
+    {
+      "id": "id37_366qi",
+      "type": "callout",
+      "tag": "hook",
+      "title": "Une archive erronée",
+      "paragraphs": [
+        "Et si un détail « Confirmé » d'un des dossiers s'avérait, à l'usage, faux ? Cela suggérerait que même l'Archiviste peut se tromper — ou qu'il a, pour une raison qui lui appartient, sciemment consigné une inexactitude. De quoi nourrir une intrigue entière autour de la fiabilité même de cette collection."
+      ]
+    }
+  ]
+}

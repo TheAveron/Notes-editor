@@ -1,0 +1,124 @@
+{
+  "id": "le-culte-de-sirozor",
+  "color": "#5c5346",
+  "stampStyle": "accent",
+  "cover": {
+    "orgLine": "GUILDE DES ARCHIVISTES — FONDS DOCUMENTAIRE",
+    "kicker": "DOSSIER D'INFORMATION",
+    "title": "Le Culte de Sirozor",
+    "subtitle": "Dogme, Ordres et Schisme du culte mécaniste",
+    "stampText": "NIVEAU 2 — Notoriété commune",
+    "meta": [
+      {
+        "a": "N° de dossier",
+        "b": "SIR-RE-002"
+      },
+      {
+        "a": "Objet",
+        "b": "Dogme, structure interne, pratiques et statut social du culte mécaniste de Sirozor"
+      },
+      {
+        "a": "Documents liés",
+        "b": "REL-RE-001 · EMP-RE-003"
+      },
+      {
+        "a": "Nature du sujet",
+        "b": "Culte actif — religion transhumaniste tolérée"
+      },
+      {
+        "a": "Confidentialité",
+        "b": "2 — Notoriété commune"
+      }
+    ]
+  },
+  "footerBrand": "Le Culte de Sirozor - Niveau 2",
+  "noteUsage": {
+    "includeTagLegend": true,
+    "text": "Ce dossier synthétise le dogme, la structure et la place sociale du culte de Sirozor au sein de l'Empire humain. Les éléments marqués Hypothèse de travail sont des propositions de développement destinées à enrichir le canon existant sans jamais le contredire — à valider, adapter ou remplacer librement."
+  },
+  "sections": [
+    {
+      "id": "id13",
+      "entry": "sir-le-dogme-fondamental",
+      "pageBreaks": [
+        {
+          "after": "id5",
+          "repeatTitle": false
+        }
+      ]
+    },
+    {
+      "id": "id23",
+      "entry": "sir-la-chair-le-metal-et-la-conscience",
+      "pageBreaks": [
+        {
+          "after": "id20",
+          "repeatTitle": false
+        }
+      ]
+    },
+    {
+      "id": "id37",
+      "entry": "sir-l-immortalite-et-le-declin-du-savoir",
+      "pageBreaks": [
+        {
+          "after": "id30",
+          "repeatTitle": false
+        }
+      ]
+    },
+    {
+      "id": "id67",
+      "entry": "sir-les-ordres-du-culte",
+      "pageBreaks": [
+        {
+          "after": "id40",
+          "repeatTitle": false
+        },
+        {
+          "after": "id47",
+          "repeatTitle": false
+        },
+        {
+          "after": "id54",
+          "repeatTitle": false
+        }
+      ]
+    },
+    {
+      "id": "id77",
+      "entry": "sir-le-schisme-d-ahel"
+    },
+    {
+      "id": "id89",
+      "entry": "sir-place-du-culte-dans-l-imperium",
+      "pageBreaks": [
+        {
+          "after": "id83",
+          "repeatTitle": false
+        }
+      ]
+    },
+    {
+      "id": "id99",
+      "entry": "sir-hooks-de-scenario",
+      "pageBreaks": [
+        {
+          "after": "id94",
+          "repeatTitle": false
+        }
+      ]
+    },
+    {
+      "id": "id108",
+      "entry": "sir-annexes",
+      "pageBreaks": [
+        {
+          "after": "id104",
+          "repeatTitle": false
+        }
+      ]
+    }
+  ],
+  "version": 3
+}

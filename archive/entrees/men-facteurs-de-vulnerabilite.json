@@ -1,0 +1,46 @@
+{
+  "id": "men-facteurs-de-vulnerabilite",
+  "title": "Facteurs de vulnérabilité",
+  "kind": "autre",
+  "tags": [
+    "La Menace"
+  ],
+  "blocks": [
+    {
+      "id": "id_3a19e050",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Sans lien : la proie par vacance",
+      "paragraphs": [
+        "La majorité de la population ne possède aucun lien télépathique. Chez ces individus, l'espace psychique normalement occupé par un lien reste vacant — une créature du Plan Éthéré peut alors s'y engouffrer pour attaquer et se nourrir plus facilement, en l'absence de toute résistance structurée."
+      ]
+    },
+    {
+      "id": "id_4b95b6d2",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Avec liens nombreux : une double vulnérabilité",
+      "paragraphs": [
+        "Les individus aux liens multiples subissent une double exposition, à la fois protectrice en apparence et dangereuse en réalité. D'une part, ils sont perçus par les créatures comme des menaces potentielles et deviennent, à ce titre, des cibles prioritaires. D'autre part, la possession de nombreux liens affaiblit généralement la « surveillance » inconsciente qu'un esprit exerce sur lui-même, ce qui en fait, paradoxalement, des cibles plus faciles à atteindre malgré leur statut de cible privilégiée."
+      ]
+    },
+    {
+      "id": "id_92758a86",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Ce que sait la Mage suprême",
+      "paragraphs": [
+        "La Mage suprême sait qu'en multipliant les liens de ses membres, la Guilde multiplie aussi leur exposition aux créatures du Plan Éthéré. Elle s'y résout : l'Empire ne pourrait pas se passer des liens, ni sur le plan industriel, ni sur le plan social."
+      ]
+    },
+    {
+      "id": "id_2ad852c7",
+      "type": "callout",
+      "tag": "attention",
+      "title": "Le paradoxe du Gardien",
+      "paragraphs": [
+        "Le Gardien de la Tour cumule, par construction, davantage de liens et de puissance psychique que quiconque dans le monde connu (voir GDN-01 et GDN-04). Il devrait donc être, en toute logique, la cible la plus prioritaire et la plus vulnérable qui soit pour les créatures les plus puissantes du Plan Éthéré. Reste à savoir si la Tour elle-même le protège de cette exposition accrue, ou si le Gardien vit, consciemment ou non, en étant structurellement l'appât le plus attractif du monde. Non tranché — voir aussi GDN-05."
+      ]
+    }
+  ]
+}

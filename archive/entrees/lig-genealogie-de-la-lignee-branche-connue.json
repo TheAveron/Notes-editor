@@ -1,0 +1,59 @@
+{
+  "id": "lig-genealogie-de-la-lignee-branche-connue",
+  "title": "Généalogie de la Lignée (branche connue)",
+  "kind": "autre",
+  "tags": [
+    "La Lignée"
+  ],
+  "blocks": [
+    {
+      "id": "id_6db6bb06",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "Génération Udor/Célestine",
+          "b": "Udor (naturel, Gardien) × Célestine (Lignée, Mage suprême). Un enfant unique, jamais investi (génération pont).",
+          "c": ""
+        },
+        {
+          "a": "Génération pont",
+          "b": "Enfant d'Udor et Célestine × conjoint mage librement choisi. Jamais investi. A eu une fille.",
+          "c": ""
+        },
+        {
+          "a": "Génération Miguel",
+          "b": "Miguel (naturel, Gardien actuel) × Ambre, homologue de la Lignée, petite-fille d'Udor et Célestine (Mage suprême actuelle). Couple amoureux. Enfant unique encore à naître.",
+          "c": ""
+        }
+      ]
+    },
+    {
+      "id": "id_34481c39",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Synchronisation des transitions",
+      "paragraphs": [
+        "Célestine a cédé sa place de Mage suprême exactement l'année du Rituel de Transmission entre Udor et Miguel — les deux moitiés du duo transmettent donc leur charge la même année, en tandem."
+      ]
+    },
+    {
+      "id": "id_94f41849",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Ambre, l'actuelle Mage suprême",
+      "paragraphs": [
+        "Depuis 65 ans, Ambre est la Mage suprême en exercice, homologue et compagne de Miguel."
+      ]
+    },
+    {
+      "id": "id_f4dc1914",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Un enfant à naître",
+      "paragraphs": [
+        "Le duo Miguel / Ambre est, comme tout duo en exercice, tenu d'avoir un unique enfant ensemble pour perpétuer la Lignée. Cet enfant est encore à naître : Ambre n'est pas enceinte à ce jour."
+      ]
+    }
+  ]
+}

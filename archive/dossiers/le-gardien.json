@@ -1,0 +1,100 @@
+{
+  "id": "le-gardien",
+  "color": "#a9812e",
+  "stampStyle": "red",
+  "cover": {
+    "orgLine": "GUILDE DES ARCHIVISTES — FONDS DOCUMENTAIRE",
+    "kicker": "DOSSIER D'INFORMATION",
+    "title": "Le Gardien",
+    "subtitle": "de la Tour du Cinquième Point Cardinal",
+    "stampText": "NIVEAU 7 · A5 — Réservé au personnel\nde la Tour",
+    "meta": [
+      {
+        "a": "N° de dossier",
+        "b": "GDN-AN-002"
+      },
+      {
+        "a": "Objet",
+        "b": "Identité, mécanisme et environnement du Gardien de la Tour"
+      },
+      {
+        "a": "Documents liés",
+        "b": "GLD-AN-001 · MEN-AN-003 · CEL-AN-005 · LIG-AN-006"
+      },
+      {
+        "a": "Nature du sujet",
+        "b": "Vivant — en fonction"
+      },
+      {
+        "a": "Confidentialité",
+        "b": "7 · A5 — Gardien et personnel de la Tour"
+      }
+    ]
+  },
+  "footerBrand": "Le Gardien - Niveau 7 · A5",
+  "noteUsage": {
+    "includeTagLegend": true,
+    "text": "Chaque information de ce dossier est étiquetée selon son statut, afin de distinguer ce qui est établi avec certitude de ce qui relève de la reconstitution, de la supposition ou de la simple piste."
+  },
+  "sections": [
+    {
+      "id": "id2_ca0sx",
+      "entry": "gdn-fiche-d-identification",
+      "pageBreaks": [
+        {
+          "after": "id9_2asm5",
+          "repeatTitle": false
+        }
+      ]
+    },
+    {
+      "id": "id14_3p9mg",
+      "entry": "gdn-la-tour-du-cinquieme-point-cardinal",
+      "pageBreaks": [
+        {
+          "after": "id23_y7h3l",
+          "repeatTitle": false
+        }
+      ]
+    },
+    {
+      "id": "id31_tsx0f",
+      "entry": "gdn-la-lignee-des-gardiens-et-le-rituel-de-transmission"
+    },
+    {
+      "id": "id39_c2eeh",
+      "entry": "gdn-mecanique-de-la-conscience-partagee"
+    },
+    {
+      "id": "id52_nkzg2",
+      "entry": "gdn-miguel-portrait-du-gardien-actuel",
+      "pageBreaks": [
+        {
+          "after": "id12_dogeh",
+          "repeatTitle": false
+        }
+      ]
+    },
+    {
+      "id": "id20_uko79",
+      "entry": "gdn-hooks-de-scenario",
+      "pageBreaks": [
+        {
+          "after": "id25_5tfbj",
+          "repeatTitle": false
+        }
+      ]
+    },
+    {
+      "id": "id28_f2m0i",
+      "entry": "gdn-annexes",
+      "pageBreaks": [
+        {
+          "after": "id34_rqsq0",
+          "repeatTitle": false
+        }
+      ]
+    }
+  ],
+  "version": 3
+}

@@ -1,0 +1,42 @@
+{
+  "id": "gld-hierarchie-complete",
+  "title": "Hiérarchie complète",
+  "kind": "autre",
+  "tags": [
+    "La Guilde"
+  ],
+  "blocks": [
+    {
+      "id": "id_9cf80d68",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "Apprentis",
+          "b": "Soumis à un couvre-feu strict (21 h) et à l'obligation de porter la marque des apprentis pour circuler après la fermeture. Niveau 3 · A1.",
+          "c": ""
+        },
+        {
+          "a": "Hiérarque local (Narmatin)",
+          "b": "Reçoit les nouveaux apprentis, évalue leurs capacités, correspond avec les anciens maîtres. Sait qu'une poignée d'apprentis exceptionnels sont destinés à une affectation confidentielle. Niveau 4 · A2.",
+          "c": ""
+        },
+        {
+          "a": "Haut Conseil des Archimages",
+          "b": "Autorité juste en dessous de la Mage suprême. Sait que la Lignée existe et doit être alimentée, sans en connaître la raison exacte. Niveau 5 · A3.",
+          "c": ""
+        },
+        {
+          "a": "Mage suprême",
+          "b": "Autorité au sommet de la Guilde. Connaissance complète de la Tour et de la menace qu'elle contient. Niveau 6 · A4.",
+          "c": ""
+        }
+      ]
+    },
+    {
+      "id": "id_4a795559",
+      "type": "crossref",
+      "text": "Voir ARC-03 pour la définition complète de chaque niveau de classification."
+    }
+  ]
+}

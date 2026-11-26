@@ -1,0 +1,131 @@
+{
+  "id": "men-annexes",
+  "title": "Annexes",
+  "kind": "autre",
+  "tags": [
+    "La Menace"
+  ],
+  "blocks": [
+    {
+      "id": "id_957add87",
+      "type": "heading2",
+      "text": "A. Glossaire"
+    },
+    {
+      "id": "id_e83b7151",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "Plan Éthéré",
+          "b": "Second plan d'existence où vivent les créatures traitées dans ce dossier ; sans matérialisation physique dans le monde connu.",
+          "c": ""
+        },
+        {
+          "a": "Lien",
+          "b": "Connexion télépathique durable entre un individu et une espèce ou entité, signe d'une connexion au Plan Éthéré.",
+          "c": ""
+        },
+        {
+          "a": "Consommation",
+          "b": "Processus par lequel une créature se nourrit de l'esprit et de la volonté d'une cible précise, au fil de plusieurs attaques.",
+          "c": ""
+        },
+        {
+          "a": "Possession totale",
+          "b": "Prise de contrôle intégrale et destructrice d'un corps par une créature devenue suffisamment puissante.",
+          "c": ""
+        },
+        {
+          "a": "Palier",
+          "b": "Niveau de puissance et d'intelligence d'une créature du Plan Éthéré, de I (Larves) à V (Souverains Éthérés).",
+          "c": ""
+        },
+        {
+          "a": "Vacance psychique",
+          "b": "Espace laissé libre dans l'esprit d'un individu sans lien, exploitable par une créature pour attaquer plus facilement.",
+          "c": ""
+        }
+      ]
+    },
+    {
+      "id": "id_29e23985",
+      "type": "heading2",
+      "text": "B. Tableau récapitulatif des paliers"
+    },
+    {
+      "id": "id_97eeb612",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "Palier I — Larves",
+          "b": "Attaques aléatoires, aucune possession, ex. : Suceur de veille.",
+          "c": ""
+        },
+        {
+          "a": "Palier II — Rôdeurs",
+          "b": "Ciblage des liens multiples, aucune possession, ex. : Traqueur des liens.",
+          "c": ""
+        },
+        {
+          "a": "Palier III — Dévoreurs",
+          "b": "Possession sur corps affaibli ou vacant, ex. : Dévoreur de seuil.",
+          "c": ""
+        },
+        {
+          "a": "Palier IV — Seigneurs de la Faim",
+          "b": "Influence régionale, coordination de créatures inférieures, ex. : Seigneur de la Faim.",
+          "c": ""
+        },
+        {
+          "a": "Palier V — Souverains Éthérés",
+          "b": "Menace à l'échelle du monde connu, ex. : Souverain Éthéré.",
+          "c": ""
+        }
+      ]
+    },
+    {
+      "id": "id_a16b8c3b",
+      "type": "heading2",
+      "text": "C. Documents liés"
+    },
+    {
+      "id": "id_6e3a8d89",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "ARC-AR-001",
+          "b": "Document fondateur — échelle de classification à sept niveaux (ARC-03).",
+          "c": ""
+        },
+        {
+          "a": "GDN-AN-002",
+          "b": "Le Gardien de la Tour du Cinquième Point Cardinal — identité, mécanisme de succession, environnement.",
+          "c": ""
+        },
+        {
+          "a": "GDN-02",
+          "b": "Architecture et origine de la Tour et de son cristal.",
+          "c": ""
+        },
+        {
+          "a": "GLD-AN-001",
+          "b": "La Guilde des Animaliens — hiérarchie et secret institutionnel entourant la Tour.",
+          "c": ""
+        },
+        {
+          "a": "LIE-AN-004",
+          "b": "Les Liens — mécanique des liens télépathiques ; leur origine véritable est traitée dans ce dossier (MEN-01), la vulnérabilité associée en MEN-03.",
+          "c": ""
+        },
+        {
+          "a": "LIG-AN-006",
+          "b": "La Lignée — Ambre, actuelle Mage suprême, et le secret de Niveau 6.",
+          "c": ""
+        }
+      ]
+    }
+  ]
+}

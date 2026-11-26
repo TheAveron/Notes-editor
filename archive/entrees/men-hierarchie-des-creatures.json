@@ -1,0 +1,210 @@
+{
+  "id": "men-hierarchie-des-creatures",
+  "title": "Hiérarchie des créatures",
+  "kind": "autre",
+  "tags": [
+    "La Menace"
+  ],
+  "blocks": [
+    {
+      "id": "id_b4c072e5",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Principe général",
+      "paragraphs": [
+        "Les créatures du Plan Éthéré forment une hiérarchie de puissance et d'intelligence très étendue. À l'extrémité inférieure, des entités quasi automatiques attaquent leurs cibles au hasard. À l'extrémité supérieure, certaines créatures atteignent une puissance et une intentionnalité comparables à celles des plus grandes figures maléfiques des mythes et légendes de l'Empire."
+      ]
+    },
+    {
+      "id": "id_a76cba0f",
+      "type": "paragraph",
+      "text": "Le système de paliers suivant est une proposition destinée à rendre cette hiérarchie directement utilisable en jeu. Les noms, comportements précis et exemples sont des créations pour ce dossier — à adapter librement.",
+      "italic": true
+    },
+    {
+      "id": "id_1b462474",
+      "type": "heading2",
+      "text": "Grille des paliers"
+    },
+    {
+      "id": "id_5ef7eb39",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "Palier I",
+          "b": "Larves — automatismes quasi instinctifs, attaques opportunistes et aléatoires, aucune capacité de possession.",
+          "c": ""
+        },
+        {
+          "a": "Palier II",
+          "b": "Rôdeurs — comportement erratique mais capable de reconnaître et de traquer une cible sur plusieurs jours.",
+          "c": ""
+        },
+        {
+          "a": "Palier III",
+          "b": "Dévoreurs — intelligence réelle, premiers cas connus de possession totale sur des corps affaiblis ou vacants.",
+          "c": ""
+        },
+        {
+          "a": "Palier IV",
+          "b": "Seigneurs de la Faim — puissance régionale, capables d'orchestrer plusieurs créatures inférieures.",
+          "c": ""
+        },
+        {
+          "a": "Palier V",
+          "b": "Souverains Éthérés — entités quasi mythiques, enjeux à l'échelle du monde connu.",
+          "c": ""
+        }
+      ]
+    },
+    {
+      "id": "id_1d43d936",
+      "type": "card",
+      "badgeText": "PALIER I",
+      "title": "Suceur de veille",
+      "pitch": "",
+      "rows": [
+        {
+          "a": "Intelligence",
+          "b": "Quasi nulle — automatisme instinctif"
+        },
+        {
+          "a": "Comportement",
+          "b": "S'engouffre dans l'espace psychique vacant d'individus sans lien, particulièrement lors du sommeil ou de la fatigue extrême. Attaque au hasard, sans discernement."
+        },
+        {
+          "a": "Capacité de possession",
+          "b": "Aucune"
+        },
+        {
+          "a": "Symptômes typiques",
+          "b": "Réveils nocturnes inexpliqués, sensation de froid localisé, fatigue disproportionnée au repos pris."
+        }
+      ],
+      "accent": "#6b8e5a"
+    },
+    {
+      "id": "id_648421d9",
+      "type": "card",
+      "badgeText": "PALIER II",
+      "title": "Traqueur des liens",
+      "pitch": "",
+      "rows": [
+        {
+          "a": "Intelligence",
+          "b": "Limitée mais orientée — reconnaît un lien télépathique comme une menace"
+        },
+        {
+          "a": "Comportement",
+          "b": "Cible en priorité les individus à liens multiples pour leur garde affaiblie ; peut suivre une même cible sur plusieurs jours avant de frapper."
+        },
+        {
+          "a": "Capacité de possession",
+          "b": "Aucune"
+        },
+        {
+          "a": "Symptômes typiques",
+          "b": "Maux de tête sourds et récurrents, malaises confondus avec des vertiges, absences de quelques secondes."
+        }
+      ],
+      "accent": "#b5892e"
+    },
+    {
+      "id": "id_c90126b7",
+      "type": "card",
+      "badgeText": "PALIER III",
+      "title": "Dévoreur de seuil",
+      "pitch": "",
+      "rows": [
+        {
+          "a": "Intelligence",
+          "b": "Réelle — capable de stratégie simple"
+        },
+        {
+          "a": "Comportement",
+          "b": "Après avoir consommé plusieurs victimes, atteint un seuil de puissance suffisant pour tenter une possession totale sur un corps affaibli ou vacant."
+        },
+        {
+          "a": "Capacité de possession",
+          "b": "Oui — sur corps affaibli ou vacant"
+        },
+        {
+          "a": "Symptômes typiques",
+          "b": "Syncopes fréquentes, teint blafard, perte de poids inexpliquée, désorientation croissante."
+        }
+      ],
+      "accent": "#b5502b"
+    },
+    {
+      "id": "id_dfdce271",
+      "type": "paragraph",
+      "text": "Note — Un Dévoreur de seuil ayant réussi sa possession est un formidable levier d'enquête : le PNJ « possédé » peut sembler socialement normal, la créature imitant son hôte pour ne pas se faire repérer.",
+      "italic": false
+    },
+    {
+      "id": "id_781d8e4e",
+      "type": "card",
+      "badgeText": "PALIER IV",
+      "title": "Seigneur de la Faim",
+      "pitch": "",
+      "rows": [
+        {
+          "a": "Intelligence",
+          "b": "Élevée — intentionnalité et planification"
+        },
+        {
+          "a": "Comportement",
+          "b": "Étend son influence sur toute une région, capable de diriger plusieurs créatures inférieures vers des cibles précises (voir hook « Les proches en péril », GDN-06)."
+        },
+        {
+          "a": "Capacité de possession",
+          "b": "Oui — sur cibles choisies, parfois préparées de longue date"
+        },
+        {
+          "a": "Symptômes typiques",
+          "b": "Recrudescence localisée et anormale d'attaques de créatures inférieures sur une même région."
+        }
+      ],
+      "accent": "#8b2635"
+    },
+    {
+      "id": "id_e46cddf8",
+      "type": "paragraph",
+      "text": "Note — Un antagoniste récurrent crédible pour une campagne régionale, sans nécessiter l'intervention directe du Gardien à chaque incident.",
+      "italic": false
+    },
+    {
+      "id": "id_f766d454",
+      "type": "card",
+      "badgeText": "PALIER V",
+      "title": "Souverain Éthéré",
+      "pitch": "",
+      "rows": [
+        {
+          "a": "Intelligence",
+          "b": "Quasi incompréhensible à l'échelle humaine"
+        },
+        {
+          "a": "Comportement",
+          "b": "Inconnu dans le détail — sa seule attention prolongée sur une région semble suffire à en corrompre les esprits les plus sensibles."
+        },
+        {
+          "a": "Capacité de possession",
+          "b": "Présumée totale et irréversible"
+        },
+        {
+          "a": "Symptômes typiques",
+          "b": "Non documentés — aucun témoin connu n'a survécu assez longtemps pour les décrire de façon fiable."
+        }
+      ],
+      "accent": "#4a2160"
+    },
+    {
+      "id": "id_48becbdd",
+      "type": "paragraph",
+      "text": "Note — Un enjeu de fin de campagne plutôt qu'une menace récurrente.",
+      "italic": false
+    }
+  ]
+}

@@ -1,141 +1,185 @@
 # Notes Editor — Atelier de Dossiers
 
-Cet éditeur a pour objectif de faciliter la création de notes de lore avec une mise en page
-graphique soignée, au format « dossier classifié » : couverture, note d'usage, table des
-matières et sections paginées en A4, prêtes à exporter en PDF.
+Archive de lore et éditeur de dossiers au format « dossier classifié ».
 
-## Lancer l'éditeur
+Chaque information est stockée **indépendamment**, dans son propre fichier du dépôt : on peut
+la consulter seule, la retrouver par la recherche, et la réutiliser dans plusieurs dossiers.
+Les **dossiers** (couverture, note d'usage, table des matières, pages A4, export PDF) ne sont
+plus que des mises en page qui assemblent ces informations.
 
-Aucune installation ni dépendance : ouvrez `index.html` dans un navigateur récent
-(Chrome, Edge, Firefox). Le fichier peut être ouvert directement depuis le disque.
+## Démarrer
+
+Il faut [Node.js](https://nodejs.org) 18 ou plus récent ; aucune dépendance à installer.
+
+```sh
+npm start            # ou : node server.js
+```
+
+Puis ouvrir <http://localhost:8080>. Le serveur n'écoute que sur votre machine.
+
+Les modifications sont enregistrées automatiquement dans le dossier `archive/`. Pour les
+conserver dans le dépôt, committez-les avec Git comme n'importe quel fichier :
+
+```sh
+git add archive && git commit -m "Archive : nouvelles entrées sur la Tour"
+```
+
+Options : `node server.js --port 3000 --archive chemin/vers/une/archive`.
+
+## Organisation de l'archive
+
+| Élément | Fichier | Rôle |
+| --- | --- | --- |
+| **Entrée** | `archive/entrees/<id>.json` | Une information autonome (personnage, lieu, institution, événement…) : un titre, une catégorie, des étiquettes et des blocs. |
+| **Bloc partagé** | `archive/blocs/<id>.json` | Un bloc (callout, tableau…) réutilisé par plusieurs entrées : le modifier le modifie partout. |
+| **Dossier** | `archive/dossiers/<id>.json` | La mise en page d'un document imprimable : couverture, note d'usage, liste ordonnée d'entrées, sauts de page. |
+| Registre des couleurs | `archive/couleurs.json` | Couleur de chaque dossier, pour qu'elles restent distinctes. |
+| Index | `archive/index.json` | Liste des fichiers, régénérée automatiquement (sert à la lecture sans serveur). |
+
+Une entrée peut figurer dans plusieurs dossiers, ou dans aucun. Retirer une section d'un
+dossier ne supprime pas l'entrée ; supprimer un dossier garde toutes ses entrées.
 
 ## Utilisation
 
-L'écran est divisé en deux : le **panneau d'édition** à gauche et l'**aperçu** paginé à droite,
-mis à jour à chaque frappe.
+### Parcourir et rechercher
 
-- **Cliquer un élément de l'aperçu** fait défiler le panneau jusqu'à son éditeur ;
-  **placer le curseur dans un éditeur** fait défiler l'aperçu jusqu'au bloc correspondant.
-- Les sections se **replient** (▾/▸, ou « Tout replier »), se **réordonnent** par
-  glisser-déposer avec la poignée ⠿ (blocs et sections, y compris d'une section à une autre)
-  ou avec les flèches ↑/↓.
-- Le bouton **＋** d'un bloc insère un nouveau bloc juste après lui.
-- **Annuler / rétablir** : boutons ↶ ↷, `Ctrl+Z`, `Ctrl+Maj+Z` ou `Ctrl+Y`.
+- **Accueil** : toutes les entrées, filtrables par catégorie, étiquette, ou « hors dossier ».
+- **Recherche** : dans les titres, étiquettes et le contenu de tous les blocs, sans tenir
+  compte des accents. Chaque bloc correspondant est listé avec un extrait surligné et mène
+  directement à l'information dans sa page.
+- **Page d'une entrée** : lecture dans le style des dossiers, avec les dossiers (et codes de
+  section) où elle figure. Les codes comme `ARC-03` ou `GDN-05`, de n'importe quel dossier,
+  et les numéros de dossier comme `CEL-VC-001` sont des liens.
+- Onglets **Dossiers** (avec leur sommaire) et **Blocs partagés**.
+
+### Modifier
+
+- **Entrée** (✎ Modifier) : titre, catégorie, étiquettes et blocs. Une entrée n'a pas de
+  pagination : les sauts de page appartiennent aux dossiers.
+- **Dossier** : l'éditeur complet, avec aperçu paginé et export PDF. Chaque section est une
+  entrée de l'archive :
+  - « Entrée : … » mène à sa page ; « aussi dans … » signale que la modifier changera aussi
+    d'autres dossiers ;
+  - **+ Nouvelle section** crée une nouvelle entrée ; **+ Insérer une entrée existante**
+    réutilise une entrée de l'archive ;
+  - ✕ retire la section du dossier (l'entrée reste dans l'archive).
+- **Blocs partagés** : dans l'éditeur, ⇄ rend un bloc partageable (on lui donne un nom), ⇥ le
+  détache (copie propre à l'entrée) ; **+ Bloc partagé…** ou le menu ＋ d'un bloc insère un
+  bloc de la bibliothèque.
+- **+ Nouvelle entrée**, **+ Nouveau dossier**, **Importer un dossier JSON** (un dossier
+  exporté par l'éditeur est découpé en entrées).
+
+Dans l'éditeur : glisser-déposer avec la poignée ⠿, sections repliables, annuler/rétablir
+(`Ctrl+Z`, `Ctrl+Maj+Z`), clic sur l'aperçu pour aller au formulaire correspondant.
 
 ### Types de blocs
 
 | Bloc | Usage |
 | --- | --- |
-| Sous-titre | Titre de second niveau dans une section |
+| Sous-titre | Titre de second niveau |
 | Paragraphe | Texte courant, éventuellement en italique |
 | Liste | Liste à puces |
-| Callout | Encadré étiqueté par un des 4 tags (voir ci-dessous) |
-| Tableau | 3 dispositions : libellé + valeur, badge + valeur, badge + libellé + valeur |
+| Callout | Encadré étiqueté par un tag : *Confirmé*, *Hypothèse de travail*, *Piste*, *Attention* |
+| Tableau | Libellé + valeur, badge + valeur, ou badge + libellé + valeur |
 | Fiche | Carte « hook » : badge, titre, accroche et tableau ; sarcelle, couleur du document ou couleur d'accent libre (hex) |
-| Renvoi | Ligne « → RENVOI » vers une autre section ou un autre dossier |
-| Saut de page | Termine la page ; peut répéter le titre de la section (« suite ») |
-
-Les **tags** des callouts sont communs à toute la collection : *Confirmé* (couleur du
-document), *Hypothèse de travail* (or), *Hook MJ* (sarcelle), *Attention MJ* (rouge).
+| Renvoi | Ligne « → RENVOI » |
+| Saut de page | Dans un dossier seulement ; peut répéter le titre de la section (« suite ») |
 
 ### Mise en forme du texte
 
-Dans tous les textes de contenu :
-
-- `**gras**` et `*italique*` ; `\*` pour un astérisque littéral ;
-- une **ligne vide** force un retour à la ligne ; un retour simple est traité comme une espace
-  (pratique pour coller du texte depuis un PDF) ;
-- les **codes de section** du dossier (par ex. `ARC-03`) deviennent des liens cliquables
-  vers la section, dans l'aperçu comme dans le PDF. `XXX-00` renvoie à la note d'usage.
-
-Les codes de section sont calculés automatiquement : préfixe du champ « N° de dossier »
-(`ARC-VC-001` → `ARC`) suivi de la position de la section.
-
-### Couleurs et registre
-
-Chaque dossier a une couleur d'accent, dont l'éditeur dérive une palette (encre, fonds).
-Le **registre des couleurs** mémorise la couleur de chaque dossier pour que les propositions
-restent distinctes d'un dossier à l'autre. Une couleur personnalisée déjà prise est refusée ;
-une couleur très proche est acceptée avec un avertissement.
-
-Le registre s'exporte et s'importe (fusion) depuis « Registre des couleurs ». Le fichier
-`registre-couleurs.json` du dépôt contient celui de la collection actuelle.
-
-### Sauvegarde
-
-- Le document en cours et le registre sont **enregistrés automatiquement** dans le navigateur
-  (localStorage) et rouverts à la visite suivante. La barre du haut indique l'état de la
-  sauvegarde et s'il reste des **modifications non exportées**.
-- Pour conserver ou partager un dossier, utilisez **Exporter JSON** ; **Importer JSON**
-  le rouvre. Les dossiers existants sont dans `documents/`.
-- En navigation privée, ou si le stockage est bloqué, la sauvegarde automatique est
-  indisponible : l'éditeur le signale et prévient avant de fermer l'onglet.
+`**gras**`, `*italique*`, `\*` pour un astérisque. Une **ligne vide** force un retour à la
+ligne ; un retour simple compte comme une espace (pratique pour coller depuis un PDF).
 
 ### Export PDF
 
-« Exporter en PDF » ouvre la boîte d'impression du navigateur : choisissez
-**Enregistrer au format PDF**, format **A4**. Les marges et les arrière-plans sont gérés par
-la feuille de style ; inutile de modifier ces réglages.
+Dans un dossier, « Exporter en PDF » ouvre l'impression du navigateur : choisir
+« Enregistrer au format PDF », format A4 ; marges et arrière-plans sont gérés par la feuille
+de style. Une page trop longue pour une feuille A4 est encadrée en rouge dans l'aperçu.
 
-Chaque page de l'aperçu correspond à une feuille. Une page dont le contenu dépasse la hauteur
-d'une feuille A4 est **encadrée en rouge** dans l'aperçu (et signalée dans la barre du haut) :
-à l'impression elle serait coupée sur deux feuilles et la numérotation serait décalée.
-Ajoutez un saut de page ou raccourcissez le contenu.
+## Modes d'accès
 
-## Format des fichiers JSON
+| Ouverture | Mode |
+| --- | --- |
+| `node server.js` | Archive complète, lecture et écriture. |
+| Hébergement statique (GitHub Pages…) | Archive en **lecture seule** : consultation, recherche, aperçu et PDF des dossiers. |
+| `index.html` ouvert directement depuis le disque | Éditeur de dossier **autonome** (sans archive), enregistré dans le navigateur, import/export JSON — le fonctionnement d'origine. |
+
+## Formats des fichiers
 
 ```jsonc
+// archive/entrees/gdn-fiche-d-identification.json
 {
-  "version": 2,                 // version du format
-  "id": "id…",                  // identifiant du dossier (lien avec le registre)
-  "color": "#5c6b4f",           // couleur d'accent
-  "stampStyle": "accent",       // "accent" ou "red"
-  "cover": {
-    "orgLine": "…", "kicker": "…", "title": "…", "subtitle": "…", "stampText": "…",
-    "meta": [{ "a": "N° de dossier", "b": "ARC-VC-001" }, …]
-  },
+  "id": "gdn-fiche-d-identification",
+  "title": "Fiche d'identification",
+  "kind": "personnage",           // personnage, lieu, institution, evenement, objet, concept, autre
+  "tags": ["Le Gardien"],
+  "blocks": [
+    { "id": "…", "type": "table", "layout": "label-value", "rows": [{ "a": "Nom civil", "b": "Miguel", "c": "" }] },
+    { "ref": "identite-du-gardien" }  // bloc partagé
+  ]
+}
+
+// archive/blocs/identite-du-gardien.json
+{ "id": "identite-du-gardien", "name": "Identité du Gardien", "type": "callout", "tag": "confirme", "title": "…", "paragraphs": ["…"] }
+
+// archive/dossiers/le-gardien.json
+{
+  "id": "le-gardien", "version": 3, "color": "#a9812e", "stampStyle": "red",
+  "cover": { "orgLine": "…", "kicker": "…", "title": "Le Gardien", "subtitle": "…", "stampText": "…",
+             "meta": [{ "a": "N° de dossier", "b": "GDN-VC-001" }] },
   "footerBrand": "…",
   "noteUsage": { "includeTagLegend": true, "text": "…" },
   "sections": [
-    {
-      "id": "id…", "title": "…",
-      "blocks": [
-        { "id": "…", "type": "paragraph", "text": "…", "italic": false },
-        { "id": "…", "type": "callout", "tag": "confirme", "title": "…", "paragraphs": ["…"] },
-        { "id": "…", "type": "table", "layout": "label-value", "rows": [{ "a": "…", "b": "…", "c": "" }] },
-        { "id": "…", "type": "card", "tone": "hook", "accent": "#b5502b", "badgeText": "…", "title": "…", "pitch": "…", "rows": [{ "a": "…", "b": "…" }] },
-        { "id": "…", "type": "pagebreak", "repeatTitle": false }
-        // autres types : heading2 (text), bullets (items), crossref (text)
-      ]
-    }
+    { "id": "…", "entry": "gdn-fiche-d-identification" },
+    { "id": "…", "entry": "gdn-la-tour-du-cinquieme-point-cardinal",
+      "pageBreaks": [{ "after": "<id du bloc>", "repeatTitle": true }] }
   ]
 }
 ```
 
-À l'import, le fichier est validé et complété : champs manquants remplis, blocs de type
-inconnu ignorés, anciens formats (tableaux avec `badge`) convertis. Les champs inconnus
-sont conservés tels quels.
+Les identifiants (noms de fichiers) sont dérivés des titres à la création et ne changent
+plus ensuite ; seuls `a-z`, `0-9` et `-` sont admis.
+
+L'export JSON d'un dossier produit le **format autonome** historique (sections contenant
+directement leurs blocs), réimportable dans n'importe quelle archive ou dans l'éditeur
+autonome.
+
+### Migration
+
+`documents/` contient les dossiers au format autonome d'origine. Ils ont été convertis dans
+`archive/` (une section → une entrée) par :
+
+```sh
+npm run migrate                                     # documents/*.json
+node tools/migrate-documents.js mon-dossier.json    # un fichier précis
+```
+
+Le script n'écrase rien : un identifiant déjà pris reçoit un suffixe (`-2`…).
 
 ## Organisation du code
 
-Scripts classiques (et non modules ES, bloqués en `file://`), chargés dans l'ordre par
-`index.html` :
-
 | Fichier | Rôle |
 | --- | --- |
-| `js/colors.js` | Conversions de couleurs, palette dérivée, propositions distinctes |
-| `js/tags.js` | Les 4 tags et leurs couleurs |
-| `js/storage.js` | Stockage : `window.storage`, sinon localStorage, sinon mémoire |
-| `js/registry.js` | Registre des couleurs |
-| `js/model.js` | Modèle de document, codes de section, validation des imports |
-| `js/history.js` | Annuler / rétablir, sauvegarde automatique, état des exports |
-| `js/preview.js` | Rendu de l'aperçu, mise en forme du texte, pages trop longues |
-| `js/ui.js` | Utilitaires de construction de formulaires |
-| `js/sidebar-*.js` | Un fichier par panneau (couleur, couverture, sections, registre) |
-| `js/sync.js` | Liaison aperçu ↔ panneau |
-| `js/app.js` | Cycle de mise à jour (`update()`), actions de la barre, initialisation |
-| `app.css` | Styles de l'interface, de l'aperçu et de l'impression |
+| `server.js` | Serveur local : application + API de l'archive |
+| `server/archive-fs.js` | Lecture et écriture atomique des fichiers de l'archive |
+| `tools/migrate-documents.js` | Conversion des dossiers autonomes |
+| `js/archive-model.js` | Formats de l'archive ; passage archive ⇄ document de l'éditeur (navigateur et Node) |
+| `js/archive-store.js` | Chargement, enregistrement, relations et recherche côté navigateur |
+| `js/archive-views.js` | Pages de l'archive (accueil, entrée, bloc partagé) |
+| `js/archive-editor.js` | Éditeur branché sur l'archive (ouverture, enregistrement, blocs partagés) |
+| `js/router.js` | Navigation (`#/…`) et démarrage |
+| `js/model.js`, `js/preview.js`, `js/sidebar-*.js`… | Éditeur et rendu des dossiers |
+| `app.css` | Styles de l'interface, des dossiers et de l'impression |
 
-Toute modification du document passe par `update({ structure })` : l'aperçu est régénéré,
-le panneau aussi si un élément a été ajouté, supprimé ou déplacé, puis l'historique et la
-sauvegarde automatique sont mis à jour.
+L'éditeur travaille toujours sur un dossier « résolu » au format autonome : `resolve*()`
+le construit à partir des fichiers de l'archive, `decompose*()` le redécoupe à
+l'enregistrement, et seuls les fichiers modifiés sont réécrits.
+
+## Tests
+
+```sh
+npm test
+```
+
+Ils vérifient la conversion des dossiers de `documents/` (aller-retour exact), les blocs
+partagés, les références manquantes et l'API du serveur (y compris ses protections).

@@ -1,0 +1,52 @@
+{
+  "id": "gld-vue-d-ensemble",
+  "title": "Vue d'ensemble",
+  "kind": "autre",
+  "tags": [
+    "La Guilde"
+  ],
+  "blocks": [
+    {
+      "id": "id_4fc9a0f3",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Fonction",
+      "paragraphs": [
+        "La Guilde des Animaliens est une institution basée à Narmatin, capitale de l'Empire, dédiée à la formation des individus capables de développer des liens télépathiques avec d'autres espèces. La majorité des Hommes dotés d'un tel don peuvent, avec de l'entraînement, développer deux à trois liens ; une minorité exceptionnelle peut en atteindre six ou sept par le seul entraînement (voir LIE-AN-004)."
+      ]
+    },
+    {
+      "id": "id_7e11da3d",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Une autonomie de fait",
+      "paragraphs": [
+        "En pratique, personne ne donne vraiment d'ordre à la Guilde : ceux qui dirigent l'Empire lui « demandent gentiment » d'agir quand ils en ont besoin. L'Empereur a disparu depuis des millénaires, et l'Empire est aujourd'hui dirigé par un régent."
+      ]
+    },
+    {
+      "id": "id_d01a16a2",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "La régence",
+      "paragraphs": [
+        "Le régent est élevé dès la petite enfance pour gouverner. Un conseil réunissant les chefs de toutes les guildes de l'Empire choisit la famille dont il sera issu ; l'enfant en est retiré vers deux ou trois ans, puis formé tour à tour dans chacune des guildes, afin de connaître de l'intérieur tout ce qu'il devra administrer.",
+        "À la tête de la Guilde des Animaliens, la Mage suprême siège à ce conseil."
+      ]
+    },
+    {
+      "id": "id_5030626b",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "La disparition de l'Empereur et la guerre civile",
+      "paragraphs": [
+        "Aucune source ne permet de situer la disparition de l'Empereur par rapport à la guerre civile du VIIIᵉ millénaire : elle a pu la précéder, l'accompagner ou la suivre."
+      ]
+    },
+    {
+      "id": "id_f60de028",
+      "type": "crossref",
+      "text": "Pour le détail complet du fonctionnement des liens, voir LIE-AN-004."
+    }
+  ]
+}

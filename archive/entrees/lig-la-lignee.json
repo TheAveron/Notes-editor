@@ -1,0 +1,66 @@
+{
+  "id": "lig-la-lignee",
+  "title": "La Lignée",
+  "kind": "autre",
+  "tags": [
+    "La Lignée"
+  ],
+  "blocks": [
+    {
+      "id": "id_df98ef98",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Principe",
+      "paragraphs": [
+        "La Lignée est une famille dont la fonction est de fournir, génération après génération, l'un des deux membres du duo à la tête de la Tour et de la Guilde. Le duo en exercice est tenu d'avoir un unique enfant ensemble, destiné à perpétuer la Lignée."
+      ]
+    },
+    {
+      "id": "id_21c2b36d",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Pourquoi un enfant unique",
+      "paragraphs": [
+        "L'obligation d'un enfant unique est une règle ancienne, destinée à prévenir les conflits de pouvoir qui pourraient opposer plusieurs enfants de la Lignée."
+      ]
+    },
+    {
+      "id": "id_0d3696a6",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Un conflit fondateur ?",
+      "paragraphs": [
+        "Un tel conflit a pu avoir lieu dans le passé et être à l'origine de la règle. Aucune source n'en garde la trace."
+      ]
+    },
+    {
+      "id": "id_9c6dab3f",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Les générations « pont »",
+      "paragraphs": [
+        "En raison de l'âge très avancé qu'atteignent Gardien et Mage suprême dans l'exercice de leur charge, au moins une génération de la Lignée — parfois deux — n'est jamais elle-même investie. L'objectif prioritaire est d'obtenir un Gardien suffisamment puissant : si aucun naturel de puissance adéquate n'existe à la génération suivant un duo en exercice, la Lignée patiente et transmet simplement le flambeau à la génération d'après, sans jamais occuper les postes."
+      ]
+    },
+    {
+      "id": "id_e8775f55",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Liberté de choix pour les générations « pont »",
+      "paragraphs": [
+        "Un membre de la Lignée qui sait qu'il ne sera jamais investi — comme l'enfant unique d'Udor et Célestine — est libre de choisir son propre conjoint parmi les mages de la Guilde, à la seule condition que ce conjoint soit lui-même mage. Aucun appariement avec un naturel n'est requis dans ce cas : seule compte la perpétuation de la Lignée elle-même."
+      ]
+    },
+    {
+      "id": "id_e12cd3ba",
+      "type": "heading2",
+      "text": "L'enfant de la Lignée"
+    },
+    {
+      "id": "id_d7d13b42",
+      "type": "paragraph",
+      "text": "L'enfant de la Lignée naît et grandit au sein de la Guilde, en partie élevé par le parent Mage suprême. S'il a un parent Gardien, il ne le connaît pas en tant que tel. Il vit librement dans la Guilde et suit les cours comme n'importe quel autre disciple, sans traitement apparent différent de celui des autres apprentis — seule son appartenance à la Lignée, connue de lui-même et du cercle de Niveau 5 (voir ARC-03), le distingue en pratique.",
+      "italic": false
+    }
+  ]
+}

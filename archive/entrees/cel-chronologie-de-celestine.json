@@ -1,0 +1,63 @@
+{
+  "id": "cel-chronologie-de-celestine",
+  "title": "Chronologie de Célestine",
+  "kind": "autre",
+  "tags": [
+    "Célestine"
+  ],
+  "blocks": [
+    {
+      "id": "id_7cafa5c1",
+      "type": "paragraph",
+      "text": "Seuls les repères établis figurent ici. Les dates exprimées « il y a » sont relatives au présent du récit, où Miguel a 105 ans.",
+      "italic": true
+    },
+    {
+      "id": "id_48118fec",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "Naissance",
+          "b": "Narmatin, dans les quartiers de la Guilde, au sein de la Lignée. Date non précisée.",
+          "c": ""
+        },
+        {
+          "a": "Appariement avec Udor",
+          "b": "Rapprochés « en leur temps » par les maîtres de la Guilde, avant leur entrée en fonction, comme le veut l'usage. Ils deviennent amis proches sans tomber amoureux. Date non précisée.",
+          "c": ""
+        },
+        {
+          "a": "Investiture",
+          "b": "Mage suprême à l'investiture d'Udor comme Gardien, jusqu'à celle de Miguel.",
+          "c": ""
+        },
+        {
+          "a": "Enfant unique",
+          "b": "Ils ont l'enfant unique exigé par la Lignée, jamais investi (génération pont), futur parent d'Ambre. Date non précisée.",
+          "c": ""
+        },
+        {
+          "a": "Il y a 89 à 85 ans",
+          "b": "Miguel, de 16 à 20 ans, suit sa formation à la Guilde de Narmatin : Célestine l'évalue et le forme personnellement.",
+          "c": ""
+        },
+        {
+          "a": "Il y a 85 ans",
+          "b": "Célestine, alors Mage suprême, escorte Miguel, 20 ans, jusqu'à la Tour du Cinquième Point Cardinal. Udor, 136 ans, commence alors la formation de vingt ans de son successeur.",
+          "c": ""
+        },
+        {
+          "a": "Il y a 65 ans",
+          "b": "Rituel de Transmission d'Udor à Miguel (40 ans). La même année, Célestine cède sa place de Mage suprême : Ambre lui succède et l'est toujours.",
+          "c": ""
+        },
+        {
+          "a": "Depuis",
+          "b": "Retirée depuis 65 ans, aujourd'hui décédée. Date et circonstances du décès non précisées.",
+          "c": ""
+        }
+      ]
+    }
+  ]
+}

@@ -64,12 +64,17 @@ function newBlock(type) {
             return base;
     }
 }
-function newSection() {
-    return {
+function newSection(title) {
+    const s = {
         id: uid(),
-        title: "Nouvelle section",
+        title: title || "Nouvelle section",
         blocks: [newBlock("paragraph")],
     };
+    // Dossier de l'archive : la section est une nouvelle entrée, dont l'identifiant est
+    // réservé dès maintenant (il suit ainsi l'historique annuler/rétablir).
+    if (typeof editorMode !== "undefined" && editorMode === "dossier")
+        s._entry = newEntryIdFor(s.title);
+    return s;
 }
 
 // Dérive le préfixe du dossier (ex. "GDN") depuis le champ "N° de dossier" des métadonnées,

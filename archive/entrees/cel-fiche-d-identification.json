@@ -1,0 +1,75 @@
+{
+  "id": "cel-fiche-d-identification",
+  "title": "Fiche d'identification",
+  "kind": "autre",
+  "tags": [
+    "Célestine"
+  ],
+  "blocks": [
+    {
+      "id": "id7_4jqej",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "Nom civil",
+          "b": "Célestine",
+          "c": ""
+        },
+        {
+          "a": "Titre",
+          "b": "Ancienne Mage suprême de la Guilde des Animaliens",
+          "c": ""
+        },
+        {
+          "a": "Naissance",
+          "b": "Narmatin, dans les quartiers de la Guilde",
+          "c": ""
+        },
+        {
+          "a": "Origine sociale",
+          "b": "Héritière de la Lignée",
+          "c": ""
+        },
+        {
+          "a": "Âge actuel",
+          "b": "Décédée",
+          "c": ""
+        },
+        {
+          "a": "Période d'activité",
+          "b": "L'investiture d'Udor jusqu'à celle de Miguel, remplacée par Ambre.",
+          "c": ""
+        },
+        {
+          "a": "Liens recensés",
+          "b": "Inconnus",
+          "c": ""
+        },
+        {
+          "a": "Supérieur hiérarchique",
+          "b": "Empereur de l'Humanité",
+          "c": ""
+        }
+      ]
+    },
+    {
+      "id": "id8_bdwbn",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Longévité",
+      "paragraphs": [
+        "Comme Udor (136 ans au moment de l'arrivée de Miguel), Célestine atteint un âge très avancé dans l'exercice de sa charge, rendu possible par des potions et des sortilèges. Le détail exact de ce procédé est délibérément laissé dans l'ombre."
+      ]
+    },
+    {
+      "id": "id9_h5qmk",
+      "type": "callout",
+      "tag": "attention",
+      "title": "Inventer les détails du mécanisme",
+      "paragraphs": [
+        "Il n'est pas recommandé de chercher à inventer ou développer le fonctionnement précis des potions et sortilèges de longévité. Pour Udor, seul est confirmé que sa puissance liée aux esprits absorbés facilite l'usage de ces procédés. Le facilitateur équivalent pour Célestine, qui n'est pas Gardien, n'est pas précisé — champ ouvert si nécessaire, mais à traiter avec la même retenue."
+      ]
+    }
+  ]
+}

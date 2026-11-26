@@ -1,0 +1,37 @@
+{
+  "id": "gld-le-hierarque-local-le-reperage-des-talents",
+  "title": "Le hiérarque local & le repérage des talents",
+  "kind": "autre",
+  "tags": [
+    "La Guilde"
+  ],
+  "blocks": [
+    {
+      "id": "id_3ccb66a7",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Le hiérarque de Narmatin",
+      "paragraphs": [
+        "Un hiérarque (grand maître) reçoit les nouveaux apprentis à la Guilde de Narmatin, teste leurs capacités — notamment au cinquième sous-sol du bâtiment de la Guilde — et correspond avec les anciens maîtres régionaux tels que Sirgal. C'est un rouage local, subordonné à la Mage suprême, sans connaissance de la nature réelle de la Tour."
+      ]
+    },
+    {
+      "id": "id_67bf15e2",
+      "type": "callout",
+      "tag": "attention",
+      "title": "Ne pas confondre les deux « cinquièmes sous-sols »",
+      "paragraphs": [
+        "Le cinquième sous-sol de la Guilde à Narmatin, où sont testés les nouveaux apprentis, est un lieu distinct du cinquième sous-sol de la Tour évoqué ailleurs dans la collection. Les deux ne doivent jamais être confondus."
+      ]
+    },
+    {
+      "id": "id_01c1cba5",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Le repérage des candidats exceptionnels",
+      "paragraphs": [
+        "Pour les cas les plus rares — les candidats destinés à la Tour — c'est la Mage suprême elle-même qui se déplace en personne, plutôt que de déléguer cette tâche à un hiérarque local. Voir LIG-AN-006 pour le détail de ce mécanisme et de l'appariement Gardien/Mage suprême."
+      ]
+    }
+  ]
+}

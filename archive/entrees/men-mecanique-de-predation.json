@@ -1,0 +1,59 @@
+{
+  "id": "men-mecanique-de-predation",
+  "title": "Mécanique de prédation",
+  "kind": "autre",
+  "tags": [
+    "La Menace"
+  ],
+  "blocks": [
+    {
+      "id": "id_be4ca466",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Deux issues distinctes",
+      "paragraphs": [
+        "La prédation d'une créature du Plan Éthéré peut mener à deux résultats bien différents, qu'il convient de ne jamais confondre : la consommation totale d'une cible précise, qui entraîne sa mort pure et simple ; ou la possession totale d'un corps, réservée aux créatures devenues suffisamment puissantes, qui détruit l'esprit et l'âme de l'hôte pour laisser la créature s'y installer durablement."
+      ]
+    },
+    {
+      "id": "id_4a267708",
+      "type": "heading2",
+      "text": "Consommation d'une cible"
+    },
+    {
+      "id": "id_588f0154",
+      "type": "paragraph",
+      "text": "Les attaques subies par une cible sont violentes et ponctuelles — jamais une érosion lente et continue. Une cible ressent leurs conséquences sans en identifier la cause : maux de tête soudains, malaises que l'on confond avec de simples vertiges ou des malaises vagaux. Une seule attaque ne suffit jamais à consommer entièrement une cible : il en faut plusieurs, espacées dans le temps. Si la cible est intégralement consommée, elle meurt simplement — aucune possession n'a lieu dans ce cas précis.",
+      "italic": false
+    },
+    {
+      "id": "id_5a45e3bc",
+      "type": "heading2",
+      "text": "Possession totale"
+    },
+    {
+      "id": "id_23c0b732",
+      "type": "paragraph",
+      "text": "La possession est un phénomène distinct, réservé aux créatures ayant suffisamment grandi en puissance — vraisemblablement en se nourrissant, au fil du temps, de nombreuses victimes différentes plutôt que d'une seule. Une fois ce seuil de puissance atteint, la créature peut posséder un corps de façon totale, détruisant l'esprit et l'âme de son hôte pour s'y substituer entièrement.",
+      "italic": false
+    },
+    {
+      "id": "id_0548bc0e",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Quel corps est possédé ?",
+      "paragraphs": [
+        "Les sources ne précisent pas si la créature devenue assez puissante cible un corps déjà affaibli par ses propres attaques, un corps « vacant » (dépourvu de tout lien, cf. MEN-03), ou n'importe quel corps disponible au moment venu. Par cohérence avec le reste du système, un corps affaibli ou vacant serait logiquement plus simple à soumettre — mais ce point reste ouvert."
+      ]
+    },
+    {
+      "id": "id_b2190f39",
+      "type": "callout",
+      "tag": "attention",
+      "title": "Ne pas confondre les échelles",
+      "paragraphs": [
+        "La consommation se joue à l'échelle d'une victime précise, sur plusieurs attaques rapprochées. La possession se joue à l'échelle de la trajectoire de la créature elle-même, construite sur la durée. Un scénario centré sur un PNJ en train d'être « mangé » (MEN-06) n'implique donc pas nécessairement de risque de possession à court terme."
+      ]
+    }
+  ]
+}

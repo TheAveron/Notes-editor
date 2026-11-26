@@ -1,0 +1,146 @@
+{
+  "id": "gdn-annexes",
+  "title": "Annexes",
+  "kind": "autre",
+  "tags": [
+    "Le Gardien"
+  ],
+  "blocks": [
+    {
+      "id": "id30_3lzqp",
+      "type": "heading2",
+      "text": "A. Chronologie indicative"
+    },
+    {
+      "id": "id33_8h5p6",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "Il y a ~12 000 ans",
+          "b": "Chute de la météorite contenant le cristal originel. Elle coïncide, à quelques dizaines d'années près, avec l'an 0 du calendrier, dont personne ne sait ce qu'il marque.",
+          "c": ""
+        },
+        {
+          "a": "VIIIᵉ millénaire",
+          "b": "Guerre civile : destruction des archives écrites de la Tour, comme de celles du culte mécaniste. Seuls les Gardiens absorbés gardent le souvenir de ce qui précède.",
+          "c": ""
+        },
+        {
+          "a": "Il y a 89 ans (Miguel, 16 ans)",
+          "b": "Départ du village natal pour la Guilde des Animaliens à Narmatin.",
+          "c": ""
+        },
+        {
+          "a": "Il y a 85 ans (Miguel, 20 ans)",
+          "b": "Arrivée à la Tour, début de la formation auprès du Gardien Udor.",
+          "c": ""
+        },
+        {
+          "a": "Il y a 65 ans (Miguel, 40 ans)",
+          "b": "Rituel de Transmission entre Udor et Miguel.",
+          "c": ""
+        },
+        {
+          "a": "Aujourd'hui",
+          "b": "Miguel, 105 ans, 65ᵉ année de charge en tant que Gardien.",
+          "c": ""
+        }
+      ]
+    },
+    {
+      "id": "id31_8hga5",
+      "type": "heading2",
+      "text": "B. Glossaire"
+    },
+    {
+      "id": "id34_rqsq0",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "Animalien",
+          "b": "Membre ou système de la Guilde dédiée aux liens télépathiques inter-espèces.",
+          "c": ""
+        },
+        {
+          "a": "Lien",
+          "b": "Connexion télépathique durable entre un individu et une espèce ou entité (esprits de feu, rapaces, etc.).",
+          "c": ""
+        },
+        {
+          "a": "Strite",
+          "b": "Minerai extrait au nord de Narmatin, amplifiant les capacités télépathiques.",
+          "c": ""
+        },
+        {
+          "a": "Rituel de Transmission",
+          "b": "Absorption consentie de l'âme et de la puissance d'un Gardien sortant par son successeur.",
+          "c": ""
+        },
+        {
+          "a": "Plan Éthéré",
+          "b": "Second plan d'existence où vivent les créatures affrontées par le Gardien — voir MEN-AN-003.",
+          "c": ""
+        },
+        {
+          "a": "Golem",
+          "b": "Créature majoritairement minérale, utilisée notamment pour la garde de Narmatin. Très peu sont toujours en vie à travers le monde.",
+          "c": ""
+        },
+        {
+          "a": "Korrigan",
+          "b": "Lutin redoutable, actif en particulier à la saison estivale, présent aux abords des villages isolés.",
+          "c": ""
+        },
+        {
+          "a": "Lignée",
+          "b": "Famille fournissant, génération après génération, l'un des deux membres du duo Gardien/Mage suprême — voir LIG-AN-006.",
+          "c": ""
+        },
+        {
+          "a": "Withre",
+          "b": "Petit village proche de Narmatin, doté d'une auberge où Miguel fait étape en route vers la Guilde. Ce n'est pas son village natal.",
+          "c": ""
+        }
+      ]
+    },
+    {
+      "id": "id32_70otw",
+      "type": "heading2",
+      "text": "C. Documents liés"
+    },
+    {
+      "id": "id35_wj1s9",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "GLD-AN-001",
+          "b": "La Guilde des Animaliens — hiérarchie complète, Haut Conseil des Archimages, secret institutionnel.",
+          "c": ""
+        },
+        {
+          "a": "MEN-AN-003",
+          "b": "La Menace — nature exacte du Plan Éthéré et des créatures affrontées par le Gardien.",
+          "c": ""
+        },
+        {
+          "a": "LIE-AN-004",
+          "b": "Les Liens — mécanique complète des connexions télépathiques, dont celles du Gardien.",
+          "c": ""
+        },
+        {
+          "a": "CEL-AN-005",
+          "b": "Célestine — fiche d'identification de l'ancienne Mage suprême.",
+          "c": ""
+        },
+        {
+          "a": "LIG-AN-006",
+          "b": "La Lignée — le duo Gardien/Mage suprême et Ambre, l'actuelle Mage suprême.",
+          "c": ""
+        }
+      ]
+    }
+  ]
+}

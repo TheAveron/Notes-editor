@@ -1,0 +1,124 @@
+{
+  "id": "sir-l-immortalite-et-le-declin-du-savoir",
+  "title": "L'Immortalité et le Déclin du Savoir",
+  "kind": "autre",
+  "tags": [
+    "Le Culte de Sirozor"
+  ],
+  "blocks": [
+    {
+      "id": "id24",
+      "type": "paragraph",
+      "text": "Le salut promis par Sirozor n'est pas une récompense accordée après la mort : c'est un objectif à atteindre. Les Mécanistes travaillent depuis des millénaires à mettre au point des cerveaux artificiels capables d'accueillir une conscience humaine sans en altérer la continuité, comme première étape nécessaire avant l'ascension.",
+      "italic": false
+    },
+    {
+      "id": "id25",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Les Anciens",
+      "paragraphs": [
+        "Quelques très anciens Mécanistes vivent encore aujourd'hui dans des corps entièrement artificiels — les derniers témoins d'un âge où les connaissances nécessaires à cette opération étaient maîtrisées. Ils jouissent d'une profonde révérence et ne dirigent plus réellement le culte."
+      ]
+    },
+    {
+      "id": "id26",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "État actuel des Anciens",
+      "paragraphs": [
+        "Les siècles ont passé : leurs corps vieillissent, leurs composants tombent progressivement en panne, leurs processeurs ralentissent. Ils sont continuellement rafistolés avec des technologies de moins en moins adaptées, et leur mémoire s'efface lentement. Chaque disparition emporte avec elle des connaissances irremplaçables — chaque entretien avec eux est soigneusement retranscrit, chaque souvenir retrouvé immédiatement archivé."
+      ]
+    },
+    {
+      "id": "id27",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Combien en reste-t-il",
+      "paragraphs": [
+        "Aucun chiffre officiel n'existe, mais la tradition orale du culte laisse entendre qu'il n'en resterait qu'une poignée à travers tout l'Empire — un nombre à un seul chiffre serait cohérent avec la gravité avec laquelle chaque disparition est vécue. Leur emplacement exact est un secret jalousement gardé par l'Ordre de l'Esprit, en partie pour les protéger d'éventuelles convoitises extérieures."
+      ]
+    },
+    {
+      "id": "id28",
+      "type": "heading2",
+      "text": "La guerre civile et la perte des archives"
+    },
+    {
+      "id": "id29",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "La guerre civile et la perte des archives",
+      "paragraphs": [
+        "Une guerre civile ayant eu lieu au VIIIe millénaire (le récit présent se situant au XIIe) a détruit la quasi-totalité des archives techniques du culte accumulées pendant des siècles. Les Mécanistes n'ont pas participé directement au conflit en tant que protagonistes, même s'ils ont dû malgré tout s'y investir.",
+        "Deux savoirs fondamentaux disparurent presque entièrement : la conception d'intelligences artificielles capables de prendre des décisions semi-complexes, et la fabrication de cerveaux artificiels permettant le transfert intégral d'une conscience humaine.",
+        "Les machines les plus anciennes et les plus performantes datent d'avant et pendant cette guerre ; ce savoir est aujourd'hui perdu."
+      ]
+    },
+    {
+      "id": "id30",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Nom de la guerre civile",
+      "paragraphs": [
+        "Le nom exact de ce conflit n'est pas encore établi dans le canon. « Guerre Civile du VIIIe millénaire » est utilisé comme désignation provisoire dans ce dossier, à remplacer dès qu'un nom définitif sera fixé."
+      ]
+    },
+    {
+      "id": "id_a77e6bb3",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Une cause inconnue",
+      "paragraphs": [
+        "Les causes de la guerre civile du VIIIᵉ millénaire ne sont établies par aucune source."
+      ]
+    },
+    {
+      "id": "id31",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Une perte sans responsable",
+      "paragraphs": [
+        "Personne ne bénéficie de la perte des archives : il n'existe aucun commanditaire, aucun complot derrière cette destruction. C'est une tragédie pure, une forme d'entropie historique inévitable plutôt qu'un crime à venger."
+      ]
+    },
+    {
+      "id": "id32",
+      "type": "paragraph",
+      "text": "Depuis cette rupture, chaque génération tente de reconstruire le savoir perdu, mais transmet également un héritage légèrement plus incomplet que celui qu'elle avait reçu. Le culte ne progresse plus : il lutte contre l'oubli.",
+      "italic": false
+    },
+    {
+      "id": "id33",
+      "type": "heading2",
+      "text": "Les paliers du savoir perdu"
+    },
+    {
+      "id": "id34",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Une échelle de la perte",
+      "paragraphs": [
+        "Tout le savoir mécaniste ne s'est pas effondré de manière uniforme. On peut distinguer, à titre de proposition, quatre paliers : le savoir maîtrisé aujourd'hui (mécanique, augmentation courante, automatismes simples) ; le savoir compris mais non reproductible (certains alliages et cristaux anciens, dont la fabrication reste hors de portée) ; le savoir fragmentaire (bribes contradictoires de traités pré-guerre, en cours d'interprétation par l'Ordre de l'Esprit) ; et le savoir totalement perdu (IA décisionnelle, transfert de conscience), dont on sait seulement qu'il a existé."
+      ]
+    },
+    {
+      "id": "id36",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Les Reliques",
+      "paragraphs": [
+        "Les machines antérieures à la guerre civile, quand elles sont retrouvées intactes ou partiellement fonctionnelles, sont traitées avec un statut proche de la relique sacrée plutôt que du simple objet technique. Des expéditions entières du culte, souvent encadrées par l'Ordre des Protecteurs pour la sécurité et l'Ordre de l'Esprit pour l'étude, peuvent être organisées à la seule fin de récupérer un fragment de ce savoir ancien."
+      ]
+    },
+    {
+      "id": "id35",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Les tentatives actuelles de transfert de conscience",
+      "paragraphs": [
+        "Certains au sein du culte, le plus souvent des membres isolés de l'Ordre de l'Esprit et rarement avec un aval officiel, continueraient en secret des expérimentations sur le transfert de conscience, faute de savoir complet. Ces tentatives, hautement risquées, seraient rarement couronnées de succès complet et pourraient constituer un sujet tabou, dont l'échec n'est jamais officiellement reconnu publiquement."
+      ]
+    }
+  ]
+}

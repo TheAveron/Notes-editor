@@ -1,0 +1,28 @@
+{
+  "id": "lie-definition-du-don",
+  "title": "Définition du don",
+  "kind": "autre",
+  "tags": [
+    "Les Liens"
+  ],
+  "blocks": [
+    {
+      "id": "id_b772b86e",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Définition",
+      "paragraphs": [
+        "Un lien est une connexion télépathique durable entre un individu et une autre espèce ou entité — un esprit élémentaire, un animal, ou plus rarement une entité d'un niveau de conscience supérieur. Il permet une communication directe, souvent décrite comme la capacité d'entendre et de comprendre les pensées ou l'état intérieur de l'autre partie."
+      ]
+    },
+    {
+      "id": "id_20f5b72a",
+      "type": "callout",
+      "tag": "attention",
+      "title": "Origine véritable du don",
+      "paragraphs": [
+        "L'origine véritable du don relève d'un savoir de niveau supérieur et n'est pas traitée dans ce dossier (voir MEN-AN-003)."
+      ]
+    }
+  ]
+}
