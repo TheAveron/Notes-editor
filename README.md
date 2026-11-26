@@ -79,7 +79,7 @@ Dans l'éditeur : glisser-déposer avec la poignée ⠿, sections repliables, an
 | Sous-titre | Titre de second niveau |
 | Paragraphe | Texte courant, éventuellement en italique |
 | Liste | Liste à puces |
-| Callout | Encadré étiqueté par un tag : *Confirmé*, *Hypothèse de travail*, *Hook MJ*, *Attention MJ* |
+| Callout | Encadré étiqueté par un tag : *Confirmé*, *Hypothèse de travail*, *Piste*, *Attention* |
 | Tableau | Libellé + valeur, badge + valeur, ou badge + libellé + valeur |
 | Fiche | Carte « hook » : badge, titre, accroche et tableau ; sarcelle, couleur du document ou couleur d'accent libre (hex) |
 | Renvoi | Ligne « → RENVOI » |

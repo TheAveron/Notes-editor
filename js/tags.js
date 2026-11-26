@@ -3,8 +3,8 @@
 const TAG_META = {
     confirme: { label: "Confirmé", bg: "var(--doc-ink)" },
     hypothese: { label: "Hypothèse de travail", bg: FIXED.gold },
-    hook: { label: "Hook MJ", bg: FIXED.teal },
-    attention: { label: "Attention MJ", bg: FIXED.red },
+    hook: { label: "Piste", bg: FIXED.teal },
+    attention: { label: "Attention", bg: FIXED.red },
 };
 const TAG_KEYS = Object.keys(TAG_META);
 const CALLOUT_BG = {

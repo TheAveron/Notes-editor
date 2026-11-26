@@ -263,19 +263,19 @@ function renderPreview() {
         const legends = [
             [
                 "confirme",
-                "Fait établi dans le lore central. Ne devrait pas être contredit à la légère car cela pourrait créer des incohérences dans l'histoire.",
+                "Fait établi avec certitude. Le contredire fragiliserait la cohérence de l'ensemble de la collection.",
             ],
             [
                 "hypothese",
-                "Proposition cohérente avec le canon existant, mais non tranchée. Le MJ peut l'adopter telle quelle, l'adapter, ou la remplacer par sa propre idée.",
+                "Reconstitution ou supposition cohérente avec les faits établis, mais non tranchée : elle peut être retenue telle quelle, adaptée ou remplacée.",
             ],
             [
                 "hook",
-                "Accroche de scénario prête à l'emploi, directement exploitable en jeu.",
+                "Situation ou tension qui pourrait servir de point de départ à qui voudrait agir.",
             ],
             [
                 "attention",
-                "Point de vigilance : risque d'incohérence, d'équilibrage, ou de spoil à ne pas dévoiler trop tôt aux joueurs.",
+                "Point de vigilance : risque de confusion, d'incohérence, ou information à ne pas révéler trop tôt.",
             ],
         ];
         legends.forEach(([tag, txt]) => {
