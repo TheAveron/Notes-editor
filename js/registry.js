@@ -19,11 +19,19 @@ function sanitizeRegistry(list) {
             docId: String(r.docId),
         }));
 }
+// Avec une archive, le registre est le fichier archive/couleurs.json (partagé par tous les
+// dossiers de l'archive) ; sinon il est gardé dans le navigateur.
 async function loadRegistry() {
-    registry = sanitizeRegistry(await storeGet("color-registry"));
+    if (archive.mode !== "none") registry = sanitizeRegistry(archive.colors);
+    else registry = sanitizeRegistry(await storeGet("color-registry"));
 }
 async function saveRegistry() {
-    await storeSet("color-registry", registry);
+    if (archive.mode === "none") return void (await storeSet("color-registry", registry));
+    try {
+        await archivePutColors(registry);
+    } catch (e) {
+        console.warn("Registre des couleurs non enregistré :", e.message);
+    }
 }
 function registryHexes() {
     return registry.map((r) => r.hex);
@@ -45,7 +53,7 @@ function syncRegistryTitle() {
 // Retire du registre la couleur d'un document jamais modifié (document vierge créé au
 // démarrage ou via « Nouveau document »), pour ne pas laisser d'entrée fantôme.
 async function releaseColorIfPristine(d) {
-    if (!isPristine(d)) return;
+    if (editorMode !== "standalone" || !isPristine(d)) return;
     registry = registry.filter((r) => r.docId !== d.id);
     await saveRegistry();
 }

@@ -1,9 +1,14 @@
-/* Atelier de Dossiers — Point d'entrée : cycle de mise à jour, actions de la barre, initialisation. */
+/* Atelier de Dossiers — Cycle de mise à jour et actions de l'éditeur (le démarrage et la
+   navigation sont dans js/router.js). */
+
+// "editor" (éditeur et aperçu) ou "archive" (pages de l'archive)
+let currentView = "editor";
 
 // Point unique de mise à jour après une modification du document.
 //   structure: true → le panneau doit être reconstruit (élément ajouté, supprimé ou déplacé) ;
 //   sinon seul l'aperçu est régénéré (frappe dans un champ, pour garder le focus).
 function update({ structure = false } = {}) {
+    if (editorMode !== "standalone") syncSharedCopies();
     if (structure) renderSidebar();
     renderPreview();
     if (historyRecord({ typing: !structure })) scheduleAutosave();
@@ -27,10 +32,15 @@ async function loadDocument(d, { exported = true } = {}) {
 function renderSidebar() {
     const sidebar = document.getElementById("sidebar");
     sidebar.innerHTML = "";
-    renderColorPicker(sidebar);
-    renderDocSettings(sidebar);
-    renderSections(sidebar);
-    renderRegistryPanel(sidebar);
+    if (editorMode === "entry") {
+        renderEntryPanel(sidebar);
+        renderSections(sidebar);
+    } else {
+        renderColorPicker(sidebar);
+        renderDocSettings(sidebar);
+        renderSections(sidebar);
+        renderRegistryPanel(sidebar);
+    }
     markSidebarOverflow();
 }
 
@@ -57,10 +67,17 @@ function slugify(s) {
     );
 }
 
+// Le JSON exporté est un dossier autonome (format historique), sans les champs internes
+// de l'éditeur : il se réimporte ici ou dans une autre archive.
+function exportableDoc(d) {
+    return JSON.parse(
+        JSON.stringify(d, (k, v) => (k.startsWith("_") ? undefined : v)),
+    );
+}
 document.getElementById("btn-export-json").addEventListener("click", () => {
     downloadFile(
         `dossier-${slugify(doc.cover.title)}.json`,
-        JSON.stringify(doc, null, 2),
+        JSON.stringify(exportableDoc(doc), null, 2),
         "application/json",
     );
     markExported();
@@ -115,6 +132,8 @@ document.getElementById("btn-undo").addEventListener("click", undo);
 document.getElementById("btn-redo").addEventListener("click", redo);
 document.addEventListener("keydown", (e) => {
     if (!(e.ctrlKey || e.metaKey) || e.altKey) return;
+    // Dans les pages de l'archive, Ctrl+Z reste celui du navigateur (champ de recherche)
+    if (currentView !== "editor" || document.body.classList.contains("read-only")) return;
     const k = e.key.toLowerCase();
     if (k === "z" && !e.shiftKey) {
         e.preventDefault();
@@ -127,6 +146,7 @@ document.addEventListener("keydown", (e) => {
 
 // Sans sauvegarde persistante, fermer l'onglet perdrait le travail : on prévient.
 window.addEventListener("beforeunload", (e) => {
+    if (editorMode !== "standalone") return; // archive : voir js/router.js
     if (storageIsPersistent && autosaveOk) return;
     if (!hasUnexportedChanges()) return;
     e.preventDefault();
@@ -173,9 +193,10 @@ document.getElementById("registry-import").addEventListener("change", (e) => {
     e.target.value = "";
 });
 
-/* ---------- Initialisation ---------- */
-(async function init() {
-    await loadRegistry();
+/* ---------- Dossier autonome (sans archive) ---------- */
+async function startStandalone() {
+    editorMode = "standalone";
+    document.body.dataset.editor = "standalone";
     // Reprend le document en cours lors de la dernière visite, s'il y en a un.
     const saved = await loadAutosave();
     let start;
@@ -192,4 +213,4 @@ document.getElementById("registry-import").addEventListener("change", (e) => {
     }
     // Un document restauré n'est pas considéré comme exporté.
     await loadDocument(start, { exported: !saved });
-})();
+}

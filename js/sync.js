@@ -35,7 +35,18 @@ function applyLinkedHighlight() {
 }
 
 document.getElementById("preview").addEventListener("click", (e) => {
-    if (e.target.closest("a")) return; // liens de la table des matières et renvois
+    const a = e.target.closest("a");
+    if (a) {
+        // Ancre interne (table des matières, renvoi) : on fait défiler l'aperçu sans
+        // changer l'adresse, qui sert à la navigation dans l'archive (#/…).
+        const href = a.getAttribute("href") || "";
+        if (href.startsWith("#") && !href.startsWith("#/")) {
+            e.preventDefault();
+            const t = document.getElementById(href.slice(1));
+            if (t) t.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+        return;
+    }
     const blockEl = e.target.closest("[data-bid]");
     if (blockEl) {
         const bid = blockEl.dataset.bid;

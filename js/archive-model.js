@@ -236,11 +236,12 @@
     function entryFrom(sec, items, store) {
         const prev = store.entries.get(sec._entry);
         const { id, title, kind, tags, blocks, ...rest } = prev ? stripInternal(prev) : {};
+        // _kind / _tags : modifiés dans le panneau de l'entrée (mode « entrée »)
         return {
             id: sec._entry,
             title: sec.title,
-            kind: kind || "autre",
-            tags: tags || [],
+            kind: sec._kind || kind || "autre",
+            tags: sec._tags || tags || [],
             ...rest,
             blocks: items,
         };
