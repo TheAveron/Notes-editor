@@ -322,6 +322,26 @@ function renderBlockEditor(s, b, idx) {
             ),
         );
     } else if (b.type === "card") {
+        const toneRow = el("div", { class: "field" });
+        toneRow.appendChild(
+            el("label", {}, [document.createTextNode("Couleur de la fiche")]),
+        );
+        const toneSel = el("select", {
+            onchange: (e) => {
+                b.tone = e.target.value;
+                update();
+            },
+        });
+        [
+            ["hook", "Sarcelle (hook MJ)"],
+            ["accent", "Couleur du document"],
+        ].forEach(([v, label]) => {
+            const o = el("option", { value: v }, [document.createTextNode(label)]);
+            if ((b.tone || "hook") === v) o.setAttribute("selected", "selected");
+            toneSel.appendChild(o);
+        });
+        toneRow.appendChild(toneSel);
+        body.appendChild(toneRow);
         body.appendChild(
             fieldText("Badge (ex. HOOK 1)", b.badgeText, (v) => {
                 b.badgeText = v;

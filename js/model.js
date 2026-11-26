@@ -47,6 +47,7 @@ function newBlock(type) {
         case "card":
             return {
                 ...base,
+                tone: "hook",
                 badgeText: "HOOK 1",
                 title: "Titre de la fiche",
                 pitch: "Accroche ou description.",
@@ -167,6 +168,8 @@ function normalizeBlock(b, id) {
             return {
                 id,
                 type: b.type,
+                // "hook" : sarcelle des hooks MJ (historique) ; "accent" : couleur du document
+                tone: b.tone === "accent" ? "accent" : "hook",
                 badgeText: asStr(b.badgeText),
                 title: asStr(b.title),
                 pitch: asStr(b.pitch),

@@ -28,7 +28,23 @@ function rich(text) {
         .replace(/[ \t]*\n[ \t]*/g, " ");
     h = h.replace(/\*\*(\S(?:.*?\S)?)\*\*/g, "<strong>$1</strong>");
     h = h.replace(/\*(\S(?:[^*]*?\S)?)\*/g, "<em>$1</em>");
-    return h.replaceAll(ESC_STAR, "*");
+    return linkSectionCodes(h).replaceAll(ESC_STAR, "*");
+}
+
+// Transforme les codes de section du dossier courant (ex. « GDN-03 ») en liens vers la
+// section, cliquables dans l'aperçu comme dans le PDF. Les codes d'autres dossiers
+// (autre préfixe) et les numéros sans section correspondante restent du texte simple.
+// N'opère que sur du texte déjà échappé : aucune balise de rich() ne porte d'attribut.
+function linkSectionCodes(html) {
+    const prefix = docPrefix().replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const re = new RegExp(`(^|[^A-Za-z0-9-])(${prefix}-(\\d{2}))(?![A-Za-z0-9-])`, "g");
+    return html.replace(re, (m, before, code, num) => {
+        const n = parseInt(num, 10);
+        const target =
+            n === 0 ? "note-usage" : doc.sections[n - 1] && doc.sections[n - 1].id;
+        if (!target) return m;
+        return `${before}<a class="xref" href="#${target}">${code}</a>`;
+    });
 }
 
 function renderBlockHtml(b) {
@@ -56,7 +72,7 @@ function renderBlockHtml(b) {
             return `<table class="stat">${b.rows.map((r) => `<tr><td class="label">${escapeHtml(r.a)}</td><td>${rich(r.b)}</td></tr>`).join("")}</table>`;
         }
         case "card":
-            return `<div class="card">
+            return `<div class="card${b.tone === "accent" ? " card-accent" : ""}">
         <div class="card-header">
         <div class="chead">${escapeHtml(b.badgeText)}</div>
         <div class="dot-separator">·</div>
@@ -166,11 +182,11 @@ function renderPreview() {
     cover += `<div class="cover-title">${escapeHtml(doc.cover.title)}</div>`;
     cover += `<div class="cover-subtitle">${escapeHtml(doc.cover.subtitle)}</div>`;
     cover += `<div class="cover-stamp-box"><div class="cover-stamp"><p style="margin: 0; text-align: center">${nl2p(doc.cover.stampText)}</p></div></div>`;
-    cover += `<table class="meta-table">${doc.cover.meta.map((m) => `<tr><td>${escapeHtml(m.a)}</td><td>${escapeHtml(m.b)}</td></tr>`).join("")}</table>`;
+    cover += `<table class="meta-table">${doc.cover.meta.map((m) => `<tr><td>${escapeHtml(m.a)}</td><td>${linkSectionCodes(escapeHtml(m.b))}</td></tr>`).join("")}</table>`;
     pagesInner.push(cover);
 
     // Note d'usage
-    let note = `<div class="sec-h1"><span class="code">${escapeHtml(docPrefix())}-00</span><span class="dot-separator">·</span>NOTE D'USAGE</div>`;
+    let note = `<div class="sec-h1" id="note-usage"><span class="code">${escapeHtml(docPrefix())}-00</span><span class="dot-separator">·</span>NOTE D'USAGE</div>`;
     note += `<p class="p-body">${rich(doc.noteUsage.text)}</p>`;
     if (doc.noteUsage.includeTagLegend) {
         const legends = [
