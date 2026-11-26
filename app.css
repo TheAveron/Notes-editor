@@ -304,6 +304,19 @@ a {
     vertical-align: -1px;
 }
 
+.format-hint {
+    font-size: 11px;
+    color: var(--ui-muted);
+    margin: -4px 0 12px 0;
+    line-height: 1.5;
+}
+.format-hint code {
+    font-family: var(--mono);
+    background: #f4f2ea;
+    border-radius: 3px;
+    padding: 0 3px;
+}
+
 /* Sections / blocks tree */
 .section-card {
     border: 1px solid var(--ui-line);
@@ -434,6 +447,18 @@ a {
     border: 1px solid #ddd8c9;
     border-radius: 4px;
     font-size: 12px;
+}
+.rowpair textarea.bullet-input {
+    flex: 1;
+    min-width: 0;
+    padding: 5px 6px;
+    border: 1px solid #ddd8c9;
+    border-radius: 4px;
+    font-size: 12px;
+    font-family: var(--sans);
+    resize: vertical;
+    min-height: 28px;
+    field-sizing: content;
 }
 .rowpair input.narrow {
     flex: 0 0 70px;

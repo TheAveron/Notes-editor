@@ -14,29 +14,46 @@ function nl2p(text) {
     return escapeHtml(text).replace(/\n/g, "<br>");
 }
 
+// Texte enrichi : échappement HTML, puis mini-markdown en ligne.
+//   **gras**   *italique*   \* pour un astérisque littéral
+// Comme en Markdown, un retour à la ligne simple est une espace (les textes collés depuis
+// un PDF en contiennent au milieu des phrases) ; une ligne vide force un saut de ligne.
+const ESC_STAR = "\u0001";
+function rich(text) {
+    let h = String(text ?? "")
+        .replace(/\r\n?/g, "\n")
+        .replace(/\\\*/g, ESC_STAR);
+    h = escapeHtml(h)
+        .replace(/[ \t]*\n(?:[ \t]*\n)+[ \t]*/g, "<br>")
+        .replace(/[ \t]*\n[ \t]*/g, " ");
+    h = h.replace(/\*\*(\S(?:.*?\S)?)\*\*/g, "<strong>$1</strong>");
+    h = h.replace(/\*(\S(?:[^*]*?\S)?)\*/g, "<em>$1</em>");
+    return h.replaceAll(ESC_STAR, "*");
+}
+
 function renderBlockHtml(b) {
     switch (b.type) {
         case "heading2":
             return `<div class="sec-h2">${escapeHtml(b.text)}</div>`;
         case "paragraph":
-            return `<p class="p-body${b.italic ? " italic" : ""}">${nl2p(b.text)}</p>`;
+            return `<p class="p-body${b.italic ? " italic" : ""}">${rich(b.text)}</p>`;
         case "bullets":
-            return `<ul class="bullets">${b.items.map((i) => `<li>${escapeHtml(i)}</li>`).join("")}</ul>`;
+            return `<ul class="bullets">${b.items.map((i) => `<li>${rich(i)}</li>`).join("")}</ul>`;
         case "callout": {
             const meta = tagStyle(b.tag);
             return `<div class="callout" style="border-left-color:${meta.border};background:${meta.calloutBg};">
-        <span class="ctag" style="background:${meta.bg};">${meta.label}</span><span class="ctitle">${escapeHtml(b.title)}</span>
-        ${b.paragraphs.map((p) => `<p>${escapeHtml(p)}</p>`).join("")}
+        <span class="ctag" style="background:${meta.bg};">${meta.label}</span><span class="ctitle">${rich(b.title)}</span>
+        ${b.paragraphs.map((p) => `<p>${rich(p)}</p>`).join("")}
       </div>`;
         }
         case "table": {
             if (b.layout === "badge-label-value") {
-                return `<table class="stat">${b.rows.map((r) => `<tr><td class="badge" style="width:44px;">${escapeHtml(r.a)}</td><td class="label">${escapeHtml(r.c)}</td><td>${escapeHtml(r.b)}</td></tr>`).join("")}</table>`;
+                return `<table class="stat">${b.rows.map((r) => `<tr><td class="badge" style="width:44px;">${escapeHtml(r.a)}</td><td class="label">${escapeHtml(r.c)}</td><td>${rich(r.b)}</td></tr>`).join("")}</table>`;
             }
             if (b.layout === "badge-value") {
-                return `<table class="stat">${b.rows.map((r) => `<tr><td class="badge">${escapeHtml(r.a)}</td><td>${escapeHtml(r.b)}</td></tr>`).join("")}</table>`;
+                return `<table class="stat">${b.rows.map((r) => `<tr><td class="badge">${escapeHtml(r.a)}</td><td>${rich(r.b)}</td></tr>`).join("")}</table>`;
             }
-            return `<table class="stat">${b.rows.map((r) => `<tr><td class="label">${escapeHtml(r.a)}</td><td>${escapeHtml(r.b)}</td></tr>`).join("")}</table>`;
+            return `<table class="stat">${b.rows.map((r) => `<tr><td class="label">${escapeHtml(r.a)}</td><td>${rich(r.b)}</td></tr>`).join("")}</table>`;
         }
         case "card":
             return `<div class="card">
@@ -45,11 +62,11 @@ function renderBlockHtml(b) {
         <div class="dot-separator">·</div>
         <div class="ctitle2">${escapeHtml(b.title)}</div>
         </div>
-        <p>${escapeHtml(b.pitch)}</p>
-        <table>${b.rows.map((r) => `<tr><td>${escapeHtml(r.a)}</td><td>${escapeHtml(r.b)}</td></tr>`).join("")}</table>
+        <p>${rich(b.pitch)}</p>
+        <table>${b.rows.map((r) => `<tr><td>${escapeHtml(r.a)}</td><td>${rich(r.b)}</td></tr>`).join("")}</table>
       </div>`;
         case "crossref":
-            return `<div class="crossref"><b>→ RENVOI</b> &nbsp;${escapeHtml(b.text)}</div>`;
+            return `<div class="crossref"><b>→ RENVOI</b> &nbsp;${rich(b.text)}</div>`;
         default: // pagebreak : géré par renderPreview (découpage des pages)
             return "";
     }
@@ -105,7 +122,7 @@ function renderPreview() {
 
     // Note d'usage
     let note = `<div class="sec-h1"><span class="code">${escapeHtml(docPrefix())}-00</span><span class="dot-separator">·</span>NOTE D'USAGE</div>`;
-    note += `<p class="p-body">${nl2p(doc.noteUsage.text)}</p>`;
+    note += `<p class="p-body">${rich(doc.noteUsage.text)}</p>`;
     if (doc.noteUsage.includeTagLegend) {
         const legends = [
             [

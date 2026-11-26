@@ -128,7 +128,9 @@ function renderBlockEditor(s, b, idx) {
         const list = el("div", { class: "bullets-list" });
         b.items.forEach((it, i) => {
             const rp = el("div", { class: "rowpair" });
-            const inp = el("input", { type: "text", value: it });
+            // Zone de texte (et non champ simple) pour permettre les retours à la ligne.
+            const inp = el("textarea", { class: "bullet-input", rows: "1" });
+            inp.value = it;
             inp.addEventListener("input", (e) => {
                 b.items[i] = e.target.value;
                 update();
@@ -509,10 +511,17 @@ function renderSectionCard(s, idx) {
     return card;
 }
 
+const FORMAT_HINT_HTML =
+    "Mise en forme dans les textes : <code>**gras**</code>, <code>*italique*</code>, " +
+    "<code>\\*</code> pour un astérisque. Laisser une ligne vide pour aller à la ligne.";
+
 function renderSections(container) {
     const box = el("div", { class: "side-section" });
     box.appendChild(
         el("h3", {}, [document.createTextNode("Sections & contenu")]),
+    );
+    box.appendChild(
+        el("div", { class: "format-hint", html: FORMAT_HINT_HTML }),
     );
     doc.sections.forEach((s, idx) =>
         box.appendChild(renderSectionCard(s, idx)),
