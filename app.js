@@ -9,13 +9,19 @@ function clampPct(v) {
     return Math.max(0, Math.min(100, v));
 }
 
-function hexToHsl(hex) {
-    hex = hex.replace("#", "");
+// "#abc" → "abc" développé en "aabbcc" ; "#aabbcc" → "aabbcc"
+function expandHex(hex) {
+    hex = String(hex || "").trim().replace("#", "");
     if (hex.length === 3)
         hex = hex
             .split("")
             .map((c) => c + c)
             .join("");
+    return hex.toLowerCase();
+}
+
+function hexToHsl(hex) {
+    hex = expandHex(hex);
     const r = parseInt(hex.substring(0, 2), 16) / 255;
     const g = parseInt(hex.substring(2, 4), 16) / 255;
     const b = parseInt(hex.substring(4, 6), 16) / 255;
@@ -73,12 +79,11 @@ function hslToHex(h, s, l) {
     return "#" + toHex(r) + toHex(g) + toHex(b);
 }
 function isValidHex(hex) {
-    return /^#?[0-9a-fA-F]{6}$/.test(hex);
+    return /^#?([0-9a-fA-F]{3}|[0-9a-fA-F]{6})$/.test(String(hex || "").trim());
 }
+// Toujours au format "#rrggbb" minuscule (les codes courts sont développés)
 function normalizeHex(hex) {
-    hex = hex.trim();
-    if (!hex.startsWith("#")) hex = "#" + hex;
-    return hex.toLowerCase();
+    return "#" + expandHex(hex);
 }
 
 // Distance perceptuelle approximative (pondérée) entre deux teintes hex
@@ -91,7 +96,7 @@ function colorDistance(hexA, hexB) {
     return Math.sqrt(2 * dr * dr + 4 * dg * dg + 3 * db * db);
 }
 function hexToRgb(hex) {
-    hex = hex.replace("#", "");
+    hex = expandHex(hex);
     return {
         r: parseInt(hex.substring(0, 2), 16),
         g: parseInt(hex.substring(2, 4), 16),
@@ -122,6 +127,11 @@ const FIXED = {
     redBg: "#f5e6e8",
 };
 
+// Écart minimal (colorDistance) entre une proposition et une couleur déjà attribuée,
+// et entre deux propositions d'une même série.
+const MIN_DISTANCE_USED = 60;
+const MIN_DISTANCE_PROPOSALS = 45;
+
 function generateProposals(usedHexes, count) {
     const proposals = [];
     let attempts = 0;
@@ -136,8 +146,8 @@ function generateProposals(usedHexes, count) {
         const lig = 30 + Math.random() * 16; // 30-46% (ton "encre saturée", ni pastel ni noir)
         const hex = hslToHex(hue, sat, lig);
         const tooClose =
-            usedHexes.some((u) => colorDistance(hex, u) < 60) ||
-            proposals.some((p) => colorDistance(hex, p) < 45);
+            usedHexes.some((u) => colorDistance(hex, u) < MIN_DISTANCE_USED) ||
+            proposals.some((p) => colorDistance(hex, p) < MIN_DISTANCE_PROPOSALS);
         if (!tooClose) proposals.push(hex);
     }
     while (proposals.length < count) {
@@ -189,6 +199,22 @@ function registryHexes() {
 async function registerColor(docId, hex, title) {
     registry = registry.filter((r) => r.docId !== docId);
     registry.push({ hex, title: title || "(sans titre)", docId });
+    await saveRegistry();
+}
+// Garde le titre affiché dans le registre synchronisé avec le titre du document.
+let registryTitleTimer = null;
+function syncRegistryTitle() {
+    const entry = registry.find((r) => r.docId === doc.id);
+    if (!entry) return;
+    entry.title = doc.cover.title || "(sans titre)";
+    clearTimeout(registryTitleTimer);
+    registryTitleTimer = setTimeout(saveRegistry, 400);
+}
+// Retire du registre la couleur d'un document jamais modifié (document vierge créé au
+// démarrage ou via « Nouveau document »), pour ne pas laisser d'entrée fantôme.
+async function releaseColorIfPristine(d) {
+    if (!isPristine(d)) return;
+    registry = registry.filter((r) => r.docId !== d.id);
     await saveRegistry();
 }
 
@@ -330,6 +356,17 @@ function defaultDocument() {
         },
         sections: [newSection()],
     };
+}
+
+// Empreinte d'un document « vierge » (hors identifiant et couleur), pour savoir si
+// l'utilisateur l'a modifié.
+function contentFingerprint(d) {
+    const { id, color, ...rest } = d;
+    return JSON.stringify(rest, (k, v) => (k === "id" ? undefined : v));
+}
+const PRISTINE_FINGERPRINT = contentFingerprint(defaultDocument());
+function isPristine(d) {
+    return contentFingerprint(d) === PRISTINE_FINGERPRINT;
 }
 
 let doc = defaultDocument();
@@ -551,7 +588,11 @@ function el(tag, attrs, children) {
     return e;
 }
 
-async function selectColor(hex, isDefault) {
+// Message affiché sous le champ « Couleur personnalisée ». Il est conservé ici (et non dans
+// le DOM) pour survivre à la reconstruction du panneau.
+let colorMsg = null; // { cls, text } | null
+
+async function selectColor(hex) {
     doc.color = normalizeHex(hex);
     await registerColor(doc.id, doc.color, doc.cover.title);
     renderSidebar();
@@ -569,7 +610,10 @@ function renderColorPicker(container) {
         const isSelected = normalizeHex(doc.color) === normalizeHex(hex);
         const sw = el("div", {
             class: "swatch" + (isSelected ? " selected" : ""),
-            onclick: () => selectColor(hex, i === 0),
+            onclick: () => {
+                colorMsg = null;
+                selectColor(hex);
+            },
         });
         sw.appendChild(
             el("div", {
@@ -596,10 +640,14 @@ function renderColorPicker(container) {
             "button",
             {
                 onclick: () => {
-                    proposals = generateProposals(
-                        registryHexes().filter((h) => h !== doc.color),
-                        5,
-                    );
+                    // La couleur actuelle reste en tête pour pouvoir y revenir.
+                    proposals = [
+                        doc.color,
+                        ...generateProposals(
+                            [...registryHexes(), doc.color],
+                            4,
+                        ),
+                    ];
                     renderSidebar();
                 },
             },
@@ -618,31 +666,43 @@ function renderColorPicker(container) {
         placeholder: "#RRGGBB",
         value: doc.color,
     });
-    const msg = el("div", {});
+    const msg = el("div", colorMsg ? { class: colorMsg.cls } : {});
+    if (colorMsg) msg.textContent = colorMsg.text;
+    // Refus : on revient à la dernière couleur validée (l'aperçu a pu suivre le glissement).
+    function refuse(text) {
+        colorMsg = { cls: "hex-warning", text };
+        const mine = registry.find((r) => r.docId === doc.id);
+        if (mine) doc.color = mine.hex;
+        renderSidebar();
+        renderPreview();
+    }
     function tryCustom(val) {
-        if (!isValidHex(val)) {
-            msg.className = "hex-warning";
-            msg.textContent = "Code hexadécimal invalide.";
-            return;
-        }
+        if (!isValidHex(val)) return refuse("Code hexadécimal invalide.");
         const norm = normalizeHex(val);
-        const clash = registry.find(
-            (r) => r.docId !== doc.id && normalizeHex(r.hex) === norm,
+        const others = registry.filter((r) => r.docId !== doc.id);
+        const clash = others.find((r) => normalizeHex(r.hex) === norm);
+        if (clash) return refuse(`Déjà utilisée par « ${clash.title} ».`);
+        // Même critère que les propositions automatiques : une teinte quasi identique
+        // est acceptée (choix explicite) mais signalée.
+        const near = others.find(
+            (r) => colorDistance(r.hex, norm) < MIN_DISTANCE_USED,
         );
-        if (clash) {
-            msg.className = "hex-warning";
-            msg.textContent = `Déjà utilisée par « ${clash.title} ».`;
-            return;
-        }
-        msg.className = "hex-ok";
-        msg.textContent = "Couleur disponible ✓";
-        colorInput.value = norm;
+        colorMsg = near
+            ? {
+                  cls: "hex-warning",
+                  text: `Acceptée, mais très proche de « ${near.title} » (${near.hex}).`,
+              }
+            : { cls: "hex-ok", text: "Couleur disponible ✓" };
         selectColor(norm);
     }
+    // Pendant le glissement dans le sélecteur natif : aperçu seulement, sans reconstruire
+    // le panneau (ce qui fermerait le sélecteur). La validation se fait au relâchement.
     colorInput.addEventListener("input", () => {
         textInput.value = colorInput.value;
-        tryCustom(colorInput.value);
+        doc.color = normalizeHex(colorInput.value);
+        renderPreview();
     });
+    colorInput.addEventListener("change", () => tryCustom(colorInput.value));
     textInput.addEventListener("change", () => tryCustom(textInput.value));
     customWrap.appendChild(colorInput);
     customWrap.appendChild(textInput);
@@ -729,6 +789,7 @@ function renderDocSettings(container) {
     box.appendChild(
         fieldText("Titre principal", doc.cover.title, (v) => {
             doc.cover.title = v;
+            syncRegistryTitle();
             renderPreview();
         }),
     );
@@ -1586,6 +1647,8 @@ document.getElementById("file-import").addEventListener("change", (e) => {
         try {
             const imported = JSON.parse(reader.result);
             if (!imported.sections) throw new Error("format invalide");
+            await releaseColorIfPristine(doc);
+            colorMsg = null;
             doc = migrateDoc(imported);
             if (!doc.id) doc.id = uid();
             proposals = [
@@ -1612,6 +1675,8 @@ document.getElementById("btn-new").addEventListener("click", async () => {
         )
     )
         return;
+    await releaseColorIfPristine(doc);
+    colorMsg = null;
     doc = defaultDocument();
     proposals = generateProposals(registryHexes(), 5);
     doc.color = proposals[0];
