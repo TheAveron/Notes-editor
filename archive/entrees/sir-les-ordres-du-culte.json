@@ -1,0 +1,285 @@
+{
+  "id": "sir-les-ordres-du-culte",
+  "title": "Les Ordres du culte",
+  "kind": "autre",
+  "tags": [
+    "Le Culte de Sirozor"
+  ],
+  "blocks": [
+    {
+      "id": "id38",
+      "type": "paragraph",
+      "text": "Tous les Mécanistes ne servent pas Sirozor de la même manière. Le culte se divise en quatre Ordres, chacun incarnant une lecture différente de la voie vers la transcendance.",
+      "italic": false
+    },
+    {
+      "id": "id41",
+      "type": "heading2",
+      "text": "Ordre de l'Esprit"
+    },
+    {
+      "id": "id42",
+      "type": "paragraph",
+      "text": "« La machine ne ment jamais. C'est nous qui peinons encore à la comprendre. »",
+      "italic": true
+    },
+    {
+      "id": "id43",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Approche théologique",
+      "paragraphs": [
+        "Pour l'Ordre de l'Esprit, le corps n'est qu'un instrument secondaire face à ce qui mérite véritablement d'être augmenté : l'intellect. La transcendance qui permettra de communiquer avec Sirozor et de s'élever à son niveau ne réside pas dans la force ou la précision, mais dans la capacité à comprendre, cataloguer et maîtriser tout mécanisme."
+      ]
+    },
+    {
+      "id": "id44",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "Rôle au sein du culte",
+          "b": "Branche archiviste et administrative — l'équivalent d'un clergé de curie : ce sont eux qui déchiffrent les textes techniques les plus anciens et décident quels mécanismes méritent d'être reproduits ou doivent rester scellés.",
+          "c": ""
+        },
+        {
+          "a": "Rôle sur le terrain",
+          "b": "Peu combattants dans l'âme ; diagnostic instantanés et assistance tactiques.",
+          "c": ""
+        },
+        {
+          "a": "Pouvoir réel",
+          "b": "En pratique, ce sont eux qui façonnent le dogme au fil du temps par l'interprétation des fragments retrouvés — un pouvoir énorme et assez peu visible",
+          "c": ""
+        },
+        {
+          "a": "Perception par les autres Ordres",
+          "b": "Respect particulier, presque révérenciel",
+          "c": ""
+        }
+      ]
+    },
+    {
+      "id": "id39",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Recrutement et hiérarchie interne",
+      "paragraphs": [
+        "L'Ordre recruterait de préférence des enfants ou jeunes adultes déjà reconnus pour une intelligence ou une curiosité hors norme, plutôt que par vocation spontanée. Une hiérarchie interne informelle existerait, fondée non sur l'ancienneté mais sur le nombre et la rareté des textes qu'un membre a personnellement déchiffrés ou catalogués — un érudit ayant percé un fragment inédit gagne un prestige immédiat, quel que soit son âge."
+      ]
+    },
+    {
+      "id": "id40",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Vie quotidienne",
+      "paragraphs": [
+        "Contrairement aux Protecteurs ou aux Adeptes, les membres de l'Esprit passeraient le plus clair de leur temps dans des bibliothèques et ateliers reculés plutôt que dans les temples ou sur le terrain, ce qui les rend souvent peu connus du grand public malgré leur influence réelle sur la doctrine."
+      ]
+    },
+    {
+      "id": "id48",
+      "type": "heading2",
+      "text": "Ordre des Protecteurs"
+    },
+    {
+      "id": "id49",
+      "type": "paragraph",
+      "text": "« Ils ont voulu faire de nous des outils. Nous avons choisi de devenir des remparts. »",
+      "italic": true
+    },
+    {
+      "id": "id50",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Approche théologique",
+      "paragraphs": [
+        "Pour l'Ordre des Protecteurs, le corps n'est pas augmenté pour comprendre ou pour convertir, mais pour protéger l'Œuvre elle-même — les machines, les archives, les autres fidèles. Ils se voient comme le rempart temporel qui permet à l'Œuvre de survivre tant que la transcendance collective n'est pas atteinte : un rôle sacrificiel et fonctionnel, non mystique."
+      ]
+    },
+    {
+      "id": "id51",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "Rôle au sein du culte",
+          "b": "Milice et force armée du culte, chargée de veiller à ce que les Mécanistes puissent agir sans être dérangés — par l'Imperium hostile ou par toute menace extérieure",
+          "c": ""
+        },
+        {
+          "a": "Rôle sur le terrain",
+          "b": "Première ligne des forces impériales lorsqu'un contingent mécaniste est déployé ; encaissent et rendent les coups, protègent les frères d'ordre plus vulnérables",
+          "c": ""
+        },
+        {
+          "a": "Tempérament",
+          "b": "Fierté martiale, point d'honneur presque chevaleresque à ne jamais reculer",
+          "c": ""
+        },
+        {
+          "a": "Perception par les autres Ordres",
+          "b": "Parfois vus comme peu subtils, mais respectés pour leur loyauté et leur fiabilité au combat",
+          "c": ""
+        }
+      ]
+    },
+    {
+      "id": "id46",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Recrutement et hiérarchie interne",
+      "paragraphs": [
+        "Recrutement  parmi d'anciens soldats de l'Imperium ou des volontaires en quête d'un but après une carrière militaire,  soldats blessés au delà de ce qui est soignable traditionnellement, davantage que parmi de jeunes novices. La hiérarchie interne suit une logique proche d'une organisation martiale classique — grades gagnés au mérite et à l'ancienneté au combat plutôt qu'à la piété affichée."
+      ]
+    },
+    {
+      "id": "id47",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Rapport aux non-Mécanistes qu'ils protègent",
+      "paragraphs": [
+        "Sur un champ de bataille impérial, un Protecteur pourrait tout aussi bien risquer sa vie pour un soldat impérial qui méprise sa foi que pour un frère d'Ordre — une abnégation qui, paradoxalement, nourrit une partie du respect fragile qu'accorde le peuple au culte tout entier."
+      ]
+    },
+    {
+      "id": "id55",
+      "type": "heading2",
+      "text": "Adeptes de Sirozor"
+    },
+    {
+      "id": "id56",
+      "type": "paragraph",
+      "text": "« Le culte ne se maintient pas par la force des rouages, mais par la foi de ceux qui les portent. »",
+      "italic": true
+    },
+    {
+      "id": "id57",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Approche théologique",
+      "paragraphs": [
+        "Les Adeptes incarnent l'orthodoxie du culte dans toute sa rigueur : la chair est une erreur de conception à corriger, et chaque once de tissu organique remplacée par du métal est un pas de plus vers la perfection promise par Sirozor."
+      ]
+    },
+    {
+      "id": "id58",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "Rôle au sein du culte",
+          "b": "Officient dans les rares temples mécanistes tolérés, reçoivent les conversions, commandent en pratique l'essentiel de la hiérarchie du culte",
+          "c": ""
+        },
+        {
+          "a": "Rôle social",
+          "b": "Charisme austère mais efficace, recrutement et encadrement des fidèles ; plus proches du reste de la population que les autres Ordres",
+          "c": ""
+        },
+        {
+          "a": "Rôle sur le terrain",
+          "b": "Savent invoquer et diriger des assistants robotiques, extensions mécaniques de leur volonté, envoyés au contact quand leur propre corps doit rester en retrait",
+          "c": ""
+        },
+        {
+          "a": "Rapport au schisme d'Ahel",
+          "b": "Le considèrent comme une trahison plus douloureuse qu'une simple hérésie extérieure — la blessure d'un fils qui renierait son père. Beaucoup espèrent encore un retour des disciples d'Ahel dans le droit chemin.",
+          "c": ""
+        }
+      ]
+    },
+    {
+      "id": "id53",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Recrutement et conversions",
+      "paragraphs": [
+        "Les Adeptes seraient les seuls à convertir activement des non-Mécanistes de naissance — souvent des personnes malades, mutilées, ou simplement désespérées, à qui l'augmentation offre une seconde vie autant qu'une nouvelle foi. Cette porte d'entrée relativement ouverte expliquerait pourquoi les Adeptes restent, malgré l'orthodoxie rigide de leur doctrine, l'Ordre le plus proche émotionnellement du peuple."
+      ]
+    },
+    {
+      "id": "id54",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Titres internes",
+      "paragraphs": [
+        "Une hiérarchie de titres pourrait exister au sein des Adeptes, du simple officiant de temple local jusqu'à des figures de rang plus élevé faisant autorité sur plusieurs temples d'une même région — sans qu'aucun de ces titres ne confère une autorité sur les trois autres Ordres."
+      ]
+    },
+    {
+      "id": "id63",
+      "type": "heading2",
+      "text": "Ordre d'Ahel"
+    },
+    {
+      "id": "id64",
+      "type": "paragraph",
+      "text": "« Sirozor n'a jamais exigé que nous nous détestions. »",
+      "italic": true
+    },
+    {
+      "id": "id65",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Approche théologique",
+      "paragraphs": [
+        "Pour les disciples d'Ahel, ce n'est pas le métal qui rapproche de Sirozor : c'est la compréhension. Une augmentation n'a de valeur que si elle permet de mieux penser, mieux apprendre ou mieux transmettre. Remplacer son corps sans approfondir sa compréhension du monde revient à confondre l'outil avec son objectif — pour eux, l'augmentation est un moyen, jamais une fin."
+      ]
+    },
+    {
+      "id": "id66",
+      "type": "table",
+      "layout": "label-value",
+      "rows": [
+        {
+          "a": "Origine",
+          "b": "Nommés d'après Ahel, figure autrefois vénérée du culte, dont la foi en Sirozor ne faiblit jamais mais qui rejetait l'idée que la chair devait être entièrement anéantie pour l'honorer",
+          "c": ""
+        },
+        {
+          "a": "Statut",
+          "b": "Exilés — rejetés par l'Imperium qui les considère comme des Mécanistes hérétiques, reniés par leurs propres frères d'ordre qui les jugent incomplets, inaboutis",
+          "c": ""
+        },
+        {
+          "a": "Mode de vie",
+          "b": "Discrétion et distance, survie en marge de l'Imperium ; augmentations plus légères et ciblées préservant une part organique du corps",
+          "c": ""
+        },
+        {
+          "a": "Particularité martiale",
+          "b": "Agilité et vivacité préservées ; talent redoutable pour les attaques éclair",
+          "c": ""
+        }
+      ]
+    },
+    {
+      "id": "id60",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Comment ils survivent",
+      "paragraphs": [
+        "Faute de temples ou de statut légal, les disciples d'Ahel vivraient probablement de métiers itinérants où leur compétence mécaniste reste utile sans exposer leur affiliation — réparateurs ambulants, mercenaires techniques, guérisseurs improvisés dans des villages reculés que les Adeptes officiels ne visitent jamais."
+      ]
+    },
+    {
+      "id": "id61",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Une tradition orale plutôt qu'écrite",
+      "paragraphs": [
+        "Exclus des archives officielles du culte, les disciples d'Ahel transmettraient leur doctrine essentiellement par voie orale, de maître à élève, ce qui expliquerait à la fois la survie fragile de leur théologie et l'absence de tout texte canonique."
+      ]
+    },
+    {
+      "id": "id62",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Des sympathisants discrets chez les orthodoxes",
+      "paragraphs": [
+        "Il n'est pas exclu que certains membres de Ordre de l'Esprit, sans jamais le reconnaître publiquement, nourrissent une sympathie discrète pour la position d'Ahel (qui en était une ancienne membre). En particulier  la théologie de l'Ordre de l'Esprit concernant le savoir se rapproche déjà, sans le vouloir, de l'argument d'Ahel selon lequel la compréhension prime sur le métal."
+      ]
+    }
+  ]
+}

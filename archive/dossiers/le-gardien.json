@@ -1,0 +1,100 @@
+{
+  "id": "le-gardien",
+  "color": "#a9812e",
+  "stampStyle": "red",
+  "cover": {
+    "orgLine": "GUILDE DES ARCHIVISTES — FONDS DOCUMENTAIRE",
+    "kicker": "DOSSIER D'INFORMATION",
+    "title": "Le Gardien",
+    "subtitle": "de la Tour du Cinquième Point Cardinal",
+    "stampText": "NIVEAU 7 · A5 — Réservé au personnel\nde la Tour",
+    "meta": [
+      {
+        "a": "N° de dossier",
+        "b": "GRD-VC-001"
+      },
+      {
+        "a": "Objet",
+        "b": "Identité, mécanisme et environnement du Gardien de la Tour"
+      },
+      {
+        "a": "Documents liés",
+        "b": "GLD-VC-001·MEN-VC-001·CEL-VC-001"
+      },
+      {
+        "a": "Nature du sujet",
+        "b": "Vivant - en fonction"
+      },
+      {
+        "a": "Confidentialité",
+        "b": "7 · A5 — usage MJ uniquement"
+      }
+    ]
+  },
+  "footerBrand": "Le Guardien - Niveau 7 · A5",
+  "noteUsage": {
+    "includeTagLegend": true,
+    "text": "Ce dossier est conçu pour être utilisé tel quel par un meneur de jeu (MJ) autre que l'auteur de l'univers. Chaque information est étiquetée selon son statut, afin de distinguer ce qui appartient au canon établi de ce qui reste ouvert à l'interprétation ou à l'adaptation."
+  },
+  "sections": [
+    {
+      "id": "id2_ca0sx",
+      "entry": "grd-fiche-d-identification",
+      "pageBreaks": [
+        {
+          "after": "id9_2asm5",
+          "repeatTitle": false
+        }
+      ]
+    },
+    {
+      "id": "id14_3p9mg",
+      "entry": "grd-la-tour-du-cinquieme-point-cardinal",
+      "pageBreaks": [
+        {
+          "after": "id23_y7h3l",
+          "repeatTitle": false
+        }
+      ]
+    },
+    {
+      "id": "id31_tsx0f",
+      "entry": "grd-la-lignee-des-gardiens-et-le-rituel-de-transmission"
+    },
+    {
+      "id": "id39_c2eeh",
+      "entry": "grd-mecanique-de-la-conscience-partagee"
+    },
+    {
+      "id": "id52_nkzg2",
+      "entry": "grd-miguel-portait-du-gardien-actuel",
+      "pageBreaks": [
+        {
+          "after": "id12_dogeh",
+          "repeatTitle": false
+        }
+      ]
+    },
+    {
+      "id": "id20_uko79",
+      "entry": "grd-hooks-de-scenario",
+      "pageBreaks": [
+        {
+          "after": "id25_5tfbj",
+          "repeatTitle": false
+        }
+      ]
+    },
+    {
+      "id": "id28_f2m0i",
+      "entry": "grd-annexes",
+      "pageBreaks": [
+        {
+          "after": "id34_rqsq0",
+          "repeatTitle": false
+        }
+      ]
+    }
+  ],
+  "version": 3
+}

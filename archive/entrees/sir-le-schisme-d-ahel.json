@@ -1,0 +1,77 @@
+{
+  "id": "sir-le-schisme-d-ahel",
+  "title": "Le Schisme d'Ahel",
+  "kind": "autre",
+  "tags": [
+    "Le Culte de Sirozor"
+  ],
+  "blocks": [
+    {
+      "id": "id68",
+      "type": "paragraph",
+      "text": "Le principal schisme du culte porte le nom d'Ahel. L'orthodoxie enseigne que le remplacement progressif de la chair est la conséquence logique de la quête de transcendance : plus un fidèle abandonne les limites biologiques, plus il se rapproche de l'état auquel Sirozor est parvenu.",
+      "italic": false
+    },
+    {
+      "id": "id69",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "La position d'Ahel",
+      "paragraphs": [
+        "Ahel ne rejeta jamais cette finalité — elle remit en cause le raisonnement qui y conduisait. Selon elle, un corps encore partiellement organique pouvait tout autant témoigner de la grandeur de Sirozor qu'un corps intégralement mécanisé."
+      ]
+    },
+    {
+      "id": "id70",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Réaction de l'orthodoxie",
+      "paragraphs": [
+        "Cette position, jugée hérétique, valut à Ahel et à ses disciples l'exil. Les Adeptes de Sirozor considèrent ce schisme comme une trahison plus douloureuse qu'une simple hérésie extérieure — la blessure d'un fils qui aurait renié son père — et nombre d'entre eux nourrissent encore l'espoir, jamais tout à fait éteint, d'un retour des disciples d'Ahel dans le droit chemin."
+      ]
+    },
+    {
+      "id": "id71",
+      "type": "paragraph",
+      "text": "Malgré des siècles de rupture, les disciples d'Ahel continuent de vénérer Sirozor à leur manière, convaincus qu'un jour, le reste du culte reconnaîtra que la voie qu'ils ont choisie n'était pas une trahison, mais une fidélité plus honnête.",
+      "italic": false
+    },
+    {
+      "id": "id72",
+      "type": "heading2",
+      "text": "Qui était Ahel"
+    },
+    {
+      "id": "id73",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Une figure jamais canonisée ni diabolisée officiellement",
+      "paragraphs": [
+        "Le nom d'Ahel ne semble ni maudit ni effacé des textes orthodoxes — au contraire, il resterait cité avec une forme de tristesse plutôt que de haine, ce qui distingue ce schisme d'une hérésie ordinaire. Aucune source ne tranche si Ahel était une figure historique bien identifiée (une Adepte de haut rang, une fondatrice de l'un des premiers Ordres) ou déjà une figure semi-légendaire au moment du schisme — ce flou pourrait être conservé volontairement, à la manière du mystère qui entoure Sirozor lui-même."
+      ]
+    },
+    {
+      "id": "id74",
+      "type": "heading2",
+      "text": "Situation actuelle des disciples"
+    },
+    {
+      "id": "id75",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Répartition géographique",
+      "paragraphs": [
+        "Sans territoire reconnu, les disciples d'Ahel se répartissent en petits groupes mobiles ou en communautés isolées installées aux marges de l'Imperium — villages frontaliers, avant-postes proches de la forêt elfe ou des montagnes naines, régions où l'autorité impériale et le clergé officiel se font plus discrets."
+      ]
+    },
+    {
+      "id": "id76",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Une menace en déclin ou en résurgence ?",
+      "paragraphs": [
+        "Deux lectures possibles pour l'avenir narratif de l'Ordre : soit il s'agit d'une tradition mourante, de moins en moins nombreuse à mesure que les générations s'éloignent du souvenir direct d'Ahel ; soit, à l'inverse, une résurgence discrète serait en cours, portée par une nouvelle génération de Mécanistes déçus par la rigidité croissante de l'orthodoxie."
+      ]
+    }
+  ]
+}

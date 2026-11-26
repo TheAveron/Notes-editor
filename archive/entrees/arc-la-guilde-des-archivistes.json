@@ -1,0 +1,34 @@
+{
+  "id": "arc-la-guilde-des-archivistes",
+  "title": "La Guilde des Archivistes",
+  "kind": "autre",
+  "tags": [
+    "L'Archiviste"
+  ],
+  "blocks": [
+    {
+      "id": "id6_0kxlx",
+      "type": "paragraph",
+      "text": "Le fonctionnement interne, la hiérarchie et les pratiques exactes de la véritable Guilde des Archivistes ne\nsont pas détaillés ici — ce dossier ne porte que sur l'entité qui usurpe son nom.",
+      "italic": false
+    },
+    {
+      "id": "id4_ql3ej",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Une organisation bien réelle",
+      "paragraphs": [
+        "La Guilde des Archivistes existe véritablement dans l'Imperium. Ce\nn'est pas une institution secrète : elle a pour mission publique et légitime de collecter, conserver et transcrire\nles événements, actes et connaissances du royaume — une fonction d'archivage et d'histoire, largement connue\net respectée."
+      ]
+    },
+    {
+      "id": "id5_l8ydf",
+      "type": "callout",
+      "tag": "attention",
+      "title": "Ce que la Guilde des Archivistes ignore",
+      "paragraphs": [
+        "La Guilde des Archivistes n'a aucun lien avec l'Archiviste (voir ARC-02) et ignore jusqu'à son existence. Elle\nn'a ni rédigé, ni validé, ni même vu passer un seul des documents de cette collection. Toute mention de son\nnom sur ces dossiers est une appropriation, pas une attribution réelle."
+      ]
+    }
+  ]
+}

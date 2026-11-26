@@ -1,0 +1,34 @@
+{
+  "id": "arc-fiabilite-des-archives",
+  "title": "Fiabilité des Archives",
+  "kind": "autre",
+  "tags": [
+    "L'Archiviste"
+  ],
+  "blocks": [
+    {
+      "id": "id35_ln538",
+      "type": "paragraph",
+      "text": "Une question se pose logiquement : si l'Archiviste conserve la totalité des événements du monde, pourquoi\nses propres dossiers contiennent-ils des zones d'ombre, des hypothèses non tranchées, et des points\nexplicitement marqués comme incertains ?",
+      "italic": false
+    },
+    {
+      "id": "id36_vvesn",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Une hypothèse de lecture",
+      "paragraphs": [
+        "Il est probable que la mémoire de l'Archiviste ne soit pas uniforme : certains événements y sont fixés avec une\nprécision totale, d'autres ne lui parviennent que sous forme d'impressions, de déductions, ou de rumeurs qu'il\nn'a pas pu vérifier lui-même. Le système de balises utilisé dans toute la collection — Confirmé, Hypothèse de\ntravail, Hook MJ, Attention MJ — peut ainsi se lire, en creux, comme le propre système d'annotation de\nl'Archiviste : sa façon à lui de distinguer ce qu'il sait avec certitude de ce qu'il reconstitue, suppose, ou choisit\nde signaler comme utile sans le garantir."
+      ]
+    },
+    {
+      "id": "id37_366qi",
+      "type": "callout",
+      "tag": "hook",
+      "title": "Une archive erronée",
+      "paragraphs": [
+        "Et si un détail « Confirmé » d'un des dossiers s'avérait, à l'usage, faux ? Cela suggérerait que même l'Archiviste\npeut se tromper — ou qu'il a, pour une raison qui lui appartient, sciemment consigné une inexactitude. De\nquoi nourrir une intrigue entière autour de la fiabilité même de cette collection."
+      ]
+    }
+  ]
+}

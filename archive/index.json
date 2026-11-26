@@ -1,0 +1,34 @@
+{
+  "generatedBy": "Atelier de Dossiers",
+  "entrees": [
+    "arc-annexes",
+    "arc-echelle-de-confidentialite",
+    "arc-fiabilite-des-archives",
+    "arc-hooks-de-scenario",
+    "arc-l-archiviste",
+    "arc-la-guilde-des-archivistes",
+    "cel-fiche-d-identification",
+    "grd-annexes",
+    "grd-fiche-d-identification",
+    "grd-hooks-de-scenario",
+    "grd-la-lignee-des-gardiens-et-le-rituel-de-transmission",
+    "grd-la-tour-du-cinquieme-point-cardinal",
+    "grd-mecanique-de-la-conscience-partagee",
+    "grd-miguel-portait-du-gardien-actuel",
+    "sir-annexes",
+    "sir-hooks-de-scenario",
+    "sir-l-immortalite-et-le-declin-du-savoir",
+    "sir-la-chair-le-metal-et-la-conscience",
+    "sir-le-dogme-fondamental",
+    "sir-le-schisme-d-ahel",
+    "sir-les-ordres-du-culte",
+    "sir-place-du-culte-dans-l-imperium"
+  ],
+  "blocs": [],
+  "dossiers": [
+    "celestine",
+    "l-archiviste",
+    "le-culte-de-sirozor",
+    "le-gardien"
+  ]
+}

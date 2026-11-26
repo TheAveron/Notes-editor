@@ -1,0 +1,77 @@
+{
+  "id": "grd-mecanique-de-la-conscience-partagee",
+  "title": "Mécanique de la conscience partagée",
+  "kind": "autre",
+  "tags": [
+    "Le Gardien"
+  ],
+  "blocks": [
+    {
+      "id": "id42_nt6v2",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Structure de la conscience du Gardien",
+      "paragraphs": [
+        "Après le rituel, le Gardien porte en lui l'ensemble des Gardiens qui l'ont précédé — en théorie jusqu'aux origines\nmêmes de la Tour, il y a 12 000 ans. Cette conscience multiple se répartit en deux strates distinctes."
+      ]
+    },
+    {
+      "id": "id43_lhvht",
+      "type": "heading2",
+      "text": "Connaissance commune (stable)"
+    },
+    {
+      "id": "id44_gq63i",
+      "type": "paragraph",
+      "text": "L''ensemble des savoirs partagés par la majorité des Gardiens successifs forme un socle stable, accessible en permanence et instantanément, sans effort particulier de la part du Gardien en exercice.",
+      "italic": false
+    },
+    {
+      "id": "id45_qi2b0",
+      "type": "heading2",
+      "text": "Connaissance individuelle (à consulter)"
+    },
+    {
+      "id": "id46_r89ln",
+      "type": "paragraph",
+      "text": "Un souvenir, une compétence rare ou un sort propre à un seul Gardien précis reste rattaché à cet esprit et ne peut être obtenu qu'en le « consultant » activement — ce qui prend du temps, suppose de deviner ou de savoir lequel des prédécesseurs détient l'information recherchée, et n'est jamais garanti d'aboutir rapidement.",
+      "italic": false
+    },
+    {
+      "id": "id47_bz122",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Principe de contrôle",
+      "paragraphs": [
+        "À tout instant, c'est l'esprit le plus puissant parmi tous ceux présents qui contrôle le corps du Gardien. Il n'existe aucune hiérarchie de préséance liée à l'ordre d'absorption : tous les Gardiens précédents sont placés strictement au même niveau. Un esprit absorbé huit mille ans plus tôt a, en théorie, exactement autant de chances de reprendre le contrôle qu'un esprit absorbé la veille, à la seule condition d'être, à cet instant précis, le plus puissant des esprits en présence."
+      ]
+    },
+    {
+      "id": "id48_6qod4",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Conséquence directe",
+      "paragraphs": [
+        "Le contrôle du corps n'est donc jamais définitivement acquis pour le Gardien en exercice : c'est un équilibre dynamique, négocié en permanence plutôt qu'une fois pour toutes. Cela justifie la sévérité extrême de la sélection des novices, ainsi que la durée et l'intensité de leur formation — destinée à la fois à développer leur\npuissance propre et à les préparer psychologiquement à supporter la charge cumulée qu'ils s'apprêtent à\nrecevoir."
+      ]
+    },
+    {
+      "id": "id49_x5tdu",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Le Gardien actuel face à ce risque",
+      "paragraphs": [
+        "Miguel vit-il, 65 ans après son investiture, avec une vigilance intérieure permanente face à ce risque de bascule, ou a-t-il acquis au fil des décennies une confiance stable en sa propre domination ? C'est l'un des choix de caractérisation les plus structurants pour quiconque souhaite utiliser ce personnage : un Gardien serein et un Gardien qui doute en silence n'offrent pas du tout le même terrain dramatique."
+      ]
+    },
+    {
+      "id": "id50_ow6vn",
+      "type": "callout",
+      "tag": "attention",
+      "title": "Un pouvoir difficile à mettre en danger",
+      "paragraphs": [
+        "Un Gardien ayant accès à des dizaines de savoirs et de capacités cumulés est, par construction, redoutablement difficile à menacer physiquement de façon crédible. Pour l'exploiter en jeu sans qu'il devienne\nun simple mur d'invincibilité, il est recommandé d'introduire des limites claires : temps nécessaire pour « consulter » un esprit précis, incapacité à consulter plusieurs esprits simultanément, fatigue ou vulnérabilité accrue liée à un usage intensif de cette faculté."
+      ]
+    }
+  ]
+}

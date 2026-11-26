@@ -1,0 +1,142 @@
+{
+  "id": "sir-hooks-de-scenario",
+  "title": "Hooks de Scénario",
+  "kind": "autre",
+  "tags": [
+    "Le Culte de Sirozor"
+  ],
+  "blocks": [
+    {
+      "id": "id90",
+      "type": "paragraph",
+      "text": "Six accroches centrées sur le culte de Sirozor, exploitables directement. Pour plus de hook religieux, aller voir les différents documents liés.",
+      "italic": false
+    },
+    {
+      "id": "id91",
+      "type": "card",
+      "badgeText": "HOOK 1",
+      "title": "Le fragment retrouvé",
+      "pitch": "Une expédition ou une fouille met la main sur un fragment d'archive technique antérieur à la guerre civile du VIIIe millénaire — peut-être lié à la conception d'IA décisionnelles ou de cerveaux artificiels.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Régional / mondial"
+        },
+        {
+          "a": "Complication",
+          "b": "Le fragment attire immédiatement l'attention de l'Ordre de l'Esprit, qui pourrait vouloir le récupérer par tous les moyens, légitimes ou non"
+        },
+        {
+          "a": "Rôle du culte",
+          "b": "Potentiel allié ou rival selon qui met la main dessus en premier"
+        }
+      ]
+    },
+    {
+      "id": "id92",
+      "type": "card",
+      "badgeText": "HOOK 2",
+      "title": "Le dernier souffle d'un Ancien",
+      "pitch": "Un des tout derniers Mécanistes au corps entièrement artificiel se sait proche de la défaillance totale. Il cherche quelqu'un — pas forcément un Mécaniste — pour recueillir un dernier fragment de savoir avant que sa mémoire ne s'efface.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Personnel, à résonance émotionnelle forte"
+        },
+        {
+          "a": "Complication",
+          "b": "Le savoir transmis pourrait être incomplet, erroné, ou convoité par plusieurs factions à la fois"
+        },
+        {
+          "a": "Rôle du culte",
+          "b": "L'Ordre de l'Esprit surveille de près ce genre de transmission et pourrait intervenir"
+        }
+      ]
+    },
+    {
+      "id": "id94",
+      "type": "card",
+      "badgeText": "HOOK 3",
+      "title": "Une main tendue par-delà le schisme",
+      "pitch": "Un Adepte de Sirozor orthodoxe et un Disciple d'Ahel se retrouvent forcés de collaborer — face à une menace commune, ou à cause d'un lien personnel antérieur au schisme.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Local à régional"
+        },
+        {
+          "a": "Complication",
+          "b": "Leur collaboration, si elle est découverte, pourrait être vue comme une trahison par leurs Ordres respectifs"
+        },
+        {
+          "a": "Rôle du culte",
+          "b": "Terrain d'exploration pour humaniser la fracture théologique sans la refermer artificiellement"
+        }
+      ]
+    },
+    {
+      "id": "id95",
+      "type": "card",
+      "badgeText": "HOOK 4",
+      "title": "L'artefact ambigu",
+      "pitch": "Un mécanisme d'un genre inconnu, potentiellement antérieur même aux origines connues du culte, est découvert. Certains y voient un signe de Sirozor lui-même.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Mondial"
+        },
+        {
+          "a": "Complication",
+          "b": "Rien ne doit jamais confirmer ou infirmer qu'il s'agit réellement d'un signe de Sirozor — voir l'avertissement en section 1"
+        },
+        {
+          "a": "Rôle du culte",
+          "b": "Toutes les factions du culte pourraient converger vers cet artefact, chacune avec sa propre interprétation"
+        }
+      ]
+    },
+    {
+      "id": "id97",
+      "type": "card",
+      "badgeText": "HOOK 5",
+      "title": "L'expérience interdite",
+      "pitch": "Une rumeur circule : un membre de l'Ordre de l'Esprit aurait tenté, en secret, un transfert de conscience sur un fidèle mourant. Le résultat, s'il existe, ne ressemble à rien de connu.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Régional, forte charge morale"
+        },
+        {
+          "a": "Complication",
+          "b": "Si la rumeur est vraie, elle expose l'Ordre de l'Esprit à une crise interne majeure et pourrait raviver le débat sur les limites de l'expérimentation"
+        },
+        {
+          "a": "Rôle du culte",
+          "b": "Le Conclave pourrait être convoqué en urgence pour statuer sur ce cas"
+        }
+      ]
+    },
+    {
+      "id": "id98",
+      "type": "card",
+      "badgeText": "HOOK 6",
+      "title": "Le temple menacé",
+      "pitch": "L'un des rares temples mécanistes officiellement tolérés se retrouve visé par une agitation populaire ou une manœuvre politique locale cherchant à le faire fermer.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Local, à enjeu politique"
+        },
+        {
+          "a": "Complication",
+          "b": "Fermer le temple priverait la région d'un savoir technique dont elle dépend en silence — un dilemme pour les autorités locales elles-mêmes"
+        },
+        {
+          "a": "Rôle du culte",
+          "b": "Les Protecteurs pourraient être tentés d'intervenir avec plus de fermeté que ne le souhaiteraient les Adeptes, ouvrant une tension interne"
+        }
+      ]
+    }
+  ]
+}

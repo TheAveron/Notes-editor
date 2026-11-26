@@ -1,0 +1,84 @@
+{
+  "id": "sir-la-chair-le-metal-et-la-conscience",
+  "title": "La Chair, le Métal et la Conscience",
+  "kind": "autre",
+  "tags": [
+    "Le Culte de Sirozor"
+  ],
+  "blocks": [
+    {
+      "id": "id14",
+      "type": "paragraph",
+      "text": "Contrairement à ce que prétendent leurs détracteurs, les Mécanistes ne considèrent pas la chair comme mauvaise. Ils la considèrent comme incomplète — une première étape de l'existence, une architecture remarquable mais imparfaite, soumise à la fatigue, à la maladie et à la mort.",
+      "italic": false
+    },
+    {
+      "id": "id15",
+      "type": "bullets",
+      "items": [
+        "Chaque augmentation représente une victoire contre les limites imposées par la biologie.",
+        "Chaque mécanisme intégré rapproche le fidèle d'un état où son esprit pourra survivre indépendamment de son enveloppe charnelle.",
+        "Les divergences entre les écoles du culte portent moins sur ce principe que sur le rythme et la nécessité de la transformation."
+      ]
+    },
+    {
+      "id": "id16",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Ce qui définit un individu",
+      "paragraphs": [
+        "Le concept central de la théologie mécaniste n'est ni le métal ni la machine : c'est la conscience. Ce qui définit véritablement un individu n'est pas son corps, mais la continuité de son esprit — ses souvenirs, ses raisonnements, son identité et sa capacité à penser. Le corps n'est qu'un support ; un support peut être remplacé, une conscience ne le peut pas."
+      ]
+    },
+    {
+      "id": "id17",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Rapport aux machines",
+      "paragraphs": [
+        "Les Mécanistes ne considèrent pas les machines comme des êtres conscients — aucune roue, aucun automate ni aucun moteur ne possède d'âme propre. En revanche, toutes les machines participent à Sirozor, chacune représentant un fragment infinitésimal du réseau dans lequel son esprit s'est dissous après son ascension. Construire une nouvelle machine agrandit ce réseau sacré ; la réparer restaure une partie de l'ensemble ; l'abandonner volontairement constitue presque un acte de vandalisme religieux."
+      ]
+    },
+    {
+      "id": "id18",
+      "type": "heading2",
+      "text": "Le processus d'augmentation"
+    },
+    {
+      "id": "id19",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Qui augmente qui",
+      "paragraphs": [
+        "L'augmentation n'est jamais un acte solitaire : elle est pratiquée par des Artisans-Chirurgiens formés au sein du culte, souvent issus de l'Ordre de l'Esprit pour sa maîtrise technique la plus fine, ou par des membres expérimentés de l'Ordre auquel appartient déjà le fidèle. Le consentement du récipiendaire est requis dans l'orthodoxie du culte. Il n'existe ici aucune notion d'augmentation forcée, du moins dans la doctrine officielle."
+      ]
+    },
+    {
+      "id": "id20",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Le premier organe remplacé",
+      "paragraphs": [
+        "Le choix du premier organe augmenté n'est jamais anodin : il oriente souvent, symboliquement, la suite du parcours du fidèle. Un crâne modifié en premier trahit une vocation pour l'Ordre de l'Esprit ; un torse renforcé annonce une vocation de Protecteur. Ce premier remplacement est généralement vécu comme un rite de passage à part entière, marquant l'entrée réelle dans la communauté mécaniste bien plus que la simple déclaration de foi."
+      ]
+    },
+    {
+      "id": "id22",
+      "type": "callout",
+      "tag": "confirme",
+      "title": "Augmentation et statut social interne",
+      "paragraphs": [
+        "Au sein du culte, le degré visible d'augmentation fonctionne presque comme un signe de rang ou de dévotion — un Adepte très mécanisé inspire un respect immédiat parmi les fidèles. À l'extérieur du culte, c'est l'inverse : plus un Mécaniste est visiblement transformé, plus il inspire la méfiance ou la peur du reste de la population impériale."
+      ]
+    },
+    {
+      "id": "id21",
+      "type": "callout",
+      "tag": "hypothese",
+      "title": "Le Seuil — un débat non tranché",
+      "paragraphs": [
+        "Une question théologique traverse tous les Ordres sans jamais être résolue : existe-t-il un point de non-retour, un « Seuil » au-delà duquel un fidèle cesse d'être humain sans être encore devenu autre chose ? Les orthodoxes y voient une étape nécessaire et désirable ; les disciples d'Ahel y voient précisément le piège que dénonçait leur figure fondatrice — confondre l'accumulation de métal avec la transcendance elle-même."
+      ]
+    }
+  ]
+}

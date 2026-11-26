@@ -1,0 +1,121 @@
+{
+  "id": "grd-hooks-de-scenario",
+  "title": "Hooks de Scénario",
+  "kind": "autre",
+  "tags": [
+    "Le Gardien"
+  ],
+  "blocks": [
+    {
+      "id": "id21_gz5ma",
+      "type": "paragraph",
+      "text": "Cinq accroches prêtes à l'emploi, centrées sur le Gardien en tant que PNJ. Pour les accroches d'ordre institutionnel autour de la Guilde, voir GLD-VC-001.",
+      "italic": false
+    },
+    {
+      "id": "id22_kebn2",
+      "type": "card",
+      "badgeText": "HOOK 1",
+      "title": "L'appel de la Tour",
+      "pitch": "Un des personnages se révèle exceptionnellement doué (potentiel de six ou sept liens) et attire l'attention de la Guilde. Le personnage doit être relativement jeune, pour pouvoir être un candidat sérieux pour le poste de Gardien ou de Mage Suprême.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Personnel / régional"
+        },
+        {
+          "a": "Complication",
+          "b": "Accepter signifie potentiellement suivre la voie de Miguel : disparaître, au sens propre, dans vingt ans lors d'un futur Rituel de Transmission."
+        },
+        {
+          "a": "Rôle du Gardien",
+          "b": "Mentionné, jamais rencontré — figure de destin lointain."
+        }
+      ]
+    },
+    {
+      "id": "id23_x9hre",
+      "type": "card",
+      "badgeText": "HOOK 2",
+      "title": "Le Gardien silencieux",
+      "pitch": "Depuis plusieurs semaines, Ambre, la Mage suprême, remarque des signes inhabituels chez lui — absences, visions rapportées par des tiers — suggérant que le contrôle du Gardien pourrait vaciller.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Régional / mondial"
+        },
+        {
+          "a": "Complication",
+          "b": "Elle engage des personnages extérieurs à la Guilde, donc politiquement « jetables », pour enquêter sans alerter l'institution."
+        },
+        {
+          "a": "Rôle du Guardien",
+          "b": "Potentiel antagoniste temporaire, si un esprit ancien reprend le dessus lors de la confrontation finale."
+        }
+      ]
+    },
+    {
+      "id": "id25_5tfbj",
+      "type": "card",
+      "badgeText": "HOOK 3",
+      "title": "Les archives perdues",
+      "pitch": "Une expédition dans d'anciennes ruines ou des sous-sols oubliés de la Guilde permet de retrouver des fragments d'archives antérieures au huitième millénaire, jetant une lumière nouvelle et dérangeante sur l'origine du rituel.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Mondial (implications historiques)"
+        },
+        {
+          "a": "Complication",
+          "b": "Ces révélations pourraient inclure la preuve d'un échec de transmission passé (voir GDN-03, « La transmission ratée »), ou de quelconque histoire sombre autour des agissements d'anciens gardiens."
+        },
+        {
+          "a": "Rôle du Guardien",
+          "b": "Ambigu — peut intervenir pour récupérer ou protéger ces archives, sans que ses intentions soient claires (protection légitime ou dissimulation)."
+        }
+      ]
+    },
+    {
+      "id": "id26_aaw8t",
+      "type": "card",
+      "badgeText": "HOOK 4",
+      "title": "Les proches en péril",
+      "pitch": "Le village natal de Miguel est frappé par une recrudescence d'attaques et de symptômes étranges (maux de tête, malaises) évoquant une activité du Plan Éthéré (voir MEN-VC-001).",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Local, à résonance personnelle forte"
+        },
+        {
+          "a": "Complication",
+          "b": "Miguel pourrait intervenir personnellement par attachement sentimental — situation rarissime où le Gardien agit hors la Tour pour une raison purement privée."
+        },
+        {
+          "a": "Rôle du Guardien",
+          "b": "Allié exceptionnel, dont l'implication directe soulève des questions politiques : pourquoi lui, pourquoi là, pourquoi maintenant ?"
+        }
+      ]
+    },
+    {
+      "id": "id24_00vqb",
+      "type": "card",
+      "badgeText": "HOOK 5",
+      "title": "Une succession anticipée",
+      "pitch": "Des rumeurs circulent selon lesquelles Miguel chercherait déjà un successeur, bien plus tôt que les décennies de règne habituelles ne le laisseraient supposer.",
+      "rows": [
+        {
+          "a": "Niveau",
+          "b": "Mondial"
+        },
+        {
+          "a": "Complication",
+          "b": "Cela peut signifier qu'il se sait affaibli, menacé, ou qu'il a détecté une menace nécessitant un Gardien neuf, plus fort que lui-même en exercice."
+        },
+        {
+          "a": "Rôle du Guardien",
+          "b": "Central mais insaisissable — jamais rencontré en personne, perçu uniquement à travers les conséquences de ses décisions."
+        }
+      ]
+    }
+  ]
+}

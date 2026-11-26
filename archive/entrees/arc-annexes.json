@@ -1,0 +1,47 @@
+{
+  "id": "arc-annexes",
+  "title": "Annexes",
+  "kind": "autre",
+  "tags": [
+    "L'Archiviste"
+  ],
+  "blocks": [
+    {
+      "id": "id46_v6nho",
+      "type": "heading2",
+      "text": "A. Glossaire"
+    },
+    {
+      "id": "id47_08zsq",
+      "type": "table",
+      "rows": [
+        {
+          "a": "Guilde des Archivistes",
+          "b": "Organisation réelle et publique de l'Imperium, dédiée à la conservation des événements et connaissances du royaume — sans lien avec l'Archiviste.",
+          "c": ""
+        },
+        {
+          "a": "L'Archiviste",
+          "b": "Voyageur solitaire à l'origine réelle de cette collection, inconnu de toute institution, conservant par un moyen inconnu la mémoire du monde.",
+          "c": ""
+        },
+        {
+          "a": "Niveau officiel",
+          "b": "Échelle neutre de la Guilde des Archivistes, de 1 à 7, mesurant l'ordre de grandeur de personnes informées — voir ARC-03.A.",
+          "c": ""
+        },
+        {
+          "a": "Palier spécial",
+          "b": "Désignation par rôle, ajoutée par l'Archiviste à des dossiers particuliers — voir ARC-03.B.",
+          "c": ""
+        },
+        {
+          "a": "Guilde des Animaliens",
+          "b": "Organisation publique de l'Imperium, dédiée à l'entrainement et à la régulation de l'usage des liens téléphatiques inter-espèces.",
+          "c": ""
+        }
+      ],
+      "layout": "label-value"
+    }
+  ]
+}
