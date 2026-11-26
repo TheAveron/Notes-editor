@@ -14,7 +14,13 @@
                     Atelier de Dossiers<small
                         >Éditeur de fiches de lore — style classification</small
                     >
+                    <div class="status-line">
+                        <span id="layout-status" class="save-status warn"></span>
+                        <span id="save-status" class="save-status"></span>
+                    </div>
                 </div>
+                <button id="btn-undo" class="icon" title="Annuler (Ctrl+Z)" disabled>↶</button>
+                <button id="btn-redo" class="icon" title="Rétablir (Ctrl+Maj+Z / Ctrl+Y)" disabled>↷</button>
                 <button id="btn-new">+ Nouveau document</button>
                 <label class="file-btn"
                     >Importer JSON<input
@@ -74,6 +80,21 @@
             </div>
         </div>
 
-        <script src="./app.js"></script>
+        <!-- Scripts classiques (et non modules ES) : l'éditeur fonctionne ouvert
+             directement depuis le disque (file://). L'ordre compte. -->
+        <script src="./js/colors.js"></script>
+        <script src="./js/tags.js"></script>
+        <script src="./js/storage.js"></script>
+        <script src="./js/registry.js"></script>
+        <script src="./js/model.js"></script>
+        <script src="./js/history.js"></script>
+        <script src="./js/preview.js"></script>
+        <script src="./js/ui.js"></script>
+        <script src="./js/sidebar-color.js"></script>
+        <script src="./js/sidebar-doc.js"></script>
+        <script src="./js/sidebar-sections.js"></script>
+        <script src="./js/sidebar-registry.js"></script>
+        <script src="./js/sync.js"></script>
+        <script src="./js/app.js"></script>
     </body>
 </html>
