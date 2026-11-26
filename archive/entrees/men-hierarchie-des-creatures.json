@@ -12,7 +12,7 @@
       "tag": "confirme",
       "title": "Principe général",
       "paragraphs": [
-        "Les créatures du Plan Éthéré forment une hiérarchie de puissance et d'intelligence très étendue. À l'extrémité inférieure, des entités quasi automatiques attaquent leurs cibles au hasard. À l'extrémité supérieure, certaines créatures atteignent une puissance et une intentionnalité comparables à celles des plus grands seigneurs du mal des récits mythologiques — des figures à l'échelle d'un Sauron ou d'un dieu du Chaos."
+        "Les créatures du Plan Éthéré forment une hiérarchie de puissance et d'intelligence très étendue. À l'extrémité inférieure, des entités quasi automatiques attaquent leurs cibles au hasard. À l'extrémité supérieure, certaines créatures atteignent une puissance et une intentionnalité comparables à celles des plus grandes figures maléfiques des mythes et légendes de l'Empire."
       ]
     },
     {
@@ -139,7 +139,7 @@
     {
       "id": "id_dfdce271",
       "type": "paragraph",
-      "text": "Note MJ — Un Dévoreur de seuil ayant réussi sa possession est un formidable levier d'enquête : le PNJ « possédé » peut sembler socialement normal, la créature imitant son hôte pour ne pas se faire repérer.",
+      "text": "Note — Un Dévoreur de seuil ayant réussi sa possession est un formidable levier d'enquête : le PNJ « possédé » peut sembler socialement normal, la créature imitant son hôte pour ne pas se faire repérer.",
       "italic": false
     },
     {
@@ -171,7 +171,7 @@
     {
       "id": "id_e46cddf8",
       "type": "paragraph",
-      "text": "Note MJ — Un antagoniste récurrent crédible pour une campagne régionale, sans nécessiter l'intervention directe du Gardien à chaque incident.",
+      "text": "Note — Un antagoniste récurrent crédible pour une campagne régionale, sans nécessiter l'intervention directe du Gardien à chaque incident.",
       "italic": false
     },
     {
@@ -203,7 +203,7 @@
     {
       "id": "id_48becbdd",
       "type": "paragraph",
-      "text": "Note MJ — Un enjeu de fin de campagne plutôt qu'une menace récurrente.",
+      "text": "Note — Un enjeu de fin de campagne plutôt qu'une menace récurrente.",
       "italic": false
     }
   ]

@@ -27,14 +27,14 @@
       },
       {
         "a": "Confidentialité",
-        "b": "7 · A5 — usage MJ uniquement"
+        "b": "7 · A5 — Gardien et personnel de la Tour"
       }
     ]
   },
   "footerBrand": "Le Gardien - Niveau 7 · A5",
   "noteUsage": {
     "includeTagLegend": true,
-    "text": "Ce dossier est conçu pour être utilisé tel quel par un meneur de jeu (MJ) autre que l'auteur de l'univers. Chaque information est étiquetée selon son statut, afin de distinguer ce qui appartient au canon établi de ce qui reste ouvert à l'interprétation ou à l'adaptation."
+    "text": "Chaque information de ce dossier est étiquetée selon son statut, afin de distinguer ce qui est établi avec certitude de ce qui relève de la reconstitution, de la supposition ou de la simple piste."
   },
   "sections": [
     {
